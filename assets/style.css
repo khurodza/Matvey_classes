@@ -1,0 +1,343 @@
+/* ============================================================
+   Matvey's English Lessons — shared visual style
+   "Warm notebook / sticker" look — cream paper, thick ink
+   borders, hard offset shadows, big playful accent colors.
+   Do not edit unless you want to change the look of every page.
+   ============================================================ */
+
+:root{
+  --cream:#FFF8EF; --paper:#FFFFFF; --ink:#241E1A; --muted:#7A6E64;
+  --coral:#E8663A; --teal:#218A80; --yellow:#F5C34B; --lilac:#7C6BD6;
+  --line:#241E1A; --green:#2F9E5E; --red:#D2402F;
+  --shadow:4px 4px 0 var(--line);
+  --shadow-sm:2px 2px 0 var(--line);
+  --peach:#FFE9DF; --mint:#F3F7F6; --butter:#FFF6E2; --lav:#E6E1FA;
+  --okgreen:#DFF3E6; --badred:#FBE3DF;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--cream); color:var(--ink);
+  font:18px/1.6 ui-sans-serif,-apple-system,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px 80px}
+h1,h2,h3{line-height:1.2;margin:0}
+h1{font-size:clamp(30px,4.6vw,46px);letter-spacing:-.02em}
+h2{font-size:clamp(21px,3vw,29px);letter-spacing:-.01em}
+h3{font-size:18px}
+p{margin:.6em 0}
+a{color:inherit}
+
+/* ---------------- hero header (used on every page) ---------------- */
+header.hero{
+  background:var(--coral); color:#fff; border-bottom:3px solid var(--line);
+  padding:34px 0 30px; position:relative; overflow:hidden;
+}
+header.hero .wrap{padding-bottom:0}
+.hero-grid{display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.hero p{margin:.4em 0 0;max-width:56ch;color:#FFE9DF;font-size:17px}
+.hero-badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.badge{
+  background:#fff;color:var(--ink);border:2px solid var(--line);border-radius:999px;
+  padding:5px 14px;font-size:13px;font-weight:800
+}
+.back-home{
+  display:inline-flex;align-items:center;gap:6px;color:#fff;text-decoration:none;
+  font-weight:800;font-size:14px;background:rgba(0,0,0,.15);border:2px solid rgba(255,255,255,.5);
+  border-radius:999px;padding:6px 14px;margin-bottom:14px
+}
+.back-home:hover{background:rgba(0,0,0,.25)}
+header.hero.hw{background:var(--lilac)}
+
+/* ---------------- sticky nav chips ---------------- */
+nav.chips{
+  position:sticky;top:0;z-index:40;background:var(--cream);
+  border-bottom:2px solid var(--line);padding:10px 0;
+}
+nav.chips .wrap{padding-bottom:0;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+nav.chips a{
+  text-decoration:none;color:var(--ink);background:#fff;border:2px solid var(--line);
+  border-radius:999px;padding:6px 14px;font-size:14px;font-weight:800;white-space:nowrap
+}
+nav.chips a:hover{background:var(--yellow)}
+
+/* ---------------- generic card + step ---------------- */
+section.step{margin-top:34px}
+.card{
+  background:var(--paper);border:2px solid var(--line);border-radius:18px;
+  box-shadow:var(--shadow);padding:24px;margin-top:16px
+}
+.step-head{display:flex;gap:16px;align-items:flex-start}
+.step-num{
+  flex:0 0 auto;width:52px;height:52px;border-radius:16px;border:2px solid var(--line);
+  background:var(--yellow);display:grid;place-items:center;font-weight:900;font-size:23px;
+  box-shadow:var(--shadow-sm)
+}
+.step-meta{font-size:13px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+
+/* colour cycle helper for step-num badges */
+.step:nth-of-type(4n+1) .step-num{background:var(--yellow)}
+.step:nth-of-type(4n+2) .step-num{background:var(--peach)}
+.step:nth-of-type(4n+3) .step-num{background:var(--lav)}
+.step:nth-of-type(4n+4) .step-num{background:#D9F0EC}
+
+/* ---------------- tip box ---------------- */
+.tip{
+  background:var(--mint);border-left:6px solid var(--teal);border-radius:0 12px 12px 0;
+  padding:12px 16px;margin-top:16px;font-size:15px
+}
+.tip b{color:var(--teal)}
+
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+
+/* ---------------- buttons ---------------- */
+button,.btn,.btn-primary,.btn-accent,.btn-warm,.btn-ghost{
+  font:inherit;font-weight:800;cursor:pointer;border:2px solid var(--line);
+  background:#fff;color:var(--ink);border-radius:12px;padding:10px 18px;
+  box-shadow:var(--shadow-sm);transition:transform .06s ease;display:inline-block;text-decoration:none
+}
+button:active,.btn:active,.btn-primary:active,.btn-accent:active,.btn-warm:active,.btn-ghost:active{
+  transform:translate(2px,2px);box-shadow:0 0 0 var(--line)
+}
+.btn-primary{background:var(--teal);color:#fff}
+.btn-accent{background:var(--lilac);color:#fff}
+.btn-warm{background:var(--coral);color:#fff}
+.btn-ghost{background:#fff}
+.btn-row{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+
+/* ---------------- exercise label ---------------- */
+.exercise-label{
+  display:inline-block;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em;
+  color:#fff;background:var(--coral);padding:5px 14px;border-radius:999px;margin-bottom:12px;
+  border:2px solid var(--line)
+}
+.exercise-label.hw{background:var(--lilac)}
+
+/* ---------------- fill in the blanks ---------------- */
+.blank{
+  font:inherit;font-weight:800;text-align:center;color:var(--ink);
+  border:2px solid var(--line);border-radius:10px;background:#fff;
+  padding:6px 10px;min-width:110px;outline:none;
+}
+.blank:focus{background:var(--butter)}
+.blank.correct{background:var(--okgreen);border-color:var(--green);color:#1B6237}
+.blank.wrong{background:var(--badred);border-color:var(--red);color:#8C2A1D}
+.blank.line-write{width:100%;text-align:left;font-weight:600;display:block;margin-top:6px}
+
+/* worked example (already answered, shown for reference, not interactive) */
+.example-row{
+  display:flex;gap:10px;align-items:baseline;background:var(--mint);border-radius:10px;
+  padding:8px 12px;margin-bottom:10px;font-size:15px
+}
+.example-row .ex-tag{
+  flex:0 0 auto;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.06em;
+  color:var(--teal);background:#fff;border:2px solid var(--teal);border-radius:999px;padding:2px 10px
+}
+
+/* reference table (grammar rules, not interactive) */
+.ref-table{width:100%;border-collapse:collapse;margin-top:10px;font-size:15px}
+.ref-table th{background:var(--lilac);color:#fff;padding:8px 12px;text-align:left;border:2px solid var(--line)}
+.ref-table td{padding:8px 12px;border:2px solid var(--line);background:#fff}
+.ref-table td.label{font-weight:800;background:var(--lav);white-space:nowrap}
+.ref-table tr.group td{background:var(--cream);font-weight:800;text-align:center;color:var(--muted)}
+
+/* plain reference word list (not clickable) */
+.word-bank-ref{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.word-bank-ref span{background:var(--butter);border:2px solid var(--line);border-radius:999px;padding:4px 14px;font-size:14px;font-weight:700}
+
+/* ---------------- multiple choice ---------------- */
+.mc-options{display:flex;flex-direction:column;gap:10px;margin-top:10px}
+.mc-option{
+  display:flex;align-items:center;gap:12px;padding:12px 16px;
+  border:2px solid var(--line);border-radius:12px;cursor:pointer;
+  background:#fff;font-size:16px;font-weight:600;transition:background .15s;user-select:none
+}
+.mc-option:hover{background:var(--butter)}
+.mc-option input[type=radio]{display:none}
+.mc-bullet{
+  width:28px;height:28px;border-radius:50%;border:2px solid var(--line);
+  display:grid;place-items:center;flex-shrink:0;font-size:13px;font-weight:900;background:#fff
+}
+.mc-option.selected{background:var(--lav)}
+.mc-option.selected .mc-bullet{background:var(--lilac);color:#fff;border-color:var(--lilac)}
+.mc-option.correct{background:var(--okgreen);border-color:var(--green)}
+.mc-option.correct .mc-bullet{background:var(--green);color:#fff;border-color:var(--green)}
+.mc-option.wrong{background:var(--badred);border-color:var(--red)}
+.mc-option.wrong .mc-bullet{background:var(--red);color:#fff;border-color:var(--red)}
+
+/* ---------------- matching ---------------- */
+.match-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+.match-col{display:flex;flex-direction:column;gap:10px}
+.match-item{
+  padding:13px 16px;border:2px solid var(--line);border-radius:12px;cursor:pointer;
+  background:#fff;font-size:15px;font-weight:700;transition:background .15s;user-select:none;
+  min-height:48px;display:flex;align-items:center
+}
+.match-item:hover:not(.locked){background:var(--butter)}
+.match-item.selected{background:var(--lav)}
+.match-item.matched{background:var(--okgreen);border-color:var(--green);color:#1B6237;cursor:default}
+.match-item.shake{animation:shake .3s;background:var(--badred);border-color:var(--red)}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+
+/* ---------------- word-choice inline buttons ---------------- */
+.word-choice{display:inline-flex;gap:8px;margin:2px 6px;vertical-align:middle}
+.word-choice-btn{
+  padding:6px 14px;cursor:pointer;border:2px solid var(--line);border-radius:10px;
+  background:#fff;font-size:16px;font-weight:700;color:var(--muted);font-family:inherit;
+  box-shadow:var(--shadow-sm);transition:transform .06s ease
+}
+.word-choice-btn:hover{background:var(--butter);color:var(--ink)}
+.word-choice-btn:active{transform:translate(2px,2px);box-shadow:0 0 0 var(--line)}
+.word-choice-btn.selected{background:var(--lilac);color:#fff;border-color:var(--lilac)}
+.word-choice-btn.correct{background:var(--green)!important;color:#fff!important;border-color:var(--green)!important}
+.word-choice-btn.wrong{background:var(--red)!important;color:#fff!important;border-color:var(--red)!important}
+
+/* ---------------- crossword ---------------- */
+.crossword-scroll{overflow-x:auto;padding-bottom:8px;margin-top:14px}
+.xw-grid{display:inline-grid;gap:0;background:var(--line)}
+.xw-cell{
+  position:relative;width:38px;height:38px;background:#fff;border:1px solid var(--line);
+  box-sizing:border-box
+}
+.xw-num{
+  position:absolute;top:1px;left:2px;font-size:9px;font-weight:900;color:var(--muted);
+  line-height:1;pointer-events:none
+}
+.xw-blank{
+  width:100%;height:100%;border:none;background:transparent;text-align:center;
+  font:inherit;font-weight:900;font-size:17px;text-transform:uppercase;padding:0;
+  color:var(--ink);outline:none
+}
+.xw-blank:focus{background:var(--butter)}
+.xw-blank.correct{background:var(--okgreen);color:#1B6237}
+.xw-blank.wrong{background:var(--badred);color:#8C2A1D}
+.xw-cell.xw-grey .xw-blank{background:var(--yellow)}
+.xw-cell.xw-grey .xw-blank:focus{background:#FBE07A}
+.xw-cell.xw-grey .xw-blank.correct{background:var(--okgreen)}
+.xw-cell.xw-grey .xw-blank.wrong{background:var(--badred)}
+.xw-cell.xw-given{background:var(--mint)}
+.xw-letter{
+  display:flex;align-items:center;justify-content:center;width:100%;height:100%;
+  font-weight:900;font-size:17px;text-transform:uppercase;color:var(--teal)
+}
+.xw-cell.xw-given.xw-grey{background:var(--yellow)}
+.xw-cell.xw-given.xw-grey .xw-letter{color:#7A5A05}
+
+/* ---------------- reflection checklist ---------------- */
+.reflect-list{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.reflect-item{
+  display:flex;align-items:center;gap:14px;padding:13px 18px;border:2px solid var(--line);
+  border-radius:12px;background:#fff;cursor:pointer;font-weight:700;font-size:16px;
+  transition:background .15s
+}
+.reflect-item:hover{background:var(--butter)}
+.reflect-item input[type=checkbox]{display:none}
+.reflect-item .check-box{
+  width:28px;height:28px;flex-shrink:0;border:2px solid var(--line);border-radius:8px;
+  background:#fff;display:inline-flex;align-items:center;justify-content:center;
+  font-weight:900;color:#fff
+}
+.reflect-item input:checked + .check-box{background:var(--teal);border-color:var(--teal)}
+.reflect-item input:checked + .check-box::after{content:'✓'}
+.reflect-item:has(input:checked){background:var(--okgreen);border-color:var(--green)}
+
+/* ---------------- free writing ---------------- */
+.free-write{
+  width:100%;min-height:120px;border:2px solid var(--line);border-radius:12px;
+  padding:14px;font-size:16px;font-family:inherit;color:var(--ink);background:#fff;
+  resize:vertical;outline:none;line-height:1.6
+}
+.free-write:focus{background:var(--butter)}
+.char-count{font-size:12px;color:var(--muted);margin-top:6px;text-align:right}
+
+/* ---------------- embedded media ---------------- */
+.embed-wrap{border:2px solid var(--line);border-radius:16px;overflow:hidden;margin-top:10px;box-shadow:var(--shadow-sm)}
+.embed-wrap iframe{width:100%;border:none;display:block}
+.media-img{width:100%;border:2px solid var(--line);border-radius:16px;margin-top:10px;box-shadow:var(--shadow-sm)}
+.audio-wrap{margin-top:10px}
+.audio-wrap audio{width:100%}
+.video-wrap{margin-top:10px;border:2px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm)}
+.video-wrap video{width:100%;display:block;background:#000}
+.wordwall-btn{
+  display:inline-flex;align-items:center;gap:10px;margin-top:6px;padding:12px 24px;
+  background:var(--teal);color:#fff;border:2px solid var(--line);border-radius:999px;
+  font-size:16px;font-weight:800;text-decoration:none;box-shadow:var(--shadow-sm)
+}
+.wordwall-btn:active{transform:translate(2px,2px);box-shadow:0 0 0 var(--line)}
+
+/* ---------------- sticky score bar ---------------- */
+.scorebar{
+  position:sticky;bottom:0;background:var(--paper);border-top:3px solid var(--line);
+  margin-top:40px;padding:14px 20px;display:flex;gap:16px;align-items:center;
+  flex-wrap:wrap;font-weight:900;z-index:30;box-shadow:0 -4px 0 rgba(0,0,0,.03)
+}
+.scorebar .wrap{padding:0;display:flex;gap:16px;align-items:center;flex-wrap:wrap;max-width:1000px;margin:0 auto;width:100%}
+.meter{flex:1;min-width:140px;height:16px;border:2px solid var(--line);border-radius:999px;background:#fff;overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:var(--teal);transition:width .3s ease}
+
+/* ---------------- toast ---------------- */
+.toast{
+  position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);
+  background:var(--ink);color:#fff;padding:12px 22px;border-radius:999px;font-weight:800;font-size:15px;
+  opacity:0;pointer-events:none;transition:.25s ease;z-index:99;border:2px solid var(--line)
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ---------------- footer ---------------- */
+footer.site-footer{margin-top:46px;padding:18px 0 40px;border-top:2px solid var(--line);font-size:14px;color:var(--muted);text-align:center}
+
+/* ============================================================
+   HOME PAGE ONLY
+   ============================================================ */
+.name-bar{
+  background:#fff;border:2px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:16px 22px;margin-top:-30px;position:relative;z-index:5;
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap
+}
+.name-bar label{font-weight:800;white-space:nowrap}
+.name-bar input{
+  flex:1;min-width:160px;font:inherit;font-weight:700;border:2px solid var(--line);
+  border-radius:999px;padding:8px 18px;background:var(--cream);outline:none;color:var(--ink)
+}
+.name-bar input:focus{background:#fff}
+
+.section-title{
+  font-weight:900;font-size:14px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);
+  margin:32px 0 4px;padding-bottom:10px;border-bottom:2px solid var(--line)
+}
+
+.lesson-list{margin-top:16px;display:flex;flex-direction:column;gap:14px}
+.lesson-card{
+  display:flex;align-items:center;gap:18px;background:#fff;border:2px solid var(--line);
+  border-radius:16px;box-shadow:var(--shadow);padding:16px 20px;color:var(--ink)
+}
+.lesson-actions{display:flex;gap:8px;flex-shrink:0;flex-wrap:wrap}
+.lesson-actions .btn-primary,.lesson-actions .btn-ghost{padding:9px 16px;font-size:14px}
+.lesson-num{
+  flex:0 0 auto;width:54px;height:54px;border-radius:16px;border:2px solid var(--line);
+  display:grid;place-items:center;font-weight:900;font-size:24px;box-shadow:var(--shadow-sm)
+}
+.lesson-card:nth-child(4n+1) .lesson-num{background:var(--coral);color:#fff}
+.lesson-card:nth-child(4n+2) .lesson-num{background:var(--teal);color:#fff}
+.lesson-card:nth-child(4n+3) .lesson-num{background:var(--yellow)}
+.lesson-card:nth-child(4n+4) .lesson-num{background:var(--lilac);color:#fff}
+.lesson-info{flex:1;min-width:0}
+.lesson-topic{display:block;font-weight:800;font-size:19px}
+.lesson-date{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+.empty-note{color:var(--muted);text-align:center;padding:30px 10px;font-size:15px}
+
+@media(max-width:560px){
+  .lesson-card{flex-wrap:wrap}
+  .lesson-actions{width:100%}
+  .lesson-actions a{flex:1;text-align:center}
+  .match-grid{grid-template-columns:1fr}
+  nav.chips .wrap{overflow-x:auto;flex-wrap:nowrap;padding-bottom:6px}
+}
+
+@media print{
+  nav.chips,button,.scorebar,.toast{display:none!important}
+  .card{box-shadow:none;break-inside:avoid}
+  body{background:#fff}
+}

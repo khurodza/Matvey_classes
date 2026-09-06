@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matvey's English Lessons</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <h1 id="greetingText">Welcome</h1>
+        <p>Type your name below, then pick a lesson to get started.</p>
+      </div>
+      <!-- Blocky pixel-art avatar (generic voxel style, not any specific game's assets) -->
+      <svg width="140" height="150" viewBox="0 0 140 150" aria-hidden="true">
+        <rect x="35" y="14" width="70" height="18" fill="#3D2B1F" stroke="#241E1A" stroke-width="3"/>
+        <rect x="35" y="32" width="70" height="52" fill="#D9A066" stroke="#241E1A" stroke-width="3"/>
+        <rect x="50" y="52" width="12" height="12" fill="#241E1A"/>
+        <rect x="78" y="52" width="12" height="12" fill="#241E1A"/>
+        <rect x="55" y="72" width="30" height="6" fill="#241E1A"/>
+        <rect x="25" y="84" width="90" height="50" fill="#218A80" stroke="#241E1A" stroke-width="3"/>
+        <rect x="60" y="84" width="20" height="50" fill="#1B6E65"/>
+        <rect x="25" y="84" width="20" height="50" fill="#1B6E65"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="name-bar">
+    <label for="studentName">Your name:</label>
+    <input type="text" id="studentName" placeholder="Type your name…" autocomplete="off">
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════
+       ADD NEW LESSONS BELOW THIS LINE
+       Copy one .lesson-card block and update:
+         href          → the lesson file, e.g. lessons/lesson-02.html
+         .lesson-num   → lesson number
+         .lesson-topic → topic title
+         .lesson-date  → date of the class
+       Card colours cycle automatically — you don't set them.
+  ══════════════════════════════════════════════════════════ -->
+
+  <div class="section-title">All Lessons</div>
+
+  <div class="lesson-list" id="lessonList">
+
+    <!-- LESSON 1 -->
+    <div class="lesson-card">
+      <span class="lesson-num">1</span>
+      <div class="lesson-info">
+        <span class="lesson-topic">Sports: Reading and Language in Action</span>
+        <span class="lesson-date">Unit 6</span>
+      </div>
+      <div class="lesson-actions">
+        <a class="btn-primary" href="lessons/lesson-01.html">Lesson →</a>
+        <a class="btn-ghost" href="lessons/homework/homework-01.html">Homework</a>
+      </div>
+    </div>
+
+    <!-- ADD MORE LESSON CARDS HERE -->
+
+  </div>
+
+</div>
+
+<footer class="site-footer">Matvey's English Lessons</footer>
+
+<script>
+  const nameInput = document.getElementById('studentName');
+  const greeting  = document.getElementById('greetingText');
+
+  const saved = localStorage.getItem('studentName') || '';
+  nameInput.value = saved;
+  updateGreeting(saved);
+
+  nameInput.addEventListener('input', () => {
+    localStorage.setItem('studentName', nameInput.value.trim());
+    updateGreeting(nameInput.value.trim());
+  });
+
+  function updateGreeting(name) {
+    greeting.textContent = name ? `Welcome, ${name}` : 'Welcome';
+  }
+</script>
+
+</body>
+</html>
