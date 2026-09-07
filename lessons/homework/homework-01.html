@@ -13,12 +13,11 @@
     <a class="back-home" href="../lesson-01.html">← Back to Lesson 1</a>
     <div class="hero-grid">
       <div>
-        <h1>Homework: Let's try it out</h1>
-        <p>A quick demo homework page — replace with real Unit 6 tasks whenever you're ready.</p>
+        <h1>Homework: Sports and Comparatives</h1>
+        <p>Practise what you learned in Lesson 1.</p>
         <div class="hero-badges">
           <span class="badge">Lesson 1</span>
-          <span class="badge">Unit 6</span>
-          <span class="badge">Demo</span>
+          <span class="badge">Unit 6 · Sport for life</span>
         </div>
       </div>
     </div>
@@ -27,60 +26,236 @@
 
 <div class="wrap">
 
+  <!-- ══════════════════════════════════════════════════════
+       TASK 1 — Language in Action, task 2: match the forms
+       (moved here from Lesson 1, step 9)
+  ══════════════════════════════════════════════════════ -->
   <section class="step" id="s1">
     <div class="step-head">
       <div class="step-num">1</div>
       <div>
         <div class="step-meta">Task 1</div>
-        <h2>Fill in the blanks</h2>
+        <h2>Match the comparative forms</h2>
       </div>
     </div>
 
-    <div class="card" id="ex-fill">
-      <div class="exercise-label">Fill in the Blanks</div>
-      <h3>Write the missing word.</h3>
+    <div class="card" id="ex-match-forms">
+      <div class="exercise-label">Matching</div>
+      <h3>Match the adjectives to the correct comparative form.</h3>
 
-      <p>1. A cat says <input class="blank" id="hw1" data-answer="meow" placeholder="?">.</p>
-      <p>2. Two plus two is <input class="blank" id="hw2" data-answer="four" placeholder="?">.</p>
+      <div class="match-grid">
+        <div class="match-col" data-side="left">
+          <div class="match-item matched locked" data-pair="1" onclick="selectMatch(this,'ex-match-forms')">1. bad</div>
+          <div class="match-item" data-pair="2" onclick="selectMatch(this,'ex-match-forms')">2. big</div>
+          <div class="match-item" data-pair="3" onclick="selectMatch(this,'ex-match-forms')">3. boring</div>
+          <div class="match-item" data-pair="4" onclick="selectMatch(this,'ex-match-forms')">4. fast</div>
+          <div class="match-item" data-pair="5" onclick="selectMatch(this,'ex-match-forms')">5. good</div>
+          <div class="match-item" data-pair="6" onclick="selectMatch(this,'ex-match-forms')">6. healthy</div>
+        </div>
+        <div class="match-col" data-side="right">
+          <div class="match-item" data-pair="3" onclick="selectMatch(this,'ex-match-forms')">a. more boring</div>
+          <div class="match-item" data-pair="5" onclick="selectMatch(this,'ex-match-forms')">b. better</div>
+          <div class="match-item" data-pair="6" onclick="selectMatch(this,'ex-match-forms')">c. healthier</div>
+          <div class="match-item" data-pair="2" onclick="selectMatch(this,'ex-match-forms')">d. bigger</div>
+          <div class="match-item matched locked" data-pair="1" onclick="selectMatch(this,'ex-match-forms')">e. worse</div>
+          <div class="match-item" data-pair="4" onclick="selectMatch(this,'ex-match-forms')">f. faster</div>
+        </div>
+      </div>
+      <p class="char-count" style="text-align:left;margin-top:10px">1 → e is matched for you, as an example.</p>
 
       <div class="btn-row">
-        <button class="btn-primary" onclick="checkBlanks('ex-fill')">Check ✓</button>
-        <button class="btn-ghost" onclick="resetBlanks('ex-fill')">Try again</button>
+        <button class="btn-ghost" onclick="resetMatchEx('ex-match-forms')">Reset</button>
       </div>
     </div>
   </section>
 
+  <!-- ══════════════════════════════════════════════════════
+       TASK 2 — Reading, task 1 (Workbook p.49): read + choose photo
+  ══════════════════════════════════════════════════════ -->
   <section class="step" id="s2">
     <div class="step-head">
       <div class="step-num">2</div>
       <div>
-        <div class="step-meta">Task 2</div>
-        <h2>Writing</h2>
+        <div class="step-meta">Task 2 · Reading</div>
+        <h2>Get the ball rolling!</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-missing-q">
+      <div class="exercise-label">Read &amp; Complete</div>
+      <h3>Read the article. Choose the missing question for each gap.</h3>
+
+      <h3 style="font-size:22px;margin-top:10px">Get the ball rolling!</h3>
+      <p><b>Are you looking for a new sport? Do you want to try something different? In New Zealand we've got the answer &ndash; try zorbing!</b></p>
+
+      <p style="font-weight:800;margin-bottom:0">FAQs</p>
+
+      <p style="font-weight:800;margin-bottom:0">Q1: <span style="font-weight:400;text-decoration:underline">What is zorbing?</span></p>
+      <p>Zorbing is an outdoor sport. Here in New Zealand, it's more popular than in other countries.</p>
+
+      <p style="font-weight:800;margin-bottom:4px">Q2: <select class="blank" id="q2sel" data-answer="c" style="min-width:220px;text-align:left;font-weight:600">
+        <option value="">? choose a question</option>
+        <option value="a">Is there an age limit?</option>
+        <option value="b">Is it a team sport?</option>
+        <option value="c">What do you do?</option>
+        <option value="e">Where can I do it?</option>
+        <option value="f">Is it expensive?</option>
+        <option value="g">Is it safe?</option>
+      </select></p>
+      <p>You need a large plastic ball. This is called a 'zorb.' You get inside the ball and run or walk. When you move, the ball moves, too! You know where you're going and how you're moving because you can see through the ball. Lots of people love going down a hill in their zorb. It's fun!</p>
+
+      <p style="font-weight:800;margin-bottom:4px">Q3: <select class="blank" id="q3sel" data-answer="b" style="min-width:220px;text-align:left;font-weight:600">
+        <option value="">? choose a question</option>
+        <option value="a">Is there an age limit?</option>
+        <option value="b">Is it a team sport?</option>
+        <option value="c">What do you do?</option>
+        <option value="e">Where can I do it?</option>
+        <option value="f">Is it expensive?</option>
+        <option value="g">Is it safe?</option>
+      </select></p>
+      <p>No, it's an individual sport. You get inside the zorb on your own, but it's not boring. You can have a race with your family and friends in other balls. Sometimes children are faster than their parents!</p>
+
+      <p style="font-weight:800;margin-bottom:4px">Q4: <select class="blank" id="q4sel" data-answer="g" style="min-width:220px;text-align:left;font-weight:600">
+        <option value="">? choose a question</option>
+        <option value="a">Is there an age limit?</option>
+        <option value="b">Is it a team sport?</option>
+        <option value="c">What do you do?</option>
+        <option value="e">Where can I do it?</option>
+        <option value="f">Is it expensive?</option>
+        <option value="g">Is it safe?</option>
+      </select></p>
+      <p>Yes, it is, but always do it in a zorbing centre and follow the rules. Have fun, but be careful &ndash; don't get hurt!</p>
+
+      <p style="font-weight:800;margin-bottom:4px">Q5: <select class="blank" id="q5sel" data-answer="a" style="min-width:220px;text-align:left;font-weight:600">
+        <option value="">? choose a question</option>
+        <option value="a">Is there an age limit?</option>
+        <option value="b">Is it a team sport?</option>
+        <option value="c">What do you do?</option>
+        <option value="e">Where can I do it?</option>
+        <option value="f">Is it expensive?</option>
+        <option value="g">Is it safe?</option>
+      </select></p>
+      <p>Yes. To go zorbing, you usually need to be six years old, or older.</p>
+
+      <p style="font-weight:800;margin-bottom:4px">Q6: <select class="blank" id="q6sel" data-answer="e" style="min-width:220px;text-align:left;font-weight:600">
+        <option value="">? choose a question</option>
+        <option value="a">Is there an age limit?</option>
+        <option value="b">Is it a team sport?</option>
+        <option value="c">What do you do?</option>
+        <option value="e">Where can I do it?</option>
+        <option value="f">Is it expensive?</option>
+        <option value="g">Is it safe?</option>
+      </select></p>
+      <p>There are zorbing centres in many places on the South Island of New Zealand. Click here for a list.</p>
+
+      <p style="font-weight:800;margin-bottom:4px">Q7: <select class="blank" id="q7sel" data-answer="f" style="min-width:220px;text-align:left;font-weight:600">
+        <option value="">? choose a question</option>
+        <option value="a">Is there an age limit?</option>
+        <option value="b">Is it a team sport?</option>
+        <option value="c">What do you do?</option>
+        <option value="e">Where can I do it?</option>
+        <option value="f">Is it expensive?</option>
+        <option value="g">Is it safe?</option>
+      </select></p>
+      <p>Yes. It's more expensive than other traditional sports, but it's an exciting activity for special days. So, are you ready for zorbing? Go and try it!</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-missing-q')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-missing-q')">Try again</button>
+      </div>
+    </div>
+
+    <div class="card" id="ex-photo">
+      <div class="exercise-label">Multiple Choice</div>
+      <h3>What sport is the article about? Choose the correct photo.</h3>
+
+      <div class="mc-options" data-correct="c" style="flex-direction:row;flex-wrap:wrap;gap:16px">
+        <label class="mc-option" style="flex-direction:column;align-items:center;text-align:center;width:160px;padding:12px">
+          <img src="../images/unit6-photo-bungee.jpg" alt="Photo 1: a person bungee jumping" style="width:100%;border-radius:10px;margin-bottom:8px">
+          <input type="radio" name="photo-mc" value="a">
+          <span class="mc-bullet">1</span>
+        </label>
+        <label class="mc-option" style="flex-direction:column;align-items:center;text-align:center;width:160px;padding:12px">
+          <img src="../images/unit6-photo-climbing.jpg" alt="Photo 2: a person rock climbing" style="width:100%;border-radius:10px;margin-bottom:8px">
+          <input type="radio" name="photo-mc" value="b">
+          <span class="mc-bullet">2</span>
+        </label>
+        <label class="mc-option" style="flex-direction:column;align-items:center;text-align:center;width:160px;padding:12px">
+          <img src="../images/unit6-photo-zorbing.jpg" alt="Photo 3: a person inside a large clear ball" style="width:100%;border-radius:10px;margin-bottom:8px">
+          <input type="radio" name="photo-mc" value="c">
+          <span class="mc-bullet">3</span>
+        </label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkMC('ex-photo')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetMC('ex-photo')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       TASK 3 — Reading, task 3 (Workbook p.49): key vocabulary
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s3">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-meta">Task 3 · Vocabulary</div>
+        <h2>Key vocabulary</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-vocab-zorb">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Complete the sentences with the words below.</h3>
+
+      <div class="word-bank-ref">
+        <span onclick="this.classList.toggle('crossed')">get hurt</span><span onclick="this.classList.toggle('crossed')">hill</span><span onclick="this.classList.toggle('crossed')">race</span><span class="crossed" onclick="this.classList.toggle('crossed')">safe</span><span onclick="this.classList.toggle('crossed')">try</span>
+      </div>
+
+      <div class="tip">
+        <b>Tip:</b> Use a dictionary to check the meanings (Используй онлайн-словарь, чтобы проверить значения непонятных слов) — <a href="https://dictionary.cambridge.org/us/dictionary/english-russian/" target="_blank" rel="noopener">dictionary.cambridge.org</a>
+      </div>
+
+      <div class="example-row"><span class="ex-tag">Example</span> 1. Be careful! Going out alone at night isn't <b>safe</b>.</div>
+
+      <p>2. The Spartathlon is a <input class="blank" id="voc1" data-answer="race" placeholder="?">  in Greece. People run 246 kilometres!</p>
+      <p>3. I live at the top of a <input class="blank" id="voc2" data-answer="hill" placeholder="?">. Walking down to school is easy!</p>
+      <p>4. I love tennis, but this year I want to <input class="blank" id="voc3" data-answer="try" placeholder="?"> a new sport.</p>
+      <p>5. Careful there! You can fall and <input class="blank" id="voc4" data-answer="get hurt|hurt yourself" placeholder="?">!</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-vocab-zorb')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-vocab-zorb')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       TASK 4 — Reading, task 4 (Workbook p.49): your opinion
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s4">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-meta">Task 4 · Writing</div>
+        <h2>Your opinion</h2>
       </div>
     </div>
 
     <div class="card">
       <div class="exercise-label">Writing</div>
-      <h3>Write three sentences about your weekend.</h3>
-      <textarea class="free-write" id="fw-hw" placeholder="Write here…" rows="5"></textarea>
-      <div class="char-count" id="cc-fw-hw">0 characters</div>
-    </div>
-  </section>
-
-  <section class="step" id="s3">
-    <div class="step-head">
-      <div class="step-num">3</div>
-      <div>
-        <div class="step-meta">Finish</div>
-        <h2>Done</h2>
-      </div>
+      <h3>1. Do you think zorbing is a fun sport to try? Why / Why not? <span style="font-weight:400;color:var(--muted)">(Write 1 full sentence)</span></h3>
+      <textarea class="free-write" id="fw-zorb-opinion" placeholder="Write here…" rows="3"></textarea>
+      <div class="char-count" id="cc-fw-zorb-opinion">0 characters</div>
     </div>
 
     <div class="card">
-      <p>That's the homework demo. Next time this will be real homework from Unit 6.</p>
-      <div class="btn-row">
-        <a class="btn-ghost" href="../lesson-01.html">← Back to Lesson 1</a>
-      </div>
+      <div class="exercise-label">Writing</div>
+      <h3>2. Which fun outdoor sports are popular in your country? <span style="font-weight:400;color:var(--muted)">(Write 1 full sentence)</span></h3>
+      <textarea class="free-write" id="fw-zorb-country" placeholder="Write here…" rows="3"></textarea>
+      <div class="char-count" id="cc-fw-zorb-country">0 characters</div>
     </div>
   </section>
 

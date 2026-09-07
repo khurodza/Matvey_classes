@@ -143,9 +143,11 @@ button:active,.btn:active,.btn-primary:active,.btn-accent:active,.btn-warm:activ
 .ref-table td.label{font-weight:800;background:var(--lav);white-space:nowrap}
 .ref-table tr.group td{background:var(--cream);font-weight:800;text-align:center;color:var(--muted)}
 
-/* plain reference word list (not clickable) */
+/* plain reference word list (click a word to cross it out once used) */
 .word-bank-ref{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
-.word-bank-ref span{background:var(--butter);border:2px solid var(--line);border-radius:999px;padding:4px 14px;font-size:14px;font-weight:700}
+.word-bank-ref span{background:var(--butter);border:2px solid var(--line);border-radius:999px;padding:4px 14px;font-size:14px;font-weight:700;cursor:pointer;user-select:none}
+.word-bank-ref span:hover{background:var(--yellow)}
+.word-bank-ref span.crossed{text-decoration:line-through;opacity:.55;background:var(--paper)}
 
 /* ---------------- multiple choice ---------------- */
 .mc-options{display:flex;flex-direction:column;gap:10px;margin-top:10px}
