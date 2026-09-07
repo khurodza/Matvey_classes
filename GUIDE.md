@@ -41,15 +41,22 @@ homework pages never mix up their saved answers.
    the lesson's "Go to homework" link and the homework's "Back to Lesson"
    link both need the real lesson number.
 4. **Add a card on the home page.** Open `index.html`, find the comment
-   `ADD MORE LESSON CARDS HERE`, and paste a copy of the `.lesson-card` block
-   above it, updating the number, topic, date, and both `href`s (lesson and
-   homework).
+   `ADD NEW LESSON CARDS HERE`, and paste a copy of the `.lesson-card` block
+   right below it (at the top of the list), updating the number, topic, tags,
+   date, and both `href`s (lesson and homework). Newest lesson goes first —
+   each new card pushes the earlier ones down, so the list always reads
+   newest-to-oldest.
 5. **Delete anything you don't need** — exercise blocks, embed slots, whole
    `<section class="step">` blocks. Copy a block to add more of the same type.
 
 Card colours on the home page and step-number badges inside a page cycle
 automatically — you never set a colour yourself. Homework pages use a lilac
 header instead of coral, so it's visually obvious which mode you're in.
+
+Each lesson card shows small topic tags under its title (`.lesson-tags` >
+`.lesson-tag` spans) — one per vocabulary/grammar focus of that lesson, e.g.
+`comparatives`, `phrasal verbs`, `past simple`. Keep them short (1-3 words),
+lowercase, and specific to what's actually taught.
 
 ---
 

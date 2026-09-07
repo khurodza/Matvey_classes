@@ -327,7 +327,9 @@ footer.site-footer{margin-top:46px;padding:18px 0 40px;border-top:2px solid var(
 .lesson-card:nth-child(4n+4) .lesson-num{background:var(--lilac);color:#fff}
 .lesson-info{flex:1;min-width:0}
 .lesson-topic{display:block;font-weight:800;font-size:19px}
-.lesson-date{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+.lesson-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.lesson-tag{background:#fff;border:2px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px;font-weight:800;color:var(--ink)}
+.lesson-date{display:block;font-size:13px;color:var(--muted);margin-top:6px}
 .empty-note{color:var(--muted);text-align:center;padding:30px 10px;font-size:15px}
 
 @media(max-width:560px){
