@@ -69,6 +69,7 @@
     </div>
   </section>
 
+
   <!-- ══════════════════════════════════════════════════════
        TASK 2 — Reading, task 1 (Workbook p.49): read + choose photo
   ══════════════════════════════════════════════════════ -->
@@ -256,6 +257,132 @@
       <h3>2. Which fun outdoor sports are popular in your country? <span style="font-weight:400;color:var(--muted)">(Write 1 full sentence)</span></h3>
       <textarea class="free-write" id="fw-zorb-country" placeholder="Write here…" rows="3"></textarea>
       <div class="char-count" id="cc-fw-zorb-country">0 characters</div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       TASK 5 — Workbook p.48, Language in action, task 1 — 1 star
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s5">
+    <div class="step-head">
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-meta">Task 5 · Language in Action · easy</div>
+        <h2>Write the comparative forms</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-comp-forms">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Write the comparative form of each adjective.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span> 1. <span class="cue">small</span> → <b>smaller</b></div>
+
+      <p>2. <span class="cue">big</span> → <input class="blank" id="cf1" data-answer="bigger" placeholder="?"></p>
+      <p>3. <span class="cue">good</span> → <input class="blank" id="cf2" data-answer="better" placeholder="?"></p>
+      <p>4. <span class="cue">happy</span> → <input class="blank" id="cf3" data-answer="happier" placeholder="?"></p>
+      <p>5. <span class="cue">interesting</span> → <input class="blank" id="cf4" data-answer="more interesting" placeholder="?"></p>
+      <p>6. <span class="cue">bad</span> → <input class="blank" id="cf5" data-answer="worse" placeholder="?"></p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-comp-forms')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-comp-forms')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       TASK 6 — Workbook p.48, Language in action, task 2 — 1 star
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s6">
+    <div class="step-head">
+      <div class="step-num">6</div>
+      <div>
+        <div class="step-meta">Task 6 · Language in Action · easy</div>
+        <h2>Complete the rules</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-comp-rules">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Complete the rules with the comparative forms from Task 5.</h3>
+
+      <div class="word-bank-ref">
+        <span class="crossed" onclick="this.classList.toggle('crossed')">smaller</span><span onclick="this.classList.toggle('crossed')">bigger</span><span onclick="this.classList.toggle('crossed')">better</span><span onclick="this.classList.toggle('crossed')">happier</span><span onclick="this.classList.toggle('crossed')">more interesting</span><span onclick="this.classList.toggle('crossed')">worse</span>
+      </div>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span><b>1. Short adjectives (one syllable)</b> → add <i>-er</i>: <b>smaller</b></span></div>
+
+      <p style="margin-bottom:14px"><b>2. Two syllables ending in <i>-y</i></b> → change the <i>-y</i> to <i>-ier</i>:
+        <input class="blank" id="cr1" data-answer="happier" placeholder="?"></p>
+      <p style="margin-bottom:14px"><b>3. Long adjectives</b> → put <i>more</i> in front:
+        <input class="blank" id="cr2" data-answer="more interesting" placeholder="?"></p>
+      <p style="margin-bottom:14px"><b>4. One syllable, vowel + consonant at the end</b> → double the last letter, add <i>-er</i>:
+        <input class="blank" id="cr3" data-answer="bigger" placeholder="?"></p>
+      <p style="margin-bottom:14px"><b>5. Irregular adjectives</b> → a completely different word:
+        <input class="blank" id="cr4" data-answer="better|worse" placeholder="?"> and
+        <input class="blank" id="cr5" data-answer="worse|better" placeholder="?"></p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-comp-rules')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-comp-rules')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       TASK 7 — Workbook p.48, Language in action, task 4 — 2 stars
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s7">
+    <div class="step-head">
+      <div class="step-num">7</div>
+      <div>
+        <div class="step-meta">Task 7 · Language in Action · medium</div>
+        <h2>Complete the sentences</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-comp-sentences">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Complete the sentences with the comparative form of the adjectives in brackets.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span> 1. An ice hockey match is <b>longer</b> than a basketball match. (<span class="cue">long</span>)</div>
+
+      <p>2. I think rock climbing is <input class="blank" id="cs1" data-answer="more exciting" placeholder="?"> than yoga. (<span class="cue">exciting</span>)</p>
+      <p>3. Lola's <input class="blank" id="cs2" data-answer="better" placeholder="?"> at tennis than her dad. (<span class="cue">good</span>)</p>
+      <p>4. Our school hockey team is <input class="blank" id="cs3" data-answer="worse" placeholder="?"> than the rugby team. (<span class="cue">bad</span>)</p>
+      <p>5. We think rugby is a <input class="blank" id="cs4" data-answer="more difficult" placeholder="?"> game than football. (<span class="cue">difficult</span>)</p>
+      <p>6. Doing sport is <input class="blank" id="cs5" data-answer="healthier" placeholder="?"> than watching TV. (<span class="cue">healthy</span>)</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-comp-sentences')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-comp-sentences')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       TASK 8 — Workbook p.48, Language in action, task 6 — 3 stars
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s8">
+    <div class="step-head">
+      <div class="step-num">8</div>
+      <div>
+        <div class="step-meta">Task 8 · Language in Action · challenge</div>
+        <h2>Compare two sports</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Writing</div>
+      <h3>Write three sentences comparing sports. Look at Task 7 to help you.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span> I think football is more entertaining than rugby.</div>
+
+      <input type="text" class="blank line-write" id="cw1" placeholder="Write your sentence…">
+      <input type="text" class="blank line-write" id="cw2" placeholder="Write your sentence…">
+      <input type="text" class="blank line-write" id="cw3" placeholder="Write your sentence…">
     </div>
   </section>
 

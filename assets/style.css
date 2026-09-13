@@ -126,6 +126,12 @@ button:active,.btn:active,.btn-primary:active,.btn-accent:active,.btn-warm:activ
 .blank.wrong{background:var(--badred);border-color:var(--red);color:#8C2A1D}
 .blank.line-write{width:100%;text-align:left;font-weight:600;display:block;margin-top:6px}
 
+/* the given word a student has to transform (e.g. the adjective in brackets) */
+.cue{
+  background:var(--yellow);border-radius:6px;padding:1px 7px;
+  font-weight:800;white-space:nowrap
+}
+
 /* worked example (already answered, shown for reference, not interactive) */
 .example-row{
   display:flex;gap:10px;align-items:baseline;background:var(--mint);border-radius:10px;

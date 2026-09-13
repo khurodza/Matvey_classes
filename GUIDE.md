@@ -73,6 +73,9 @@ lowercase, and specific to what's actually taught.
 - Wrap the exercise in a card with a unique `id` and pass it to the buttons:
   `onclick="checkBlanks('ex-fill')"` / `onclick="resetBlanks('ex-fill')"`
 - Every `<input>` needs its own unique `id` across the whole page.
+- To highlight the word the student has to change (the adjective in brackets,
+  the base form before an arrow), wrap it in `<span class="cue">happy</span>` —
+  a yellow pill. Use it only for words that get transformed, not for emphasis.
 
 ### Multiple choice
 
