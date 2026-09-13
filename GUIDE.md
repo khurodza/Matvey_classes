@@ -76,6 +76,34 @@ lowercase, and specific to what's actually taught.
 - To highlight the word the student has to change (the adjective in brackets,
   the base form before an arrow), wrap it in `<span class="cue">happy</span>` —
   a yellow pill. Use it only for words that get transformed, not for emphasis.
+- Inside a long sentence, don't put the word in brackets after the blank — it
+  wraps to the next line and is hard to follow. Use the label form instead: the
+  word sits on a small yellow label directly above the input box.
+
+```html
+<span class="cue-input">
+  <span class="cue-lab">long</span>
+  <input class="blank" id="qz1" data-answer="longer" placeholder="?">
+</span>
+```
+
+  For the worked example, swap the `<input>` for `<span class="given">longer</span>`
+  (a dashed green box, not editable).
+
+### Two-speaker dialogue
+
+```html
+<div class="dialogue">
+  <span class="dl-name">Daniel</span>
+  <p class="dl-text ask">Which match is … ?</p>
+  <span class="dl-name two">Andrea</span>
+  <p class="dl-text">I don't know.</p>
+</div>
+```
+
+Names become colour chips in their own column (`.two` = the second speaker, a
+different colour). Add `ask` to the lines that contain the blanks — they get a
+soft yellow background, so it's obvious at a glance which lines need answers.
 
 ### Multiple choice
 

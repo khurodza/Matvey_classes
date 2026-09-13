@@ -26,13 +26,15 @@
 
 <nav class="chips">
   <div class="wrap">
-    <a href="#s1">1 · Sports verbs</a>
-    <a href="#s2">2 · Guess the sport</a>
-    <a href="#s3">3 · Vocabulary sets</a>
-    <a href="#s4">4 · Use it</a>
-    <a href="#s5">5 · A conversation</a>
-    <a href="#s6">6 · Listen again</a>
-    <a href="#s7">7 · Finish</a>
+    <a href="#s1">1 · Find the mistake</a>
+    <a href="#s2">2 · Sports quiz</a>
+    <a href="#s3">3 · Sports verbs</a>
+    <a href="#s4">4 · Guess the sport</a>
+    <a href="#s5">5 · Vocabulary sets</a>
+    <a href="#s6">6 · Use it</a>
+    <a href="#s7">7 · A conversation</a>
+    <a href="#s8">8 · Listen again</a>
+    <a href="#s9">9 · Finish</a>
     <a href="homework/homework-02.html">Homework ↗</a>
   </div>
 </nav>
@@ -40,11 +42,116 @@
 <div class="wrap">
 
   <!-- ══════════════════════════════════════════════════════
-       STEP 1 — Vocabulary and listening, task 1 (p.74): sports verbs
+       STEP 1 — RECYCLING (Lesson 1): Workbook p.48, task 3 — 2 stars
   ══════════════════════════════════════════════════════ -->
   <section class="step" id="s1">
     <div class="step-head">
       <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Recycling · from Lesson 1</div>
+        <h2>Find the mistake</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-mistakes">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>There is one mistake in each sentence. Find it and write the correct word.</h3>
+
+      <div class="tip">
+        <b>Remember:</b> short adjective → <i>-er</i> (<i>fast → faster</i>) · long adjective → <i>more</i> (<i>more expensive</i>) ·
+        irregular → a different word (<i>good → better</i>, <i>bad → worse</i>). Never use <i>more</i> and <i>-er</i> together!
+      </div>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span>1. Windsurfing is more expensive <s>that</s> running. → <b>than</b></span></div>
+
+      <p style="margin-bottom:14px">2. Rugby is more fast than basketball.
+        <input class="blank" id="m1" data-answer="faster" placeholder="?"></p>
+      <p style="margin-bottom:14px">3. Runners are usually thiner than swimmers.
+        <input class="blank" id="m2" data-answer="thinner" placeholder="?"></p>
+      <p style="margin-bottom:14px">4. Which sport is noisyer, volleyball or yoga?
+        <input class="blank" id="m3" data-answer="noisier" placeholder="?"></p>
+      <p style="margin-bottom:14px">5. She's badder at gymnastics than at hockey.
+        <input class="blank" id="m4" data-answer="worse" placeholder="?"></p>
+      <p style="margin-bottom:14px">6. Playing sport is more better than watching it.
+        <input class="blank" id="m5" data-answer="better" placeholder="?"></p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-mistakes')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-mistakes')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 2 — RECYCLING (Lesson 1): Workbook p.48, task 5 — 2 stars
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Recycling · from Lesson 1</div>
+        <h2>The sports quiz</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-quiz">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Complete Daniel's quiz questions. The word to change is on the yellow label above each box.</h3>
+
+      <div class="dialogue">
+        <span class="dl-name">Daniel</span>
+        <p class="dl-text ask">Let's do this quiz! First question: Which ball is
+          <span class="cue-input"><span class="cue-lab">fast</span><span class="given">faster</span></span>, a table tennis or a tennis ball?</p>
+
+        <span class="dl-name two">Andrea</span>
+        <p class="dl-text">A table tennis ball?</p>
+
+        <span class="dl-name">Daniel</span>
+        <p class="dl-text ask">Next question: Which match is
+          <span class="cue-input"><span class="cue-lab">long</span><input class="blank" id="qz1" data-answer="longer" placeholder="?"></span>, a basketball or an ice hockey match?</p>
+
+        <span class="dl-name two">Andrea</span>
+        <p class="dl-text">I don't know. Ice hockey?</p>
+
+        <span class="dl-name">Daniel</span>
+        <p class="dl-text ask">Number three: Which country is
+          <span class="cue-input"><span class="cue-lab">good</span><input class="blank" id="qz2" data-answer="better" placeholder="?"></span>
+          at table tennis, China or South Korea?</p>
+
+        <span class="dl-name two">Andrea</span>
+        <p class="dl-text">South Korea, I think.</p>
+
+        <span class="dl-name">Daniel</span>
+        <p class="dl-text ask">And the last question: Which sport is
+          <span class="cue-input"><span class="cue-lab">popular</span><input class="blank" id="qz3" data-answer="more popular" placeholder="?"></span>
+          at schools here in New Zealand, hockey or athletics?</p>
+
+        <span class="dl-name two">Andrea</span>
+        <p class="dl-text">Oh, dear! I don't know. Athletics maybe. What are the answers?</p>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-quiz')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-quiz')">Try again</button>
+      </div>
+
+      <details style="margin-top:16px;background:var(--mint);border-radius:12px;padding:12px 16px">
+        <summary style="cursor:pointer;font-weight:900;color:var(--teal)">Show the quiz answers</summary>
+        <p style="margin:10px 0 0">1. A <b>tennis ball</b> is faster: 263 km/h (a table tennis ball: 116 km/h).</p>
+        <p style="margin:6px 0 0">2. An <b>ice hockey match</b> is longer: 60 minutes (a basketball match: 48 minutes).</p>
+        <p style="margin:6px 0 0">3. <b>China</b> is better at table tennis: China is number 1, South Korea number 2.</p>
+        <p style="margin:6px 0 0">4. <b>Hockey</b> is more popular in New Zealand schools: 13,967 players (athletics: 12,713).</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 3 — Vocabulary and listening, task 1 (p.74): sports verbs
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s3">
+    <div class="step-head">
+      <div class="step-num">3</div>
       <div>
         <div class="step-meta">Vocabulary and Listening</div>
         <h2>Sports verbs</h2>
@@ -106,11 +213,11 @@
   </section>
 
   <!-- ══════════════════════════════════════════════════════
-       STEP 2 — Vocabulary and listening, task 2 (p.74): guess the sport
+       STEP 4 — Vocabulary and listening, task 2 (p.74): guess the sport
   ══════════════════════════════════════════════════════ -->
-  <section class="step" id="s2">
+  <section class="step" id="s4">
     <div class="step-head">
-      <div class="step-num">2</div>
+      <div class="step-num">4</div>
       <div>
         <div class="step-meta">Vocabulary and Listening</div>
         <h2>Guess the sport</h2>
@@ -203,11 +310,11 @@
   </section>
 
   <!-- ══════════════════════════════════════════════════════
-       STEP 3 — Learn to learn: remembering vocabulary sets
+       STEP 5 — Learn to learn: remembering vocabulary sets
   ══════════════════════════════════════════════════════ -->
-  <section class="step" id="s3">
+  <section class="step" id="s5">
     <div class="step-head">
-      <div class="step-num">3</div>
+      <div class="step-num">5</div>
       <div>
         <div class="step-meta">Learn to Learn</div>
         <h2>Remembering vocabulary sets</h2>
@@ -237,11 +344,11 @@
   </section>
 
   <!-- ══════════════════════════════════════════════════════
-       STEP 4 — Use it!
+       STEP 6 — Use it!
   ══════════════════════════════════════════════════════ -->
-  <section class="step" id="s4">
+  <section class="step" id="s6">
     <div class="step-head">
-      <div class="step-num">4</div>
+      <div class="step-num">6</div>
       <div>
         <div class="step-meta">Use it!</div>
         <h2>Describe a sport</h2>
@@ -262,11 +369,11 @@
   </section>
 
   <!-- ══════════════════════════════════════════════════════
-       STEP 5 — A conversation, task 1 (p.74): predict + listen
+       STEP 7 — A conversation, task 1 (p.74): predict + listen
   ══════════════════════════════════════════════════════ -->
-  <section class="step" id="s5">
+  <section class="step" id="s7">
     <div class="step-head">
-      <div class="step-num">5</div>
+      <div class="step-num">7</div>
       <div>
         <div class="step-meta">A Conversation</div>
         <h2>Look and predict</h2>
@@ -301,11 +408,11 @@
   </section>
 
   <!-- ══════════════════════════════════════════════════════
-       STEP 6 — A conversation, task 2 (p.74): listen again
+       STEP 8 — A conversation, task 2 (p.74): listen again
   ══════════════════════════════════════════════════════ -->
-  <section class="step" id="s6">
+  <section class="step" id="s8">
     <div class="step-head">
-      <div class="step-num">6</div>
+      <div class="step-num">8</div>
       <div>
         <div class="step-meta">A Conversation</div>
         <h2>Listen again</h2>
@@ -359,11 +466,11 @@
   </section>
 
   <!-- ══════════════════════════════════════════════════════
-       STEP 7 — Finish
+       STEP 9 — Finish
   ══════════════════════════════════════════════════════ -->
-  <section class="step" id="s7">
+  <section class="step" id="s9">
     <div class="step-head">
-      <div class="step-num">7</div>
+      <div class="step-num">9</div>
       <div>
         <div class="step-meta">Finish</div>
         <h2>Nice work</h2>

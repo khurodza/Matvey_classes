@@ -132,6 +132,36 @@ button:active,.btn:active,.btn-primary:active,.btn-accent:active,.btn-warm:activ
   font-weight:800;white-space:nowrap
 }
 
+/* a blank with the word to transform shown as a label above the box */
+.cue-input{display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;margin:2px 6px}
+.cue-lab{
+  font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.07em;
+  color:#7A5B00;background:var(--yellow);border-radius:999px;padding:1px 10px;margin-bottom:3px
+}
+.cue-input .blank{min-width:150px;width:150px;margin:0}
+.cue-input .given{
+  display:inline-block;min-width:150px;text-align:center;font-weight:800;
+  background:var(--mint);border:2px dashed var(--teal);border-radius:10px;padding:6px 10px;color:var(--teal)
+}
+
+/* a numbered sentence that contains a .cue-input gap */
+.gap-line{line-height:1.9;margin:0 0 10px}
+.gap-line .num{font-weight:900;color:var(--muted);margin-right:4px}
+
+/* two-speaker dialogue (name chip + line) */
+.dialogue{display:grid;grid-template-columns:auto 1fr;gap:12px 14px;align-items:start;margin:6px 0}
+.dl-name{
+  font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.07em;color:#fff;
+  background:var(--teal);border-radius:999px;padding:6px 14px;white-space:nowrap;margin-top:8px
+}
+.dl-name.two{background:var(--lilac)}
+.dl-text{margin:0;line-height:1.85;padding:6px 0}
+.dl-text.ask{background:var(--butter);border-radius:12px;padding:6px 14px}
+@media(max-width:620px){
+  .dialogue{grid-template-columns:1fr;gap:4px 0}
+  .dl-name{justify-self:start;margin-top:10px}
+}
+
 /* worked example (already answered, shown for reference, not interactive) */
 .example-row{
   display:flex;gap:10px;align-items:baseline;background:var(--mint);border-radius:10px;
