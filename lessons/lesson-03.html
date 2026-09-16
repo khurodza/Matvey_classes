@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 3 – Superlatives</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <a class="back-home" href="../index.html">← All lessons</a>
+    <div class="hero-grid">
+      <div>
+        <h1>Language in Action: Superlatives</h1>
+        <p>The fastest, the most amazing, the best — how to say that something is number one. Plus the biggest sports quiz in the world.</p>
+        <div class="hero-badges">
+          <span class="badge">Lesson 3</span>
+          <span class="badge">Unit 6 · Sport for life</span>
+          <span class="badge">Student's Book p.75</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="chips">
+  <div class="wrap">
+    <a href="#s1">1 · Sports verbs again</a>
+    <a href="#s2">2 · Watch the vlog</a>
+    <a href="#s3">3 · The rules</a>
+    <a href="#s4">4 · Build the forms</a>
+    <a href="#s5">5 · Joan and Victor</a>
+    <a href="#s6">6 · Sports quiz</a>
+    <a href="#s7">7 · Listen and check</a>
+    <a href="#s8">8 · Your opinions</a>
+    <a href="#s9">9 · About you</a>
+    <a href="#s10">10 · Basketball video</a>
+    <a href="#s11">11 · Finish</a>
+    <a href="homework/homework-03.html">Homework ↗</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 1 — RECYCLING (Lesson 2): sports verbs
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Recycling · from Lesson 2</div>
+        <h2>Sports verbs again</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-verbs-recap">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Complete the sentences with the correct sports verb.</h3>
+
+      <div class="word-bank-ref">
+        <span onclick="this.classList.toggle('crossed')">bounce</span><span onclick="this.classList.toggle('crossed')">catch</span><span onclick="this.classList.toggle('crossed')">climb</span><span onclick="this.classList.toggle('crossed')">kick</span><span onclick="this.classList.toggle('crossed')">lift</span><span onclick="this.classList.toggle('crossed')">pass</span><span onclick="this.classList.toggle('crossed')">score</span><span onclick="this.classList.toggle('crossed')">throw</span>
+      </div>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span>1. In football you <b>kick</b> the ball with your foot.</span></div>
+
+      <p class="gap-line"><span class="num">2.</span> In basketball you
+        <input class="blank" id="rv1" data-answer="bounce" placeholder="?"> the ball on the ground when you run.</p>
+      <p class="gap-line"><span class="num">3.</span> A goalkeeper can
+        <input class="blank" id="rv2" data-answer="catch" placeholder="?"> the ball with two hands.</p>
+      <p class="gap-line"><span class="num">4.</span> In rugby, players
+        <input class="blank" id="rv3" data-answer="pass" placeholder="?"> the ball to each other.</p>
+      <p class="gap-line"><span class="num">5.</span> Weightlifters
+        <input class="blank" id="rv4" data-answer="lift" placeholder="?"> very heavy weights.</p>
+      <p class="gap-line"><span class="num">6.</span> You need a rope and a helmet to
+        <input class="blank" id="rv5" data-answer="climb" placeholder="?"> a mountain.</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-verbs-recap')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-verbs-recap')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 2 — Video 6.3 (p.75)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Video 6.3</div>
+        <h2>Watch the vlog</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-video3">
+      <div class="exercise-label">Watch &amp; Answer</div>
+      <h3>Watch the video. Who is the most amazing painter? Who can play the piano the best?</h3>
+
+      <div class="video-wrap">
+        <video controls>
+          <source src="video/unit6-page75-language-in-action.mp4" type="video/mp4">
+          <track kind="captions" src="video/unit6-page75-language-in-action.vtt" srclang="en" label="English" default>
+          Your browser does not support video.
+        </video>
+      </div>
+
+      <p style="font-weight:800;margin:18px 0 4px">1. Who is the most amazing painter?</p>
+      <div class="mc-options" data-correct="b">
+        <label class="mc-option"><input type="radio" name="v31" value="a"><span class="mc-bullet">A</span> Amelie</label>
+        <label class="mc-option"><input type="radio" name="v31" value="b"><span class="mc-bullet">B</span> Joan</label>
+        <label class="mc-option"><input type="radio" name="v31" value="c"><span class="mc-bullet">C</span> Carlos</label>
+      </div>
+
+      <p style="font-weight:800;margin:20px 0 4px">2. Who plays the piano the best?</p>
+      <div class="mc-options" data-correct="c">
+        <label class="mc-option"><input type="radio" name="v32" value="a"><span class="mc-bullet">A</span> Joan</label>
+        <label class="mc-option"><input type="radio" name="v32" value="b"><span class="mc-bullet">B</span> Carlos</label>
+        <label class="mc-option"><input type="radio" name="v32" value="c"><span class="mc-bullet">C</span> Amelie</label>
+      </div>
+
+      <p style="font-weight:800;margin:20px 0 4px">3. What does the vlogger say he is the best at?</p>
+      <div class="mc-options" data-correct="c">
+        <label class="mc-option"><input type="radio" name="v33" value="a"><span class="mc-bullet">A</span> drawing and painting</label>
+        <label class="mc-option"><input type="radio" name="v33" value="b"><span class="mc-bullet">B</span> playing the piano</label>
+        <label class="mc-option"><input type="radio" name="v33" value="c"><span class="mc-bullet">C</span> having the best friends</label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkMC('ex-video3')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetMC('ex-video3')">Try again</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Speaking</div>
+      <h3>And you? Have you got something you're the best at?</h3>
+      <textarea class="free-write" id="fw-best-at" placeholder="I'm the best at…" rows="2"></textarea>
+      <div class="char-count" id="cc-fw-best-at">0 characters</div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 3 — Language in action, task 1 (p.75): complete the rules
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s3">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-meta">Language in Action</div>
+        <h2>Look at the table and complete the rules</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-rules">
+      <div class="exercise-label">Fill in the Blanks</div>
+
+      <table class="ref-table">
+        <tr><th colspan="2">Superlative adjectives</th></tr>
+        <tr><td class="label">Short</td><td>She's <b>the fastest</b> player.</td></tr>
+        <tr><td class="label">Long</td><td>She's <b>the most amazing</b> painter.</td></tr>
+        <tr><td class="label">Irregular</td><td>Have you got something you're <b>the best</b> at?</td></tr>
+      </table>
+
+      <h3 style="margin-top:20px">Now complete the rules.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span>1. We add <i>the</i> + <i>-est</i> to <b>short</b> adjectives.</span></div>
+
+      <p class="gap-line"><span class="num">2.</span> We put <i>the most</i> before
+        <input class="blank" id="ru1" data-answer="long" placeholder="?"> adjectives.</p>
+      <p class="gap-line"><span class="num">3.</span> There are some
+        <input class="blank" id="ru2" data-answer="irregular" placeholder="?"> adjectives,
+        e.g. <i>good – the best</i>, <i>bad – the worst</i>.</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-rules')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-rules')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>Comparative or superlative?</b> A comparative compares <i>two</i> things
+      (<i>Yoga is <b>slower than</b> gymnastics.</i>). A superlative compares <i>more than two</i> —
+      it says which one is number one (<i>Gymnastics is <b>the fastest</b> sport.</i>).
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 4 — Extra drill before task 2: build the superlative forms
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s4">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-meta">Grammar practice</div>
+        <h2>Build the forms</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-sup-forms">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Write the superlative form of each adjective. Don't forget <i>the</i>!</h3>
+
+      <table class="ref-table">
+        <tr><th>Adjective</th><th>How to build it</th><th>Example</th></tr>
+        <tr><td class="label">short</td><td><i>the</i> + adjective + <i>-est</i></td><td>fast → <b>the fastest</b></td></tr>
+        <tr><td class="label">short, ending in <i>-e</i></td><td><i>the</i> + adjective + <i>-st</i></td><td>nice → <b>the nicest</b></td></tr>
+        <tr><td class="label">short, ending in <i>-y</i></td><td><i>-y</i> → <i>-iest</i></td><td>easy → <b>the easiest</b></td></tr>
+        <tr><td class="label">one vowel + one consonant</td><td>double the last letter</td><td>big → <b>the biggest</b></td></tr>
+        <tr><td class="label">long</td><td><i>the most</i> + adjective</td><td>popular → <b>the most popular</b></td></tr>
+        <tr><td class="label">irregular</td><td>a different word</td><td>good → <b>the best</b> · bad → <b>the worst</b></td></tr>
+      </table>
+
+      <div class="example-row" style="margin-top:16px"><span class="ex-tag">Example</span>
+        <span>1. <span class="cue">tall</span> → <b>the tallest</b></span></div>
+
+      <p class="gap-line"><span class="num">2.</span> <span class="cue">new</span> →
+        <input class="blank" id="sf1" data-answer="the newest" placeholder="?"></p>
+      <p class="gap-line"><span class="num">3.</span> <span class="cue">healthy</span> →
+        <input class="blank" id="sf2" data-answer="the healthiest" placeholder="?"></p>
+      <p class="gap-line"><span class="num">4.</span> <span class="cue">fit</span> →
+        <input class="blank" id="sf3" data-answer="the fittest" placeholder="?"></p>
+      <p class="gap-line"><span class="num">5.</span> <span class="cue">difficult</span> →
+        <input class="blank" id="sf4" data-answer="the most difficult" placeholder="?"></p>
+      <p class="gap-line"><span class="num">6.</span> <span class="cue">good</span> →
+        <input class="blank" id="sf5" data-answer="the best" placeholder="?"></p>
+      <p class="gap-line"><span class="num">7.</span> <span class="cue">bad</span> →
+        <input class="blank" id="sf6" data-answer="the worst" placeholder="?"></p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-sup-forms')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-sup-forms')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 5 — Language in action, task 2 (p.75): Joan and Victor
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s5">
+    <div class="step-head">
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-meta">Language in Action</div>
+        <h2>Joan and Victor</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-people">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Complete the sentences with the superlative form of the adjectives. The adjective is on the yellow label above each box.</h3>
+
+      <div style="display:flex;gap:20px;flex-wrap:wrap;margin-top:14px">
+        <div style="width:200px;text-align:center">
+          <img class="media-img" src="images/unit6-p74-joan-macdonald.jpg" alt="Joan MacDonald holding two heavy weights and smiling" style="margin-top:0">
+          <p style="font-weight:800;margin:8px 0 0">Joan MacDonald</p>
+        </div>
+        <div style="width:200px;text-align:center">
+          <img class="media-img" src="images/unit6-p74-victor-wembanyama.jpg" alt="Victor Wembanyama playing basketball in front of a crowd" style="margin-top:0">
+          <p style="font-weight:800;margin:8px 0 0">Victor Wembanyama</p>
+        </div>
+      </div>
+
+      <p class="gap-line" style="margin-top:18px">Joan MacDonald is one of
+        <span class="cue-input"><span class="cue-lab">popular</span><span class="given">the most popular</span></span>
+        women in their 70s on social media. She's probably
+        <span class="cue-input"><span class="cue-lab">fit</span><input class="blank" id="pe2" data-answer="the fittest" placeholder="?"></span>
+        and
+        <span class="cue-input"><span class="cue-lab">healthy</span><input class="blank" id="pe3" data-answer="the healthiest|healthiest" placeholder="?"></span>
+        person that age I know.</p>
+
+      <p class="gap-line" style="margin-top:14px">Victor Wembanyama is one of
+        <span class="cue-input"><span class="cue-lab">tall</span><input class="blank" id="pe4" data-answer="the tallest" placeholder="?"></span>
+        basketball players in the world. Does the article say he is
+        <span class="cue-input"><span class="cue-lab">good</span><input class="blank" id="pe5" data-answer="the best" placeholder="?"></span>
+        player in his team? Maybe Victor's got
+        <span class="cue-input"><span class="cue-lab">big</span><input class="blank" id="pe6" data-answer="the biggest" placeholder="?"></span>
+        feet in his team!</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-people')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-people')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>Watch out!</b> After <i>one of</i> we use a plural noun:
+      <i>one of the tallest <b>players</b></i>, <i>one of the most popular <b>women</b></i>.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 6 — Language in action, task 3 (p.75): the sports quiz
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s6">
+    <div class="step-head">
+      <div class="step-num">6</div>
+      <div>
+        <div class="step-meta">Language in Action</div>
+        <h2>The biggest sports quiz in the world</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-sportsquiz" style="border-left:6px solid var(--lilac)">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Complete the quiz with the superlative form of the adjectives. Then choose the answer you think is correct.</h3>
+      <p class="char-count" style="text-align:left;margin:-6px 0 0">Predict first — you'll listen and check in the next step.</p>
+
+      <img class="media-img" src="images/unit6-p75-juju-noda.jpg" alt="Juju Noda, a young racing driver, putting on her helmet" style="float:right;width:170px;margin:0 0 12px 16px">
+
+      <p class="gap-line" style="margin-top:16px"><span class="num">1.</span> Juju Noda is one of
+        <span class="cue-input"><span class="cue-lab">good</span><span class="given">the best</span></span>
+        female Japanese
+        <span class="word-choice" id="wq1" data-answer="racing drivers">
+          <button class="word-choice-btn" onclick="selectWord(this)">footballers</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">racing drivers</button>
+        </span>.</p>
+
+      <p class="gap-line" style="clear:both"><span class="num">2.</span> Lots of people think that
+        <span class="word-choice" id="wq2" data-answer="football">
+          <button class="word-choice-btn" onclick="selectWord(this)">basketball</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">football</button>
+        </span>
+        is
+        <span class="cue-input"><span class="cue-lab">easy</span><input class="blank" id="q2" data-answer="the easiest" placeholder="?"></span>
+        sport to learn.</p>
+
+      <p class="gap-line"><span class="num">3.</span>
+        <span class="word-choice" id="wq3" data-answer="wheelchair basketball">
+          <button class="word-choice-btn" onclick="selectWord(this)">Sitting volleyball</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Wheelchair basketball</button>
+        </span>
+        is one of
+        <span class="cue-input"><span class="cue-lab">popular</span><input class="blank" id="q3" data-answer="the most popular" placeholder="?"></span>
+        Paralympic sports.</p>
+
+      <p class="gap-line"><span class="num">4.</span>
+        <span class="word-choice" id="wq4" data-answer="surfing">
+          <button class="word-choice-btn" onclick="selectWord(this)">Surfing</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Table tennis</button>
+        </span>
+        is one of
+        <span class="cue-input"><span class="cue-lab">new</span><input class="blank" id="q4" data-answer="the newest" placeholder="?"></span>
+        Olympic sports.</p>
+
+      <p class="gap-line"><span class="num">5.</span>
+        <span class="cue-input"><span class="cue-lab">healthy</span><input class="blank" id="q5" data-answer="the healthiest" placeholder="?"></span>
+        food to eat before you do sport or exercise is a
+        <span class="word-choice" id="wq5" data-answer="banana">
+          <button class="word-choice-btn" onclick="selectWord(this)">carrot</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">banana</button>
+        </span>.</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 7 — Language in action, task 4 (p.75): audio 6.09
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s7">
+    <div class="step-head">
+      <div class="step-num">7</div>
+      <div>
+        <div class="step-meta">Audio 6.09</div>
+        <h2>Listen and check</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Listening</div>
+      <h3>Listen and check your answers to the quiz. Were your predictions right?</h3>
+
+      <div class="audio-wrap">
+        <audio controls>
+          <source src="audio/unit6-page75-track9.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-sportsquiz'); checkWords('ex-sportsquiz')">Check the quiz ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-sportsquiz')">Clear the gaps</button>
+      </div>
+      <p class="char-count" style="text-align:left">This checks Step 6 above — scroll back up to see the green and red boxes.</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 8 — Use it! task 5 (p.75)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s8">
+    <div class="step-head">
+      <div class="step-num">8</div>
+      <div>
+        <div class="step-meta">Use it!</div>
+        <h2>Your opinions about sports</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Writing</div>
+      <h3>Write four sentences with your opinions about sports. Use one word from box A and one from box B in each sentence.</h3>
+
+      <table class="ref-table">
+        <tr><td class="label">A</td><td>easiest · most boring · most difficult · most interesting on TV</td></tr>
+        <tr><td class="label">B</td><td>do · learn · play · watch</td></tr>
+      </table>
+
+      <div class="example-row" style="margin-top:14px"><span class="ex-tag">Example</span>
+        <span>I think tennis is the most difficult sport to learn.</span></div>
+
+      <input type="text" class="blank line-write" id="op1" placeholder="1. I think … is the … sport to …">
+      <input type="text" class="blank line-write" id="op2" placeholder="2. …">
+      <input type="text" class="blank line-write" id="op3" placeholder="3. …">
+      <input type="text" class="blank line-write" id="op4" placeholder="4. …">
+
+      <div class="tip">
+        <b>Get it right!</b> Don't forget <i>the</i> before a superlative:
+        <i>rugby is <b>the most</b> difficult sport to learn</i> ✓ &nbsp;&nbsp;
+        <s><i>rugby is most difficult sport</i></s> ✗
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 9 — Use it! task 6 (p.75)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s9">
+    <div class="step-head">
+      <div class="step-num">9</div>
+      <div>
+        <div class="step-meta">Use it!</div>
+        <h2>Superlatives about you</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Writing</div>
+      <h3>Write sentences with superlative adjectives about you. Use these topics, or choose your own.</h3>
+
+      <div class="word-bank-ref">
+        <span>day of the week (good)</span><span>food (delicious)</span><span>sportsperson (amazing)</span><span>person (happy)</span>
+      </div>
+
+      <div class="dialogue">
+        <span class="dl-name">Partner</span>
+        <p class="dl-text ask">Which is the best day of the week?</p>
+        <span class="dl-name two">You</span>
+        <p class="dl-text">I think Friday is the best day of the week because I always finish school early. What about you?</p>
+      </div>
+
+      <input type="text" class="blank line-write" id="ay1" placeholder="1. I think … is the …">
+      <input type="text" class="blank line-write" id="ay2" placeholder="2. …">
+      <input type="text" class="blank line-write" id="ay3" placeholder="3. …">
+      <input type="text" class="blank line-write" id="ay4" placeholder="4. …">
+
+      <p class="char-count" style="text-align:left">Say <i>because</i> and give a reason, like in the example.</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 10 — Watch a basketball match and write about it
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s10">
+    <div class="step-head">
+      <div class="step-num">10</div>
+      <div>
+        <div class="step-meta">Watch &amp; Write</div>
+        <h2>Watch the basketball match</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Writing</div>
+      <h3>Watch part of the basketball match. Then write three things you like about it.</h3>
+
+      <div class="video-wrap">
+        <video controls>
+          <source src="video/unit6-basketball.mp4" type="video/mp4">
+          Your browser does not support video.
+        </video>
+      </div>
+
+      <div class="example-row" style="margin-top:16px"><span class="ex-tag">Example</span>
+        <span>I like how the players throw the ball.</span></div>
+
+      <input type="text" class="blank line-write" id="bb1" placeholder="1. I like …">
+      <input type="text" class="blank line-write" id="bb2" placeholder="2. I like …">
+      <input type="text" class="blank line-write" id="bb3" placeholder="3. I like …">
+
+      <div class="word-bank-ref">
+        <span>bounce</span><span>catch</span><span>jump</span><span>pass</span><span>run</span><span>score</span><span>throw</span>
+      </div>
+
+      <div class="tip">
+        <b>Try a superlative!</b> Use one in at least one sentence:
+        <i>I like how number 7 is <b>the fastest</b> player on the court.</i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 11 — Finish
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s11">
+    <div class="step-head">
+      <div class="step-num">11</div>
+      <div>
+        <div class="step-meta">Finish</div>
+        <h2>Nice work</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Now I...</h3>
+      <div class="reflect-list">
+        <label class="reflect-item">
+          <input type="checkbox" id="r1">
+          <span class="check-box"></span>
+          <span class="reflect-text">know when to use a superlative instead of a comparative</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="r2">
+          <span class="check-box"></span>
+          <span class="reflect-text">can build short superlatives (the fastest, the biggest, the easiest)</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="r3">
+          <span class="check-box"></span>
+          <span class="reflect-text">can build long superlatives (the most popular, the most amazing)</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="r4">
+          <span class="check-box"></span>
+          <span class="reflect-text">know the irregular ones: good → the best, bad → the worst</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="r5">
+          <span class="check-box"></span>
+          <span class="reflect-text">can give my opinion about sports with superlatives</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="r6">
+          <span class="check-box"></span>
+          <span class="reflect-text">watched a basketball match and wrote what I like about it</span>
+        </label>
+      </div>
+
+      <div class="btn-row">
+        <a class="btn-accent" href="homework/homework-03.html">Go to homework →</a>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /wrap -->
+
+<div class="scorebar" id="scoreBar" style="display:none">
+  <div class="wrap">
+    <span>Score: <span id="scoreCorrect">0</span> correct · <span id="scoreDone">0</span>/<span id="scoreTotal">0</span> answered</span>
+    <div class="meter"><i id="scoreMeter"></i></div>
+    <button class="btn-primary" onclick="checkAll()">Check my answers ✓</button>
+  </div>
+</div>
+
+<script src="../assets/lessons.js"></script>
+</body>
+</html>
