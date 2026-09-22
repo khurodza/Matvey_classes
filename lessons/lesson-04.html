@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 4 – Goalball &amp; Buying Tickets Online</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <a class="back-home" href="../index.html">← All lessons</a>
+    <div class="hero-grid">
+      <div>
+        <h1>Let's remember &amp; Say it: Buying tickets online</h1>
+        <p><b>Let's remember:</b> superlatives about you and a conversation about goalball. <b>Say it:</b> Omar and Ruben buy football tickets online — listen, complete the conversation, learn five everyday phrases and then plan your own conversation.</p>
+        <div class="hero-badges">
+          <span class="badge">Lesson 4</span>
+          <span class="badge">Unit 6 · Sport for life</span>
+          <span class="badge">Workbook p.51–52 · Student's Book p.76</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="parts">
+  <div class="wrap">
+    <button class="part-tab" data-part="part-remember" onclick="showPart('part-remember')">Let's remember</button>
+    <button class="part-tab" data-part="part-say-it" onclick="showPart('part-say-it')">Say it</button>
+    <button class="part-tab hw" data-part="part-homework" onclick="showPart('part-homework')">Homework</button>
+  </div>
+</nav>
+
+<div class="lesson-part" id="part-remember">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#s1">1 · Warm-up</a>
+    <a href="#s2">2 · Goalball: listen</a>
+    <a href="#s3">3 · Listen again</a>
+    <a href="#part-homework" onclick="showPart('part-homework');window.scrollTo(0,0)">Homework ↗</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 1 — Workbook p.52, Language in action, task 4 (moved from Homework 3)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Warm-up · Superlatives</div>
+        <h2>Questions about you</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-about-you">
+      <div class="exercise-label">Fill in the Blanks + Writing</div>
+      <h3>Complete the questions with the superlative form of the adjectives. Then answer them for you.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span>1. Who is <b>the youngest</b> (young) person in your family? → <i>My sister Anya is the youngest person in my family.</i></span></div>
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">1.</span> Who is
+        <span class="cue-input"><span class="cue-lab">young</span><span class="given">the youngest</span></span>
+        person in your family?</p>
+      <input type="text" class="blank line-write" id="ab1" placeholder="Your answer: … is the youngest person in my family.">
+
+      <p class="gap-line" style="margin-top:18px"><span class="num">2.</span> Which is
+        <span class="cue-input"><span class="cue-lab">popular</span><input class="blank" id="ab-q2" data-answer="the most popular|most popular" placeholder="?"></span>
+        sport at your school?</p>
+      <input type="text" class="blank line-write" id="ab2" placeholder="Your answer: …">
+
+      <p class="gap-line" style="margin-top:18px"><span class="num">3.</span> Which is
+        <span class="cue-input"><span class="cue-lab">difficult</span><input class="blank" id="ab-q3" data-answer="the most difficult|most difficult" placeholder="?"></span>
+        school subject?</p>
+      <input type="text" class="blank line-write" id="ab3" placeholder="Your answer: …">
+
+      <p class="gap-line" style="margin-top:18px"><span class="num">4.</span> Which is
+        <span class="cue-input"><span class="cue-lab">entertaining</span><input class="blank" id="ab-q4" data-answer="the most entertaining|most entertaining" placeholder="?"></span>
+        film you know?</p>
+      <input type="text" class="blank line-write" id="ab4" placeholder="Your answer: …">
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-about-you')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-about-you')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>Answer in a full sentence</b> and use the superlative again:
+      <i>Football is <b>the most popular</b> sport at my school.</i> Only the questions are checked — your answers are for us to talk about in class.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 2 — Workbook p.51, A conversation, task 4 (audio 6.01) — 1 star
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Vocabulary and Listening · Audio 6.01</div>
+        <h2>A conversation about goalball</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-goalball-1">
+      <div class="exercise-label">Word Choice</div>
+      <h3>Look at the photo. What do you think goalball is? Then listen to the conversation and choose the correct answers.</h3>
+
+      <img class="media-img" src="images/unit6-wb51-goalball.jpg" alt="Two goalball players wearing eyeshades, crouching on a court in front of a goal with a ball rolling towards them" style="max-width:520px">
+
+      <div class="audio-wrap">
+        <audio controls>
+          <source src="audio/unit6-wb51-track6-01.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+
+      <p class="gap-line" style="margin-top:16px"><span class="num">1.</span> In goalball, players use a ball that has
+        <span class="word-choice" id="gb1" data-answer="sound">
+          <button class="word-choice-btn" onclick="selectWord(this)">lights</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">sound</button>
+        </span>.</p>
+
+      <p class="gap-line"><span class="num">2.</span> Goalball is
+        <span class="word-choice" id="gb2" data-answer="a team">
+          <button class="word-choice-btn" onclick="selectWord(this)">a team</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">an individual</button>
+        </span>
+        sport.</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkWords('ex-goalball-1')">Check ✓</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>Before you listen:</b> look at the players' eyes. Why do you think they wear those masks?
+      How can they know where the ball is?
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 3 — Workbook p.51, A conversation, task 5 (audio 6.01) — 3 stars
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s3">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-meta">Listening · Audio 6.01</div>
+        <h2>Listen again</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-goalball-2">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Listen again. Complete the sentences with one word or a number.</h3>
+
+      <div class="audio-wrap">
+        <audio controls>
+          <source src="audio/unit6-wb51-track6-01.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+
+      <div class="example-row" style="margin-top:16px"><span class="ex-tag">Example</span>
+        <span>1. Goalball is a <b>Paralympic</b> sport.</span></div>
+
+      <p class="gap-line"><span class="num">2.</span> In goalball, the ball is like a
+        <input class="blank" id="gl2" data-answer="football" placeholder="?">, but heavier.</p>
+      <p class="gap-line"><span class="num">3.</span> A goalball team has
+        <input class="blank" id="gl3" data-answer="three|3" placeholder="?"> players in it.</p>
+      <p class="gap-line"><span class="num">4.</span> Players try to
+        <input class="blank" id="gl4" data-answer="throw" placeholder="?"> the ball to score a goal.</p>
+      <p class="gap-line"><span class="num">5.</span> They use their
+        <input class="blank" id="gl5" data-answer="bodies" placeholder="?"> to stop the ball.</p>
+      <p class="gap-line"><span class="num">6.</span> Some players can make the ball go at
+        <input class="blank" id="gl6" data-answer="60|sixty" placeholder="?"> km per hour.</p>
+      <p class="gap-line"><span class="num">7.</span> The girl plays goalball at the
+        <input class="blank" id="gl7" data-answer="sports" placeholder="?"> centre.</p>
+      <p class="gap-line"><span class="num">8.</span> The boy wants to see the girl play on
+        <input class="blank" id="gl8" data-answer="saturday" placeholder="?">.</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-goalball-2')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-goalball-2')">Try again</button>
+      </div>
+
+      <details style="margin-top:16px;background:var(--mint);border-radius:12px;padding:12px 16px">
+        <summary style="cursor:pointer;font-weight:900;color:var(--teal)">Show the audioscript</summary>
+        <div class="dialogue" style="margin-top:10px">
+          <span class="dl-name">Boy</span>
+          <p class="dl-text">Hey, Enes. You know that sport you do a lot?</p>
+          <span class="dl-name two">Enes</span>
+          <p class="dl-text">Which one? I like lots of sport. Sailing, cycling …</p>
+          <span class="dl-name">Boy</span>
+          <p class="dl-text">No, I mean … er … is it goalball? I'm interested in finding out more about it.</p>
+          <span class="dl-name two">Enes</span>
+          <p class="dl-text">Oh, goalball! Yeah! Well, that's my favourite sport. I play it every weekend I can.</p>
+          <span class="dl-name">Boy</span>
+          <p class="dl-text">Cool. There's an article here that says it's a Paralympic sport. Is that right?</p>
+          <span class="dl-name two">Enes</span>
+          <p class="dl-text">Yes, it is. I think it's the most exciting sport in the world!</p>
+          <span class="dl-name">Boy</span>
+          <p class="dl-text">What is goalball like then? It's a team game. Is that right?</p>
+          <span class="dl-name two">Enes</span>
+          <p class="dl-text">Yes. It's a lot of fun to play with other people. And it's a game that blind people, or people like me who find it difficult to see, can play. The sport uses a special ball which makes a sound. When I'm playing, I can hear where the ball is, so I know where it's going.</p>
+          <span class="dl-name">Boy</span>
+          <p class="dl-text">Is that difficult? I don't know if I could do that.</p>
+          <span class="dl-name two">Enes</span>
+          <p class="dl-text">It's not so difficult. Like every sport, you have to practise.</p>
+          <span class="dl-name">Boy</span>
+          <p class="dl-text">And is the ball like a football or smaller than a football?</p>
+          <span class="dl-name two">Enes</span>
+          <p class="dl-text">It's big, like a football, but it has three bells inside it, to make a noise.</p>
+          <span class="dl-name">Boy</span>
+          <p class="dl-text">Ah, so it's heavier.</p>
+          <span class="dl-name two">Enes</span>
+          <p class="dl-text">Yes!</p>
+          <span class="dl-name">Boy</span>
+          <p class="dl-text">And how many people are in a team?</p>
+          <span class="dl-name two">Enes</span>
+          <p class="dl-text">Each team has three players. To score a goal, you try to throw the ball across the goal line at the other end of the court. You can run, but you can't kick the ball. The people in the other team try to stop the ball with their bodies. They can stand up or get down on the floor. The game's really fast. It's faster than you think. The best players can throw the ball at 60 km per hour!</p>
+          <span class="dl-name">Boy</span>
+          <p class="dl-text">Wow, that's a lot! Where do you play?</p>
+          <span class="dl-name two">Enes</span>
+          <p class="dl-text">We play at the sports centre. It's fun. Do you want to come and watch us next Saturday?</p>
+          <span class="dl-name">Boy</span>
+          <p class="dl-text">Sure. That's the most interesting plan for the weekend I can think of!</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="tip">
+      <b>Listen for the sports verbs</b> from Lesson 2: <i>throw</i>, <i>run</i>, <i>kick</i>, <i>score</i>.
+      Which ones <b>can</b> you do in goalball, and which one <b>can't</b> you do?
+    </div>
+  </section>
+
+  <div class="btn-row" style="justify-content:flex-end;margin:10px 0 30px">
+    <button class="btn-accent" onclick="showPart('part-say-it');window.scrollTo(0,0)">Next part: Say it →</button>
+  </div>
+
+</div><!-- /wrap -->
+</div><!-- /part-remember -->
+
+<div class="lesson-part" id="part-say-it">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#t1">1 · How much?</a>
+    <a href="#t2">2 · Complete the conversation</a>
+    <a href="#t3">3 · Everyday English</a>
+    <a href="#t4">4 · Practise</a>
+    <a href="#t5">5 · Plan</a>
+    <a href="#t6">6 · Speak</a>
+    <a href="#t7">7 · Check</a>
+    <a href="#t8">8 · Finish</a>
+    <a href="#part-homework" onclick="showPart('part-homework');window.scrollTo(0,0)">Homework ↗</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 1 — Student's Book p.76, Speaking, task 1 (audio 6.10)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Speaking · Buying tickets online · Audio 6.10</div>
+        <h2>How much do they pay?</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-tickets-price">
+      <div class="exercise-label">Listening</div>
+      <h3>Look at Omar and Ruben. Listen to the conversation. How much do they pay for the tickets?</h3>
+
+      <img class="media-img" src="images/unit6-p76-omar-ruben.jpg" alt="Omar and Ruben looking at a tablet together at a desk" style="max-width:420px">
+
+      <div class="audio-wrap">
+        <audio controls>
+          <source src="audio/unit6-page76-track10.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+
+      <p class="gap-line" style="margin-top:16px">They pay
+        <input class="blank" id="tp1" data-answer="£12|12|£12 each|12 pounds|£12 for each ticket|twelve pounds|£12 each ticket" placeholder="£ ?">
+        for each ticket.</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-tickets-price')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-tickets-price')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>Listen for two prices.</b> One is for <i>the best seats</i>, one is for <i>the cheapest tickets</i>. Which one do the boys choose?
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 2 — Student's Book p.76, Speaking, task 2 (audio 6.10)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Speaking · Audio 6.10</div>
+        <h2>Complete the conversation</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-tickets-dialogue">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Complete the conversation with the phrases from the <i>Useful language</i> box. Then listen and check.</h3>
+
+      <div class="exercise-label" style="margin-top:14px">Useful language</div>
+      <div class="word-bank-ref">
+        <span class="crossed" onclick="this.classList.toggle('crossed')">Shall we go?</span><span onclick="this.classList.toggle('crossed')">How much are tickets?</span><span onclick="this.classList.toggle('crossed')">They're (£45).</span><span onclick="this.classList.toggle('crossed')">Let's go.</span><span onclick="this.classList.toggle('crossed')">Let's book them.</span><span onclick="this.classList.toggle('crossed')">What's the (quickest / best / cheapest) way to get there?</span>
+      </div>
+      <p class="char-count" style="text-align:left;margin-top:0">Tap a phrase to cross it out when you have used it.</p>
+
+      <div class="dialogue">
+        <span class="dl-name">Ruben</span>
+        <p class="dl-text ask">Look! Our favourite team is playing football this afternoon.
+          <span class="cue-input"><span class="cue-lab">1</span><span class="given">Shall we go?</span></span></p>
+
+        <span class="dl-name two">Omar</span>
+        <p class="dl-text ask">Why not?
+          <span class="cue-input"><span class="cue-lab">2</span><input class="blank" id="td2" data-answer="how much are tickets?|how much are tickets|how much are the tickets?|how much are the tickets" placeholder="?" style="width:260px"></span></p>
+
+        <span class="dl-name">Ruben</span>
+        <p class="dl-text ask">The best seats are the most expensive.
+          <span class="cue-input"><span class="cue-lab">3</span><input class="blank" id="td3" data-answer="they're £45.|they're £45|they are £45.|they are £45|they're 45 pounds|they're £45 each" placeholder="?" style="width:260px"></span></p>
+
+        <span class="dl-name two">Omar</span>
+        <p class="dl-text">That's crazy! Are there any cheaper tickets?</p>
+
+        <span class="dl-name">Ruben</span>
+        <p class="dl-text">Yes, there are. The cheapest tickets are £12 but they're the worst seats.</p>
+
+        <span class="dl-name two">Omar</span>
+        <p class="dl-text ask">That's OK. I don't mind if you don't.
+          <span class="cue-input"><span class="cue-lab">4</span><input class="blank" id="td4" data-answer="let's book them.|let's book them|let us book them" placeholder="?" style="width:260px"></span></p>
+
+        <span class="dl-name">Ruben</span>
+        <p class="dl-text">Got them! We collect and pay for them when we get there. The match starts in an hour.</p>
+
+        <span class="dl-name two">Omar</span>
+        <p class="dl-text ask">What are we waiting for?
+          <span class="cue-input"><span class="cue-lab">5</span><input class="blank" id="td5" data-answer="let's go.|let's go|let's go!" placeholder="?" style="width:260px"></span></p>
+
+        <span class="dl-name">Ruben</span>
+        <p class="dl-text ask">
+          <span class="cue-input"><span class="cue-lab">6</span><input class="blank" id="td6" data-answer="what's the quickest way to get there?|what's the quickest way to get there|what is the quickest way to get there?|what is the quickest way to get there" placeholder="?" style="width:340px"></span></p>
+
+        <span class="dl-name two">Omar</span>
+        <p class="dl-text">Run – fast!</p>
+
+        <span class="dl-name">Ruben</span>
+        <p class="dl-text">Wait for me!</p>
+      </div>
+
+      <h3 style="margin-top:20px">Now listen and check.</h3>
+      <div class="audio-wrap">
+        <audio controls>
+          <source src="audio/unit6-page76-track10.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-tickets-dialogue')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-tickets-dialogue')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>Write the whole phrase</b> with its punctuation, like in the box. In gap 6, choose the right adjective — listen: is it <i>quickest</i>, <i>best</i> or <i>cheapest</i>?
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 3 — Student's Book p.76, Speaking, task 3 + Video 6.4 Everyday English
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t3">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-meta">Everyday English · Video 6.4</div>
+        <h2>Find the phrases</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Watch</div>
+      <h3>Watch video 6.4. When do we use each phrase?</h3>
+
+      <div class="video-wrap">
+        <video controls>
+          <source src="video/unit6-page76-everyday-english.mp4" type="video/mp4">
+          <track kind="captions" src="video/unit6-page76-everyday-english.vtt" srclang="en" label="English" default>
+          Your browser does not support video.
+        </video>
+      </div>
+
+      <div class="exercise-label" style="margin-top:16px">Everyday English</div>
+      <div class="word-bank-ref">
+        <span>Got them!</span><span>Look!</span><span>That's crazy!</span><span>What are we waiting for?</span><span>Why not?</span>
+      </div>
+    </div>
+
+    <div class="card" id="ex-find-phrases">
+      <div class="exercise-label">Find &amp; Underline</div>
+      <h3>Look at the <i>Everyday English</i> box. Find the five phrases in the conversation — tap a phrase to underline it.</h3>
+
+      <div class="dialogue">
+        <span class="dl-name">Ruben</span>
+        <p class="dl-text"><span class="tap" data-key onclick="toggleTap(this)">Look!</span> <span class="tap" onclick="toggleTap(this)">Our favourite team is playing football this afternoon.</span> <span class="tap" onclick="toggleTap(this)">Shall we go?</span></p>
+        <span class="dl-name two">Omar</span>
+        <p class="dl-text"><span class="tap" data-key onclick="toggleTap(this)">Why not?</span> <span class="tap" onclick="toggleTap(this)">How much are tickets?</span></p>
+        <span class="dl-name">Ruben</span>
+        <p class="dl-text"><span class="tap" onclick="toggleTap(this)">The best seats are the most expensive.</span> <span class="tap" onclick="toggleTap(this)">They're £45.</span></p>
+        <span class="dl-name two">Omar</span>
+        <p class="dl-text"><span class="tap" data-key onclick="toggleTap(this)">That's crazy!</span> <span class="tap" onclick="toggleTap(this)">Are there any cheaper tickets?</span></p>
+        <span class="dl-name">Ruben</span>
+        <p class="dl-text"><span class="tap" onclick="toggleTap(this)">Yes, there are.</span> <span class="tap" onclick="toggleTap(this)">The cheapest tickets are £12 but they're the worst seats.</span></p>
+        <span class="dl-name two">Omar</span>
+        <p class="dl-text"><span class="tap" onclick="toggleTap(this)">That's OK.</span> <span class="tap" onclick="toggleTap(this)">I don't mind if you don't.</span> <span class="tap" onclick="toggleTap(this)">Let's book them.</span></p>
+        <span class="dl-name">Ruben</span>
+        <p class="dl-text"><span class="tap" data-key onclick="toggleTap(this)">Got them!</span> <span class="tap" onclick="toggleTap(this)">We collect and pay for them when we get there.</span> <span class="tap" onclick="toggleTap(this)">The match starts in an hour.</span></p>
+        <span class="dl-name two">Omar</span>
+        <p class="dl-text"><span class="tap" data-key onclick="toggleTap(this)">What are we waiting for?</span> <span class="tap" onclick="toggleTap(this)">Let's go.</span></p>
+        <span class="dl-name">Ruben</span>
+        <p class="dl-text"><span class="tap" onclick="toggleTap(this)">What's the quickest way to get there?</span></p>
+        <span class="dl-name two">Omar</span>
+        <p class="dl-text"><span class="tap" onclick="toggleTap(this)">Run – fast!</span></p>
+        <span class="dl-name">Ruben</span>
+        <p class="dl-text"><span class="tap" onclick="toggleTap(this)">Wait for me!</span></p>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkTap('ex-find-phrases')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetTap('ex-find-phrases')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>Look!</b> = pay attention to this · <b>That's crazy!</b> = I can't believe it · <b>Why not?</b> = yes, good idea ·
+      <b>What are we waiting for?</b> = let's do it now · <b>Got them!</b> = I have them / I did it
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 4 — Student's Book p.76, Speaking, task 4
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t4">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-meta">Speaking · Audio 6.10</div>
+        <h2>Practise the conversation</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Speaking</div>
+      <h3>Work with a partner. Practise the conversation. First read it together with the audio, then act it out — you are Omar, then swap.</h3>
+
+      <div class="audio-wrap">
+        <audio controls>
+          <source src="audio/unit6-page76-track10.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+
+      <div class="dialogue" style="margin-top:16px">
+        <span class="dl-name">Ruben</span>
+        <p class="dl-text">Look! Our favourite team is playing football this afternoon. Shall we go?</p>
+        <span class="dl-name two">Omar</span>
+        <p class="dl-text">Why not? How much are tickets?</p>
+        <span class="dl-name">Ruben</span>
+        <p class="dl-text">The best seats are the most expensive. They're £45.</p>
+        <span class="dl-name two">Omar</span>
+        <p class="dl-text">That's crazy! Are there any cheaper tickets?</p>
+        <span class="dl-name">Ruben</span>
+        <p class="dl-text">Yes, there are. The cheapest tickets are £12 but they're the worst seats.</p>
+        <span class="dl-name two">Omar</span>
+        <p class="dl-text">That's OK. I don't mind if you don't. Let's book them.</p>
+        <span class="dl-name">Ruben</span>
+        <p class="dl-text">Got them! We collect and pay for them when we get there. The match starts in an hour.</p>
+        <span class="dl-name two">Omar</span>
+        <p class="dl-text">What are we waiting for? Let's go.</p>
+        <span class="dl-name">Ruben</span>
+        <p class="dl-text">What's the quickest way to get there?</p>
+        <span class="dl-name two">Omar</span>
+        <p class="dl-text">Run – fast!</p>
+        <span class="dl-name">Ruben</span>
+        <p class="dl-text">Wait for me!</p>
+      </div>
+
+      <div class="tip">
+        <b>Sound natural:</b> the short phrases are said fast and with feeling —
+        <i>Look!</i> ↗ &nbsp; <i>That's crazy!</i> ↘ &nbsp; <i>Why not?</i> ↗ &nbsp; <i>Got them!</i> ↘
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 5 — Student's Book p.76, Plan, task 5
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t5">
+    <div class="step-head">
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-meta">Plan</div>
+        <h2>Plan your conversation</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Writing</div>
+      <h3>Work with a partner. Plan a conversation about buying tickets online for a sports event. Decide …</h3>
+
+      <p style="font-weight:800;margin:14px 0 4px">What event do you want to see?</p>
+      <div class="word-bank-ref">
+        <span onclick="this.classList.toggle('crossed')">a basketball game</span><span onclick="this.classList.toggle('crossed')">a tennis match</span><span onclick="this.classList.toggle('crossed')">an athletics event</span>
+      </div>
+      <input type="text" class="blank line-write" id="pl1" placeholder="We want to see …">
+
+      <p style="font-weight:800;margin:18px 0 4px">How much do the tickets cost?</p>
+      <input type="text" class="blank line-write" id="pl2" placeholder="The best seats are £… The cheapest tickets are £…">
+
+      <p style="font-weight:800;margin:18px 0 4px">How are you going to get there?</p>
+      <input type="text" class="blank line-write" id="pl3" placeholder="The quickest way to get there is …">
+
+      <div class="tip">
+        <b>Make it real:</b> pick a team or player you actually like, and think of two prices — an expensive one and a cheap one — so you can use <i>the most expensive</i> and <i>the cheapest</i>.
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 6 — Student's Book p.76, Speak, task 6
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t6">
+    <div class="step-head">
+      <div class="step-num">6</div>
+      <div>
+        <div class="step-meta">Speak</div>
+        <h2>Have the conversation</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Speaking</div>
+      <h3>Practise the conversation with your partner. Remember to use:</h3>
+
+      <div class="reflect-list">
+        <label class="reflect-item">
+          <input type="checkbox" id="sp1">
+          <span class="check-box"></span>
+          <span class="reflect-text">comparatives and superlatives (<i>cheaper</i>, <i>the most expensive</i>, <i>the quickest</i>)</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="sp2">
+          <span class="check-box"></span>
+          <span class="reflect-text">the vocabulary from this unit (sports, sports verbs)</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="sp3">
+          <span class="check-box"></span>
+          <span class="reflect-text">expressions from the <i>Useful language</i> and <i>Everyday English</i> boxes</span>
+        </label>
+      </div>
+
+      <div class="exercise-label" style="margin-top:16px">Useful language</div>
+      <div class="word-bank-ref">
+        <span>Shall we go?</span><span>How much are tickets?</span><span>They're (£45).</span><span>Let's go.</span><span>Let's book them.</span><span>What's the (quickest / best / cheapest) way to get there?</span>
+      </div>
+      <div class="exercise-label" style="margin-top:10px">Everyday English</div>
+      <div class="word-bank-ref">
+        <span>Got them!</span><span>Look!</span><span>That's crazy!</span><span>What are we waiting for?</span><span>Why not?</span>
+      </div>
+      <p class="char-count" style="text-align:left;margin-top:0">Tick each box when you have used it in your conversation.</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 7 — Student's Book p.76, Check, task 7
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t7">
+    <div class="step-head">
+      <div class="step-num">7</div>
+      <div>
+        <div class="step-meta">Check</div>
+        <h2>Listen and take notes</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Listening &amp; Writing</div>
+      <h3>Work with another pair. Listen to their conversation and complete the notes.</h3>
+
+      <p style="font-weight:800;margin:14px 0 4px">What event do they want to see?</p>
+      <input type="text" class="blank line-write" id="ck1" placeholder="They want to see …">
+
+      <p style="font-weight:800;margin:18px 0 4px">How much are the tickets?</p>
+      <input type="text" class="blank line-write" id="ck2" placeholder="The tickets are …">
+
+      <p style="font-weight:800;margin:18px 0 4px">How are they going to get there?</p>
+      <input type="text" class="blank line-write" id="ck3" placeholder="They're going to …">
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 8 — Finish
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t8">
+    <div class="step-head">
+      <div class="step-num">8</div>
+      <div>
+        <div class="step-meta">Finish</div>
+        <h2>Nice work</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Now I...</h3>
+      <div class="reflect-list">
+        <label class="reflect-item">
+          <input type="checkbox" id="r1">
+          <span class="check-box"></span>
+          <span class="reflect-text">can make superlative questions with <i>Who is the …?</i> and <i>Which is the …?</i></span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="r2">
+          <span class="check-box"></span>
+          <span class="reflect-text">can answer them about my family, my school and films</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="r3">
+          <span class="check-box"></span>
+          <span class="reflect-text">know what goalball is and how you play it</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="r4">
+          <span class="check-box"></span>
+          <span class="reflect-text">can understand details in a conversation about a sport</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="r5">
+          <span class="check-box"></span>
+          <span class="reflect-text">can buy tickets online in English — ask the price and suggest a plan</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="r6">
+          <span class="check-box"></span>
+          <span class="reflect-text">can use <i>Look!</i>, <i>Why not?</i>, <i>That's crazy!</i>, <i>Got them!</i> and <i>What are we waiting for?</i></span>
+        </label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-accent" onclick="showPart('part-homework');window.scrollTo(0,0)">Go to homework →</button>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /wrap -->
+</div><!-- /part-say-it -->
+
+<div class="lesson-part" id="part-homework">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#h1">1 · Coming soon</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 1 — placeholder
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Homework</div>
+        <h2>Nothing here yet</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <p>Homework for Lesson 4 hasn't been added yet.</p>
+      <div class="btn-row">
+        <button class="btn-ghost" onclick="showPart('part-remember');window.scrollTo(0,0)">← Back to the lesson</button>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /wrap -->
+</div><!-- /part-homework -->
+
+<div class="scorebar" id="scoreBar" style="display:none">
+  <div class="wrap">
+    <span>Score: <span id="scoreCorrect">0</span> correct · <span id="scoreDone">0</span>/<span id="scoreTotal">0</span> answered</span>
+    <div class="meter"><i id="scoreMeter"></i></div>
+    <button class="btn-primary" onclick="checkAll()">Check my answers ✓</button>
+  </div>
+</div>
+
+<script src="../assets/lessons.js"></script>
+</body>
+</html>

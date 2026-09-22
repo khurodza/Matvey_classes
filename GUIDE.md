@@ -170,6 +170,52 @@ generated from a pixel analysis of the original workbook puzzle. Ask Claude
 to build a new one from a photo or PDF of the puzzle rather than hand-placing
 cells.
 
+### Parts inside a lesson (tabs)
+
+A long lesson can be split into named parts (e.g. *Let's remember* /
+*Say it*). Big tabs under the header switch between them; only one part
+is shown at a time, and each part has its own sticky chip nav and its own
+step numbering starting from 1. The open tab is remembered per lesson.
+
+```html
+<nav class="parts">
+  <div class="wrap">
+    <button class="part-tab" data-part="part-remember" onclick="showPart('part-remember')">Let's remember</button>
+    <button class="part-tab" data-part="part-say-it" onclick="showPart('part-say-it')">Say it</button>
+  </div>
+</nav>
+
+<div class="lesson-part" id="part-remember">
+  <nav class="chips"> …one chip per step in this part… </nav>
+  <div class="wrap"> …<section class="step">…</section>… </div>
+</div>
+<div class="lesson-part" id="part-say-it"> …same again… </div>
+```
+
+- `data-part` and the `showPart('…')` argument must equal the part's `id`.
+- Step / input ids still have to be unique across the whole page — use a
+  different prefix per part (e.g. `s1…` in the first, `t1…` in the second).
+- The score bar counts every part together.
+- Homework can be a part too (Lesson 4 does this): give its tab the extra
+  class `hw` so it turns lilac when open, and link to it from the home page
+  with `lessons/lesson-NN.html#part-homework` instead of a separate
+  `homework/homework-NN.html` file.
+
+### Tap to underline (find the phrases in a text)
+
+```html
+<div class="card" id="ex-find">
+  <p><span class="tap" data-key onclick="toggleTap(this)">Look!</span>
+     <span class="tap" onclick="toggleTap(this)">Our team is playing.</span></p>
+  <button onclick="checkTap('ex-find')">Check</button>
+  <button onclick="resetTap('ex-find')">Try again</button>
+</div>
+```
+
+- Every chunk the student can tap is a `.tap` span; the ones they should
+  find carry `data-key`. Tapping underlines; checking marks green/red.
+- Selections autosave; the container needs a unique `id`.
+
 ### Reflection checklist (Finish step)
 
 ```html

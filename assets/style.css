@@ -172,6 +172,28 @@ button:active,.btn:active,.btn-primary:active,.btn-accent:active,.btn-warm:activ
   color:var(--teal);background:#fff;border:2px solid var(--teal);border-radius:999px;padding:2px 10px
 }
 
+/* lesson parts — big tabs under the header, e.g. "Let's remember" / "Say it".
+   Each .lesson-part holds its own sticky chip nav + steps; one part shows at a time. */
+nav.parts{background:var(--cream);padding:18px 0 0;border-bottom:2px solid var(--line)}
+nav.parts .wrap{padding-top:0;padding-bottom:0;display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end}
+.part-tab{
+  font:inherit;font-weight:900;font-size:17px;color:var(--ink);cursor:pointer;
+  padding:10px 22px;background:#fff;border:2px solid var(--line);border-bottom:none;
+  border-radius:14px 14px 0 0;opacity:.7;box-shadow:none
+}
+.part-tab:hover{background:var(--butter);opacity:1}
+.part-tab.active{background:var(--yellow);opacity:1;padding-bottom:13px;margin-bottom:-2px;border-bottom:2px solid var(--yellow)}
+.part-tab.hw.active{background:var(--lilac);color:#fff;border-bottom-color:var(--lilac)}
+.lesson-part{display:none}
+.lesson-part.active{display:block}
+
+/* tap-to-underline phrases ("find and underline … in the text") */
+.tap{cursor:pointer;border-radius:4px;padding:0 2px;user-select:none}
+.tap:hover{background:var(--butter)}
+.tap.ul{text-decoration:underline;text-decoration-thickness:3px;text-decoration-color:var(--coral);text-underline-offset:3px}
+.tap.correct{background:var(--okgreen);color:var(--green);font-weight:800}
+.tap.wrong{background:var(--badred);color:var(--red);text-decoration:line-through}
+
 /* reference table (grammar rules, not interactive) */
 .ref-table{width:100%;border-collapse:collapse;margin-top:10px;font-size:15px}
 .ref-table th{background:var(--lilac);color:#fff;padding:8px 12px;text-align:left;border:2px solid var(--line)}
@@ -378,6 +400,7 @@ footer.site-footer{margin-top:46px;padding:18px 0 40px;border-top:2px solid var(
 
 @media print{
   nav.chips,button,.scorebar,.toast{display:none!important}
+  .lesson-part{display:block}
   .card{box-shadow:none;break-inside:avoid}
   body{background:#fff}
 }
