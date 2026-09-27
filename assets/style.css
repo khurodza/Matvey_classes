@@ -115,6 +115,29 @@ button:active,.btn:active,.btn-primary:active,.btn-accent:active,.btn-warm:activ
 }
 .exercise-label.hw{background:var(--lilac)}
 
+/* ---------------- Everyday English phrase box ---------------- */
+.ee-box{
+  margin:18px 0 6px;border:2px solid var(--line);border-radius:16px;overflow:hidden;
+  background:var(--butter);box-shadow:var(--shadow-sm)
+}
+.ee-head{
+  display:flex;align-items:center;gap:10px;padding:10px 18px;background:var(--teal);color:#fff;
+  font-size:15px;font-weight:900;text-transform:uppercase;letter-spacing:.08em;border-bottom:2px solid var(--line)
+}
+.ee-icon{font-size:20px;letter-spacing:0}
+.ee-list{display:flex;flex-wrap:wrap;gap:10px;padding:16px}
+.ee-item{
+  flex:1 1 200px;display:flex;flex-direction:column;gap:2px;padding:12px 16px;background:#fff;
+  border:2px solid var(--line);border-radius:12px
+}
+.ee-phrase{font-size:21px;font-weight:900;line-height:1.25;color:var(--ink)}
+.ee-mean{font-size:15px;font-weight:600;color:var(--muted)}
+.ee-mean::before{content:'= ';color:var(--teal);font-weight:900}
+.ee-list.compact{display:flex;flex-wrap:wrap;gap:10px}
+.ee-list.compact .ee-phrase{
+  font-size:18px;padding:7px 16px;background:#fff;border:2px solid var(--line);border-radius:999px
+}
+
 /* ---------------- fill in the blanks ---------------- */
 .blank{
   font:inherit;font-weight:800;text-align:center;color:var(--ink);
@@ -316,8 +339,54 @@ nav.parts .wrap{padding-top:0;padding-bottom:0;display:flex;gap:10px;flex-wrap:w
 .embed-wrap{border:2px solid var(--line);border-radius:16px;overflow:hidden;margin-top:10px;box-shadow:var(--shadow-sm)}
 .embed-wrap iframe{width:100%;border:none;display:block}
 .media-img{width:100%;border:2px solid var(--line);border-radius:16px;margin-top:10px;box-shadow:var(--shadow-sm)}
-.audio-wrap{margin-top:10px}
+.audio-wrap{margin-top:12px}
 .audio-wrap audio{width:100%}
+/* custom audio player (built by setupAudio in lessons.js) */
+.ap{
+  display:flex;align-items:center;gap:12px;padding:10px 16px 10px 10px;
+  background:var(--butter);border:2px solid var(--line);border-radius:999px;box-shadow:var(--shadow-sm)
+}
+.ap button{font-family:inherit;cursor:pointer;flex-shrink:0;-webkit-tap-highlight-color:transparent}
+.ap-play{
+  width:52px;height:52px;border-radius:50%;border:2px solid var(--line);background:var(--coral);
+  color:#fff;display:grid;place-items:center;padding:0;box-shadow:var(--shadow-sm);
+  transition:transform .08s ease,box-shadow .08s ease,background .15s
+}
+.ap-play svg{width:24px;height:24px;fill:currentColor}
+.ap-play:hover{background:#D9552A}
+.ap-play:active{transform:translate(2px,2px);box-shadow:0 0 0 var(--line)}
+.ap.playing .ap-play{background:var(--teal)}
+.ap-back{
+  position:relative;width:38px;height:38px;border-radius:50%;border:2px solid var(--line);
+  background:#fff;color:var(--ink);display:grid;place-items:center;padding:0
+}
+.ap-back svg{width:26px;height:26px;fill:currentColor;grid-area:1/1}
+.ap-back span{grid-area:1/1;font-size:9px;font-weight:900;margin-top:3px}
+.ap-back:hover{background:var(--peach)}
+.ap-track{
+  position:relative;flex:1;min-width:60px;height:12px;border:2px solid var(--line);border-radius:999px;
+  background:#fff;cursor:pointer;touch-action:none;outline:none
+}
+.ap-track:focus-visible{box-shadow:0 0 0 3px var(--yellow)}
+.ap-fill{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--teal);border-radius:999px}
+.ap-knob{
+  position:absolute;top:50%;left:0;width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;
+  background:var(--yellow);border:2px solid var(--line);transition:transform .1s
+}
+.ap-track:hover .ap-knob,.ap.seeking .ap-knob{transform:scale(1.2)}
+.ap-time{font-size:14px;font-weight:800;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.ap-cur{color:var(--ink)}
+.ap-speed{
+  min-width:52px;height:32px;padding:0 10px;border-radius:999px;border:2px solid var(--line);
+  background:#fff;color:var(--ink);font-size:13px;font-weight:900
+}
+.ap-speed:hover{background:var(--lav)}
+.ap-speed.slow{background:var(--lilac);color:#fff}
+@media (max-width:560px){
+  .ap{flex-wrap:wrap;border-radius:22px;padding:10px 14px 16px;row-gap:12px}
+  .ap-track{order:5;flex-basis:calc(100% - 16px);margin:0 8px}
+  .ap-time{margin-left:auto}
+}
 .video-wrap{margin-top:10px;border:2px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm)}
 .video-wrap video{width:100%;display:block;background:#000}
 .wordwall-btn{

@@ -383,6 +383,101 @@ function initParts() {
 }
 
 /* ============================================================
+   AUDIO PLAYER — turns every <audio> inside .audio-wrap into a
+   styled player: big play button, rewind 5 s, seekable progress
+   bar, time, and a slow-down (0.75×) toggle. The original
+   <audio> stays in the page (hidden) and does the playing.
+   Only one track plays at a time.
+   ============================================================ */
+const AUDIO_ICONS = {
+  play:  '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>',
+  pause: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4.5" height="14" rx="1.2"/><rect x="13.5" y="5" width="4.5" height="14" rx="1.2"/></svg>',
+  back:  '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z"/></svg>'
+};
+
+function fmtTime(t) {
+  if (!isFinite(t)) return '0:00';
+  t = Math.floor(t);
+  return Math.floor(t / 60) + ':' + String(t % 60).padStart(2, '0');
+}
+
+function setupAudio() {
+  document.querySelectorAll('.audio-wrap audio').forEach(audio => {
+    audio.removeAttribute('controls');
+    audio.preload = 'metadata';
+
+    const ui = document.createElement('div');
+    ui.className = 'ap';
+    ui.innerHTML =
+      '<button type="button" class="ap-play" aria-label="Play">' + AUDIO_ICONS.play + '</button>' +
+      '<button type="button" class="ap-back" aria-label="Back 5 seconds" title="Back 5 seconds">' + AUDIO_ICONS.back + '<span>5</span></button>' +
+      '<div class="ap-track" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">' +
+        '<div class="ap-fill"></div><div class="ap-knob"></div></div>' +
+      '<span class="ap-time"><span class="ap-cur">0:00</span> / <span class="ap-dur">0:00</span></span>' +
+      '<button type="button" class="ap-speed" aria-label="Playback speed" title="Slower / normal">1×</button>';
+    audio.after(ui);
+
+    const play = ui.querySelector('.ap-play'), back = ui.querySelector('.ap-back');
+    const track = ui.querySelector('.ap-track'), fill = ui.querySelector('.ap-fill'), knob = ui.querySelector('.ap-knob');
+    const cur = ui.querySelector('.ap-cur'), dur = ui.querySelector('.ap-dur'), speed = ui.querySelector('.ap-speed');
+
+    const render = () => {
+      const pct = audio.duration ? audio.currentTime / audio.duration * 100 : 0;
+      fill.style.width = pct + '%';
+      knob.style.left = pct + '%';
+      track.setAttribute('aria-valuenow', Math.round(pct));
+      cur.textContent = fmtTime(audio.currentTime);
+    };
+    const setPlaying = on => {
+      ui.classList.toggle('playing', on);
+      play.innerHTML = on ? AUDIO_ICONS.pause : AUDIO_ICONS.play;
+      play.setAttribute('aria-label', on ? 'Pause' : 'Play');
+    };
+
+    play.addEventListener('click', () => {
+      if (audio.paused) {
+        document.querySelectorAll('.audio-wrap audio').forEach(a => { if (a !== audio) a.pause(); });
+        audio.play();
+      } else audio.pause();
+    });
+    back.addEventListener('click', () => { audio.currentTime = Math.max(0, audio.currentTime - 5); render(); });
+    speed.addEventListener('click', () => {
+      audio.playbackRate = audio.playbackRate === 1 ? 0.75 : 1;
+      speed.textContent = audio.playbackRate === 1 ? '1×' : '0.75×';
+      speed.classList.toggle('slow', audio.playbackRate !== 1);
+    });
+
+    const seekTo = e => {
+      if (!audio.duration) return;
+      const r = track.getBoundingClientRect();
+      const x = Math.min(Math.max((e.clientX - r.left) / r.width, 0), 1);
+      audio.currentTime = x * audio.duration;
+      render();
+    };
+    track.addEventListener('pointerdown', e => {
+      track.setPointerCapture(e.pointerId);
+      ui.classList.add('seeking');
+      seekTo(e);
+    });
+    track.addEventListener('pointermove', e => { if (track.hasPointerCapture(e.pointerId)) seekTo(e); });
+    track.addEventListener('pointerup', () => ui.classList.remove('seeking'));
+    track.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight') audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 5);
+      else if (e.key === 'ArrowLeft') audio.currentTime = Math.max(0, audio.currentTime - 5);
+      else return;
+      e.preventDefault(); render();
+    });
+
+    audio.addEventListener('loadedmetadata', () => { dur.textContent = fmtTime(audio.duration); });
+    audio.addEventListener('timeupdate', render);
+    audio.addEventListener('play', () => setPlaying(true));
+    audio.addEventListener('pause', () => setPlaying(false));
+    audio.addEventListener('ended', () => { setPlaying(false); audio.currentTime = 0; render(); });
+    if (audio.readyState >= 1) dur.textContent = fmtTime(audio.duration);
+  });
+}
+
+/* ============================================================
    INIT — runs on every lesson page
    ============================================================ */
 function initLesson() {
@@ -394,6 +489,7 @@ function initLesson() {
   restoreMC();
   restoreMatching();
   restoreTap();
+  setupAudio();
   updateScoreBar();
 }
 

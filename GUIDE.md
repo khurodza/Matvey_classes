@@ -247,7 +247,9 @@ something to go over separately.
   button (`.wordwall-btn`) instead of an iframe.
 - **YouTube** — paste the video's embed URL into the iframe `src`.
 - **Audio** — put the file in `lessons/audio/` and point `<source src="...">`
-  at it.
+  at it, inside `<div class="audio-wrap"><audio controls>…</audio></div>`.
+  `lessons.js` automatically swaps the browser's plain player for the styled
+  one (play/pause, back 5 s, seek bar, 0.75× slow-down) — nothing to add.
 - **Images** — put the file in `lessons/images/` and point `<img src="...">`
   at it.
 
