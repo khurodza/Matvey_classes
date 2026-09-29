@@ -18,7 +18,7 @@
         <div class="hero-badges">
           <span class="badge">Lesson 4</span>
           <span class="badge">Unit 6 · Sport for life</span>
-          <span class="badge">Workbook p.51–52 · Student's Book p.76</span>
+          <span class="badge">Workbook p.51–52 · Student's Book p.76, 81</span>
         </div>
       </div>
     </div>
@@ -667,6 +667,9 @@
   <div class="wrap">
     <a href="#h1">1 · Sports verbs</a>
     <a href="#h2">2 · Questions about you</a>
+    <a href="#h3">3 · Review: sports</a>
+    <a href="#h4">4 · Review: verbs</a>
+    <a href="#h5">5 · Review: comparatives</a>
   </div>
 </nav>
 
@@ -765,6 +768,150 @@
     <div class="tip">
       <b>Answer in a full sentence</b> and use the superlative again:
       <i>Football is <b>the most popular</b> sport at my school.</i> Only the questions are checked — your answers are for us to talk about in the next lesson.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 3 — Student's Book p.81, Review, Vocabulary, task 1
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h3">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-meta">Homework · Review · Vocabulary</div>
+        <h2>Sports</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-review-sports">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Complete the sentences with the sports in the box.</h3>
+
+      <div class="word-bank-ref">
+        <span onclick="this.classList.toggle('crossed')">mountain climbing</span><span onclick="this.classList.toggle('crossed')">rugby</span><span onclick="this.classList.toggle('crossed')">sailing</span><span onclick="this.classList.toggle('crossed')">table tennis</span><span onclick="this.classList.toggle('crossed')">volleyball</span><span onclick="this.classList.toggle('crossed')">windsurfing</span><span onclick="this.classList.toggle('crossed')">yoga</span>
+      </div>
+      <p class="char-count" style="text-align:left;margin-top:0">Tap a sport to cross it out when you have used it.</p>
+
+      <p class="gap-line"><span class="num">1.</span> You need a net to play
+        <input class="blank" id="rs1a" data-answer="table tennis|volleyball" placeholder="?"> and
+        <input class="blank" id="rs1b" data-answer="volleyball|table tennis" placeholder="?">.</p>
+      <p class="gap-line"><span class="num">2.</span>
+        <input class="blank" id="rs2" data-answer="rugby" placeholder="?"> is a ball game that people always play outdoors.</p>
+      <p class="gap-line"><span class="num">3.</span> People usually do
+        <input class="blank" id="rs3" data-answer="yoga" placeholder="?"> indoors.</p>
+      <p class="gap-line"><span class="num">4.</span> You need to be on the water to go
+        <input class="blank" id="rs4a" data-answer="sailing|windsurfing" placeholder="?"> or
+        <input class="blank" id="rs4b" data-answer="windsurfing|sailing" placeholder="?">.</p>
+      <p class="gap-line"><span class="num">5.</span>
+        <input class="blank" id="rs5" data-answer="mountain climbing" placeholder="?"> can be dangerous, so you need very good equipment.</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-review-sports')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-review-sports')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>Use each sport once.</b> In sentences 1 and 4 there are two answers — you can write them in any order.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 4 — Student's Book p.81, Review, Vocabulary, task 2
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h4">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-meta">Homework · Review · Vocabulary</div>
+        <h2>Sports verbs</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-review-verbs">
+      <div class="exercise-label">Word Choice</div>
+      <h3>Choose the correct verbs.</h3>
+
+      <p class="gap-line"><span class="num">1.</span> We're playing football so we can
+        <span class="word-choice" id="rw1" data-answer="kick">
+          <button class="word-choice-btn" onclick="selectWord(this)">kick</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">score</button>
+        </span>
+        the ball.</p>
+      <p class="gap-line"><span class="num">2.</span> That looks heavy. Can you
+        <span class="word-choice" id="rw2" data-answer="lift">
+          <button class="word-choice-btn" onclick="selectWord(this)">climb</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">lift</button>
+        </span>
+        it?</p>
+      <p class="gap-line"><span class="num">3.</span> I want to
+        <span class="word-choice" id="rw3" data-answer="run">
+          <button class="word-choice-btn" onclick="selectWord(this)">run</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">dive</button>
+        </span>
+        a marathon one day.</p>
+      <p class="gap-line"><span class="num">4.</span>
+        <span class="word-choice" id="rw4" data-answer="Throw">
+          <button class="word-choice-btn" onclick="selectWord(this)">Catch</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Throw</button>
+        </span>
+        me that ball, please.</p>
+      <p class="gap-line"><span class="num">5.</span> How do you
+        <span class="word-choice" id="rw5" data-answer="score">
+          <button class="word-choice-btn" onclick="selectWord(this)">jump</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">score</button>
+        </span>
+        in hockey?</p>
+      <p class="gap-line"><span class="num">6.</span> It's important to
+        <span class="word-choice" id="rw6" data-answer="pass">
+          <button class="word-choice-btn" onclick="selectWord(this)">pass</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">hit</button>
+        </span>
+        the ball in rugby.</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkWords('ex-review-verbs')">Check ✓</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 5 — Student's Book p.81, Review, Language in action, task 3
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h5">
+    <div class="step-head">
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-meta">Homework · Review · Language in action</div>
+        <h2>Comparatives</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-review-comp">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Write the comparative form of the adjectives.</h3>
+
+      <p class="gap-line"><span class="num">1.</span> <span class="cue">bad</span> →
+        <input class="blank" id="rc1" data-answer="worse" placeholder="?"></p>
+      <p class="gap-line"><span class="num">2.</span> <span class="cue">big</span> →
+        <input class="blank" id="rc2" data-answer="bigger" placeholder="?"></p>
+      <p class="gap-line"><span class="num">3.</span> <span class="cue">easy</span> →
+        <input class="blank" id="rc3" data-answer="easier" placeholder="?"></p>
+      <p class="gap-line"><span class="num">4.</span> <span class="cue">exciting</span> →
+        <input class="blank" id="rc4" data-answer="more exciting" placeholder="?"></p>
+      <p class="gap-line"><span class="num">5.</span> <span class="cue">good</span> →
+        <input class="blank" id="rc5" data-answer="better" placeholder="?"></p>
+      <p class="gap-line"><span class="num">6.</span> <span class="cue">interesting</span> →
+        <input class="blank" id="rc6" data-answer="more interesting" placeholder="?"></p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-review-comp')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-review-comp')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>Watch out:</b> two of these are irregular, one doubles its last letter, one changes <i>-y</i> to <i>-i</i>, and the long adjectives need <i>more</i>.
     </div>
   </section>
 
