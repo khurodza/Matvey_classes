@@ -216,6 +216,34 @@ step numbering starting from 1. The open tab is remembered per lesson.
   find carry `data-key`. Tapping underlines; checking marks green/red.
 - Selections autosave; the container needs a unique `id`.
 
+### Word search
+
+```html
+<div class="card" id="ex-wordsearch">
+  <div class="ws-grid">
+    <span class="tap" data-key onclick="toggleTap(this)">d</span><span class="tap" onclick="toggleTap(this)">x</span> …
+  </div>
+  <button onclick="checkTap('ex-wordsearch')">Check</button>
+</div>
+```
+
+A 10×10 grid of `.tap` letters (same logic as *Tap to underline*): letters that
+belong to a hidden word carry `data-key`, tapped letters turn yellow, and
+checking marks them green/red. Lesson 5's homework has one — ask Claude to
+generate the grid from a photo rather than typing 100 spans by hand.
+
+### Self-assessment faces
+
+```html
+<div class="rate-row">
+  <span>I can name thirteen sports in English.</span>
+  <span class="rate" id="sa1"><button class="rate-btn" data-v="1" onclick="rate(this)">🙈</button><button class="rate-btn" data-v="2" onclick="rate(this)">🤔</button><button class="rate-btn" data-v="3" onclick="rate(this)">😎</button></span>
+</div>
+```
+
+For the book's *Self-assessment* boxes. One face per row, saved automatically,
+no right answer (not counted in the score bar). Each `.rate` needs a unique `id`.
+
 ### Reflection checklist (Finish step)
 
 ```html

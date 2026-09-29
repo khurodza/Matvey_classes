@@ -478,6 +478,25 @@ function setupAudio() {
 }
 
 /* ============================================================
+   SELF-ASSESSMENT FACES — pick one face per row, no right answer
+   <span class="rate" id="UNIQUE">
+     <button class="rate-btn" data-v="1" onclick="rate(this)">😕</button> …
+   </span>
+   ============================================================ */
+function rate(btn) {
+  const group = btn.closest('.rate');
+  group.querySelectorAll('.rate-btn').forEach(b => b.classList.toggle('selected', b === btn));
+  save({ [group.id]: btn.dataset.v });
+}
+
+function restoreRate() {
+  document.querySelectorAll('.rate').forEach(group => {
+    const btn = data[group.id] && group.querySelector(`.rate-btn[data-v="${data[group.id]}"]`);
+    if (btn) btn.classList.add('selected');
+  });
+}
+
+/* ============================================================
    INIT — runs on every lesson page
    ============================================================ */
 function initLesson() {
@@ -489,6 +508,7 @@ function initLesson() {
   restoreMC();
   restoreMatching();
   restoreTap();
+  restoreRate();
   setupAudio();
   updateScoreBar();
 }

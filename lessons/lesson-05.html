@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 5 – Review &amp; Writing a Sportsperson Profile</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <a class="back-home" href="../index.html">← All lessons</a>
+    <div class="hero-grid">
+      <div>
+        <h1>Let's remember &amp; Write it: A profile of a sportsperson</h1>
+        <p><b>Let's remember:</b> compare sports with comparatives and superlatives, then check what you know from Unit 6. <b>Write it:</b> read about the rock climber Oriane Bertone, learn to use <i>also</i> and <i>too</i>, and write a profile of your favourite sportsperson.</p>
+        <div class="hero-badges">
+          <span class="badge">Lesson 5</span>
+          <span class="badge">Unit 6 · Sport for life</span>
+          <span class="badge">Student's Book p.77, 81 · Workbook p.54–55</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="parts">
+  <div class="wrap">
+    <button class="part-tab" data-part="part-remember" onclick="showPart('part-remember')">Let's remember</button>
+    <button class="part-tab" data-part="part-write-it" onclick="showPart('part-write-it')">Write it</button>
+    <button class="part-tab hw" data-part="part-homework" onclick="showPart('part-homework')">Homework</button>
+  </div>
+</nav>
+
+<div class="lesson-part" id="part-remember">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#s1">1 · Jack's opinion</a>
+    <a href="#s2">2 · Self-assessment</a>
+    <a href="#part-homework" onclick="showPart('part-homework');window.scrollTo(0,0)">Homework ↗</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 1 — Student's Book p.81, Review, Language in action, task 4
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Review · Language in action</div>
+        <h2>Jack's opinion</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-jack">
+      <div class="exercise-label">Writing · Checked</div>
+      <h3>Look at the information and write sentences. Use comparative and superlative adjectives.</h3>
+
+      <table class="ref-table star-table" style="max-width:560px">
+        <tr><th></th><th>🏓 Table tennis</th><th>🏉 Rugby</th><th>🏑 Hockey</th></tr>
+        <tr><td class="label">easy</td><td class="stars">★★★★★</td><td class="stars">★★</td><td class="stars">★</td></tr>
+        <tr><td class="label">exciting</td><td class="stars">★</td><td class="stars">★★★★</td><td class="stars">★★</td></tr>
+        <tr><td class="label">good</td><td class="stars">★★</td><td class="stars">★★★★</td><td class="stars">★</td></tr>
+      </table>
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">1.</span> table tennis / <span class="cue">easy</span></p>
+      <input type="text" class="blank line-write" id="jk1" data-answer="Table tennis is the easiest|Table tennis is the easiest.|Table tennis is the easiest!|Table tennis is the easiest sport|Table tennis is the easiest sport.|Table tennis is the easiest sport!|Jack thinks table tennis is the easiest|Jack thinks table tennis is the easiest.|Jack thinks table tennis is the easiest!|Jack thinks table tennis is the easiest sport|Jack thinks table tennis is the easiest sport.|Jack thinks table tennis is the easiest sport!" placeholder="Write a sentence …">
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">2.</span> rugby / <span class="cue">easy</span> / hockey</p>
+      <input type="text" class="blank line-write" id="jk2" data-answer="Rugby is easier than hockey|Rugby is easier than hockey.|Rugby is easier than hockey!|Jack thinks rugby is easier than hockey|Jack thinks rugby is easier than hockey.|Jack thinks rugby is easier than hockey!" placeholder="Write a sentence …">
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">3.</span> hockey / <span class="cue">exciting</span> / table tennis</p>
+      <input type="text" class="blank line-write" id="jk3" data-answer="Hockey is more exciting than table tennis|Hockey is more exciting than table tennis.|Hockey is more exciting than table tennis!|Jack thinks hockey is more exciting than table tennis|Jack thinks hockey is more exciting than table tennis.|Jack thinks hockey is more exciting than table tennis!" placeholder="Write a sentence …">
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">4.</span> table tennis / <span class="cue">good</span> / hockey</p>
+      <input type="text" class="blank line-write" id="jk4" data-answer="Table tennis is better than hockey|Table tennis is better than hockey.|Table tennis is better than hockey!|Jack thinks table tennis is better than hockey|Jack thinks table tennis is better than hockey.|Jack thinks table tennis is better than hockey!" placeholder="Write a sentence …">
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">5.</span> rugby / <span class="cue">good</span></p>
+      <input type="text" class="blank line-write" id="jk5" data-answer="Rugby is the best|Rugby is the best.|Rugby is the best!|Rugby is the best sport|Rugby is the best sport.|Rugby is the best sport!|Jack thinks rugby is the best|Jack thinks rugby is the best.|Jack thinks rugby is the best!|Jack thinks rugby is the best sport|Jack thinks rugby is the best sport.|Jack thinks rugby is the best sport!" placeholder="Write a sentence …">
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">6.</span> rugby / <span class="cue">exciting</span></p>
+      <input type="text" class="blank line-write" id="jk6" data-answer="Rugby is the most exciting|Rugby is the most exciting.|Rugby is the most exciting!|Rugby is the most exciting sport|Rugby is the most exciting sport.|Rugby is the most exciting sport!|Jack thinks rugby is the most exciting|Jack thinks rugby is the most exciting.|Jack thinks rugby is the most exciting!|Jack thinks rugby is the most exciting sport|Jack thinks rugby is the most exciting sport.|Jack thinks rugby is the most exciting sport!" placeholder="Write a sentence …">
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-jack')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-jack')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>Two sports</b> in the prompt → comparative: <i>Rugby is easier <b>than</b> hockey.</i>
+      <b>One sport</b> → superlative, compared with all three: <i>Table tennis is <b>the</b> easiest.</i>
+      Remember: <i>good → better → the best</i>.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 2 — Student's Book p.81, Self-assessment
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Review · Self-assessment</div>
+        <h2>How well do you know Unit 6?</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Self-assessment</div>
+      <h3>Read each sentence. Choose the face that is true for you.</h3>
+
+      <div class="rate-row">
+        <span>I can name thirteen sports in English.</span>
+        <span class="rate" id="sa1"><button class="rate-btn" data-v="1" onclick="rate(this)" aria-label="not yet">🙈</button><button class="rate-btn" data-v="2" onclick="rate(this)" aria-label="a bit">🤔</button><button class="rate-btn" data-v="3" onclick="rate(this)" aria-label="yes">😎</button></span>
+      </div>
+      <div class="rate-row">
+        <span>I can use twelve sports verbs to talk about sports.</span>
+        <span class="rate" id="sa2"><button class="rate-btn" data-v="1" onclick="rate(this)" aria-label="not yet">🙈</button><button class="rate-btn" data-v="2" onclick="rate(this)" aria-label="a bit">🤔</button><button class="rate-btn" data-v="3" onclick="rate(this)" aria-label="yes">😎</button></span>
+      </div>
+      <div class="rate-row">
+        <span>I can use comparative adjectives to compare two things.</span>
+        <span class="rate" id="sa3"><button class="rate-btn" data-v="1" onclick="rate(this)" aria-label="not yet">🙈</button><button class="rate-btn" data-v="2" onclick="rate(this)" aria-label="a bit">🤔</button><button class="rate-btn" data-v="3" onclick="rate(this)" aria-label="yes">😎</button></span>
+      </div>
+      <div class="rate-row">
+        <span>I can use superlative adjectives to compare three or more things.</span>
+        <span class="rate" id="sa4"><button class="rate-btn" data-v="1" onclick="rate(this)" aria-label="not yet">🙈</button><button class="rate-btn" data-v="2" onclick="rate(this)" aria-label="a bit">🤔</button><button class="rate-btn" data-v="3" onclick="rate(this)" aria-label="yes">😎</button></span>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>Prove it!</b> For every 😎, show your teacher: say thirteen sports, say twelve sports verbs, or make a sentence with a comparative and a superlative.
+    </div>
+  </section>
+
+  <div class="btn-row" style="justify-content:flex-end;margin:10px 0 30px">
+    <button class="btn-accent" onclick="showPart('part-write-it');window.scrollTo(0,0)">Next part: Write it →</button>
+  </div>
+
+</div><!-- /wrap -->
+</div><!-- /part-remember -->
+
+<div class="lesson-part" id="part-write-it">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#t1">1 · Read</a>
+    <a href="#t2">2 · Paragraphs</a>
+    <a href="#t3">3 · also &amp; too</a>
+    <a href="#t4">4 · Useful language</a>
+    <a href="#t5">5 · Complete</a>
+    <a href="#t6">6 · Rewrite</a>
+    <a href="#t7">7 · Plan</a>
+    <a href="#t8">8 · Write</a>
+    <a href="#t9">9 · Check</a>
+    <a href="#t10">10 · Finish</a>
+    <a href="#part-homework" onclick="showPart('part-homework');window.scrollTo(0,0)">Homework ↗</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 1 — Student's Book p.77, Writing, task 1
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Writing · A profile of a sportsperson</div>
+        <h2>My favourite sportsperson</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-oriane-sport">
+      <div class="exercise-label">Multiple Choice</div>
+      <h3>Look at the photo. What sport do you think Oriane Bertone does? Then read the profile and check.</h3>
+
+      <img class="media-img" src="images/unit6-p77-oriane-bertone.jpg" alt="Oriane Bertone smiling and clapping in a white France team jacket, with a climbing wall behind her" style="max-width:520px">
+
+      <div class="mc-options" data-correct="b">
+        <label class="mc-option"><input type="radio" name="mc1" value="a"><span class="mc-bullet">A</span> tennis</label>
+        <label class="mc-option"><input type="radio" name="mc1" value="b"><span class="mc-bullet">B</span> rock climbing</label>
+        <label class="mc-option"><input type="radio" name="mc1" value="c"><span class="mc-bullet">C</span> athletics</label>
+      </div>
+
+      <div style="margin-top:18px;background:var(--mint);border:2px solid var(--line);border-radius:14px;padding:14px 18px">
+        <h3 style="margin-bottom:2px">My favourite sportsperson</h3>
+        <p style="margin:0 0 8px;color:var(--muted);font-size:15px">By Kelly Nammour</p>
+        <p class="gap-line"><span class="num">1</span> My favourite sportsperson is Oriane Bertone. She&#x27;s a French rock climber and she lives in Paris. She&#x27;s 164 cm tall. She&#x27;s taller than other female climbers.</p>
+        <p class="gap-line"><span class="num">2</span> She trains for seven or eight hours every day. She also eats healthy food and she doesn&#x27;t go to bed late. Oriane goes rock climbing whenever she can and she climbs with her younger brother Max, too. She loves climbing but she also loves walking outdoors, watching science-fiction movies and cooking.</p>
+        <p class="gap-line"><span class="num">3</span> I think she&#x27;s amazing because she&#x27;s the first woman and the youngest person to climb &#x27;Golden Shadow&#x27; rock in Rocklands, South Africa. It&#x27;s one of the most difficult rocks to climb in the world. She is one of the world&#x27;s strongest climbers and one of the most successful young sportspeople in the world, too.</p>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkMC('ex-oriane-sport')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetMC('ex-oriane-sport')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 2 — Student's Book p.77, Writing, task 2
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Writing · Organisation</div>
+        <h2>What is each paragraph about?</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-match-topics">
+      <div class="exercise-label">Matching</div>
+      <h3>Match topics a–c with paragraphs 1–3 of the profile.</h3>
+
+      <div class="match-grid">
+        <div class="match-col" data-side="left">
+          <div class="match-item" data-pair="1" onclick="selectMatch(this,'ex-match-topics')">Paragraph 1: <i>My favourite sportsperson is Oriane Bertone …</i></div>
+          <div class="match-item" data-pair="2" onclick="selectMatch(this,'ex-match-topics')">Paragraph 2: <i>She trains for seven or eight hours every day …</i></div>
+          <div class="match-item" data-pair="3" onclick="selectMatch(this,'ex-match-topics')">Paragraph 3: <i>I think she's amazing because …</i></div>
+        </div>
+        <div class="match-col" data-side="right">
+          <div class="match-item" data-pair="3" onclick="selectMatch(this,'ex-match-topics')">a · Achievements</div>
+          <div class="match-item" data-pair="1" onclick="selectMatch(this,'ex-match-topics')">b · Basic information and description</div>
+          <div class="match-item" data-pair="2" onclick="selectMatch(this,'ex-match-topics')">c · Training and other interests</div>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-ghost" onclick="resetMatchEx('ex-match-topics')">Reset</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>Achievements</b> = the great things a person has done, e.g. <i>the first woman to climb …</i>, <i>won a gold medal</i>. You will use the same three paragraphs in your own profile.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 3 — Student's Book p.77, Writing, task 3
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t3">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-meta">Writing · also and too</div>
+        <h2>Find <i>also</i> and <i>too</i></h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-find-also-too">
+      <div class="exercise-label">Find &amp; Underline</div>
+      <h3>Find and underline examples of <i>also</i> and <i>too</i> in the profile — tap a word to underline it.</h3>
+
+      <div style="margin-top:10px">
+        <p class="gap-line"><span class="num">1</span> <span class="tap" onclick="toggleTap(this)">My</span> <span class="tap" onclick="toggleTap(this)">favourite</span> <span class="tap" onclick="toggleTap(this)">sportsperson</span> <span class="tap" onclick="toggleTap(this)">is</span> <span class="tap" onclick="toggleTap(this)">Oriane</span> <span class="tap" onclick="toggleTap(this)">Bertone</span>. <span class="tap" onclick="toggleTap(this)">She&#x27;s</span> <span class="tap" onclick="toggleTap(this)">a</span> <span class="tap" onclick="toggleTap(this)">French</span> <span class="tap" onclick="toggleTap(this)">rock</span> <span class="tap" onclick="toggleTap(this)">climber</span> <span class="tap" onclick="toggleTap(this)">and</span> <span class="tap" onclick="toggleTap(this)">she</span> <span class="tap" onclick="toggleTap(this)">lives</span> <span class="tap" onclick="toggleTap(this)">in</span> <span class="tap" onclick="toggleTap(this)">Paris</span>. <span class="tap" onclick="toggleTap(this)">She&#x27;s</span> <span class="tap" onclick="toggleTap(this)">164</span> <span class="tap" onclick="toggleTap(this)">cm</span> <span class="tap" onclick="toggleTap(this)">tall</span>. <span class="tap" onclick="toggleTap(this)">She&#x27;s</span> <span class="tap" onclick="toggleTap(this)">taller</span> <span class="tap" onclick="toggleTap(this)">than</span> <span class="tap" onclick="toggleTap(this)">other</span> <span class="tap" onclick="toggleTap(this)">female</span> <span class="tap" onclick="toggleTap(this)">climbers</span>.</p>
+        <p class="gap-line"><span class="num">2</span> <span class="tap" onclick="toggleTap(this)">She</span> <span class="tap" onclick="toggleTap(this)">trains</span> <span class="tap" onclick="toggleTap(this)">for</span> <span class="tap" onclick="toggleTap(this)">seven</span> <span class="tap" onclick="toggleTap(this)">or</span> <span class="tap" onclick="toggleTap(this)">eight</span> <span class="tap" onclick="toggleTap(this)">hours</span> <span class="tap" onclick="toggleTap(this)">every</span> <span class="tap" onclick="toggleTap(this)">day</span>. <span class="tap" onclick="toggleTap(this)">She</span> <span class="tap" data-key onclick="toggleTap(this)">also</span> <span class="tap" onclick="toggleTap(this)">eats</span> <span class="tap" onclick="toggleTap(this)">healthy</span> <span class="tap" onclick="toggleTap(this)">food</span> <span class="tap" onclick="toggleTap(this)">and</span> <span class="tap" onclick="toggleTap(this)">she</span> <span class="tap" onclick="toggleTap(this)">doesn&#x27;t</span> <span class="tap" onclick="toggleTap(this)">go</span> <span class="tap" onclick="toggleTap(this)">to</span> <span class="tap" onclick="toggleTap(this)">bed</span> <span class="tap" onclick="toggleTap(this)">late</span>. <span class="tap" onclick="toggleTap(this)">Oriane</span> <span class="tap" onclick="toggleTap(this)">goes</span> <span class="tap" onclick="toggleTap(this)">rock</span> <span class="tap" onclick="toggleTap(this)">climbing</span> <span class="tap" onclick="toggleTap(this)">whenever</span> <span class="tap" onclick="toggleTap(this)">she</span> <span class="tap" onclick="toggleTap(this)">can</span> <span class="tap" onclick="toggleTap(this)">and</span> <span class="tap" onclick="toggleTap(this)">she</span> <span class="tap" onclick="toggleTap(this)">climbs</span> <span class="tap" onclick="toggleTap(this)">with</span> <span class="tap" onclick="toggleTap(this)">her</span> <span class="tap" onclick="toggleTap(this)">younger</span> <span class="tap" onclick="toggleTap(this)">brother</span> <span class="tap" onclick="toggleTap(this)">Max</span>, <span class="tap" data-key onclick="toggleTap(this)">too</span>. <span class="tap" onclick="toggleTap(this)">She</span> <span class="tap" onclick="toggleTap(this)">loves</span> <span class="tap" onclick="toggleTap(this)">climbing</span> <span class="tap" onclick="toggleTap(this)">but</span> <span class="tap" onclick="toggleTap(this)">she</span> <span class="tap" data-key onclick="toggleTap(this)">also</span> <span class="tap" onclick="toggleTap(this)">loves</span> <span class="tap" onclick="toggleTap(this)">walking</span> <span class="tap" onclick="toggleTap(this)">outdoors</span>, <span class="tap" onclick="toggleTap(this)">watching</span> <span class="tap" onclick="toggleTap(this)">science-fiction</span> <span class="tap" onclick="toggleTap(this)">movies</span> <span class="tap" onclick="toggleTap(this)">and</span> <span class="tap" onclick="toggleTap(this)">cooking</span>.</p>
+        <p class="gap-line"><span class="num">3</span> <span class="tap" onclick="toggleTap(this)">I</span> <span class="tap" onclick="toggleTap(this)">think</span> <span class="tap" onclick="toggleTap(this)">she&#x27;s</span> <span class="tap" onclick="toggleTap(this)">amazing</span> <span class="tap" onclick="toggleTap(this)">because</span> <span class="tap" onclick="toggleTap(this)">she&#x27;s</span> <span class="tap" onclick="toggleTap(this)">the</span> <span class="tap" onclick="toggleTap(this)">first</span> <span class="tap" onclick="toggleTap(this)">woman</span> <span class="tap" onclick="toggleTap(this)">and</span> <span class="tap" onclick="toggleTap(this)">the</span> <span class="tap" onclick="toggleTap(this)">youngest</span> <span class="tap" onclick="toggleTap(this)">person</span> <span class="tap" onclick="toggleTap(this)">to</span> <span class="tap" onclick="toggleTap(this)">climb</span> &#x27;<span class="tap" onclick="toggleTap(this)">Golden</span> <span class="tap" onclick="toggleTap(this)">Shadow</span>&#x27; <span class="tap" onclick="toggleTap(this)">rock</span> <span class="tap" onclick="toggleTap(this)">in</span> <span class="tap" onclick="toggleTap(this)">Rocklands</span>, <span class="tap" onclick="toggleTap(this)">South</span> <span class="tap" onclick="toggleTap(this)">Africa</span>. <span class="tap" onclick="toggleTap(this)">It&#x27;s</span> <span class="tap" onclick="toggleTap(this)">one</span> <span class="tap" onclick="toggleTap(this)">of</span> <span class="tap" onclick="toggleTap(this)">the</span> <span class="tap" onclick="toggleTap(this)">most</span> <span class="tap" onclick="toggleTap(this)">difficult</span> <span class="tap" onclick="toggleTap(this)">rocks</span> <span class="tap" onclick="toggleTap(this)">to</span> <span class="tap" onclick="toggleTap(this)">climb</span> <span class="tap" onclick="toggleTap(this)">in</span> <span class="tap" onclick="toggleTap(this)">the</span> <span class="tap" onclick="toggleTap(this)">world</span>. <span class="tap" onclick="toggleTap(this)">She</span> <span class="tap" onclick="toggleTap(this)">is</span> <span class="tap" onclick="toggleTap(this)">one</span> <span class="tap" onclick="toggleTap(this)">of</span> <span class="tap" onclick="toggleTap(this)">the</span> <span class="tap" onclick="toggleTap(this)">world&#x27;s</span> <span class="tap" onclick="toggleTap(this)">strongest</span> <span class="tap" onclick="toggleTap(this)">climbers</span> <span class="tap" onclick="toggleTap(this)">and</span> <span class="tap" onclick="toggleTap(this)">one</span> <span class="tap" onclick="toggleTap(this)">of</span> <span class="tap" onclick="toggleTap(this)">the</span> <span class="tap" onclick="toggleTap(this)">most</span> <span class="tap" onclick="toggleTap(this)">successful</span> <span class="tap" onclick="toggleTap(this)">young</span> <span class="tap" onclick="toggleTap(this)">sportspeople</span> <span class="tap" onclick="toggleTap(this)">in</span> <span class="tap" onclick="toggleTap(this)">the</span> <span class="tap" onclick="toggleTap(this)">world</span>, <span class="tap" data-key onclick="toggleTap(this)">too</span>.</p>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkTap('ex-find-also-too')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetTap('ex-find-also-too')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      There are <b>four</b> examples — two of <i>also</i> and two of <i>too</i>.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 4 — Student's Book p.77, Writing, task 4 (Useful language)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t4">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-meta">Writing · Useful language</div>
+        <h2>Where do <i>also</i> and <i>too</i> go?</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-useful-lang">
+      <div class="exercise-label">Word Choice</div>
+      <h3>Read the <i>Useful language</i> box and choose the correct words. Look at your underlined examples to help you.</h3>
+
+      <p class="gap-line" style="margin-top:14px">We use <i>also</i> and <i>too</i> to give extra information.</p>
+      <p class="gap-line"><span class="num">1.</span> We use <b><i>also</i></b>
+        <span class="word-choice" id="ul1" data-answer="after">
+          <button class="word-choice-btn" onclick="selectWord(this)">before</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">after</button>
+        </span>
+        the verb <i>be</i>.</p>
+      <p class="gap-line"><span class="num">2.</span> We use <b><i>also</i></b>
+        <span class="word-choice" id="ul2" data-answer="before">
+          <button class="word-choice-btn" onclick="selectWord(this)">before</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">after</button>
+        </span>
+        other verbs.</p>
+      <p class="gap-line"><span class="num">3.</span> We use <b><i>too</i></b> at the
+        <span class="word-choice" id="ul3" data-answer="end">
+          <button class="word-choice-btn" onclick="selectWord(this)">beginning</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">end</button>
+        </span>
+        of a sentence.</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkWords('ex-useful-lang')">Check ✓</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <i>She <b>is also</b> one of the best.</i> · <i>She <b>also eats</b> healthy food.</i> · <i>She climbs with her brother, <b>too</b>.</i>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 5 — Student's Book p.77, Writing, task 5
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t5">
+    <div class="step-head">
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-meta">Writing · also and too</div>
+        <h2><i>also</i> or <i>too</i>?</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-also-too">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Complete the sentences with <i>also</i> or <i>too</i>.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span>1. I enjoy playing basketball and I like watching it on TV <b>too</b>.</span></div>
+
+      <p class="gap-line"><span class="num">2.</span> Athletics is fun and hockey is
+        <input class="blank" id="at2" data-answer="also" placeholder="?"> fun.</p>
+      <p class="gap-line"><span class="num">3.</span> Our school rugby team loses some matches but we win some
+        <input class="blank" id="at3" data-answer="too" placeholder="?">.</p>
+      <p class="gap-line"><span class="num">4.</span> Emma is our team captain. She's
+        <input class="blank" id="at4" data-answer="also" placeholder="?"> the best player.</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-also-too')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-also-too')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 6 — Student's Book p.77, Writing, task 6
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t6">
+    <div class="step-head">
+      <div class="step-num">6</div>
+      <div>
+        <div class="step-meta">Writing · also and too</div>
+        <h2>Rewrite the sentences</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-rewrite">
+      <div class="exercise-label">Writing · Checked</div>
+      <h3>Rewrite the second sentence with the word in brackets.</h3>
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">1.</span> I like playing football. I enjoy hanging out with friends. <span class="cue">also</span></p>
+      <input type="text" class="blank line-write" id="rw-1" data-answer="I also enjoy hanging out with friends|I also enjoy hanging out with friends.|I also enjoy hanging out with friends!" placeholder="Rewrite the second sentence …">
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">2.</span> Table tennis is easy to play. It's fun. <span class="cue">too</span></p>
+      <input type="text" class="blank line-write" id="rw-2" data-answer="It is fun, too|It is fun, too.|It is fun, too!|It&#x27;s fun, too|It&#x27;s fun, too.|It&#x27;s fun, too!|It’s fun, too|It’s fun, too.|It’s fun, too!|It&#x27;s fun too|It&#x27;s fun too.|It&#x27;s fun too!|It’s fun too|It’s fun too.|It’s fun too!|It is fun too|It is fun too.|It is fun too!" placeholder="Rewrite the second sentence …">
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">3.</span> She's running. She's jumping. <span class="cue">also</span></p>
+      <input type="text" class="blank line-write" id="rw-3" data-answer="She is also jumping|She is also jumping.|She is also jumping!|She’s also jumping|She’s also jumping.|She’s also jumping!|She&#x27;s also jumping|She&#x27;s also jumping.|She&#x27;s also jumping!" placeholder="Rewrite the second sentence …">
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">4.</span> He's wearing trainers. He's wearing a T-shirt. <span class="cue">too</span></p>
+      <input type="text" class="blank line-write" id="rw-4" data-answer="He is wearing a T-shirt, too|He is wearing a T-shirt, too.|He is wearing a T-shirt, too!|He&#x27;s wearing a T-shirt, too|He&#x27;s wearing a T-shirt, too.|He&#x27;s wearing a T-shirt, too!|He’s wearing a T-shirt, too|He’s wearing a T-shirt, too.|He’s wearing a T-shirt, too!|He&#x27;s wearing a T-shirt too|He&#x27;s wearing a T-shirt too.|He&#x27;s wearing a T-shirt too!|He’s wearing a T-shirt too|He’s wearing a T-shirt too.|He’s wearing a T-shirt too!|He is wearing a T-shirt too|He is wearing a T-shirt too.|He is wearing a T-shirt too!|He&#x27;s wearing a t shirt too|He&#x27;s wearing a t shirt too.|He&#x27;s wearing a t shirt too!|He’s wearing a t shirt too|He’s wearing a t shirt too.|He’s wearing a t shirt too!|He is wearing a t shirt, too|He is wearing a t shirt, too.|He is wearing a t shirt, too!|He’s wearing a t shirt, too|He’s wearing a t shirt, too.|He’s wearing a t shirt, too!|He&#x27;s wearing a t shirt, too|He&#x27;s wearing a t shirt, too.|He&#x27;s wearing a t shirt, too!|He is wearing a t shirt too|He is wearing a t shirt too.|He is wearing a t shirt too!|He&#x27;s wearing a tshirt, too|He&#x27;s wearing a tshirt, too.|He&#x27;s wearing a tshirt, too!|He’s wearing a tshirt, too|He’s wearing a tshirt, too.|He’s wearing a tshirt, too!|He’s wearing a tshirt too|He’s wearing a tshirt too.|He’s wearing a tshirt too!|He&#x27;s wearing a tshirt too|He&#x27;s wearing a tshirt too.|He&#x27;s wearing a tshirt too!|He is wearing a tshirt too|He is wearing a tshirt too.|He is wearing a tshirt too!|He is wearing a tshirt, too|He is wearing a tshirt, too.|He is wearing a tshirt, too!" placeholder="Rewrite the second sentence …">
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-rewrite')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-rewrite')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      Look back at the rules in step 4: is the verb <i>be</i> or another verb? Does <i>too</i> go at the beginning or the end?
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 7 — Student's Book p.77, Plan, task 7
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t7">
+    <div class="step-head">
+      <div class="step-num">7</div>
+      <div>
+        <div class="step-meta">Plan</div>
+        <h2>Plan your profile</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Writing · Notes</div>
+      <h3>Write a profile of your favourite sportsperson. First, make notes. Decide what information to include in each paragraph — use the topics from step 2 to help you.</h3>
+
+      <p style="font-weight:800;margin:14px 0 4px">Who is your favourite sportsperson?</p>
+      <input type="text" class="blank line-write" id="pl0" placeholder="Name, sport …">
+
+      <p style="font-weight:800;margin:18px 0 4px">Paragraph 1 · Basic information and description</p>
+      <textarea class="free-write" id="fw-plan-1" placeholder="Where is he/she from? Where does he/she live? How tall? What does he/she look like?" rows="3"></textarea>
+      <div class="char-count" id="cc-fw-plan-1">0 characters</div>
+
+      <p style="font-weight:800;margin:18px 0 4px">Paragraph 2 · Training and other interests</p>
+      <textarea class="free-write" id="fw-plan-2" placeholder="How often does he/she train? What else does he/she like doing?" rows="3"></textarea>
+      <div class="char-count" id="cc-fw-plan-2">0 characters</div>
+
+      <p style="font-weight:800;margin:18px 0 4px">Paragraph 3 · Achievements</p>
+      <textarea class="free-write" id="fw-plan-3" placeholder="What great things has he/she done? Why do you like him/her?" rows="3"></textarea>
+      <div class="char-count" id="cc-fw-plan-3">0 characters</div>
+    </div>
+
+    <div class="tip">
+      <b>Notes, not sentences:</b> <i>Kylian Mbappé – French – football – 178 cm – faster than other players</i>. You'll turn them into sentences in the next step.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 8 — Student's Book p.77, Write, task 8
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t8">
+    <div class="step-head">
+      <div class="step-num">8</div>
+      <div>
+        <div class="step-meta">Write</div>
+        <h2>Write your profile</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Free Writing</div>
+      <h3>Write your description. Remember to include:</h3>
+
+      <div class="reflect-list">
+        <label class="reflect-item">
+          <input type="checkbox" id="wr1">
+          <span class="check-box"></span>
+          <span class="reflect-text">three paragraphs</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="wr2">
+          <span class="check-box"></span>
+          <span class="reflect-text">comparatives and superlatives (<i>taller than</i>, <i>the youngest</i>, <i>one of the most successful</i>)</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="wr3">
+          <span class="check-box"></span>
+          <span class="reflect-text">expressions from the <i>Useful language</i> box — <i>also</i> and <i>too</i></span>
+        </label>
+      </div>
+
+      <p style="font-weight:800;margin:18px 0 4px">My favourite sportsperson</p>
+      <textarea class="free-write" id="fw-profile" placeholder="My favourite sportsperson is …" rows="12"></textarea>
+      <div class="char-count" id="cc-fw-profile">0 characters</div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 9 — Student's Book p.77, Check, task 9
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t9">
+    <div class="step-head">
+      <div class="step-num">9</div>
+      <div>
+        <div class="step-meta">Check</div>
+        <h2>Check your profile</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Checklist</div>
+      <h3>Read your profile again. Do you …</h3>
+
+      <div class="reflect-list">
+        <label class="reflect-item">
+          <input type="checkbox" id="ck1">
+          <span class="check-box"></span>
+          <span class="reflect-text">give basic information and a description of your sportsperson?</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="ck2">
+          <span class="check-box"></span>
+          <span class="reflect-text">describe their sport using sports verbs?</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="ck3">
+          <span class="check-box"></span>
+          <span class="reflect-text">talk about their achievements and why you like them?</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>Sports verbs</b> from this unit: <i>bounce, catch, climb, dive, hit, jump, kick, lift, pass, run, score, throw</i>.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 10 — Finish
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t10">
+    <div class="step-head">
+      <div class="step-num">10</div>
+      <div>
+        <div class="step-meta">Finish</div>
+        <h2>Nice work</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Now I...</h3>
+      <div class="reflect-list">
+        <label class="reflect-item">
+          <input type="checkbox" id="r1">
+          <span class="check-box"></span>
+          <span class="reflect-text">can compare sports with comparatives and superlatives</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="r2">
+          <span class="check-box"></span>
+          <span class="reflect-text">know where to put <i>also</i> and <i>too</i> in a sentence</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="r3">
+          <span class="check-box"></span>
+          <span class="reflect-text">can plan a profile in three paragraphs</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="r4">
+          <span class="check-box"></span>
+          <span class="reflect-text">can write a profile of my favourite sportsperson</span>
+        </label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-accent" onclick="showPart('part-homework');window.scrollTo(0,0)">Go to homework →</button>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /wrap -->
+</div><!-- /part-write-it -->
+
+<div class="lesson-part" id="part-homework">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#h1">1 · Sports</a>
+    <a href="#h2">2 · Word search</a>
+    <a href="#h3">3 · Sports verbs</a>
+    <a href="#h4">4 · Comparatives</a>
+    <a href="#h5">5 · Superlatives</a>
+    <a href="#h6">6 · Conversation</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 1 — Workbook p.54, Review, Vocabulary, task 1
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Homework · Review · Vocabulary</div>
+        <h2>Water, ball or other?</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-sport-types">
+      <div class="exercise-label">Word Choice</div>
+      <h3>Put the sports into groups: <b>water</b> sports, <b>ball</b> sports or <b>other</b> sports.</h3>
+
+      <p class="gap-line"><span class="num">1.</span> <b>athletics</b> →
+        <span class="word-choice" id="sc1" data-answer="other">
+          <button class="word-choice-btn" onclick="selectWord(this)">water</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">ball</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">other</button>
+        </span></p>
+      <p class="gap-line"><span class="num">2.</span> <b>hockey</b> →
+        <span class="word-choice" id="sc2" data-answer="ball">
+          <button class="word-choice-btn" onclick="selectWord(this)">water</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">ball</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">other</button>
+        </span></p>
+      <p class="gap-line"><span class="num">3.</span> <b>rugby</b> →
+        <span class="word-choice" id="sc3" data-answer="ball">
+          <button class="word-choice-btn" onclick="selectWord(this)">water</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">ball</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">other</button>
+        </span></p>
+      <p class="gap-line"><span class="num">4.</span> <b>running</b> →
+        <span class="word-choice" id="sc4" data-answer="other">
+          <button class="word-choice-btn" onclick="selectWord(this)">water</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">ball</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">other</button>
+        </span></p>
+      <p class="gap-line"><span class="num">5.</span> <b>sailing</b> →
+        <span class="word-choice" id="sc5" data-answer="water">
+          <button class="word-choice-btn" onclick="selectWord(this)">water</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">ball</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">other</button>
+        </span></p>
+      <p class="gap-line"><span class="num">6.</span> <b>swimming</b> →
+        <span class="word-choice" id="sc6" data-answer="water">
+          <button class="word-choice-btn" onclick="selectWord(this)">water</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">ball</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">other</button>
+        </span></p>
+      <p class="gap-line"><span class="num">7.</span> <b>tennis</b> →
+        <span class="word-choice" id="sc7" data-answer="ball">
+          <button class="word-choice-btn" onclick="selectWord(this)">water</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">ball</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">other</button>
+        </span></p>
+      <p class="gap-line"><span class="num">8.</span> <b>windsurfing</b> →
+        <span class="word-choice" id="sc8" data-answer="water">
+          <button class="word-choice-btn" onclick="selectWord(this)">water</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">ball</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">other</button>
+        </span></p>
+      <p class="gap-line"><span class="num">9.</span> <b>yoga</b> →
+        <span class="word-choice" id="sc9" data-answer="other">
+          <button class="word-choice-btn" onclick="selectWord(this)">water</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">ball</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">other</button>
+        </span></p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkWords('ex-sport-types')">Check ✓</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      There are <b>three</b> sports in each group.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 2 — Workbook p.54, Review, Vocabulary, task 2
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Homework · Review · Vocabulary</div>
+        <h2>Word search</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-wordsearch">
+      <div class="exercise-label">Word Search</div>
+      <h3>Find 12 sports verbs in the word search. Tap the letters to colour them.</h3>
+
+      <div class="ws-grid">
+        <span class="tap" onclick="toggleTap(this)">b</span><span class="tap" onclick="toggleTap(this)">d</span><span class="tap" onclick="toggleTap(this)">i</span><span class="tap" onclick="toggleTap(this)">b</span><span class="tap" onclick="toggleTap(this)">t</span><span class="tap" data-key onclick="toggleTap(this)">d</span><span class="tap" data-key onclick="toggleTap(this)">i</span><span class="tap" data-key onclick="toggleTap(this)">v</span><span class="tap" data-key onclick="toggleTap(this)">e</span><span class="tap" data-key onclick="toggleTap(this)">h</span>
+        <span class="tap" onclick="toggleTap(this)">u</span><span class="tap" onclick="toggleTap(this)">i</span><span class="tap" data-key onclick="toggleTap(this)">c</span><span class="tap" onclick="toggleTap(this)">s</span><span class="tap" onclick="toggleTap(this)">d</span><span class="tap" onclick="toggleTap(this)">q</span><span class="tap" onclick="toggleTap(this)">h</span><span class="tap" onclick="toggleTap(this)">g</span><span class="tap" onclick="toggleTap(this)">r</span><span class="tap" data-key onclick="toggleTap(this)">i</span>
+        <span class="tap" onclick="toggleTap(this)">v</span><span class="tap" onclick="toggleTap(this)">o</span><span class="tap" data-key onclick="toggleTap(this)">l</span><span class="tap" data-key onclick="toggleTap(this)">i</span><span class="tap" data-key onclick="toggleTap(this)">f</span><span class="tap" data-key onclick="toggleTap(this)">t</span><span class="tap" onclick="toggleTap(this)">h</span><span class="tap" onclick="toggleTap(this)">a</span><span class="tap" onclick="toggleTap(this)">b</span><span class="tap" data-key onclick="toggleTap(this)">t</span>
+        <span class="tap" onclick="toggleTap(this)">y</span><span class="tap" data-key onclick="toggleTap(this)">k</span><span class="tap" data-key onclick="toggleTap(this)">i</span><span class="tap" data-key onclick="toggleTap(this)">c</span><span class="tap" data-key onclick="toggleTap(this)">k</span><span class="tap" onclick="toggleTap(this)">r</span><span class="tap" onclick="toggleTap(this)">z</span><span class="tap" onclick="toggleTap(this)">o</span><span class="tap" data-key onclick="toggleTap(this)">s</span><span class="tap" onclick="toggleTap(this)">p</span>
+        <span class="tap" onclick="toggleTap(this)">e</span><span class="tap" onclick="toggleTap(this)">c</span><span class="tap" data-key onclick="toggleTap(this)">m</span><span class="tap" onclick="toggleTap(this)">w</span><span class="tap" onclick="toggleTap(this)">q</span><span class="tap" onclick="toggleTap(this)">m</span><span class="tap" onclick="toggleTap(this)">n</span><span class="tap" onclick="toggleTap(this)">s</span><span class="tap" data-key onclick="toggleTap(this)">c</span><span class="tap" onclick="toggleTap(this)">a</span>
+        <span class="tap" onclick="toggleTap(this)">n</span><span class="tap" onclick="toggleTap(this)">p</span><span class="tap" data-key onclick="toggleTap(this)">b</span><span class="tap" data-key onclick="toggleTap(this)">o</span><span class="tap" data-key onclick="toggleTap(this)">u</span><span class="tap" data-key onclick="toggleTap(this)">n</span><span class="tap" data-key onclick="toggleTap(this)">c</span><span class="tap" data-key onclick="toggleTap(this)">e</span><span class="tap" data-key onclick="toggleTap(this)">o</span><span class="tap" onclick="toggleTap(this)">l</span>
+        <span class="tap" onclick="toggleTap(this)">l</span><span class="tap" onclick="toggleTap(this)">y</span><span class="tap" onclick="toggleTap(this)">k</span><span class="tap" onclick="toggleTap(this)">j</span><span class="tap" onclick="toggleTap(this)">c</span><span class="tap" onclick="toggleTap(this)">j</span><span class="tap" data-key onclick="toggleTap(this)">a</span><span class="tap" onclick="toggleTap(this)">t</span><span class="tap" data-key onclick="toggleTap(this)">r</span><span class="tap" onclick="toggleTap(this)">u</span>
+        <span class="tap" data-key onclick="toggleTap(this)">t</span><span class="tap" data-key onclick="toggleTap(this)">h</span><span class="tap" data-key onclick="toggleTap(this)">r</span><span class="tap" data-key onclick="toggleTap(this)">o</span><span class="tap" data-key onclick="toggleTap(this)">w</span><span class="tap" onclick="toggleTap(this)">v</span><span class="tap" data-key onclick="toggleTap(this)">t</span><span class="tap" onclick="toggleTap(this)">g</span><span class="tap" data-key onclick="toggleTap(this)">e</span><span class="tap" data-key onclick="toggleTap(this)">r</span>
+        <span class="tap" onclick="toggleTap(this)">h</span><span class="tap" data-key onclick="toggleTap(this)">j</span><span class="tap" data-key onclick="toggleTap(this)">u</span><span class="tap" data-key onclick="toggleTap(this)">m</span><span class="tap" data-key onclick="toggleTap(this)">p</span><span class="tap" onclick="toggleTap(this)">w</span><span class="tap" data-key onclick="toggleTap(this)">c</span><span class="tap" onclick="toggleTap(this)">e</span><span class="tap" onclick="toggleTap(this)">f</span><span class="tap" data-key onclick="toggleTap(this)">u</span>
+        <span class="tap" onclick="toggleTap(this)">f</span><span class="tap" data-key onclick="toggleTap(this)">p</span><span class="tap" data-key onclick="toggleTap(this)">a</span><span class="tap" data-key onclick="toggleTap(this)">s</span><span class="tap" data-key onclick="toggleTap(this)">s</span><span class="tap" onclick="toggleTap(this)">k</span><span class="tap" data-key onclick="toggleTap(this)">h</span><span class="tap" onclick="toggleTap(this)">x</span><span class="tap" onclick="toggleTap(this)">g</span><span class="tap" data-key onclick="toggleTap(this)">n</span>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkTap('ex-wordsearch')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetTap('ex-wordsearch')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      The words go <b>across</b> (→) and <b>down</b> (↓). Some words share letters! Green letters are right; red letters are not part of a word.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 3 — Workbook p.54, Review, Vocabulary, task 3
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h3">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-meta">Homework · Review · Vocabulary</div>
+        <h2>Sports verbs</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-verb-forms">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Complete the sentences with the correct form of the verbs from task 2. Write the whole word.</h3>
+
+      <p class="gap-line"><span class="num">1.</span> A table tennis player
+        <input class="blank" id="vf1" data-answer="bounces" placeholder="b…"> the ball across the table.</p>
+      <p class="gap-line"><span class="num">2.</span> My brother loves
+        <input class="blank" id="vf2" data-answer="jumping" placeholder="j…"> on the bed!</p>
+      <p class="gap-line"><span class="num">3.</span> Mount Everest, the highest mountain in the world, is very difficult to
+        <input class="blank" id="vf3" data-answer="climb" placeholder="c…">.</p>
+      <p class="gap-line"><span class="num">4.</span> We never
+        <input class="blank" id="vf4" data-answer="score" placeholder="s…"> many goals in football.</p>
+      <p class="gap-line"><span class="num">5.</span> Tennis players can't
+        <input class="blank" id="vf5" data-answer="hit" placeholder="h…"> the ball with their hands. They use a racket.</p>
+      <p class="gap-line"><span class="num">6.</span> In gymnastics, we sometimes
+        <input class="blank" id="vf6" data-answer="lift" placeholder="l…"> heavy boxes to make our arms strong.</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-verb-forms')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-verb-forms')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>Correct form:</b> after <i>he / she / it</i> add <i>-s</i>; after <i>love</i> use <i>-ing</i>; after <i>to</i> and <i>can't</i> use the base form.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 4 — Workbook p.54, Review, Language in action, task 4
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h4">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-meta">Homework · Review · Comparatives</div>
+        <h2>Compare two things</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-hw-comp">
+      <div class="exercise-label">Writing · Checked</div>
+      <h3>Write sentences using the comparative form of the adjectives.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span>football / tennis <span class="cue">popular</span> → <i>Football is more popular than tennis.</i></span></div>
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">1.</span> zorbing / running <span class="cue">exciting</span></p>
+      <input type="text" class="blank line-write" id="hc1" data-answer="Zorbing is more exciting than running|Zorbing is more exciting than running.|Zorbing is more exciting than running!|Running is more exciting than zorbing|Running is more exciting than zorbing.|Running is more exciting than zorbing!" placeholder="Write a sentence …">
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">2.</span> water / fizzy drinks <span class="cue">healthy</span></p>
+      <input type="text" class="blank line-write" id="hc2" data-answer="Water is healthier than fizzy drinks|Water is healthier than fizzy drinks.|Water is healthier than fizzy drinks!" placeholder="Write a sentence …">
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">3.</span> joggers / jeans <span class="cue">comfortable</span></p>
+      <input type="text" class="blank line-write" id="hc3" data-answer="Joggers are more comfortable than jeans|Joggers are more comfortable than jeans.|Joggers are more comfortable than jeans!|Jeans are more comfortable than joggers|Jeans are more comfortable than joggers.|Jeans are more comfortable than joggers!" placeholder="Write a sentence …">
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">4.</span> a table tennis ball / a tennis ball <span class="cue">small</span></p>
+      <input type="text" class="blank line-write" id="hc4" data-answer="A table tennis ball is smaller than a tennis ball|A table tennis ball is smaller than a tennis ball.|A table tennis ball is smaller than a tennis ball!" placeholder="Write a sentence …">
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">5.</span> jumping / rock climbing <span class="cue">easy</span></p>
+      <input type="text" class="blank line-write" id="hc5" data-answer="Jumping is easier than rock climbing|Jumping is easier than rock climbing.|Jumping is easier than rock climbing!|Rock climbing is easier than jumping|Rock climbing is easier than jumping.|Rock climbing is easier than jumping!" placeholder="Write a sentence …">
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-hw-comp')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-hw-comp')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>Short adjectives</b> + <i>-er</i> (<i>small → smaller</i>, <i>easy → easier</i>, <i>healthy → healthier</i>).
+      <b>Long adjectives</b> → <i>more</i> + adjective (<i>more exciting</i>). Don't forget <i>than</i>!
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 5 — Workbook p.55, Review, Language in action, task 5
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h5">
+    <div class="step-head">
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-meta">Homework · Review · Superlatives</div>
+        <h2>Wimbledon</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-wimbledon">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Complete the text with the superlative form of the adjectives.</h3>
+
+      <img class="media-img" src="images/unit6-wb55-tennis.jpg" alt="A tennis player stretching for the ball on a grass court at Wimbledon" style="max-width:420px">
+
+      <p class="gap-line" style="margin-top:16px;line-height:2.6">
+        I think tennis is the
+        <span class="cue-input"><span class="cue-lab">boring</span><input class="blank" id="wb1" data-answer="most boring|the most boring" placeholder="?"></span>
+        sport, but my dad loves it! At the moment, he's in London at the All England Club. This club is the
+        <span class="cue-input"><span class="cue-lab">old</span><input class="blank" id="wb2" data-answer="oldest|the oldest" placeholder="?"></span>
+        in the world. Every year, there are different tennis tournaments there. The
+        <span class="cue-input"><span class="cue-lab">popular</span><input class="blank" id="wb3" data-answer="most popular|the most popular" placeholder="?"></span>
+        one is called Wimbledon. My dad says all the
+        <span class="cue-input"><span class="cue-lab">good</span><input class="blank" id="wb4" data-answer="best|the best" placeholder="?"></span>
+        players want to win there. People watching tennis at Wimbledon don't usually speak to each other a lot. The
+        <span class="cue-input"><span class="cue-lab">bad</span><input class="blank" id="wb5" data-answer="worst|the worst" placeholder="?"></span>
+        thing you can do at Wimbledon is talk! The players don't like noise. I think the
+        <span class="cue-input"><span class="cue-lab">easy</span><input class="blank" id="wb6" data-answer="easiest|the easiest" placeholder="?"></span>
+        thing is to watch Wimbledon on TV, but not for me – I prefer a good film!
+      </p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-wimbledon')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-wimbledon')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <i>the</i> is already in the text — you only need to write the superlative. Two of them are irregular: <i>good</i> and <i>bad</i>.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 6 — Workbook p.55, Cumulative language, task 6
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h6">
+    <div class="step-head">
+      <div class="step-num">6</div>
+      <div>
+        <div class="step-meta">Homework · Cumulative language</div>
+        <h2>Esma and Rafael</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-esma-rafael">
+      <div class="exercise-label">Word Choice</div>
+      <h3>Complete the conversation. Choose the correct option for each gap.</h3>
+
+      <img class="media-img" src="images/unit6-wb55-yoga.jpg" alt="A girl and a boy sitting cross-legged on the grass doing yoga with their eyes closed" style="max-width:420px">
+
+      <div class="dialogue" style="margin-top:16px">
+        <span class="dl-name">Esma</span>
+        <p class="dl-text ask">Which sports <span class="cue-lab" style="margin-right:4px">1</span><span class="word-choice" id="cl1" data-answer="do">
+          <button class="word-choice-btn" onclick="selectWord(this)">does</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">are</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">do</button>
+        </span> you like, Rafael?</p>
+        <span class="dl-name two">Rafael</span>
+        <p class="dl-text ask">I like <span class="cue-lab" style="margin-right:4px">2</span><span class="word-choice" id="cl2" data-answer="doing">
+          <button class="word-choice-btn" onclick="selectWord(this)">does</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">do</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">doing</button>
+        </span> athletics and playing football.</p>
+        <span class="dl-name">Esma</span>
+        <p class="dl-text ask">I think football is the <span class="cue-lab" style="margin-right:4px">3</span><span class="word-choice" id="cl3" data-answer="best">
+          <button class="word-choice-btn" onclick="selectWord(this)">best</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">better</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">good</button>
+        </span> sport in the world.</p>
+        <span class="dl-name two">Rafael</span>
+        <p class="dl-text ask">Me, too! Today I <span class="cue-lab" style="margin-right:4px">4</span><span class="word-choice" id="cl4" data-answer="&#x27;ve got">
+          <button class="word-choice-btn" onclick="selectWord(this)">got</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">&#x27;ve got</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">&#x27;m got</button>
+        </span> football training and then yoga.</p>
+        <span class="dl-name">Esma</span>
+        <p class="dl-text ask">Yoga! I think it's <span class="cue-lab" style="margin-right:4px">5</span><span class="word-choice" id="cl5" data-answer="more interesting">
+          <button class="word-choice-btn" onclick="selectWord(this)">most interesting</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">more interesting</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">interesting</button>
+        </span> than athletics!</p>
+        <span class="dl-name two">Rafael</span>
+        <p class="dl-text ask">Then try it with me! I can teach you the <span class="cue-lab" style="margin-right:4px">6</span><span class="word-choice" id="cl6" data-answer="easiest">
+          <button class="word-choice-btn" onclick="selectWord(this)">more easy</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">easier</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">easiest</button>
+        </span> exercises.</p>
+        <span class="dl-name">Esma</span>
+        <p class="dl-text ask">Sounds great, but I'm the <span class="cue-lab" style="margin-right:4px">7</span><span class="word-choice" id="cl7" data-answer="worst">
+          <button class="word-choice-btn" onclick="selectWord(this)">bad</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">worse</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">worst</button>
+        </span> student in the world!</p>
+        <span class="dl-name two">Rafael</span>
+        <p class="dl-text ask">Ah! But I'm a <span class="cue-lab" style="margin-right:4px">8</span><span class="word-choice" id="cl8" data-answer="good">
+          <button class="word-choice-btn" onclick="selectWord(this)">good</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">the better</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">best</button>
+        </span> teacher!</p>
+        <span class="dl-name">Esma</span>
+        <p class="dl-text ask">OK! I <span class="cue-lab" style="margin-right:4px">9</span><span class="word-choice" id="cl9" data-answer="can">
+          <button class="word-choice-btn" onclick="selectWord(this)">can</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">have</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">do</button>
+        </span> try.</p>
+        <span class="dl-name two">Rafael</span>
+        <p class="dl-text ask"><span class="cue-lab" style="margin-right:4px">10</span><span class="word-choice" id="cl10" data-answer="Have you got">
+          <button class="word-choice-btn" onclick="selectWord(this)">Have you got</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">You got</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">You have</button>
+        </span> your joggers in your bag?</p>
+        <span class="dl-name">Esma</span>
+        <p class="dl-text ask">No, but I can <span class="cue-lab" style="margin-right:4px">11</span><span class="word-choice" id="cl11" data-answer="go">
+          <button class="word-choice-btn" onclick="selectWord(this)">go to</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">go</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">come</button>
+        </span> home and get them now.</p>
+        <span class="dl-name two">Rafael</span>
+        <p class="dl-text ask">Perfect. Run home and bring <span class="cue-lab" style="margin-right:4px">12</span><span class="word-choice" id="cl12" data-answer="your">
+          <button class="word-choice-btn" onclick="selectWord(this)">yours</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">you</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">your</button>
+        </span> joggers!</p>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkWords('ex-esma-rafael')">Check ✓</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      This task mixes grammar from the whole book so far: present simple and continuous, <i>have got</i>, <i>can</i>, possessives, comparatives and superlatives. Read the whole sentence before you choose.
+    </div>
+  </section>
+
+  <div class="btn-row" style="justify-content:flex-start;margin:10px 0 30px">
+    <button class="btn-ghost" onclick="showPart('part-remember');window.scrollTo(0,0)">← Back to the lesson</button>
+  </div>
+
+</div><!-- /wrap -->
+</div><!-- /part-homework -->
+
+<div class="scorebar" id="scoreBar" style="display:none">
+  <div class="wrap">
+    <span>Score: <span id="scoreCorrect">0</span> correct · <span id="scoreDone">0</span>/<span id="scoreTotal">0</span> answered</span>
+    <div class="meter"><i id="scoreMeter"></i></div>
+    <button class="btn-primary" onclick="checkAll()">Check my answers ✓</button>
+  </div>
+</div>
+
+<script src="../assets/lessons.js"></script>
+</body>
+</html>
