@@ -490,3 +490,51 @@ footer.site-footer{margin-top:46px;padding:18px 0 40px;border-top:2px solid var(
 
 /* star-rating table (e.g. "Jack's opinion") */
 .star-table td.stars{color:#E3A21A;letter-spacing:2px;font-size:17px;white-space:nowrap}
+
+/* ---------- Reading text laid out like a printed article (e.g. a profile) ---------- */
+.profile{
+  margin-top:18px;background:#fff;border:2px solid var(--line);
+  border-radius:16px;box-shadow:var(--shadow-sm);padding:22px 30px 10px
+}
+.profile-head{border-bottom:2px dashed var(--muted);padding-bottom:10px;margin-bottom:16px}
+.profile-title{font-size:23px;font-weight:900;line-height:1.2}
+.profile-by{margin:4px 0 0;color:var(--muted);font-size:15px;font-style:italic}
+.profile-para{display:grid;grid-template-columns:30px 1fr;gap:14px;margin:0 0 18px}
+.profile-para p{margin:0;font-size:19px;line-height:1.75}
+.profile-para .pnum{
+  width:30px;height:30px;border-radius:50%;background:var(--yellow);border:2px solid var(--line);
+  display:grid;place-items:center;font-weight:900;font-size:14px;margin-top:2px
+}
+.profile.tappable .profile-para p{line-height:1.95}
+.profile.tappable .profile-para .pnum{margin-top:4px}
+.profile.tappable .tap{padding:2px 1px;margin:0 -1px}
+@media (max-width:600px){
+  .profile{padding:16px 16px 4px}
+  .profile-para{grid-template-columns:26px 1fr;gap:10px}
+  .profile-para .pnum{width:26px;height:26px;font-size:13px}
+  .profile-para p{font-size:18px}
+}
+
+/* ---------- Matching paragraphs to topics (badge + text rows) ---------- */
+.pm-hint{margin:4px 0 0;color:var(--muted);font-size:15px}
+.para-match{gap:14px 22px}
+.para-match .pm-head{
+  font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:2px 0 -2px
+}
+.para-match .match-item{min-height:78px;gap:14px;padding:12px 16px}
+.para-match .pm-badge{
+  flex:0 0 auto;width:34px;height:34px;border-radius:50%;border:2px solid var(--line);
+  display:grid;place-items:center;font-weight:900;font-size:16px;background:#fff
+}
+.para-match .pm-badge.num{background:var(--yellow)}
+.para-match .pm-badge.letter{background:var(--lav)}
+.para-match .match-item.matched .pm-badge{background:#fff;border-color:var(--green)}
+.para-match .pm-text{display:block;min-width:0}
+.para-match .pm-label{display:block;font-size:16px;font-weight:900}
+.para-match .pm-quote{display:block;font-size:15px;font-weight:500;font-style:italic;color:var(--muted);line-height:1.4}
+.para-match .match-item.matched .pm-quote{color:inherit}
+.para-match .pm-topic{font-size:17px;font-weight:800;line-height:1.35}
+@media(max-width:560px){
+  .para-match .match-item{min-height:0}
+  .para-match .match-col[data-side="right"]{margin-top:8px}
+}
