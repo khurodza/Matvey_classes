@@ -209,6 +209,15 @@ function checkWords(exId) {
   updateScoreBar();
 }
 
+function resetWords(exId) {
+  const scope = exId ? document.getElementById(exId) : document;
+  scope.querySelectorAll('.word-choice').forEach(span => {
+    span.querySelectorAll('.word-choice-btn').forEach(b => b.classList.remove('selected', 'correct', 'wrong'));
+    save({ [span.id]: '' });
+  });
+  updateScoreBar();
+}
+
 /* ============================================================
    FREE WRITING — autosaves on every keystroke, no checking
    ============================================================ */

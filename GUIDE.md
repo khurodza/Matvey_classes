@@ -5,10 +5,12 @@
 ```
 website/
 ├── index.html              ← Home page (greets by name, lists all lessons)
+├── dictionary.html         ← My Dictionary (personal word list, see "My Dictionary")
 ├── GUIDE.md                 ← This file
 ├── assets/
 │   ├── style.css             ← All shared visual styles — don't touch unless redesigning
-│   └── lessons.js             ← All shared exercise logic — don't touch unless changing behaviour
+│   ├── lessons.js             ← All shared exercise logic — don't touch unless changing behaviour
+│   └── dictionary.js          ← My Dictionary + the "+ Word" button on every page
 └── lessons/
     ├── lesson-template.html   ← Blank class-lesson template — copy this for a new lesson
     ├── lesson-01.html          ← Demo lesson (replace with real content)
@@ -307,6 +309,45 @@ pages.
 - You cannot see the answers remotely. This is designed for independent,
   self-paced use — he opens a lesson or homework page on his own and works
   through it.
+
+---
+
+## My Dictionary
+
+`dictionary.html` is Matvey's personal word list: English word or phrase,
+Russian translation, an optional note, and a 🔊 button. Every page that loads
+`assets/dictionary.js` lets him add words in two ways:
+
+- **Select a word or phrase** in any text: an **📖 Add to dictionary** button
+  appears right next to it. Tapping it opens the "New word" window with the
+  word filled in and a Russian translation already suggested.
+- The lilac **+ Word** button in the corner opens the same window empty.
+
+- **Where the words are stored:** in a Google Sheet ("Matvey Dictionary")
+  in your Google Drive. Columns: `id | word | translation | note | added`. A
+  copy is also kept in the browser, so the list opens instantly and words
+  added offline are sent later.
+- **Back end:** `../dictionary-apps-script.gs` (next to the `website` folder)
+  is a saved copy of the Apps Script inside the sheet.
+- **Adding words yourself in the sheet:** type the word and translation in a
+  new row, and put anything unique in `id` (e.g. `m1`, `m2`). Rows with an
+  empty `id` show up on the site but can't be deleted there.
+- **Translation:** the **Suggest** button asks Google Translate (free, no
+  key) for up to 4 Russian options: the main translation first, then other
+  meanings. If Google fails, MyMemory is used instead. He can also type his own.
+- **Pronunciation (British):** the 🔊 button plays, in this order:
+  1. `lessons/audio/words/<word>.mp3` if it exists (e.g. "look forward to" →
+     `look-forward-to.mp3`). Make them with edge-tts:
+     `edge-tts --voice en-GB-RyanNeural --text "look forward to" --write-media look-forward-to.mp3`
+  2. Google Translate's British voice,
+  3. the device's own English voice.
+  Steps 1 and 2 get 2.5 seconds to start, otherwise the next one is tried.
+- **Settings** are at the top of `assets/dictionary.js`: `API` (the web app
+  URL of the Apps Script), `KEY` (must equal `SECRET` in the Apps Script) and
+  `LANG` (translation language). Until `API` is filled in, words are kept on
+  this device only.
+- **New lesson / homework pages:** the templates already load
+  `dictionary.js`. Keep the `<script src="…/assets/dictionary.js">` line.
 
 ---
 

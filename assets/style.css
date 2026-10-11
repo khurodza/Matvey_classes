@@ -21,7 +21,7 @@ body{
   font:18px/1.6 ui-sans-serif,-apple-system,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
   -webkit-font-smoothing:antialiased;
 }
-.wrap{max-width:1000px;margin:0 auto;padding:0 20px 80px}
+.wrap{max-width:1280px;margin:0 auto;padding:0 20px 80px}
 h1,h2,h3{line-height:1.2;margin:0}
 h1{font-size:clamp(30px,4.6vw,46px);letter-spacing:-.02em}
 h2{font-size:clamp(21px,3vw,29px);letter-spacing:-.01em}
@@ -175,7 +175,8 @@ button:active,.btn:active,.btn-primary:active,.btn-accent:active,.btn-warm:activ
 .dialogue{display:grid;grid-template-columns:auto 1fr;gap:12px 14px;align-items:start;margin:6px 0}
 .dl-name{
   font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.07em;color:#fff;
-  background:var(--teal);border-radius:999px;padding:6px 14px;white-space:nowrap;margin-top:8px
+  background:var(--teal);border-radius:999px;padding:6px 14px;white-space:nowrap;margin-top:8px;
+  text-align:center
 }
 .dl-name.two{background:var(--lilac)}
 .dl-text{margin:0;line-height:1.85;padding:6px 0}
@@ -402,7 +403,7 @@ nav.parts .wrap{padding-top:0;padding-bottom:0;display:flex;gap:10px;flex-wrap:w
   margin-top:40px;padding:14px 20px;display:flex;gap:16px;align-items:center;
   flex-wrap:wrap;font-weight:900;z-index:30;box-shadow:0 -4px 0 rgba(0,0,0,.03)
 }
-.scorebar .wrap{padding:0;display:flex;gap:16px;align-items:center;flex-wrap:wrap;max-width:1000px;margin:0 auto;width:100%}
+.scorebar .wrap{padding:0;display:flex;gap:16px;align-items:center;flex-wrap:wrap;max-width:1280px;margin:0 auto;width:100%}
 .meter{flex:1;min-width:140px;height:16px;border:2px solid var(--line);border-radius:999px;background:#fff;overflow:hidden}
 .meter i{display:block;height:100%;width:0;background:var(--teal);transition:width .3s ease}
 
@@ -538,3 +539,171 @@ footer.site-footer{margin-top:46px;padding:18px 0 40px;border-top:2px solid var(
   .para-match .match-item{min-height:0}
   .para-match .match-col[data-side="right"]{margin-top:8px}
 }
+
+/* 12-column word search (e.g. Unit 7 animals) */
+.ws-grid.ws12{grid-template-columns:repeat(12,38px)}
+@media (max-width:560px){.ws-grid.ws12{grid-template-columns:repeat(12,26px);gap:3px}.ws-grid.ws12 .tap{width:26px;height:26px;font-size:14px}}
+
+/* tappable word chips — pick the right words from a list (same logic as .tap) */
+.tap-chips{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 4px}
+.tap-chips .tap{
+  border:2px solid var(--line);border-radius:999px;padding:6px 16px;background:#fff;
+  font-weight:800;font-size:16px;box-shadow:var(--shadow-sm)
+}
+.tap-chips .tap.ul{text-decoration:none;background:var(--yellow)}
+.tap-chips .tap.correct{text-decoration:none}
+
+/* reading: fact files side by side (photo + text + fact table) */
+.factfiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:16px}
+.factfile{border:2px solid var(--line);border-radius:16px;background:#fff;box-shadow:var(--shadow-sm);overflow:hidden;display:flex;flex-direction:column}
+.factfile img{width:100%;height:200px;object-fit:contain;background:#fff;border-bottom:2px solid var(--line)}
+.factfile h4{margin:14px 18px 0;font-size:21px;color:var(--teal)}
+.factfile p{margin:8px 18px 14px;font-size:17px;line-height:1.65;flex:1}
+.factfile dl{margin:0;background:var(--butter);border-top:2px dashed var(--line);padding:12px 18px;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:15px}
+.factfile dt{font-weight:900;color:var(--coral)}
+.factfile dd{margin:0}
+.article-intro{background:var(--butter);border:2px solid var(--line);border-radius:14px;padding:14px 18px;margin-top:16px}
+.article-intro h4{margin:0 0 4px;font-size:24px;color:var(--coral)}
+.article-intro p{margin:0;font-size:17px}
+
+/* a row of letter → answer gaps next to a picture (e.g. "match the photos a–j") */
+.letter-gaps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px 18px;margin-top:14px}
+.letter-gaps label{display:flex;align-items:center;gap:10px;font-weight:900}
+.letter-gaps .lg-letter{width:32px;height:32px;flex:0 0 auto;border-radius:50%;border:2px solid var(--line);background:#fff;color:#1B8FD1;display:grid;place-items:center}
+.letter-gaps .blank,.letter-gaps .given{flex:1;min-width:0}
+.letter-gaps .given{text-align:center;font-weight:800;background:var(--mint);border:2px dashed var(--teal);border-radius:10px;padding:6px 10px;color:var(--teal)}
+
+/* highlighted speaking question — no writing box, just say it to the teacher */
+.speak-prompt{
+  display:flex;align-items:center;gap:16px;margin-top:18px;padding:18px 22px;
+  background:var(--yellow);border:3px solid var(--line);border-radius:18px;box-shadow:6px 6px 0 var(--line);
+  transform:rotate(-.6deg);animation:sp-pop .5s cubic-bezier(.34,1.56,.64,1) both
+}
+.sp-icon{
+  flex:0 0 auto;width:54px;height:54px;border-radius:50%;background:#fff;border:2px solid var(--line);
+  display:grid;place-items:center;font-size:28px;box-shadow:var(--shadow-sm)
+}
+.sp-label{font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:#7A5B00}
+.sp-q{margin:2px 0 0;font-size:20px;font-weight:800;line-height:1.4}
+.sp-q b{background:#fff;border-radius:6px;padding:0 6px}
+@keyframes sp-pop{0%{opacity:0;transform:scale(.85) rotate(-.6deg)}100%{opacity:1;transform:scale(1) rotate(-.6deg)}}
+@media (max-width:560px){.speak-prompt{padding:14px 16px}.sp-q{font-size:18px}.sp-icon{width:44px;height:44px;font-size:22px}}
+
+/* split a list of numbered lines into two columns (one column on phones) */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:0 28px;margin-top:6px}
+.two-col .gap-line{margin:0 0 12px}
+@media (max-width:700px){.two-col{grid-template-columns:1fr}}
+.two-col .gap-line{display:flex;align-items:center;gap:6px}
+.two-col .gap-line .num{min-width:30px;margin-right:0}
+.two-col .gap-line > b{min-width:100px}
+
+/* ============================================================
+   MY DICTIONARY (dictionary.html + the "+ Word" button, dictionary.js)
+   ============================================================ */
+/* sound button 🔊 (round, coral; teal while playing) */
+.say{
+  display:inline-grid;place-items:center;padding:0;border-radius:50%;background:var(--coral);
+  border:2px solid var(--line);box-shadow:var(--shadow-sm);flex-shrink:0
+}
+.say::before{
+  content:"";width:24px;height:24px;background:#fff;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 9v6h4l5 4V5L8 9H4zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z'/%3E%3C/svg%3E") center/contain no-repeat;
+          mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 9v6h4l5 4V5L8 9H4zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z'/%3E%3C/svg%3E") center/contain no-repeat
+}
+.say:hover{background:#D9552A}
+.say.playing{background:var(--teal)}
+.say.say-big{width:50px;height:50px}
+
+/* form fields */
+.dict-field{display:block;margin:0 0 14px;text-align:left}
+.dict-field > span:first-child{display:block;font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:6px}
+.dict-field i{text-transform:none;letter-spacing:0;font-weight:700}
+.dict-input-row{display:flex;gap:8px;align-items:center}
+.dict-field input{
+  flex:1;min-width:0;width:100%;font:inherit;font-size:18px;font-weight:800;color:var(--ink);
+  border:2px solid var(--line);border-radius:12px;padding:10px 14px;background:#fff;outline:none
+}
+.dict-field input:focus{background:var(--butter)}
+.dict-field input.shake{animation:shake .3s;border-color:var(--red);background:var(--badred)}
+.dict-suggest{flex-shrink:0;padding:10px 16px;font-size:15px}
+.dict-suggest:disabled{opacity:.6;cursor:default}
+.dict-suggestions{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:-4px 0 14px;text-align:left}
+.dict-suggestions[hidden]{display:none}
+.dict-suggestions .word-choice-btn{font-size:15px;padding:5px 14px;color:var(--ink)}
+.dict-sug-label{font-size:13px;font-weight:800;color:var(--muted);margin-right:2px}
+.dict-msg{margin:0;font-size:14px;font-weight:800;text-align:left}
+.dict-msg.warn{color:#7A5B00;background:var(--butter);border:2px solid var(--yellow);border-radius:10px;padding:6px 12px;margin-bottom:8px}
+.dict-form .btn-row{margin-top:8px}
+
+/* pop-up window on lesson pages */
+body.name-open{overflow:hidden}
+.name-overlay{
+  position:fixed;inset:0;z-index:200;display:grid;place-items:center;padding:16px;
+  background:rgba(36,30,26,.5);animation:dictFade .2s ease
+}
+.name-overlay.closing{opacity:0;transition:opacity .2s ease}
+.dict-dialog{
+  position:relative;width:min(480px,100%);max-height:calc(100vh - 32px);overflow:auto;text-align:left;
+  background:var(--paper);border:2px solid var(--line);border-radius:18px;box-shadow:6px 6px 0 var(--line);
+  padding:24px 22px 20px;animation:dictPop .25s ease
+}
+.dict-dialog h2{margin-bottom:16px;padding-right:40px;font-size:24px}
+.dict-dialog .btn-row .btn-primary{width:100%}
+.dict-close{
+  position:absolute;top:14px;right:14px;width:38px;height:38px;padding:0;border-radius:50%;
+  font-size:22px;line-height:1;box-shadow:none;color:var(--muted)
+}
+.dict-close:hover{background:var(--badred);color:var(--red)}
+.dict-open-link{display:block;margin-top:14px;text-align:center;font-size:14px;font-weight:800;color:var(--teal)}
+@keyframes dictFade{from{opacity:0}to{opacity:1}}
+@keyframes dictPop{from{transform:translateY(12px) scale(.97);opacity:0}to{transform:none;opacity:1}}
+
+/* floating "+ Word" button (sits above the score bar when that is showing) */
+.dict-fab{
+  position:fixed;right:16px;bottom:16px;z-index:35;border-radius:999px;padding:12px 20px;
+  background:var(--lilac);color:#fff;box-shadow:var(--shadow)
+}
+.dict-fab:hover{background:#6A59C4}
+body:has(#scoreBar[style*="flex"]) .dict-fab{bottom:92px}
+
+/* "📖 Add to dictionary" bubble under selected text */
+.dict-pop{
+  position:fixed;z-index:60;left:0;top:0;padding:8px 16px;font-size:15px;border-radius:999px;white-space:nowrap;
+  background:var(--lilac);color:#fff;box-shadow:var(--shadow-sm);animation:dictFade .15s ease
+}
+.dict-pop:hover{background:#6A59C4}
+.dict-pop[hidden]{display:none}
+
+/* word list */
+.dict-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:space-between}
+.dict-head .exercise-label{margin-bottom:0}
+.dict-search{
+  flex:0 1 260px;min-width:0;font:inherit;font-weight:700;border:2px solid var(--line);border-radius:999px;
+  padding:7px 16px;background:var(--cream);outline:none;color:var(--ink)
+}
+.dict-search:focus{background:#fff}
+.dict-status{font-size:13px;font-weight:800;color:var(--muted);margin:10px 0 4px;min-height:1.6em}
+.dict-status.offline{color:#7A5B00}
+.dict-list{display:flex;flex-direction:column}
+.dict-item{display:flex;align-items:center;gap:14px;padding:12px 0;border-top:2px dashed var(--line)}
+.dict-item:first-child{border-top:none}
+.dict-item .say-big{width:46px;height:46px}
+.dict-item .say-big::before{width:22px;height:22px}
+.dict-text{flex:1;min-width:0;display:flex;flex-direction:column}
+.dict-word{font-size:21px;font-weight:900;line-height:1.25;overflow-wrap:anywhere}
+.dict-tr{font-size:16px;font-weight:700;color:var(--muted);overflow-wrap:anywhere}
+.dict-tr::before{content:'= ';color:var(--teal);font-weight:900}
+.dict-note{font-size:13px;font-weight:700;color:var(--muted);font-style:italic;margin-top:2px}
+.dict-side{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.dict-date{font-size:12px;font-weight:800;color:var(--muted);white-space:nowrap}
+.dict-del{
+  width:34px;height:34px;padding:0;border-radius:50%;font-size:20px;line-height:1;color:var(--muted);box-shadow:none
+}
+.dict-del:hover{background:var(--badred);border-color:var(--red);color:var(--red)}
+@media(max-width:560px){
+  .dict-date{display:none}
+  .dict-search{flex-basis:100%}
+}
+
+/* home-page card */
+.lesson-card.dict-card .lesson-num{background:var(--lilac);color:#fff;font-size:26px}

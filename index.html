@@ -47,11 +47,43 @@
        Card colours cycle automatically — you don't set them.
   ══════════════════════════════════════════════════════════ -->
 
+  <div class="lesson-list">
+    <div class="lesson-card dict-card">
+      <span class="lesson-num" aria-hidden="true">📖</span>
+      <div class="lesson-info">
+        <span class="lesson-topic">My Dictionary</span>
+        <span class="lesson-date">Your own words with translation and sound. Select a word on any page, or tap <b>+ Word</b>, to add one.</span>
+      </div>
+      <div class="lesson-actions">
+        <a class="btn-primary" href="dictionary.html">Open →</a>
+      </div>
+    </div>
+  </div>
+
   <div class="section-title">All Lessons</div>
 
   <div class="lesson-list" id="lessonList">
 
     <!-- ADD NEW LESSON CARDS HERE (newest lesson goes first / at the top) -->
+
+    <!-- LESSON 6 -->
+    <div class="lesson-card">
+      <span class="lesson-num">6</span>
+      <div class="lesson-info">
+        <span class="lesson-topic">Amazing Animals: Vocabulary and Reading</span>
+        <div class="lesson-tags">
+          <span class="lesson-tag">animals</span>
+          <span class="lesson-tag">word categories</span>
+          <span class="lesson-tag">fact files</span>
+          <span class="lesson-tag">animals in danger</span>
+        </div>
+        <span class="lesson-date">Unit 7</span>
+      </div>
+      <div class="lesson-actions">
+        <a class="btn-primary" href="lessons/lesson-06.html">Lesson →</a>
+        <a class="btn-ghost" href="lessons/lesson-06.html#part-homework">Homework</a>
+      </div>
+    </div>
 
     <!-- LESSON 5 -->
     <div class="lesson-card">
@@ -167,6 +199,7 @@
     greeting.textContent = name ? `Welcome, ${name}` : 'Welcome';
   }
 </script>
+<script src="assets/dictionary.js"></script>
 
 </body>
 </html>

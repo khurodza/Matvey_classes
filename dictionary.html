@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<title>My Dictionary</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <a class="back-home" href="index.html">← All lessons</a>
+    <div class="hero-grid">
+      <div>
+        <h1 id="dictTitle">My Dictionary</h1>
+        <p>Every new word in one place, with its translation and how it sounds.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Everything inside #dictPage is filled in by assets/dictionary.js -->
+<div class="wrap" id="dictPage">
+
+  <section class="step">
+    <div class="card">
+      <span class="exercise-label">Add a new word</span>
+      <form class="dict-form" autocomplete="off"></form>
+      <div class="tip">On a lesson page, <b>select a word</b> in the text and tap <b>📖 Add to dictionary</b>, or tap the <b>+ Word</b> button in the corner. It goes straight into your dictionary.</div>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="card">
+      <div class="dict-head">
+        <span class="exercise-label">My words · <span class="dict-count">0 words</span></span>
+        <input type="search" class="dict-search" placeholder="Search…" aria-label="Search my words">
+      </div>
+      <p class="dict-status"></p>
+      <div class="dict-list"></div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer"><a href="https://translate.google.com/">Translations suggested and voice for new words from Google Translate</a></footer>
+
+<script>
+  // "Matvey's Dictionary" once he has typed his name on the home page
+  try {
+    const n = (localStorage.getItem('studentName') || '').trim();
+    if (n) document.getElementById('dictTitle').textContent = n + "'s Dictionary";
+  } catch (e) {}
+</script>
+<script src="assets/dictionary.js"></script>
+</body>
+</html>

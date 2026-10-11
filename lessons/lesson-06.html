@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 6 – Amazing Animals: Vocabulary and Reading</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <a class="back-home" href="../index.html">← All lessons</a>
+    <div class="hero-grid">
+      <div>
+        <h1>Amazing animals: Start it!, Vocabulary &amp; Reading</h1>
+        <p><b>Start it!</b> look at a lizard on the rocks and watch a video about super-animals. <b>Vocabulary:</b> learn fourteen animal words and put them into groups. <b>Read it:</b> read fact files about three animals in danger.</p>
+        <div class="hero-badges">
+          <span class="badge">Lesson 6</span>
+          <span class="badge">Unit 7 · Amazing animals</span>
+          <span class="badge">Student's Book p.82–84 · Workbook p.56–57</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="parts">
+  <div class="wrap">
+    <button class="part-tab" data-part="part-start" onclick="showPart('part-start')">Start it!</button>
+    <button class="part-tab" data-part="part-vocab" onclick="showPart('part-vocab')">Vocabulary</button>
+    <button class="part-tab" data-part="part-read" onclick="showPart('part-read')">Read it</button>
+    <button class="part-tab hw" data-part="part-homework" onclick="showPart('part-homework')">Homework</button>
+  </div>
+</nav>
+<div class="lesson-part" id="part-start">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#s1">1 · The photo</a>
+    <a href="#s2">2 · Guess</a>
+    <a href="#s3">3 · Video</a>
+    <a href="#s4">4 · Super-animals</a>
+    <a href="#s5">5 · Ask a question</a>
+    <a href="#part-homework" onclick="showPart('part-homework');window.scrollTo(0,0)">Homework ↗</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 1 — Student's Book p.82, Start it!, questions 1–2
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Start it!</div>
+        <h2>What's happening in the photo?</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-iguana">
+      <div class="exercise-label">Multiple Choice</div>
+      <h3>Look at the photo. What's happening? What do you know about this animal?</h3>
+
+      <img class="media-img" src="images/unit7-p82-iguana.jpg" alt="A large grey-brown lizard with spikes along its back climbing down a rock by the sea">
+
+      <p style="font-weight:700;margin:14px 0 4px">1. What is this animal?</p>
+      <div class="mc-options" data-correct="b">
+        <label class="mc-option"><input type="radio" name="mc1" value="a"><span class="mc-bullet">A</span> a crocodile</label>
+        <label class="mc-option"><input type="radio" name="mc1" value="b"><span class="mc-bullet">B</span> an iguana</label>
+        <label class="mc-option"><input type="radio" name="mc1" value="c"><span class="mc-bullet">C</span> a snake</label>
+      </div>
+      <p style="font-weight:700;margin:18px 0 4px">2. What's happening in the photo?</p>
+      <div class="mc-options" data-correct="c">
+        <label class="mc-option"><input type="radio" name="mc2" value="a"><span class="mc-bullet">A</span> It's swimming in the sea.</label>
+        <label class="mc-option"><input type="radio" name="mc2" value="b"><span class="mc-bullet">B</span> It's sleeping in a tree.</label>
+        <label class="mc-option"><input type="radio" name="mc2" value="c"><span class="mc-bullet">C</span> It's climbing down a rock by the sea.</label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkMC('ex-iguana')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetMC('ex-iguana')">Try again</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Writing</div>
+      <h3>What do you know about this animal? Write one or two things.</h3>
+      <textarea class="free-write" id="fw-iguana" placeholder="It's a … It lives … It eats …" rows="3"></textarea>
+      <div class="char-count" id="cc-fw-iguana">0 characters</div>
+    </div>
+
+    <div class="tip">
+      <b>Iguana</b> = a big lizard with a long tail. Iguanas live on rocks, in forests and near water in Mexico, Central and South America. They only eat plants, and they can grow to <b>2 metres</b> long!
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 2 — Student's Book p.82, Start it!, question 3 (guess)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Start it! · Before you watch</div>
+        <h2>Guess three animals</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Writing</div>
+      <h3>The video is about amazing animals. Guess three animals you think you will see.</h3>
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">1.</span></p>
+      <input type="text" class="blank line-write" id="gs1" placeholder="Animal 1 …">
+      <p class="gap-line" style="margin-top:14px"><span class="num">2.</span></p>
+      <input type="text" class="blank line-write" id="gs2" placeholder="Animal 2 …">
+      <p class="gap-line" style="margin-top:14px"><span class="num">3.</span></p>
+      <input type="text" class="blank line-write" id="gs3" placeholder="Animal 3 …">
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 3 — Student's Book p.82, Start it!, questions 3–4, Video 7.1
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s3">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-meta">Start it! · Video 7.1</div>
+        <h2>Watch and check</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-video-animals">
+      <div class="exercise-label">Watch</div>
+      <h3>Watch the video. Were your guesses right? Then tap all the animals that are in the video.</h3>
+      <div class="video-wrap">
+        <video controls>
+          <source src="video/unit7-page82-start-it.mp4" type="video/mp4">
+          <track kind="captions" src="video/unit7-page82-start-it.vtt" srclang="en" label="English" default>
+          Your browser does not support video.
+        </video>
+      </div>
+
+      <h3 style="margin-top:18px">How many animals can you remember from the video?</h3>
+      <div class="tap-chips">
+        <span class="tap" data-key onclick="toggleTap(this)">cheetah</span>
+        <span class="tap" onclick="toggleTap(this)">giraffe</span>
+        <span class="tap" data-key onclick="toggleTap(this)">snow leopard</span>
+        <span class="tap" onclick="toggleTap(this)">dolphin</span>
+        <span class="tap" data-key onclick="toggleTap(this)">three-toed sloth</span>
+        <span class="tap" data-key onclick="toggleTap(this)">rhinoceros beetle</span>
+        <span class="tap" onclick="toggleTap(this)">penguin</span>
+        <span class="tap" data-key onclick="toggleTap(this)">Greenland shark</span>
+        <span class="tap" data-key onclick="toggleTap(this)">lyrebird</span>
+        <span class="tap" onclick="toggleTap(this)">elephant</span>
+        <span class="tap" data-key onclick="toggleTap(this)">deep-sea sponge</span>
+        <span class="tap" onclick="toggleTap(this)">kangaroo</span>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkTap('ex-video-animals')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetTap('ex-video-animals')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      There are <b>seven</b> animals in the video. Did you know a <b>sponge</b> is an animal, too?
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 4 — Video 7.1, comprehension (Teacher's Book: Extend it!)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s4">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-meta">Start it! · Video 7.1</div>
+        <h2>Super-animals</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-match-super">
+      <div class="exercise-label">Matching</div>
+      <h3>What can these animals do? Match each animal with its super-power from the video.</h3>
+
+      <div class="match-grid">
+        <div class="match-col" data-side="left">
+          <div class="match-item" data-pair="1" onclick="selectMatch(this,'ex-match-super')">rhinoceros beetle</div>
+          <div class="match-item" data-pair="2" onclick="selectMatch(this,'ex-match-super')">snow leopard</div>
+          <div class="match-item" data-pair="3" onclick="selectMatch(this,'ex-match-super')">cheetah</div>
+          <div class="match-item" data-pair="4" onclick="selectMatch(this,'ex-match-super')">three-toed sloth</div>
+          <div class="match-item" data-pair="5" onclick="selectMatch(this,'ex-match-super')">deep-sea sponge</div>
+          <div class="match-item" data-pair="6" onclick="selectMatch(this,'ex-match-super')">lyrebird</div>
+        </div>
+        <div class="match-col" data-side="right">
+          <div class="match-item" data-pair="3" onclick="selectMatch(this,'ex-match-super')">It's the fastest land animal — 98 km per hour!</div>
+          <div class="match-item" data-pair="6" onclick="selectMatch(this,'ex-match-super')">It can copy any sound it hears.</div>
+          <div class="match-item" data-pair="1" onclick="selectMatch(this,'ex-match-super')">It can lift 100 times its own body weight.</div>
+          <div class="match-item" data-pair="5" onclick="selectMatch(this,'ex-match-super')">Some are thousands of years old.</div>
+          <div class="match-item" data-pair="2" onclick="selectMatch(this,'ex-match-super')">It can jump more than 15 metres.</div>
+          <div class="match-item" data-pair="4" onclick="selectMatch(this,'ex-match-super')">It's the slowest animal on earth.</div>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-ghost" onclick="resetMatchEx('ex-match-super')">Reset</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      Look at the superlatives from Unit 6: <i>the <b>fastest</b> land animal</i>, <i>the <b>slowest</b> animal</i>, <i>one of the <b>strongest</b> animals</i>.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 5 — Teacher's Book p.86, Extend it!
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s5">
+    <div class="step-head">
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-meta">Extend it!</div>
+        <h2>Ask a question</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Writing</div>
+      <h3>Remember a fact from the video. Write a question that starts with <i>Which animal …?</i> Ask your teacher!</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span><i>Which animal is the slowest on earth?</i> — <b>The three-toed sloth.</b></span></div>
+
+      <input type="text" class="blank line-write" id="wq1" placeholder="Which animal …?">
+      <input type="text" class="blank line-write" id="wq2" placeholder="Which animal …?" style="margin-top:12px">
+    </div>
+  </section>
+
+  <div class="btn-row" style="justify-content:flex-end;margin:10px 0 30px">
+    <button class="btn-accent" onclick="showPart('part-vocab');window.scrollTo(0,0)">Next part: Vocabulary →</button>
+  </div>
+
+</div><!-- /wrap -->
+</div><!-- /part-start -->
+
+<div class="lesson-part" id="part-vocab">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#t1">1 · Animals</a>
+    <a href="#t2">2 · Not in the photos</a>
+    <a href="#t3">3 · Noises</a>
+    <a href="#t4">4 · Tail, feathers, fur</a>
+    <a href="#t5">5 · Categories</a>
+    <a href="#t6">6 · Use it!</a>
+    <a href="#t7">7 · Explore it!</a>
+    <a href="#part-homework" onclick="showPart('part-homework');window.scrollTo(0,0)">Homework ↗</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 1 — Student's Book p.83, Vocabulary, task 1, Audio 7.01
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Vocabulary · Animals · Audio 7.01</div>
+        <h2>Match the animals with the photos</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-photos">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Match ten animals from the box with photos a–j. Then listen, check and repeat.</h3>
+
+      <div class="word-bank-ref">
+        <span onclick="this.classList.toggle('crossed')">bear</span><span onclick="this.classList.toggle('crossed')">crocodile</span><span onclick="this.classList.toggle('crossed')">donkey</span><span onclick="this.classList.toggle('crossed')">duck</span><span onclick="this.classList.toggle('crossed')">eagle</span><span class="crossed" onclick="this.classList.toggle('crossed')">giraffe</span><span onclick="this.classList.toggle('crossed')">hippo</span><span onclick="this.classList.toggle('crossed')">horse</span><span onclick="this.classList.toggle('crossed')">lion</span><span onclick="this.classList.toggle('crossed')">monkey</span><span onclick="this.classList.toggle('crossed')">mouse</span><span onclick="this.classList.toggle('crossed')">parrot</span><span onclick="this.classList.toggle('crossed')">snake</span><span onclick="this.classList.toggle('crossed')">whale</span>
+      </div>
+      <p class="char-count" style="text-align:left;margin-top:0">Tap a word to cross it out when you use it.</p>
+
+      <img class="media-img" src="images/unit7-p83-animal-photos.jpg" alt="Ten close-up animal photos labelled a to j: an eye with brown spots, an open mouth in green water plants, red and black scales, a big tail in the sea, a tail in long grass, big round ears, a paw with long claws, a yellow beak, red feathers, and a green eye with scales" style="max-width:560px;display:block;margin-left:auto;margin-right:auto">
+
+      <div class="letter-gaps">
+        <label><span class="lg-letter">a</span><span class="given">giraffe</span></label>
+        <label><span class="lg-letter">b</span><input class="blank" id="ph-b" data-answer="hippo" placeholder="?"></label>
+        <label><span class="lg-letter">c</span><input class="blank" id="ph-c" data-answer="snake" placeholder="?"></label>
+        <label><span class="lg-letter">d</span><input class="blank" id="ph-d" data-answer="whale" placeholder="?"></label>
+        <label><span class="lg-letter">e</span><input class="blank" id="ph-e" data-answer="lion" placeholder="?"></label>
+        <label><span class="lg-letter">f</span><input class="blank" id="ph-f" data-answer="mouse" placeholder="?"></label>
+        <label><span class="lg-letter">g</span><input class="blank" id="ph-g" data-answer="bear" placeholder="?"></label>
+        <label><span class="lg-letter">h</span><input class="blank" id="ph-h" data-answer="eagle" placeholder="?"></label>
+        <label><span class="lg-letter">i</span><input class="blank" id="ph-i" data-answer="parrot" placeholder="?"></label>
+        <label><span class="lg-letter">j</span><input class="blank" id="ph-j" data-answer="crocodile" placeholder="?"></label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-photos')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-photos')">Try again</button>
+      </div>
+
+      <h3 style="margin-top:22px">Listen, check and repeat.</h3>
+      <div class="audio-wrap">
+        <audio controls>
+          <source src="audio/unit7-page83-track1.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+    </div>
+
+    <div class="tip">
+      Look carefully — the photos only show <b>part</b> of each animal: an eye, a tail, a paw, feathers …
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 2 — Student's Book p.83, Vocabulary, task 1 (four animals not in the photos)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Vocabulary · Animals</div>
+        <h2>Which four are not in the photos?</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-not-photos">
+      <div class="exercise-label">Tap the Words</div>
+      <h3>Which <b>four</b> animals from the box are not in the photos? Tap them.</h3>
+      <div class="tap-chips">
+        <span class="tap" onclick="toggleTap(this)">bear</span>
+        <span class="tap" onclick="toggleTap(this)">crocodile</span>
+        <span class="tap" data-key onclick="toggleTap(this)">donkey</span>
+        <span class="tap" data-key onclick="toggleTap(this)">duck</span>
+        <span class="tap" onclick="toggleTap(this)">eagle</span>
+        <span class="tap" onclick="toggleTap(this)">giraffe</span>
+        <span class="tap" onclick="toggleTap(this)">hippo</span>
+        <span class="tap" data-key onclick="toggleTap(this)">horse</span>
+        <span class="tap" onclick="toggleTap(this)">lion</span>
+        <span class="tap" data-key onclick="toggleTap(this)">monkey</span>
+        <span class="tap" onclick="toggleTap(this)">mouse</span>
+        <span class="tap" onclick="toggleTap(this)">parrot</span>
+        <span class="tap" onclick="toggleTap(this)">snake</span>
+        <span class="tap" onclick="toggleTap(this)">whale</span>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkTap('ex-not-photos')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetTap('ex-not-photos')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 3 — Student's Book p.83, Vocabulary, task 2, Audio 7.02
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t3">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-meta">Vocabulary · Audio 7.02</div>
+        <h2>Listen to the noises</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-noises">
+      <div class="exercise-label">Listening · Fill in the Blanks</div>
+      <h3>Listen to the noises. Which animals from step 1 do you hear? Write them in order.</h3>
+      <div class="audio-wrap">
+        <audio controls>
+          <source src="audio/unit7-page83-track2.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+      <div class="letter-gaps">
+        <label><span class="lg-letter" style="color:var(--ink)">1</span><input class="blank" id="ns1" data-answer="an eagle|eagle" placeholder="?"></label>
+        <label><span class="lg-letter" style="color:var(--ink)">2</span><input class="blank" id="ns2" data-answer="a lion|lion" placeholder="?"></label>
+        <label><span class="lg-letter" style="color:var(--ink)">3</span><input class="blank" id="ns3" data-answer="a monkey|monkey" placeholder="?"></label>
+        <label><span class="lg-letter" style="color:var(--ink)">4</span><input class="blank" id="ns4" data-answer="a horse|horse" placeholder="?"></label>
+        <label><span class="lg-letter" style="color:var(--ink)">5</span><input class="blank" id="ns5" data-answer="a duck|duck" placeholder="?"></label>
+        <label><span class="lg-letter" style="color:var(--ink)">6</span><input class="blank" id="ns6" data-answer="a donkey|donkey" placeholder="?"></label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-noises')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-noises')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      Pause the audio after each noise. You can use the slow button (0.75×) too.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 4 — Student's Book p.83, Vocabulary, task 3
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t4">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-meta">Vocabulary · Speaking</div>
+        <h2>Tail, feathers or fur?</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Writing</div>
+      <h3>Which of the animals have a tail, feathers or fur? Look at the example, then write more animals in each group. You can use animals from step 1 or your own ideas.</h3>
+
+      <p class="gap-line" style="margin-top:18px"><span class="num">1.</span> <b>a tail?</b></p>
+      <div class="example-row"><span class="ex-tag">Example</span> <b>lion</b></div>
+      <div class="grid3">
+        <input type="text" class="blank line-write" id="tl1" placeholder="Animal 1 …">
+        <input type="text" class="blank line-write" id="tl2" placeholder="Animal 2 …">
+        <input type="text" class="blank line-write" id="tl3" placeholder="Animal 3 …">
+      </div>
+
+      <p class="gap-line" style="margin-top:18px"><span class="num">2.</span> <b>feathers?</b></p>
+      <div class="example-row"><span class="ex-tag">Example</span> <b>parrot</b></div>
+      <div class="grid3">
+        <input type="text" class="blank line-write" id="fe1" placeholder="Animal 1 …">
+        <input type="text" class="blank line-write" id="fe2" placeholder="Animal 2 …">
+        <input type="text" class="blank line-write" id="fe3" placeholder="Animal 3 …">
+      </div>
+
+      <p class="gap-line" style="margin-top:18px"><span class="num">3.</span> <b>fur?</b></p>
+      <div class="example-row"><span class="ex-tag">Example</span> <b>bear</b></div>
+      <div class="grid3">
+        <input type="text" class="blank line-write" id="fu1" placeholder="Animal 1 …">
+        <input type="text" class="blank line-write" id="fu2" placeholder="Animal 2 …">
+        <input type="text" class="blank line-write" id="fu3" placeholder="Animal 3 …">
+      </div>
+    </div>
+
+    <div class="speak-prompt">
+      <span class="sp-icon" aria-hidden="true">💬</span>
+      <div>
+        <div class="sp-label">Talk to your teacher</div>
+        <p class="sp-q">Which of the animals have a <b>tail</b>? Can you think of more animals with a <b>tail</b>, <b>feathers</b> or <b>fur</b>?</p>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>feathers</b> = the soft things that cover a bird · <b>fur</b> = thick soft hair on an animal · <b>tail</b> = the long part at the back of an animal's body.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 5 — Student's Book p.83, Learn to learn, task 4
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t5">
+    <div class="step-head">
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-meta">Learn to learn · Word categories</div>
+        <h2>Mammals, birds or reptiles?</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Learn to learn</div>
+      <h3>When you learn new words, put them into <b>categories</b>. This helps you remember the meaning.</h3>
+      <table class="ref-table" style="max-width:560px">
+        <tr><th>Mammals</th><th>Birds</th><th>Reptiles</th></tr>
+        <tr><td>giraffe</td><td>parrot</td><td>snake</td></tr>
+      </table>
+    </div>
+
+    <div class="card" id="ex-categories">
+      <div class="exercise-label">Word Choice</div>
+      <h3>Complete the categories with the other animals from step 1.</h3>
+      <div class="two-col">
+        <p class="gap-line"><span class="num">1.</span> <b>bear</b> →
+          <span class="word-choice" id="cat1" data-answer="Mammal">
+            <button class="word-choice-btn" onclick="selectWord(this)">Mammal</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">Bird</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">Reptile</button>
+          </span></p>
+        <p class="gap-line"><span class="num">2.</span> <b>crocodile</b> →
+          <span class="word-choice" id="cat2" data-answer="Reptile">
+            <button class="word-choice-btn" onclick="selectWord(this)">Mammal</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">Bird</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">Reptile</button>
+          </span></p>
+        <p class="gap-line"><span class="num">3.</span> <b>donkey</b> →
+          <span class="word-choice" id="cat3" data-answer="Mammal">
+            <button class="word-choice-btn" onclick="selectWord(this)">Mammal</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">Bird</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">Reptile</button>
+          </span></p>
+        <p class="gap-line"><span class="num">4.</span> <b>duck</b> →
+          <span class="word-choice" id="cat4" data-answer="Bird">
+            <button class="word-choice-btn" onclick="selectWord(this)">Mammal</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">Bird</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">Reptile</button>
+          </span></p>
+        <p class="gap-line"><span class="num">5.</span> <b>eagle</b> →
+          <span class="word-choice" id="cat5" data-answer="Bird">
+            <button class="word-choice-btn" onclick="selectWord(this)">Mammal</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">Bird</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">Reptile</button>
+          </span></p>
+        <p class="gap-line"><span class="num">6.</span> <b>hippo</b> →
+          <span class="word-choice" id="cat6" data-answer="Mammal">
+            <button class="word-choice-btn" onclick="selectWord(this)">Mammal</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">Bird</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">Reptile</button>
+          </span></p>
+        <p class="gap-line"><span class="num">7.</span> <b>horse</b> →
+          <span class="word-choice" id="cat7" data-answer="Mammal">
+            <button class="word-choice-btn" onclick="selectWord(this)">Mammal</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">Bird</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">Reptile</button>
+          </span></p>
+        <p class="gap-line"><span class="num">8.</span> <b>lion</b> →
+          <span class="word-choice" id="cat8" data-answer="Mammal">
+            <button class="word-choice-btn" onclick="selectWord(this)">Mammal</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">Bird</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">Reptile</button>
+          </span></p>
+        <p class="gap-line"><span class="num">9.</span> <b>monkey</b> →
+          <span class="word-choice" id="cat9" data-answer="Mammal">
+            <button class="word-choice-btn" onclick="selectWord(this)">Mammal</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">Bird</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">Reptile</button>
+          </span></p>
+        <p class="gap-line"><span class="num">10.</span> <b>mouse</b> →
+          <span class="word-choice" id="cat10" data-answer="Mammal">
+            <button class="word-choice-btn" onclick="selectWord(this)">Mammal</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">Bird</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">Reptile</button>
+          </span></p>
+        <p class="gap-line"><span class="num">11.</span> <b>whale</b> →
+          <span class="word-choice" id="cat11" data-answer="Mammal">
+            <button class="word-choice-btn" onclick="selectWord(this)">Mammal</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">Bird</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">Reptile</button>
+          </span></p>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkWords('ex-categories')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetWords('ex-categories')">Try again</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Writing</div>
+      <h3>Add two more animals to each category.</h3>
+      <p style="font-weight:800;margin:14px 0 4px">Mammals</p>
+      <input type="text" class="blank line-write" id="add-mam" placeholder="e.g. cat, …">
+      <p style="font-weight:800;margin:14px 0 4px">Birds</p>
+      <input type="text" class="blank line-write" id="add-bird" placeholder="…">
+      <p style="font-weight:800;margin:14px 0 4px">Reptiles</p>
+      <input type="text" class="blank line-write" id="add-rep" placeholder="…">
+    </div>
+
+    <div class="tip">
+      <b>Mammals</b> have hair or fur and drink milk from their mothers — even the <b>whale</b>! <b>Birds</b> have feathers. <b>Reptiles</b> have scales, like the crocodile and the snake.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 6 — Student's Book p.83, Use it!, task 5
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t6">
+    <div class="step-head">
+      <div class="step-num">6</div>
+      <div>
+        <div class="step-meta">Use it!</div>
+        <h2>Guess my category</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Speaking Game</div>
+      <h3>Play with your teacher. Write a new category and three animals for it. Tell your teacher the animals — can they guess your category?</h3>
+
+      <div class="dialogue" style="margin-top:12px">
+        <span class="dl-name">Matvey</span>
+        <p class="dl-text">Category 1: mouse, parrot, snake.</p>
+        <span class="dl-name two">Nina</span>
+        <p class="dl-text">Is your category ‘pets’?</p>
+      </div>
+
+      <div class="word-bank-ref" style="margin-top:16px">
+        <span onclick="this.classList.toggle('crossed')">pets</span><span onclick="this.classList.toggle('crossed')">animals I like</span><span onclick="this.classList.toggle('crossed')">animals I don't like</span><span onclick="this.classList.toggle('crossed')">big animals</span><span onclick="this.classList.toggle('crossed')">animals in the water</span><span onclick="this.classList.toggle('crossed')">animals that eat meat</span>
+      </div>
+
+      <p style="font-weight:800;margin:14px 0 4px">My category 1</p>
+      <input type="text" class="blank line-write" id="uc1" placeholder="Animals: … · Category: …">
+      <p style="font-weight:800;margin:14px 0 4px">My category 2</p>
+      <input type="text" class="blank line-write" id="uc2" placeholder="Animals: … · Category: …">
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 7 — Student's Book p.83, Explore it!
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="t7">
+    <div class="step-head">
+      <div class="step-num">7</div>
+      <div>
+        <div class="step-meta">Explore it!</div>
+        <h2>Guess the correct answer</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-explore">
+      <div class="exercise-label">Multiple Choice</div>
+      <h3>A blue whale's tongue weighs the same as …</h3>
+      <div class="mc-options" data-correct="b">
+        <label class="mc-option"><input type="radio" name="mc3" value="a"><span class="mc-bullet">A</span> a crocodile.</label>
+        <label class="mc-option"><input type="radio" name="mc3" value="b"><span class="mc-bullet">B</span> an elephant.</label>
+        <label class="mc-option"><input type="radio" name="mc3" value="c"><span class="mc-bullet">C</span> a giraffe.</label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkMC('ex-explore')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetMC('ex-explore')">Try again</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Writing</div>
+      <h3>Find an interesting animal fact. Write a question for your teacher to answer.</h3>
+      <textarea class="free-write" id="fw-fact" placeholder="Question: … a) … b) … c) …" rows="3"></textarea>
+      <div class="char-count" id="cc-fw-fact">0 characters</div>
+    </div>
+  </section>
+
+  <div class="btn-row" style="justify-content:flex-end;margin:10px 0 30px">
+    <button class="btn-accent" onclick="showPart('part-read');window.scrollTo(0,0)">Next part: Read it →</button>
+  </div>
+
+</div><!-- /wrap -->
+</div><!-- /part-vocab -->
+
+<div class="lesson-part" id="part-read">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#r1">1 · Predict</a>
+    <a href="#r2">2 · Read</a>
+    <a href="#r3">3 · T / F / DS</a>
+    <a href="#r4">4 · Find words</a>
+    <a href="#r5">5 · Voice it!</a>
+    <a href="#r6">6 · Finish</a>
+    <a href="#part-homework" onclick="showPart('part-homework');window.scrollTo(0,0)">Homework ↗</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 1 — Student's Book p.84, Reading, task 1
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="r1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Reading · Fact files</div>
+        <h2>Do you recognise these animals?</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-habitats">
+      <div class="exercise-label">Before you read</div>
+      <h3>Look at the photos. Do you recognise these animals? Where do they live? Guess first — you will check in step 2.</h3>
+      <div class="grid3" style="margin-top:12px">
+        <img class="media-img" src="images/unit7-axolotl.jpg" alt="A pale pink axolotl with feathery pink gills and four little legs, on a dark rock" style="object-fit:cover;height:220px">
+        <img class="media-img" src="images/unit7-maned-wolf.jpg" alt="A maned wolf: a red-brown animal like a fox with big ears and very long black legs" style="background:#fff;object-fit:contain;height:220px">
+        <img class="media-img" src="images/unit7-monk-seal.jpg" alt="A grey monk seal swimming under the water" style="object-fit:cover;object-position:40% 75%;height:220px">
+      </div>
+      <p style="margin-top:14px">1. The <b>axolotl</b> lives <span class="word-choice" id="hab1" data-answer="in a lake">
+          <button class="word-choice-btn" onclick="selectWord(this)">in a lake</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">in the sea</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">on land</button>
+        </span></p>
+      <p>2. The <b>maned wolf</b> lives <span class="word-choice" id="hab2" data-answer="on land">
+          <button class="word-choice-btn" onclick="selectWord(this)">in a lake</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">in the sea</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">on land</button>
+        </span></p>
+      <p>3. The <b>Mediterranean monk seal</b> lives <span class="word-choice" id="hab3" data-answer="in the sea">
+          <button class="word-choice-btn" onclick="selectWord(this)">in a lake</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">in the sea</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">on land</button>
+        </span></p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 2 — Student's Book p.84, Reading, task 2, Audio 7.03
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="r2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Reading · Audio 7.03</div>
+        <h2>Amazing animals in danger</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-read-check">
+      <div class="exercise-label">Listen &amp; Read</div>
+      <h3>Read and listen to the text and the fact files. Check your answers to step 1.</h3>
+      <div class="audio-wrap">
+        <audio controls>
+          <source src="audio/unit7-page84-track3.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+
+      <div class="article-intro">
+        <h4>Amazing animals in danger</h4>
+        <p>In the past, these animals <b>weren't</b> in danger and life <b>wasn't</b> the same. But things change and now people know about the problems and they are finding solutions.</p>
+      </div>
+
+      <div class="factfiles">
+        <div class="factfile">
+          <img src="images/unit7-axolotl.jpg" alt="Axolotl" style="object-fit:cover">
+          <h4>Axolotl</h4>
+          <p>In the past, <b>there was</b> a lot of water in Lake Xochimilco, Mexico. <b>It was</b> clean. <b>There were</b> a lot of axolotls in the water – about 6,000 axolotls per square kilometre. They <b>were</b> healthy and they <b>weren't</b> hungry. Now there are only 36 axolotls in the same area. Why? They're hungry because other fish eat their food. There's a lot of plastic in the water and it's dirty. But don't worry! Scientists and farmers are working to clean the water and help the axolotls.</p>
+          <dl>
+            <dt>Weight</dt><dd>56–225 grams</dd>
+            <dt>Habitat</dt><dd>Lake Xochimilco, Mexico City</dd>
+            <dt>Food</dt><dd>small fish, insects and worms</dd>
+            <dt>Amazing fact</dt><dd>It can grow new parts of its body.</dd>
+          </dl>
+        </div>
+        <div class="factfile">
+          <img src="images/unit7-maned-wolf.jpg" alt="Maned wolf">
+          <h4>Maned Wolf</h4>
+          <p>In Brazil, <b>there were</b> almost 24,000 maned wolves in the past. Today, there are less than 15,000. What's the biggest problem? The wolves can't live in the forests because there aren't a lot of trees. But there are ways to fix this. There are now safe places in forests for wolves. Local people are learning about the wolves and helping to protect them.</p>
+          <dl>
+            <dt>Weight</dt><dd>20–25 kg</dd>
+            <dt>Habitat</dt><dd>Savannahs in Brazil and forests in South America</dd>
+            <dt>Food</dt><dd>small animals and insects, fruit and vegetables</dd>
+            <dt>Amazing fact</dt><dd>The maned wolf isn't really a wolf – it's a member of the dog family. It barks like a dog!</dd>
+          </dl>
+        </div>
+        <div class="factfile">
+          <img src="images/unit7-monk-seal.jpg" alt="Mediterranean monk seal" style="object-fit:cover;object-position:40% 75%">
+          <h4>Mediterranean Monk Seal</h4>
+          <p>Today, there are about 700 Mediterranean monk seals. How many monk seals <b>were there</b> in the past? 24,000. The ocean <b>was</b> their home and it <b>was</b> safe. Monk seals sometimes die because they swim into fishing nets. But there's good news! There are different nets now. The seals can swim in and out of them easily.</p>
+          <dl>
+            <dt>Weight</dt><dd>up to 315 kg</dd>
+            <dt>Habitat</dt><dd>caves and beaches of the Mediterranean Sea</dd>
+            <dt>Food</dt><dd>fish, octopus</dd>
+            <dt>Amazing fact</dt><dd>It can swim faster than a shark.</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="btn-row" style="margin-top:18px">
+        <button class="btn-primary" onclick="checkWords('ex-habitats')">Check step 1 ✓</button>
+        <button class="btn-ghost" onclick="resetWords('ex-habitats')">Try step 1 again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>in danger</b> = there are not many of them, and they can disappear · <b>habitat</b> = the place where an animal lives · <b>solution</b> = a way to fix a problem.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 3 — Student's Book p.84, Reading, task 3
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="r3">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-meta">Reading</div>
+        <h2>True, false or doesn't say?</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-tfds">
+      <div class="exercise-label">True / False / Doesn't say</div>
+      <h3>Read the sentences and choose <b>T</b> (true), <b>F</b> (false) or <b>DS</b> (doesn't say).</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span> 1. An axolotl can grow new parts of its body. — <b>T</b></div>
+
+      <p style="font-weight:700;margin:14px 0 4px">2. The maned wolf is a member of the wolf family.</p>
+      <div class="mc-options" data-correct="f">
+        <label class="mc-option"><input type="radio" name="tf2" value="t"><span class="mc-bullet">T</span> True</label>
+        <label class="mc-option"><input type="radio" name="tf2" value="f"><span class="mc-bullet">F</span> False</label>
+        <label class="mc-option"><input type="radio" name="tf2" value="ds"><span class="mc-bullet">DS</span> Doesn't say</label>
+      </div>
+      <p style="font-weight:700;margin:18px 0 4px">3. Mediterranean monk seals are slower than sharks.</p>
+      <div class="mc-options" data-correct="f">
+        <label class="mc-option"><input type="radio" name="tf3" value="t"><span class="mc-bullet">T</span> True</label>
+        <label class="mc-option"><input type="radio" name="tf3" value="f"><span class="mc-bullet">F</span> False</label>
+        <label class="mc-option"><input type="radio" name="tf3" value="ds"><span class="mc-bullet">DS</span> Doesn't say</label>
+      </div>
+      <p style="font-weight:700;margin:18px 0 4px">4. There are more maned wolves than axolotls or monk seals.</p>
+      <div class="mc-options" data-correct="t">
+        <label class="mc-option"><input type="radio" name="tf4" value="t"><span class="mc-bullet">T</span> True</label>
+        <label class="mc-option"><input type="radio" name="tf4" value="f"><span class="mc-bullet">F</span> False</label>
+        <label class="mc-option"><input type="radio" name="tf4" value="ds"><span class="mc-bullet">DS</span> Doesn't say</label>
+      </div>
+      <p style="font-weight:700;margin:18px 0 4px">5. Pollution is a problem for all of these animals.</p>
+      <div class="mc-options" data-correct="ds">
+        <label class="mc-option"><input type="radio" name="tf5" value="t"><span class="mc-bullet">T</span> True</label>
+        <label class="mc-option"><input type="radio" name="tf5" value="f"><span class="mc-bullet">F</span> False</label>
+        <label class="mc-option"><input type="radio" name="tf5" value="ds"><span class="mc-bullet">DS</span> Doesn't say</label>
+      </div>
+      <p style="font-weight:700;margin:18px 0 4px">6. The maned wolf is the heaviest of the three animals.</p>
+      <div class="mc-options" data-correct="f">
+        <label class="mc-option"><input type="radio" name="tf6" value="t"><span class="mc-bullet">T</span> True</label>
+        <label class="mc-option"><input type="radio" name="tf6" value="f"><span class="mc-bullet">F</span> False</label>
+        <label class="mc-option"><input type="radio" name="tf6" value="ds"><span class="mc-bullet">DS</span> Doesn't say</label>
+      </div>
+      <p style="font-weight:700;margin:18px 0 4px">7. People are finding solutions to help these animals.</p>
+      <div class="mc-options" data-correct="t">
+        <label class="mc-option"><input type="radio" name="tf7" value="t"><span class="mc-bullet">T</span> True</label>
+        <label class="mc-option"><input type="radio" name="tf7" value="f"><span class="mc-bullet">F</span> False</label>
+        <label class="mc-option"><input type="radio" name="tf7" value="ds"><span class="mc-bullet">DS</span> Doesn't say</label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkMC('ex-tfds')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetMC('ex-tfds')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>DS</b> = the text doesn't give this information. It isn't true or false — we just don't know from the text.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 4 — Student's Book p.84, Reading, task 4
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="r4">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-meta">Reading · Word categories</div>
+        <h2>Find words in the fact files</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-factcats">
+      <div class="exercise-label">Word Choice</div>
+      <h3>Put the words from the fact files into the right category.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span> <b>axolotl</b> → Animals in danger</div>
+      <p class="gap-line"><span class="num">1.</span> <b>maned wolf</b> →
+        <span class="word-choice" id="fc1" data-answer="Animals in danger">
+          <button class="word-choice-btn" onclick="selectWord(this)">Animals in danger</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Food</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Habitats</button>
+        </span></p>
+      <p class="gap-line"><span class="num">2.</span> <b>small fish</b> →
+        <span class="word-choice" id="fc2" data-answer="Food">
+          <button class="word-choice-btn" onclick="selectWord(this)">Animals in danger</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Food</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Habitats</button>
+        </span></p>
+      <p class="gap-line"><span class="num">3.</span> <b>savannahs</b> →
+        <span class="word-choice" id="fc3" data-answer="Habitats">
+          <button class="word-choice-btn" onclick="selectWord(this)">Animals in danger</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Food</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Habitats</button>
+        </span></p>
+      <p class="gap-line"><span class="num">4.</span> <b>insects</b> →
+        <span class="word-choice" id="fc4" data-answer="Food">
+          <button class="word-choice-btn" onclick="selectWord(this)">Animals in danger</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Food</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Habitats</button>
+        </span></p>
+      <p class="gap-line"><span class="num">5.</span> <b>monk seal</b> →
+        <span class="word-choice" id="fc5" data-answer="Animals in danger">
+          <button class="word-choice-btn" onclick="selectWord(this)">Animals in danger</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Food</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Habitats</button>
+        </span></p>
+      <p class="gap-line"><span class="num">6.</span> <b>caves</b> →
+        <span class="word-choice" id="fc6" data-answer="Habitats">
+          <button class="word-choice-btn" onclick="selectWord(this)">Animals in danger</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Food</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Habitats</button>
+        </span></p>
+      <p class="gap-line"><span class="num">7.</span> <b>worms</b> →
+        <span class="word-choice" id="fc7" data-answer="Food">
+          <button class="word-choice-btn" onclick="selectWord(this)">Animals in danger</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Food</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Habitats</button>
+        </span></p>
+      <p class="gap-line"><span class="num">8.</span> <b>lake</b> →
+        <span class="word-choice" id="fc8" data-answer="Habitats">
+          <button class="word-choice-btn" onclick="selectWord(this)">Animals in danger</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Food</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Habitats</button>
+        </span></p>
+      <p class="gap-line"><span class="num">9.</span> <b>fruit</b> →
+        <span class="word-choice" id="fc9" data-answer="Food">
+          <button class="word-choice-btn" onclick="selectWord(this)">Animals in danger</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Food</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Habitats</button>
+        </span></p>
+      <p class="gap-line"><span class="num">10.</span> <b>forests</b> →
+        <span class="word-choice" id="fc10" data-answer="Habitats">
+          <button class="word-choice-btn" onclick="selectWord(this)">Animals in danger</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Food</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Habitats</button>
+        </span></p>
+      <p class="gap-line"><span class="num">11.</span> <b>octopus</b> →
+        <span class="word-choice" id="fc11" data-answer="Food">
+          <button class="word-choice-btn" onclick="selectWord(this)">Animals in danger</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Food</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Habitats</button>
+        </span></p>
+      <p class="gap-line"><span class="num">12.</span> <b>beaches</b> →
+        <span class="word-choice" id="fc12" data-answer="Habitats">
+          <button class="word-choice-btn" onclick="selectWord(this)">Animals in danger</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Food</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Habitats</button>
+        </span></p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkWords('ex-factcats')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetWords('ex-factcats')">Try again</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Writing</div>
+      <h3>Add two more words to each category.</h3>
+      <p style="font-weight:800;margin:14px 0 4px">Animals in danger</p>
+      <input type="text" class="blank line-write" id="more-danger" placeholder="e.g. tiger, …">
+      <p style="font-weight:800;margin:14px 0 4px">Food</p>
+      <input type="text" class="blank line-write" id="more-food" placeholder="…">
+      <p style="font-weight:800;margin:14px 0 4px">Habitats</p>
+      <input type="text" class="blank line-write" id="more-habitats" placeholder="…">
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 5 — Student's Book p.84, Voice it!, task 5
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="r5">
+    <div class="step-head">
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-meta">Voice it!</div>
+        <h2>Discuss the questions</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Speaking</div>
+      <h3>Discuss these questions with your teacher. Make notes first if you want.</h3>
+
+      <p style="font-weight:800;margin:14px 0 4px">1. Which of these animals is your favourite? Why?</p>
+      <textarea class="free-write" id="fw-v1" placeholder="My favourite is the … because …" rows="2"></textarea>
+      <div class="char-count" id="cc-fw-v1">0 characters</div>
+      <p style="font-weight:800;margin:14px 0 4px">2. What other problems are there for these animals?</p>
+      <textarea class="free-write" id="fw-v2" placeholder="There is / There isn't …" rows="2"></textarea>
+      <div class="char-count" id="cc-fw-v2">0 characters</div>
+      <p style="font-weight:800;margin:14px 0 4px">3. Why is it important to protect animals?</p>
+      <textarea class="free-write" id="fw-v3" placeholder="I think it's important because …" rows="2"></textarea>
+      <div class="char-count" id="cc-fw-v3">0 characters</div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 6 — Finish
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="r6">
+    <div class="step-head">
+      <div class="step-num">6</div>
+      <div>
+        <div class="step-meta">Finish</div>
+        <h2>Nice work</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Now I...</h3>
+      <div class="reflect-list">
+        <label class="reflect-item">
+          <input type="checkbox" id="rf1">
+          <span class="check-box"></span>
+          <span class="reflect-text">can name fourteen animals in English</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="rf2">
+          <span class="check-box"></span>
+          <span class="reflect-text">can put animals into categories: mammals, birds and reptiles</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="rf3">
+          <span class="check-box"></span>
+          <span class="reflect-text">know some amazing facts about animals from the video</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="rf4">
+          <span class="check-box"></span>
+          <span class="reflect-text">can read fact files about animals in danger</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="rf5">
+          <span class="check-box"></span>
+          <span class="reflect-text">can say if a sentence is true, false or the text doesn't say</span>
+        </label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-accent" onclick="showPart('part-homework');window.scrollTo(0,0)">Go to homework →</button>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /wrap -->
+</div><!-- /part-read -->
+
+<div class="lesson-part" id="part-homework">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#h1">1 · Word search</a>
+    <a href="#h2">2 · Odd one out</a>
+    <a href="#h3">3 · Descriptions</a>
+    <a href="#h4">4 · Definition</a>
+    <a href="#h5">5 · Explore it!</a>
+    <a href="#h6">6 · Polar bear</a>
+    <a href="#h7">7 · Article</a>
+    <a href="#h8">8 · New words</a>
+    <a href="#h9">9 · True or false</a>
+    <a href="#h10">10 · Your ideas</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 1 — Workbook p.56, Vocabulary, task 1
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Homework · Vocabulary</div>
+        <h2>Animal word search</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-wordsearch">
+      <div class="exercise-label">Word Search</div>
+      <h3>Find 14 animals in the word search. Tap the letters to colour them.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span> <b>crocodile</b> is in the first line — tap it too!</div>
+
+      <div class="ws-grid ws12">
+        <span class="tap" data-key onclick="toggleTap(this)">c</span><span class="tap" data-key onclick="toggleTap(this)">r</span><span class="tap" data-key onclick="toggleTap(this)">o</span><span class="tap" data-key onclick="toggleTap(this)">c</span><span class="tap" data-key onclick="toggleTap(this)">o</span><span class="tap" data-key onclick="toggleTap(this)">d</span><span class="tap" data-key onclick="toggleTap(this)">i</span><span class="tap" data-key onclick="toggleTap(this)">l</span><span class="tap" data-key onclick="toggleTap(this)">e</span><span class="tap" onclick="toggleTap(this)">d</span><span class="tap" onclick="toggleTap(this)">e</span><span class="tap" onclick="toggleTap(this)">y</span>
+        <span class="tap" data-key onclick="toggleTap(this)">h</span><span class="tap" data-key onclick="toggleTap(this)">i</span><span class="tap" data-key onclick="toggleTap(this)">p</span><span class="tap" data-key onclick="toggleTap(this)">p</span><span class="tap" data-key onclick="toggleTap(this)">o</span><span class="tap" onclick="toggleTap(this)">b</span><span class="tap" data-key onclick="toggleTap(this)">d</span><span class="tap" data-key onclick="toggleTap(this)">o</span><span class="tap" data-key onclick="toggleTap(this)">n</span><span class="tap" data-key onclick="toggleTap(this)">k</span><span class="tap" data-key onclick="toggleTap(this)">e</span><span class="tap" data-key onclick="toggleTap(this)">y</span>
+        <span class="tap" onclick="toggleTap(this)">j</span><span class="tap" onclick="toggleTap(this)">l</span><span class="tap" onclick="toggleTap(this)">s</span><span class="tap" onclick="toggleTap(this)">i</span><span class="tap" data-key onclick="toggleTap(this)">s</span><span class="tap" onclick="toggleTap(this)">w</span><span class="tap" onclick="toggleTap(this)">a</span><span class="tap" onclick="toggleTap(this)">y</span><span class="tap" onclick="toggleTap(this)">u</span><span class="tap" onclick="toggleTap(this)">k</span><span class="tap" data-key onclick="toggleTap(this)">a</span><span class="tap" data-key onclick="toggleTap(this)">g</span>
+        <span class="tap" data-key onclick="toggleTap(this)">p</span><span class="tap" onclick="toggleTap(this)">h</span><span class="tap" onclick="toggleTap(this)">w</span><span class="tap" data-key onclick="toggleTap(this)">b</span><span class="tap" onclick="toggleTap(this)">c</span><span class="tap" data-key onclick="toggleTap(this)">n</span><span class="tap" onclick="toggleTap(this)">g</span><span class="tap" onclick="toggleTap(this)">d</span><span class="tap" onclick="toggleTap(this)">n</span><span class="tap" onclick="toggleTap(this)">t</span><span class="tap" data-key onclick="toggleTap(this)">g</span><span class="tap" data-key onclick="toggleTap(this)">i</span>
+        <span class="tap" data-key onclick="toggleTap(this)">a</span><span class="tap" onclick="toggleTap(this)">m</span><span class="tap" data-key onclick="toggleTap(this)">h</span><span class="tap" data-key onclick="toggleTap(this)">e</span><span class="tap" onclick="toggleTap(this)">k</span><span class="tap" onclick="toggleTap(this)">m</span><span class="tap" data-key onclick="toggleTap(this)">a</span><span class="tap" onclick="toggleTap(this)">n</span><span class="tap" onclick="toggleTap(this)">i</span><span class="tap" onclick="toggleTap(this)">j</span><span class="tap" data-key onclick="toggleTap(this)">l</span><span class="tap" data-key onclick="toggleTap(this)">r</span>
+        <span class="tap" data-key onclick="toggleTap(this)">r</span><span class="tap" onclick="toggleTap(this)">q</span><span class="tap" data-key onclick="toggleTap(this)">o</span><span class="tap" data-key onclick="toggleTap(this)">a</span><span class="tap" onclick="toggleTap(this)">v</span><span class="tap" onclick="toggleTap(this)">i</span><span class="tap" data-key onclick="toggleTap(this)">d</span><span class="tap" data-key onclick="toggleTap(this)">k</span><span class="tap" onclick="toggleTap(this)">t</span><span class="tap" onclick="toggleTap(this)">h</span><span class="tap" data-key onclick="toggleTap(this)">e</span><span class="tap" data-key onclick="toggleTap(this)">a</span>
+        <span class="tap" data-key onclick="toggleTap(this)">r</span><span class="tap" onclick="toggleTap(this)">k</span><span class="tap" data-key onclick="toggleTap(this)">r</span><span class="tap" data-key onclick="toggleTap(this)">r</span><span class="tap" onclick="toggleTap(this)">p</span><span class="tap" onclick="toggleTap(this)">l</span><span class="tap" data-key onclick="toggleTap(this)">u</span><span class="tap" onclick="toggleTap(this)">z</span><span class="tap" data-key onclick="toggleTap(this)">e</span><span class="tap" onclick="toggleTap(this)">b</span><span class="tap" onclick="toggleTap(this)">c</span><span class="tap" data-key onclick="toggleTap(this)">f</span>
+        <span class="tap" data-key onclick="toggleTap(this)">o</span><span class="tap" onclick="toggleTap(this)">r</span><span class="tap" data-key onclick="toggleTap(this)">s</span><span class="tap" onclick="toggleTap(this)">o</span><span class="tap" onclick="toggleTap(this)">e</span><span class="tap" onclick="toggleTap(this)">n</span><span class="tap" data-key onclick="toggleTap(this)">c</span><span class="tap" onclick="toggleTap(this)">d</span><span class="tap" onclick="toggleTap(this)">w</span><span class="tap" onclick="toggleTap(this)">v</span><span class="tap" onclick="toggleTap(this)">e</span><span class="tap" data-key onclick="toggleTap(this)">f</span>
+        <span class="tap" data-key onclick="toggleTap(this)">t</span><span class="tap" onclick="toggleTap(this)">x</span><span class="tap" data-key onclick="toggleTap(this)">e</span><span class="tap" onclick="toggleTap(this)">g</span><span class="tap" onclick="toggleTap(this)">t</span><span class="tap" onclick="toggleTap(this)">w</span><span class="tap" data-key onclick="toggleTap(this)">k</span><span class="tap" data-key onclick="toggleTap(this)">m</span><span class="tap" data-key onclick="toggleTap(this)">o</span><span class="tap" data-key onclick="toggleTap(this)">u</span><span class="tap" data-key onclick="toggleTap(this)">s</span><span class="tap" data-key onclick="toggleTap(this)">e</span>
+        <span class="tap" onclick="toggleTap(this)">z</span><span class="tap" onclick="toggleTap(this)">f</span><span class="tap" data-key onclick="toggleTap(this)">w</span><span class="tap" data-key onclick="toggleTap(this)">h</span><span class="tap" data-key onclick="toggleTap(this)">a</span><span class="tap" data-key onclick="toggleTap(this)">l</span><span class="tap" data-key onclick="toggleTap(this)">e</span><span class="tap" onclick="toggleTap(this)">s</span><span class="tap" onclick="toggleTap(this)">k</span><span class="tap" onclick="toggleTap(this)">s</span><span class="tap" onclick="toggleTap(this)">b</span><span class="tap" onclick="toggleTap(this)">a</span>
+        <span class="tap" onclick="toggleTap(this)">a</span><span class="tap" onclick="toggleTap(this)">n</span><span class="tap" onclick="toggleTap(this)">f</span><span class="tap" onclick="toggleTap(this)">m</span><span class="tap" onclick="toggleTap(this)">p</span><span class="tap" onclick="toggleTap(this)">b</span><span class="tap" data-key onclick="toggleTap(this)">m</span><span class="tap" data-key onclick="toggleTap(this)">o</span><span class="tap" data-key onclick="toggleTap(this)">n</span><span class="tap" data-key onclick="toggleTap(this)">k</span><span class="tap" data-key onclick="toggleTap(this)">e</span><span class="tap" data-key onclick="toggleTap(this)">y</span>
+        <span class="tap" data-key onclick="toggleTap(this)">l</span><span class="tap" data-key onclick="toggleTap(this)">i</span><span class="tap" data-key onclick="toggleTap(this)">o</span><span class="tap" data-key onclick="toggleTap(this)">n</span><span class="tap" onclick="toggleTap(this)">s</span><span class="tap" onclick="toggleTap(this)">t</span><span class="tap" onclick="toggleTap(this)">c</span><span class="tap" onclick="toggleTap(this)">n</span><span class="tap" onclick="toggleTap(this)">u</span><span class="tap" onclick="toggleTap(this)">i</span><span class="tap" onclick="toggleTap(this)">j</span><span class="tap" onclick="toggleTap(this)">x</span>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkTap('ex-wordsearch')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetTap('ex-wordsearch')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      Most words go <b>across</b> (→) or <b>down</b> (↓), but <b>one</b> word goes diagonally (↘). Green letters are right; red letters are not part of a word.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 2 — Workbook p.56, Vocabulary, task 2
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Homework · Vocabulary</div>
+        <h2>Odd one out</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-odd">
+      <div class="exercise-label">Word Choice + Writing</div>
+      <h3>Choose the animal in each category which is <b>not</b> correct. Then add a different animal to each category.</h3>
+      <p class="gap-line" style="margin-top:14px"><span class="num">1.</span> <b>Birds</b>:
+        <span class="word-choice" id="od1" data-answer="hippo">
+          <button class="word-choice-btn" onclick="selectWord(this)">duck</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">hippo</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">parrot</button>
+        </span></p>
+      <input type="text" class="blank line-write" id="od-add1" placeholder="Add a different bird …">
+      <p class="gap-line" style="margin-top:14px"><span class="num">2.</span> <b>Mammals</b>:
+        <span class="word-choice" id="od2" data-answer="eagle">
+          <button class="word-choice-btn" onclick="selectWord(this)">eagle</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">giraffe</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">lion</button>
+        </span></p>
+      <input type="text" class="blank line-write" id="od-add2" placeholder="Add a different mammal …">
+      <p class="gap-line" style="margin-top:14px"><span class="num">3.</span> <b>Reptiles</b>:
+        <span class="word-choice" id="od3" data-answer="bear">
+          <button class="word-choice-btn" onclick="selectWord(this)">snake</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">bear</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">crocodile</button>
+        </span></p>
+      <input type="text" class="blank line-write" id="od-add3" placeholder="Add a different reptile …">
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkWords('ex-odd')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetWords('ex-odd')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 3 — Workbook p.56, Vocabulary, task 3
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h3">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-meta">Homework · Vocabulary</div>
+        <h2>What animal is it?</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-describe">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Read the descriptions and write the names of the animals.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span>1. This animal is a mammal. It usually lives in forests and cold places. It's very big and has lots of hair. → <b>bear</b></span></div>
+      <p class="gap-line" style="margin-top:14px"><span class="num">2.</span> This animal lives in water in hot countries. It's a reptile with a big mouth and lots of big teeth.</p>
+      <input class="blank" id="ds2" data-answer="crocodile|a crocodile" placeholder="?">
+      <p class="gap-line" style="margin-top:14px"><span class="num">3.</span> This is a bird. It eats plants and it can swim and fly. It usually lives near water.</p>
+      <input class="blank" id="ds3" data-answer="duck|a duck" placeholder="?">
+      <p class="gap-line" style="margin-top:14px"><span class="num">4.</span> This animal likes cheese a lot but it doesn't like cats! It's usually grey and has lots of babies.</p>
+      <input class="blank" id="ds4" data-answer="mouse|a mouse" placeholder="?">
+      <p class="gap-line" style="margin-top:14px"><span class="num">5.</span> This animal eats meat. It hasn't got any legs. Some of them can kill other animals and sometimes people, too.</p>
+      <input class="blank" id="ds5" data-answer="snake|a snake" placeholder="?">
+      <p class="gap-line" style="margin-top:14px"><span class="num">6.</span> This is a very large sea mammal. It has a hole on the top of its head.</p>
+      <input class="blank" id="ds6" data-answer="whale|a whale" placeholder="?">
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-describe')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-describe')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 4 — Workbook p.56, Vocabulary, task 4
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h4">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-meta">Homework · Writing</div>
+        <h2>Write a definition</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Free Writing</div>
+      <h3>Choose another animal from the word search and write a definition like the ones in task 3. Don't write the name — your teacher will guess!</h3>
+      <textarea class="free-write" id="fw-definition" placeholder="This animal is …" rows="4"></textarea>
+      <div class="char-count" id="cc-fw-definition">0 characters</div>
+    </div>
+
+    <div class="tip">
+      Use these ideas: <i>mammal / bird / reptile</i> · <i>It lives in …</i> · <i>It eats …</i> · <i>It has got … / It hasn't got …</i> · <i>It can …</i>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 5 — Workbook p.56, Explore it!
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h5">
+    <div class="step-head">
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-meta">Homework · Explore it!</div>
+        <h2>Guess the correct answer</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-hw-explore">
+      <div class="exercise-label">Multiple Choice</div>
+      <h3>Which bird sometimes sleeps with an eye open?</h3>
+      <div class="mc-options" data-correct="a">
+        <label class="mc-option"><input type="radio" name="mc4" value="a"><span class="mc-bullet">A</span> a duck</label>
+        <label class="mc-option"><input type="radio" name="mc4" value="b"><span class="mc-bullet">B</span> a parrot</label>
+        <label class="mc-option"><input type="radio" name="mc4" value="c"><span class="mc-bullet">C</span> an eagle</label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkMC('ex-hw-explore')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetMC('ex-hw-explore')">Try again</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Writing</div>
+      <h3>Find another interesting fact about birds. Write a question to ask your teacher in the next class.</h3>
+      <textarea class="free-write" id="fw-bird-fact" placeholder="Which bird …? a) … b) … c) …" rows="2"></textarea>
+      <div class="char-count" id="cc-fw-bird-fact">0 characters</div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 6 — Workbook p.57, Reading, task 1
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h6">
+    <div class="step-head">
+      <div class="step-num">6</div>
+      <div>
+        <div class="step-meta">Homework · Reading · Fact files</div>
+        <h2>Polar bear</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-polar">
+      <div class="exercise-label">Multiple Choice</div>
+      <h3>Read the fact file and choose the correct answers.</h3>
+
+      <div class="factfiles" style="grid-template-columns:minmax(0,520px)">
+        <div class="factfile">
+          <img src="images/unit7-wb57-polar-bear.jpg" alt="A big white polar bear standing on the snow" style="height:auto;object-fit:cover">
+          <h4>Polar bear</h4>
+          <dl>
+            <dt>Weight</dt><dd>about 360 kg</dd>
+            <dt>Habitat</dt><dd>the Arctic</dd>
+            <dt>Food</dt><dd>seals</dd>
+            <dt>Fact</dt><dd>Polar bears can smell a seal 32 km away! They can eat 55 kg of seal in a week.</dd>
+          </dl>
+        </div>
+      </div>
+
+      <p style="font-weight:700;margin:14px 0 4px">1. Polar bears weigh about …</p>
+      <div class="mc-options" data-correct="a">
+        <label class="mc-option"><input type="radio" name="pb1" value="a"><span class="mc-bullet">A</span> 360 kg.</label>
+        <label class="mc-option"><input type="radio" name="pb1" value="b"><span class="mc-bullet">B</span> 560 kg.</label>
+      </div>
+      <p style="font-weight:700;margin:18px 0 4px">2. Polar bears live in the …</p>
+      <div class="mc-options" data-correct="a">
+        <label class="mc-option"><input type="radio" name="pb2" value="a"><span class="mc-bullet">A</span> Arctic.</label>
+        <label class="mc-option"><input type="radio" name="pb2" value="b"><span class="mc-bullet">B</span> Antarctic.</label>
+      </div>
+      <p style="font-weight:700;margin:18px 0 4px">3. Polar bears eat about … of food in a week.</p>
+      <div class="mc-options" data-correct="b">
+        <label class="mc-option"><input type="radio" name="pb3" value="a"><span class="mc-bullet">A</span> 35 kg</label>
+        <label class="mc-option"><input type="radio" name="pb3" value="b"><span class="mc-bullet">B</span> 55 kg</label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkMC('ex-polar')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetMC('ex-polar')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 7 — Workbook p.57, Reading, task 2
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h7">
+    <div class="step-head">
+      <div class="step-num">7</div>
+      <div>
+        <div class="step-meta">Homework · Reading</div>
+        <h2>Polar bears are in town!</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-churchill">
+      <div class="exercise-label">Reading · Writing</div>
+      <h3>Read the article. What's special about the town of Churchill?</h3>
+
+      <div class="profile">
+        <div class="profile-head">
+          <div class="profile-title">Polar bears are in town!</div>
+        </div>
+        <div class="profile-para"><span class="pnum">1</span><p>Churchill is a town on the Hudson Bay in Canada. Every October, November and December, it has special visitors: polar bears! They can't hunt seals until it is colder and there is more ice, so they visit the town looking for food.</p></div>
+        <div class="profile-para"><span class="pnum">2</span><p>In 2021, there were 870 people in Churchill. Around 12,000 tourists come every year. They come to see the polar bears – there are over 600 in the area and they often come into the town. When this happens, the police ask people to leave their cars open in the town. Then people can jump inside if they need to escape!</p></div>
+        <div class="profile-para"><span class="pnum">3</span><p>In 2023, polar bears came into Churchill earlier than usual. By the summer of that year, there were 76 phone calls to the police. To keep people safe – and the bears – wildlife experts took three of the animals to a place outside the town.</p></div>
+        <div class="profile-para"><span class="pnum">4</span><p>The worst year was 1983. On 29th November, a young male bear killed a man in Churchill. It is the only time this happened. But sometimes, bears can attack when they think people want to hurt them or their babies. In 2013, a bear attacked a man in the street. Experts moved it to outside the town. The bear was safe and the man was soon fine as well.</p></div>
+      </div>
+
+      <p style="font-weight:700;margin:16px 0 4px">What's special about the town of Churchill?</p>
+      <input type="text" class="blank line-write" id="churchill-special" placeholder="Write your answer …">
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 8 — Workbook p.57, Reading, task 3
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h8">
+    <div class="step-head">
+      <div class="step-num">8</div>
+      <div>
+        <div class="step-meta">Homework · Reading · Vocabulary</div>
+        <h2>New words from the article</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-newwords">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Find these words in the article. Check their meanings in a dictionary and complete the sentences.</h3>
+
+      <div class="word-bank-ref">
+        <span onclick="this.classList.toggle('crossed')">attack</span><span onclick="this.classList.toggle('crossed')">escape</span><span onclick="this.classList.toggle('crossed')">experts</span><span onclick="this.classList.toggle('crossed')">hunt</span><span class="crossed" onclick="this.classList.toggle('crossed')">ice</span><span onclick="this.classList.toggle('crossed')">male</span>
+      </div>
+
+      <div class="example-row"><span class="ex-tag">Example</span> 1. In winter, there is <b>ice</b> on the river.</div>
+      <p class="gap-line"><span class="num">2.</span> A female animal is a girl and a
+        <input class="blank" id="nw2" data-answer="male" placeholder="?"> is a boy.</p>
+      <p class="gap-line"><span class="num">3.</span> People who are
+        <input class="blank" id="nw3" data-answer="experts" placeholder="?"> know a lot more about a subject than other people.</p>
+      <p class="gap-line"><span class="num">4.</span> Hungry lions are dangerous and they sometimes
+        <input class="blank" id="nw4" data-answer="attack" placeholder="?"> people.</p>
+      <p class="gap-line"><span class="num">5.</span> Whales often
+        <input class="blank" id="nw5" data-answer="hunt" placeholder="?"> other mammals, like seals, at night.</p>
+      <p class="gap-line"><span class="num">6.</span> The man saw the polar bear in the street and ran into a shop to
+        <input class="blank" id="nw6" data-answer="escape" placeholder="?">.</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-newwords')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-newwords')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 9 — Workbook p.57, Reading, task 4
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h9">
+    <div class="step-head">
+      <div class="step-num">9</div>
+      <div>
+        <div class="step-meta">Homework · Reading</div>
+        <h2>True or false?</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-hw-tf">
+      <div class="exercise-label">True or False</div>
+      <h3>Read the article again. Are the sentences true or false? Correct the false sentence.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span>1. The polar bears go to the town when it's cold there. — <b>F</b>. <i>Polar bears go to the town when they can't hunt seals.</i></span></div>
+
+      <p style="font-weight:700;margin:14px 0 4px">2. There are more people living in the town than tourists.</p>
+      <div class="mc-options" data-correct="f">
+        <label class="mc-option"><input type="radio" name="hwtf2" value="t"><span class="mc-bullet">T</span> True</label>
+        <label class="mc-option"><input type="radio" name="hwtf2" value="f"><span class="mc-bullet">F</span> False</label>
+      </div>
+      <input type="text" class="blank line-write" id="hwtf2-fix" placeholder="If it's false, write the correct sentence …">
+      <p style="font-weight:700;margin:18px 0 4px">3. When the polar bears come into the town, people can hide in cars.</p>
+      <div class="mc-options" data-correct="t">
+        <label class="mc-option"><input type="radio" name="hwtf3" value="t"><span class="mc-bullet">T</span> True</label>
+        <label class="mc-option"><input type="radio" name="hwtf3" value="f"><span class="mc-bullet">F</span> False</label>
+      </div>
+      <p style="font-weight:700;margin:18px 0 4px">4. When the polar bears are dangerous, experts take them to a place outside the town.</p>
+      <div class="mc-options" data-correct="t">
+        <label class="mc-option"><input type="radio" name="hwtf4" value="t"><span class="mc-bullet">T</span> True</label>
+        <label class="mc-option"><input type="radio" name="hwtf4" value="f"><span class="mc-bullet">F</span> False</label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkMC('ex-hw-tf')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetMC('ex-hw-tf')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 10 — Workbook p.57, Reading, task 5
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h10">
+    <div class="step-head">
+      <div class="step-num">10</div>
+      <div>
+        <div class="step-meta">Homework · Your ideas</div>
+        <h2>What do you think?</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Free Writing</div>
+      <h3>Answer the questions with your own ideas.</h3>
+      <p style="font-weight:800;margin:14px 0 4px">1. Would you like to visit Churchill to see the polar bears? Why / Why not?</p>
+      <textarea class="free-write" id="fw-hw-churchill" placeholder="I would / wouldn't like to visit Churchill because …" rows="3"></textarea>
+      <div class="char-count" id="cc-fw-hw-churchill">0 characters</div>
+      <p style="font-weight:800;margin:14px 0 4px">2. Why do you think there are more bears coming to the town than before?</p>
+      <textarea class="free-write" id="fw-hw-why" placeholder="I think …" rows="3"></textarea>
+      <div class="char-count" id="cc-fw-hw-why">0 characters</div>
+    </div>
+
+    <div class="tip">
+      <b>Think about it:</b> polar bears need <b>ice</b> to hunt seals. What happens to the ice when the weather gets warmer?
+    </div>
+  </section>
+
+  <div class="btn-row" style="justify-content:flex-start;margin:10px 0 30px">
+    <button class="btn-ghost" onclick="showPart('part-start');window.scrollTo(0,0)">← Back to the lesson</button>
+  </div>
+
+</div><!-- /wrap -->
+</div><!-- /part-homework -->
+
+<div class="scorebar" id="scoreBar" style="display:none">
+  <div class="wrap">
+    <span>Score: <span id="scoreCorrect">0</span> correct · <span id="scoreDone">0</span>/<span id="scoreTotal">0</span> answered</span>
+    <div class="meter"><i id="scoreMeter"></i></div>
+    <button class="btn-primary" onclick="checkAll()">Check my answers ✓</button>
+  </div>
+</div>
+
+<script src="../assets/lessons.js"></script>
+<script src="../assets/dictionary.js"></script>
+</body>
+</html>
