@@ -378,3 +378,15 @@ Commit to main → Push origin**.
 - [ ] Every input/textarea has a unique `id`
 - [ ] Every MC question group has a unique `name="mcX"`
 - [ ] Every matching container's `id` starts with `ex-match`
+
+
+---
+
+## Live answers (Firebase)
+
+Every lesson / homework page loads `sync.js` (Polina, Ksyusha: in `<head>`;
+Matvey: right before `lessons.js`). It sends the answers to Firebase so the
+teacher page (https://khurodza.github.io/Timofey_classes/teacher.html) shows
+them live. New pages made from the templates already include it. Settings
+(student id, which saved key holds the answers) are at the top of `sync.js`;
+everything else is identical on all four sites.
