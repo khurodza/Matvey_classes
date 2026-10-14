@@ -209,6 +209,16 @@ function checkWords(exId) {
   updateScoreBar();
 }
 
+function restoreWords() {
+  document.querySelectorAll('.word-choice[id]').forEach(span => {
+    const saved = data[span.id];
+    if (!saved) return;
+    span.querySelectorAll('.word-choice-btn').forEach(b => {
+      if (b.textContent.trim() === saved) b.classList.add('selected');
+    });
+  });
+}
+
 function resetWords(exId) {
   const scope = exId ? document.getElementById(exId) : document;
   scope.querySelectorAll('.word-choice').forEach(span => {
@@ -517,6 +527,7 @@ function initLesson() {
   restoreMC();
   restoreMatching();
   restoreTap();
+  restoreWords();
   restoreRate();
   setupAudio();
   updateScoreBar();
