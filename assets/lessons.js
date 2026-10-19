@@ -148,6 +148,7 @@ function selectMatch(el, exId) {
       const matched = data['match-' + exId] || [];
       matched.push(a.dataset.pair);
       save({ ['match-' + exId]: matched });
+      alignMatches(document.getElementById(exId), true);
       toast('Matched');
     } else {
       [a, b].forEach(x => x.classList.add('shake'));
@@ -163,7 +164,63 @@ function resetMatchEx(exId) {
   container.querySelectorAll('.match-item').forEach(el => el.classList.remove('matched', 'locked', 'selected', 'shake'));
   matchState[exId] = { left: null, right: null };
   save({ ['match-' + exId]: [] });
+  const right = container.querySelector('.match-col[data-side="right"]');
+  if (right && container._origRight) container._origRight.forEach(el => right.appendChild(el));
+  alignMatches(container);
   updateScoreBar();
+}
+
+/* Matched pairs sit side by side: each matched right-hand item moves to the
+   row of its left-hand partner (unmatched items fill the other rows in their
+   original order), and each row gets the height of its taller item so the
+   two columns line up. The move is animated so the student sees it happen. */
+function alignMatches(container, animate) {
+  const left = container.querySelector('.match-col[data-side="left"]');
+  const right = container.querySelector('.match-col[data-side="right"]');
+  if (!left || !right) return;
+  const L = Array.from(left.querySelectorAll(':scope > .match-item'));
+  const R = Array.from(right.querySelectorAll(':scope > .match-item'));
+  if (!container._origRight) container._origRight = R.slice();
+
+  const slots = new Array(Math.max(L.length, R.length)).fill(null);
+  L.forEach((l, i) => {
+    if (!l.classList.contains('matched')) return;
+    const partner = R.find(r => r.classList.contains('matched') && r.dataset.pair === l.dataset.pair);
+    if (partner) slots[i] = partner;
+  });
+  const rest = container._origRight.filter(r => !slots.includes(r));
+  for (let i = 0; i < slots.length; i++) if (!slots[i]) slots[i] = rest.shift() || null;
+
+  const visible = container.offsetParent !== null;
+  const before = animate && visible ? new Map(R.map(r => [r, r.getBoundingClientRect().top])) : null;
+  slots.forEach(r => { if (r) right.appendChild(r); });
+
+  [...L, ...R].forEach(el => { el.style.minHeight = ''; });
+  if (!visible) return;   // hidden lesson tab — aligned again when the tab opens
+  const sideBySide = left.getBoundingClientRect().top === right.getBoundingClientRect().top;
+  if (sideBySide) {
+    L.forEach((l, i) => {
+      const r = slots[i];
+      if (!r) return;
+      const h = Math.max(l.offsetHeight, r.offsetHeight) + 'px';
+      l.style.minHeight = h; r.style.minHeight = h;
+    });
+  }
+
+  if (before) R.forEach(r => {
+    const dy = before.get(r) - r.getBoundingClientRect().top;
+    if (!dy) return;
+    r.style.transition = 'none';
+    r.style.transform = `translateY(${dy}px)`;
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      r.style.transition = 'transform .35s ease';
+      r.style.transform = '';
+    }));
+  });
+}
+
+function alignAllMatches() {
+  document.querySelectorAll('[id^="ex-match"]').forEach(c => alignMatches(c));
 }
 
 function restoreMatching() {
@@ -174,7 +231,10 @@ function restoreMatching() {
       container.querySelectorAll(`.match-item[data-pair="${pair}"]`).forEach(el => el.classList.add('matched', 'locked'));
     });
   });
+  alignAllMatches();
 }
+
+window.addEventListener('resize', alignAllMatches);
 
 /* ============================================================
    WORD CHOICE (inline take/give style buttons)
@@ -387,6 +447,7 @@ function showPart(id) {
   document.querySelectorAll('.lesson-part').forEach(p => p.classList.toggle('active', p.id === id));
   document.querySelectorAll('.part-tab').forEach(b => b.classList.toggle('active', b.dataset.part === id));
   localStorage.setItem('part-' + LESSON_KEY, id);
+  alignAllMatches();
 }
 
 function initParts() {

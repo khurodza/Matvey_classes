@@ -5,6 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lesson 7 – Amazing Animals: was / were and Adjectives</title>
 <link rel="stylesheet" href="../assets/style.css">
+<style>
+/* word-order blocks for the "questions with was / were" diagram */
+.wo-key{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 16px}
+.wo-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:6px 0}
+.wo{display:inline-block;border:2px solid var(--line);border-radius:10px;padding:5px 12px;font-weight:800;box-shadow:var(--shadow-sm);background:#fff}
+.wo.q{background:var(--peach)}
+.wo.v{background:var(--yellow)}
+.wo.s{background:var(--lav)}
+.wo.r{background:var(--mint);font-weight:600}
+.wo.empty{border-style:dashed;box-shadow:none;color:var(--muted);font-weight:600}
+.wo-label{min-width:118px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.wo-arrow{margin:2px 0 2px 124px;color:var(--muted);font-weight:800;font-size:14px}
+.wo-short{margin:4px 0 0 124px;font-size:15px}
+.wo-box{border:2px dashed var(--muted);border-radius:14px;padding:12px 16px;margin-top:14px}
+.wo-box h4{margin:0 0 8px}
+@media (max-width:600px){.wo-label{min-width:100%}.wo-arrow,.wo-short{margin-left:0}}
+</style>
 </head>
 <body>
 
@@ -18,7 +35,7 @@
         <div class="hero-badges">
           <span class="badge">Lesson 7</span>
           <span class="badge">Unit 7 · Amazing animals</span>
-          <span class="badge">Student's Book p.85–86 · Workbook p.57</span>
+          <span class="badge">Student's Book p.85–86 · Workbook p.58</span>
         </div>
       </div>
     </div>
@@ -39,7 +56,8 @@
     <a href="#g2">2 · The rules</a>
     <a href="#g3">3 · Correct it</a>
     <a href="#g4">4 · Bald eagles</a>
-    <a href="#g5">5 · Use it!</a>
+    <a href="#g5">5 · Questions</a>
+    <a href="#g6">6 · Use it!</a>
     <a href="#part-homework" onclick="showPart('part-homework');window.scrollTo(0,0)">Homework ↗</a>
   </div>
 </nav>
@@ -281,11 +299,74 @@
   </section>
 
   <!-- ══════════════════════════════════════════════════════
-       STEP 5 — Student's Book p.85, Use it!, task 4
+       STEP 5 — Questions with was / were (word order)
   ══════════════════════════════════════════════════════ -->
   <section class="step" id="g5">
     <div class="step-head">
       <div class="step-num">5</div>
+      <div>
+        <div class="step-meta">Language in action · Questions</div>
+        <h2>How to make questions with was / were</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Look and learn</div>
+      <h3>In a question, <i>was / were</i> jumps to the front — before the person or thing.</h3>
+
+      <div class="wo-key">
+        <span class="wo q">question word</span>
+        <span class="wo v">was / were</span>
+        <span class="wo s">who or what</span>
+        <span class="wo r">the rest</span>
+      </div>
+
+      <div class="wo-box">
+        <h4>Yes / No questions</h4>
+        <div class="wo-row"><span class="wo-label">Statement</span>
+          <span class="wo s">You</span><span class="wo v">were</span><span class="wo r">at the zoo.</span></div>
+        <div class="wo-arrow">↓ swap them!</div>
+        <div class="wo-row"><span class="wo-label">Question</span>
+          <span class="wo v">Were</span><span class="wo s">you</span><span class="wo r">at the zoo?</span></div>
+        <div class="wo-short">→ Yes, I <b>was</b>. / No, I <b>wasn't</b>.</div>
+
+        <div class="wo-row" style="margin-top:16px"><span class="wo-label">Statement</span>
+          <span class="wo s">There</span><span class="wo v">was</span><span class="wo r">a baby seal.</span></div>
+        <div class="wo-arrow">↓ swap them!</div>
+        <div class="wo-row"><span class="wo-label">Question</span>
+          <span class="wo v">Was</span><span class="wo s">there</span><span class="wo r">a baby seal?</span></div>
+        <div class="wo-short">→ Yes, there <b>was</b>. / No, there <b>wasn't</b>.</div>
+      </div>
+
+      <div class="wo-box">
+        <h4>Wh- questions</h4>
+        <p style="margin:0 0 8px">Put the question word <b>in front</b> of a yes / no question.</p>
+        <div class="wo-row"><span class="wo-label">Yes / No</span>
+          <span class="wo q empty">…</span><span class="wo v">Were</span><span class="wo s">you</span><span class="wo r">at the zoo?</span></div>
+        <div class="wo-arrow">↓ add a question word</div>
+        <div class="wo-row"><span class="wo-label">Wh-</span>
+          <span class="wo q">Where</span><span class="wo v">were</span><span class="wo s">you</span><span class="wo r">yesterday?</span></div>
+        <div class="wo-row"><span class="wo-label"></span>
+          <span class="wo q">How old</span><span class="wo v">was</span><span class="wo s">Kai</span><span class="wo r">?</span></div>
+        <div class="wo-row"><span class="wo-label"></span>
+          <span class="wo q">What</span><span class="wo v">was</span><span class="wo s">your favourite animal</span><span class="wo r">?</span></div>
+        <div class="wo-row"><span class="wo-label"></span>
+          <span class="wo q">How many wolves</span><span class="wo v">were</span><span class="wo s">there</span><span class="wo r">in the park?</span></div>
+        <div class="wo-short">→ Answer with a full sentence: <i>I <b>was</b> at home.</i> · <i>He <b>was</b> fifteen.</i></div>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>was</b> → I / he / she / it / one thing · <b>were</b> → you / we / they / two or more. Look at the word <b>after</b> <i>was / were</i> to choose: <i>Was <b>Kai</b> …?</i> · <i>Were <b>the dolphins</b> …?</i>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 6 — Student's Book p.85, Use it!, task 4
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="g6">
+    <div class="step-head">
+      <div class="step-num">6</div>
       <div>
         <div class="step-meta">Use it!</div>
         <h2>Ask about the past</h2>
@@ -371,7 +452,7 @@
 
       <div class="grid3" style="margin-top:12px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))">
         <div>
-          <img class="media-img" src="images/unit7-p86-adj1.jpg" alt="A peacock showing its big green and blue tail feathers" style="height:150px;object-fit:cover">
+          <img class="media-img" src="images/unit7-p86-adj1.jpg" alt="A peacock with its long green and blue tail feathers open like a big fan" style="height:150px;object-fit:cover">
           <p class="gap-line" style="white-space:nowrap"><span class="num">1.</span>
             <span class="word-choice" id="aj1" data-answer="beautiful">
               <button class="word-choice-btn" onclick="selectWord(this)">lazy</button>
@@ -379,7 +460,7 @@
             </span></p>
         </div>
         <div>
-          <img class="media-img" src="images/unit7-p86-adj2.jpg" alt="A very small brown mouse sitting inside a dandelion clock" style="height:150px;object-fit:cover">
+          <img class="media-img" src="images/unit7-p86-adj2.jpg" alt="A very small harvest mouse holding on to an ear of wheat" style="height:150px;object-fit:cover">
           <p class="gap-line" style="white-space:nowrap"><span class="num">2.</span>
             <span class="word-choice" id="aj2" data-answer="tiny">
               <button class="word-choice-btn" onclick="selectWord(this)">tiny</button>
@@ -387,7 +468,7 @@
             </span></p>
         </div>
         <div>
-          <img class="media-img" src="images/unit7-p86-adj3.jpg" alt="A pug puppy lying down with its head on its paws" style="height:150px;object-fit:cover">
+          <img class="media-img" src="images/unit7-p86-adj3.jpg" alt="A small black pug puppy lying on a wooden floor and looking at the camera" style="height:150px;object-fit:cover">
           <p class="gap-line" style="white-space:nowrap"><span class="num">3.</span>
             <span class="word-choice" id="aj3" data-answer="cute">
               <button class="word-choice-btn" onclick="selectWord(this)">wild</button>
@@ -403,7 +484,7 @@
             </span></p>
         </div>
         <div>
-          <img class="media-img" src="images/unit7-p86-adj5.jpg" alt="A long brown and orange snake" style="height:150px;object-fit:cover">
+          <img class="media-img" src="images/unit7-p86-adj5.jpg" alt="A long thin green snake stretched across a wooden path" style="height:150px;object-fit:cover">
           <p class="gap-line" style="white-space:nowrap"><span class="num">5.</span>
             <span class="word-choice" id="aj5" data-answer="long">
               <button class="word-choice-btn" onclick="selectWord(this)">long</button>
@@ -411,7 +492,7 @@
             </span></p>
         </div>
         <div>
-          <img class="media-img" src="images/unit7-p86-adj6.jpg" alt="A dolphin swimming in blue water" style="height:150px;object-fit:cover">
+          <img class="media-img" src="images/unit7-p86-adj6.jpg" alt="A dolphin in a pool balancing a basketball on its nose next to another ball" style="height:150px;object-fit:cover">
           <p class="gap-line" style="white-space:nowrap"><span class="num">6.</span>
             <span class="word-choice" id="aj6" data-answer="clever">
               <button class="word-choice-btn" onclick="selectWord(this)">quiet</button>
@@ -424,6 +505,7 @@
         <button class="btn-primary" onclick="checkWords('ex-adj')">Check ✓</button>
         <button class="btn-ghost" onclick="resetWords('ex-adj')">Try again</button>
       </div>
+      <p class="char-count" style="text-align:left;margin-top:6px">Photos from Wikimedia Commons: 1 Godwin Borg (CC BY-SA 4.0) · 2 MicrocosmicWorld (CC BY-SA 4.0) · 3 ♥ellie♥ (CC BY 2.0) · 4 Kambai Akau (CC BY-SA 4.0) · 5 Bernard Dupont (CC BY-SA 2.0) · 6 Sergiy Galyonkin (CC BY-SA 2.0)</p>
 
       <h3 style="margin-top:22px">Listen, check and repeat. Can you guess the meaning of the other adjectives?</h3>
       <div class="audio-wrap">
@@ -799,206 +881,356 @@
 <div class="lesson-part" id="part-homework">
 <nav class="chips">
   <div class="wrap">
-    <a href="#h1">1 · Polar bear</a>
-    <a href="#h2">2 · Article</a>
-    <a href="#h3">3 · New words</a>
-    <a href="#h4">4 · True or false</a>
-    <a href="#h5">5 · Your ideas</a>
+    <a href="#h1">1 · to be</a>
+    <a href="#h2">2 · Circle</a>
+    <a href="#h3">3 · Match</a>
+    <a href="#h4">4 · Mammoths</a>
+    <a href="#h5">5 · South Africa</a>
+    <a href="#h6">6 · Questions</a>
+    <a href="#h7">7 · Animals from the past</a>
   </div>
 </nav>
 
 <div class="wrap">
 
   <!-- ══════════════════════════════════════════════════════
-       HOMEWORK TASK 1 — Workbook p.57, Reading, task 1
+       HOMEWORK TASK 1 — Past simple of to be (extra practice)
   ══════════════════════════════════════════════════════ -->
   <section class="step" id="h1">
     <div class="step-head">
       <div class="step-num">1</div>
       <div>
-        <div class="step-meta">Homework · Reading · Fact files</div>
-        <h2>Polar bear</h2>
+        <div class="step-meta">Homework · was / were</div>
+        <h2>The past simple of <i>to be</i></h2>
       </div>
     </div>
 
-    <div class="card" id="ex-polar">
-      <div class="exercise-label">Multiple Choice</div>
-      <h3>Read the fact file and choose the correct answers.</h3>
+    <div class="card">
+      <div class="exercise-label">Remember</div>
+      <h3>The past simple of <i>to be</i></h3>
+      <table class="ref-table">
+        <tr><th></th><th>I / he / she / it</th><th>you / we / they</th></tr>
+        <tr><td class="label">+</td><td>The baby flamingo <b>was</b> grey.</td><td>Toads <b>were</b> tadpoles once.</td></tr>
+        <tr><td class="label">−</td><td>It <b>wasn't</b> pink.</td><td>The monk seals <b>weren't</b> safe.</td></tr>
+        <tr><td class="label">?</td><td><b>Was</b> the water clean? — Yes, it <b>was</b>.</td><td><b>Were</b> they hungry? — No, they <b>weren't</b>.</td></tr>
+      </table>
+    </div>
 
-      <div class="factfiles" style="grid-template-columns:minmax(0,520px)">
-        <div class="factfile">
-          <img src="images/unit7-wb57-polar-bear.jpg" alt="A big white polar bear standing on the snow" style="height:auto;object-fit:cover">
-          <h4>Polar bear</h4>
-          <dl>
-            <dt>Weight</dt><dd>about 360 kg</dd>
-            <dt>Habitat</dt><dd>the Arctic</dd>
-            <dt>Food</dt><dd>seals</dd>
-            <dt>Fact</dt><dd>Polar bears can smell a seal 32 km away! They can eat 55 kg of seal in a week.</dd>
-          </dl>
+    <div class="card" id="ex-hw-tobe">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Complete the sentences, questions and short answers with the past simple of <i>to be</i>. Look at the <b>bold</b> word first — it tells you <i>was</i> or <i>were</i>.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span>1. <b>Mary</b> <span class="cue-input"><span class="cue-lab">be</span><span class="given">was</span></span> in the park.</span></div>
+
+      <p class="gap-line" style="display:flex;align-items:center;flex-wrap:wrap;gap:4px;margin:0;padding:10px 0;border-bottom:1px dashed #d9cfc0"><span class="num">2.</span> <b>We</b> <span class="cue-input"><span class="cue-lab">not be</span><input class="blank" id="tb2" data-answer="weren't|weren’t|were not" placeholder="?"></span> at home yesterday.</p>
+
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:4px;margin:0;padding:10px 0;border-bottom:1px dashed #d9cfc0">
+        <span class="gap-line" style="margin:0;align-self:flex-start;padding-top:12px"><span class="num">3.</span></span>
+        <div class="dialogue" style="flex:1;margin:0">
+          <span class="dl-name">A</span>
+          <p class="dl-text ask"><span class="cue-input"><span class="cue-lab">you / be</span><input class="blank" id="tb3a" data-answer="were you" placeholder="?"></span> at the shops?</p>
+          <span class="dl-name two">B</span>
+          <p class="dl-text ask">No, <b>I</b> <span class="cue-input"><span class="cue-lab">not be</span><input class="blank" id="tb3b" data-answer="wasn't|wasn’t|was not" placeholder="?"></span>.</p>
         </div>
       </div>
 
-      <p style="font-weight:700;margin:14px 0 4px">1. Polar bears weigh about …</p>
-      <div class="mc-options" data-correct="a">
-        <label class="mc-option"><input type="radio" name="pb1" value="a"><span class="mc-bullet">A</span> 360 kg.</label>
-        <label class="mc-option"><input type="radio" name="pb1" value="b"><span class="mc-bullet">B</span> 560 kg.</label>
-      </div>
-      <p style="font-weight:700;margin:18px 0 4px">2. Polar bears live in the …</p>
-      <div class="mc-options" data-correct="a">
-        <label class="mc-option"><input type="radio" name="pb2" value="a"><span class="mc-bullet">A</span> Arctic.</label>
-        <label class="mc-option"><input type="radio" name="pb2" value="b"><span class="mc-bullet">B</span> Antarctic.</label>
-      </div>
-      <p style="font-weight:700;margin:18px 0 4px">3. Polar bears eat about … of food in a week.</p>
-      <div class="mc-options" data-correct="b">
-        <label class="mc-option"><input type="radio" name="pb3" value="a"><span class="mc-bullet">A</span> 35 kg</label>
-        <label class="mc-option"><input type="radio" name="pb3" value="b"><span class="mc-bullet">B</span> 55 kg</label>
+      <p class="gap-line" style="display:flex;align-items:center;flex-wrap:wrap;gap:4px;margin:0;padding:10px 0;border-bottom:1px dashed #d9cfc0"><span class="num">4.</span> <b>Tom and Zoe</b> <span class="cue-input"><span class="cue-lab">be</span><input class="blank" id="tb4" data-answer="were" placeholder="?"></span> on holiday last week.</p>
+      <p class="gap-line" style="display:flex;align-items:center;flex-wrap:wrap;gap:4px;margin:0;padding:10px 0;border-bottom:1px dashed #d9cfc0"><span class="num">5.</span> <b>Rachel</b> <span class="cue-input"><span class="cue-lab">not be</span><input class="blank" id="tb5" data-answer="wasn't|wasn’t|was not" placeholder="?"></span> happy yesterday.</p>
+
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:4px;margin:0;padding:10px 0;border-bottom:1px dashed #d9cfc0">
+        <span class="gap-line" style="margin:0;align-self:flex-start;padding-top:12px"><span class="num">6.</span></span>
+        <div class="dialogue" style="flex:1;margin:0">
+          <span class="dl-name">A</span>
+          <p class="dl-text ask"><span class="cue-input"><span class="cue-lab">Jack / be</span><input class="blank" id="tb6a" data-answer="was jack" placeholder="?"></span> at the football match?</p>
+          <span class="dl-name two">B</span>
+          <p class="dl-text ask">No, <b>he</b> <span class="cue-input"><span class="cue-lab">not be</span><input class="blank" id="tb6b" data-answer="wasn't|wasn’t|was not" placeholder="?"></span>.</p>
+        </div>
       </div>
 
+      <p class="gap-line" style="display:flex;align-items:center;flex-wrap:wrap;gap:4px;margin:0;padding:10px 0;border-bottom:1px dashed #d9cfc0"><span class="num">7.</span> <b>Jess and Paul</b> <span class="cue-input"><span class="cue-lab">not be</span><input class="blank" id="tb7a" data-answer="weren't|weren’t|were not" placeholder="?"></span> tired because <b>it</b> <span class="cue-input"><span class="cue-lab">not be</span><input class="blank" id="tb7b" data-answer="wasn't|wasn’t|was not" placeholder="?"></span> late.</p>
+      <p class="gap-line" style="display:flex;align-items:center;flex-wrap:wrap;gap:4px;margin:0;padding:10px 0"><span class="num">8.</span> <b>We</b> <span class="cue-input"><span class="cue-lab">not be</span><input class="blank" id="tb8a" data-answer="weren't|weren’t|were not" placeholder="?"></span> happy because <b>the exam</b> <span class="cue-input"><span class="cue-lab">be</span><input class="blank" id="tb8b" data-answer="was" placeholder="?"></span> difficult.</p>
+
       <div class="btn-row">
-        <button class="btn-primary" onclick="checkMC('ex-polar')">Check ✓</button>
-        <button class="btn-ghost" onclick="resetMC('ex-polar')">Try again</button>
+        <button class="btn-primary" onclick="checkBlanks('ex-hw-tobe')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-hw-tobe')">Try again</button>
       </div>
+    </div>
+
+    <div class="tip">
+      In questions, <i>was / were</i> comes <b>first</b>: <i>They were hungry.</i> → <i><b>Were</b> they hungry?</i> Short answers stop after <i>was / were</i>: <i>No, they <b>weren't</b>.</i>
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════════════════
-       HOMEWORK TASK 2 — Workbook p.57, Reading, task 2
+       HOMEWORK TASK 2 — Workbook p.58, Language in action, task 1
   ══════════════════════════════════════════════════════ -->
   <section class="step" id="h2">
     <div class="step-head">
       <div class="step-num">2</div>
       <div>
-        <div class="step-meta">Homework · Reading</div>
-        <h2>Polar bears are in town!</h2>
+        <div class="step-meta">Homework · was / were, there was / were</div>
+        <h2>Choose the correct options</h2>
       </div>
     </div>
 
-    <div class="card" id="ex-churchill">
-      <div class="exercise-label">Reading · Writing</div>
-      <h3>Read the article. What's special about the town of Churchill?</h3>
+    <div class="card" id="ex-hw-circle">
+      <div class="exercise-label">Word Choice</div>
+      <h3>Choose the correct options.</h3>
 
-      <div class="profile">
-        <div class="profile-head">
-          <div class="profile-title">Polar bears are in town!</div>
-        </div>
-        <div class="profile-para"><span class="pnum">1</span><p>Churchill is a town on the Hudson Bay in Canada. Every October, November and December, it has special visitors: polar bears! They can't hunt seals until it is colder and there is more ice, so they visit the town looking for food.</p></div>
-        <div class="profile-para"><span class="pnum">2</span><p>In 2021, there were 870 people in Churchill. Around 12,000 tourists come every year. They come to see the polar bears – there are over 600 in the area and they often come into the town. When this happens, the police ask people to leave their cars open in the town. Then people can jump inside if they need to escape!</p></div>
-        <div class="profile-para"><span class="pnum">3</span><p>In 2023, polar bears came into Churchill earlier than usual. By the summer of that year, there were 76 phone calls to the police. To keep people safe – and the bears – wildlife experts took three of the animals to a place outside the town.</p></div>
-        <div class="profile-para"><span class="pnum">4</span><p>The worst year was 1983. On 29th November, a young male bear killed a man in Churchill. It is the only time this happened. But sometimes, bears can attack when they think people want to hurt them or their babies. In 2013, a bear attacked a man in the street. Experts moved it to outside the town. The bear was safe and the man was soon fine as well.</p></div>
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span>1. The polar bears <b>were</b> in Churchill in November because <b>there wasn't</b> enough food for them to eat in the river.</span></div>
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">2.</span> In the past, the weather
+        <span class="word-choice" id="hc2a" data-answer="was">
+          <button class="word-choice-btn" onclick="selectWord(this)">was</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">were</button>
+        </span> always cold in November and
+        <span class="word-choice" id="hc2b" data-answer="there was">
+          <button class="word-choice-btn" onclick="selectWord(this)">there was</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">there were</button>
+        </span> a lot of ice on the river.</p>
+      <p class="gap-line"><span class="num">3.</span> When it
+        <span class="word-choice" id="hc3a" data-answer="was">
+          <button class="word-choice-btn" onclick="selectWord(this)">was</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">were</button>
+        </span> colder,
+        <span class="word-choice" id="hc3b" data-answer="there were">
+          <button class="word-choice-btn" onclick="selectWord(this)">there was</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">there were</button>
+        </span> seals for the polar bears to eat in the river.</p>
+      <p class="gap-line"><span class="num">4.</span> In the past
+        <span class="word-choice" id="hc4a" data-answer="there was">
+          <button class="word-choice-btn" onclick="selectWord(this)">there was</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">there were</button>
+        </span> more ice because the temperatures
+        <span class="word-choice" id="hc4b" data-answer="weren't">
+          <button class="word-choice-btn" onclick="selectWord(this)">wasn't</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">weren't</button>
+        </span> as high.</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkWords('ex-hw-circle')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetWords('ex-hw-circle')">Try again</button>
       </div>
+    </div>
 
-      <p style="font-weight:700;margin:16px 0 4px">What's special about the town of Churchill?</p>
-      <input type="text" class="blank line-write" id="churchill-special" placeholder="Write your answer …">
+    <div class="tip">
+      <b>ice</b> and <b>weather</b> are uncountable — they take <b>was</b> / <b>there was</b>, not <i>were</i>. <b>temperatures</b> and <b>seals</b> are plural → <b>were</b>.
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════════════════
-       HOMEWORK TASK 3 — Workbook p.57, Reading, task 3
+       HOMEWORK TASK 3 — Workbook p.58, task 2
   ══════════════════════════════════════════════════════ -->
   <section class="step" id="h3">
     <div class="step-head">
       <div class="step-num">3</div>
       <div>
-        <div class="step-meta">Homework · Reading · Vocabulary</div>
-        <h2>New words from the article</h2>
+        <div class="step-meta">Homework · Short answers</div>
+        <h2>Match the questions with the answers</h2>
       </div>
     </div>
 
-    <div class="card" id="ex-newwords">
-      <div class="exercise-label">Fill in the Blanks</div>
-      <h3>Find these words in the article. Check their meanings in a dictionary and complete the sentences.</h3>
+    <div class="card" id="ex-match-short">
+      <div class="exercise-label">Matching</div>
+      <h3>Match the questions with the answers.</h3>
 
-      <div class="word-bank-ref">
-        <span onclick="this.classList.toggle('crossed')">attack</span><span onclick="this.classList.toggle('crossed')">escape</span><span onclick="this.classList.toggle('crossed')">experts</span><span onclick="this.classList.toggle('crossed')">hunt</span><span class="crossed" onclick="this.classList.toggle('crossed')">ice</span><span onclick="this.classList.toggle('crossed')">male</span>
+      <div class="match-grid">
+        <div class="match-col" data-side="left">
+          <div class="match-item" data-pair="1" onclick="selectMatch(this,'ex-match-short')">1. Was it hotter in the past?</div>
+          <div class="match-item" data-pair="2" onclick="selectMatch(this,'ex-match-short')">2. Were they wild animals?</div>
+          <div class="match-item" data-pair="3" onclick="selectMatch(this,'ex-match-short')">3. Was there ice in summer?</div>
+          <div class="match-item" data-pair="4" onclick="selectMatch(this,'ex-match-short')">4. Were there seals?</div>
+        </div>
+        <div class="match-col" data-side="right">
+          <div class="match-item" data-pair="4" onclick="selectMatch(this,'ex-match-short')">a. Yes, there were.</div>
+          <div class="match-item" data-pair="3" onclick="selectMatch(this,'ex-match-short')">b. No, there wasn't.</div>
+          <div class="match-item" data-pair="2" onclick="selectMatch(this,'ex-match-short')">c. Yes, they were.</div>
+          <div class="match-item" data-pair="1" onclick="selectMatch(this,'ex-match-short')">d. No, it wasn't.</div>
+        </div>
       </div>
-
-      <div class="example-row"><span class="ex-tag">Example</span> 1. In winter, there is <b>ice</b> on the river.</div>
-      <p class="gap-line"><span class="num">2.</span> A female animal is a girl and a
-        <input class="blank" id="nw2" data-answer="male" placeholder="?"> is a boy.</p>
-      <p class="gap-line"><span class="num">3.</span> People who are
-        <input class="blank" id="nw3" data-answer="experts" placeholder="?"> know a lot more about a subject than other people.</p>
-      <p class="gap-line"><span class="num">4.</span> Hungry lions are dangerous and they sometimes
-        <input class="blank" id="nw4" data-answer="attack" placeholder="?"> people.</p>
-      <p class="gap-line"><span class="num">5.</span> Whales often
-        <input class="blank" id="nw5" data-answer="hunt" placeholder="?"> other mammals, like seals, at night.</p>
-      <p class="gap-line"><span class="num">6.</span> The man saw the polar bear in the street and ran into a shop to
-        <input class="blank" id="nw6" data-answer="escape" placeholder="?">.</p>
 
       <div class="btn-row">
-        <button class="btn-primary" onclick="checkBlanks('ex-newwords')">Check ✓</button>
-        <button class="btn-ghost" onclick="resetBlanks('ex-newwords')">Try again</button>
+        <button class="btn-ghost" onclick="resetMatchEx('ex-match-short')">Reset</button>
       </div>
+    </div>
+
+    <div class="tip">
+      The short answer uses the same words as the question: <i><b>Was there</b> …?</i> → <i>Yes, <b>there was</b>.</i> · <i><b>Were they</b> …?</i> → <i>Yes, <b>they were</b>.</i>
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════════════════
-       HOMEWORK TASK 4 — Workbook p.57, Reading, task 4
+       HOMEWORK TASK 4 — Workbook p.58, task 3
   ══════════════════════════════════════════════════════ -->
   <section class="step" id="h4">
     <div class="step-head">
       <div class="step-num">4</div>
       <div>
-        <div class="step-meta">Homework · Reading</div>
-        <h2>True or false?</h2>
+        <div class="step-meta">Homework · was(n't) / were(n't)</div>
+        <h2>Animals from the past</h2>
       </div>
     </div>
 
-    <div class="card" id="ex-hw-tf">
-      <div class="exercise-label">True or False</div>
-      <h3>Read the article again. Are the sentences true or false? Correct the false sentence.</h3>
+    <div class="card" id="ex-mammoth">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Complete the text with <i>was(n't) / were(n't)</i>.</h3>
 
-      <div class="example-row"><span class="ex-tag">Example</span>
-        <span>1. The polar bears go to the town when it's cold there. — <b>F</b>. <i>Polar bears go to the town when they can't hunt seals.</i></span></div>
+      <div class="word-bank-ref">
+        <span onclick="this.classList.toggle('crossed')">was</span><span onclick="this.classList.toggle('crossed')">wasn't</span><span onclick="this.classList.toggle('crossed')">were</span><span onclick="this.classList.toggle('crossed')">weren't</span>
+      </div>
 
-      <p style="font-weight:700;margin:14px 0 4px">2. There are more people living in the town than tourists.</p>
-      <div class="mc-options" data-correct="f">
-        <label class="mc-option"><input type="radio" name="hwtf2" value="t"><span class="mc-bullet">T</span> True</label>
-        <label class="mc-option"><input type="radio" name="hwtf2" value="f"><span class="mc-bullet">F</span> False</label>
-      </div>
-      <input type="text" class="blank line-write" id="hwtf2-fix" placeholder="If it's false, write the correct sentence …">
-      <p style="font-weight:700;margin:18px 0 4px">3. When the polar bears come into the town, people can hide in cars.</p>
-      <div class="mc-options" data-correct="t">
-        <label class="mc-option"><input type="radio" name="hwtf3" value="t"><span class="mc-bullet">T</span> True</label>
-        <label class="mc-option"><input type="radio" name="hwtf3" value="f"><span class="mc-bullet">F</span> False</label>
-      </div>
-      <p style="font-weight:700;margin:18px 0 4px">4. When the polar bears are dangerous, experts take them to a place outside the town.</p>
-      <div class="mc-options" data-correct="t">
-        <label class="mc-option"><input type="radio" name="hwtf4" value="t"><span class="mc-bullet">T</span> True</label>
-        <label class="mc-option"><input type="radio" name="hwtf4" value="f"><span class="mc-bullet">F</span> False</label>
+      <div class="profile">
+        <img class="media-img" src="images/unit7-wb58-mammoth.jpg" alt="A drawing of a big woolly mammoth with long curved tusks, and a sabre-toothed tiger with long teeth" style="max-width:340px;display:block;margin:0 auto 16px;background:#fff">
+        <div class="profile-para"><span class="pnum">1</span><p>Thousands of years ago there were mammoths in Europe. They <b><u>were</u></b> large mammals with very big tusks. They
+          <input class="blank" id="mm2" data-answer="were" placeholder="?">
+          very strong. They
+          <input class="blank" id="mm3" data-answer="weren't|weren’t|were not" placeholder="?">
+          like the elephants we see today because they
+          <input class="blank" id="mm4" data-answer="were" placeholder="?">
+          much bigger and had fur.</p></div>
+        <div class="profile-para"><span class="pnum">2</span><p>The sabre-toothed tiger also lived in Europe at the same time. It
+          <input class="blank" id="mm5" data-answer="wasn't|wasn’t|was not" placeholder="?">
+          really a tiger, it
+          <input class="blank" id="mm6" data-answer="was" placeholder="?">
+          a big cat. Its teeth
+          <input class="blank" id="mm7" data-answer="were" placeholder="?">
+          very long and it
+          <input class="blank" id="mm8" data-answer="was" placeholder="?">
+          a very dangerous animal.</p></div>
       </div>
 
       <div class="btn-row">
-        <button class="btn-primary" onclick="checkMC('ex-hw-tf')">Check ✓</button>
-        <button class="btn-ghost" onclick="resetMC('ex-hw-tf')">Try again</button>
+        <button class="btn-primary" onclick="checkBlanks('ex-mammoth')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-mammoth')">Try again</button>
       </div>
+    </div>
+
+    <div class="tip">
+      <b>tusks</b> = the two very long teeth of an elephant or a mammoth · <b>fur</b> = thick soft hair.
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════════════════
-       HOMEWORK TASK 5 — Workbook p.57, Reading, task 5
+       HOMEWORK TASK 5 — Workbook p.58, task 4
   ══════════════════════════════════════════════════════ -->
   <section class="step" id="h5">
     <div class="step-head">
       <div class="step-num">5</div>
       <div>
-        <div class="step-meta">Homework · Your ideas</div>
-        <h2>What do you think?</h2>
+        <div class="step-meta">Homework · there was / there were</div>
+        <h2>When I was a girl</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-safrica">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Complete the text with the correct form of <i>there was</i> or <i>there were</i>.</h3>
+
+      <div class="word-bank-ref">
+        <span onclick="this.classList.toggle('crossed')">there was</span><span onclick="this.classList.toggle('crossed')">there wasn't</span><span onclick="this.classList.toggle('crossed')">there were</span><span onclick="this.classList.toggle('crossed')">there weren't</span>
+      </div>
+
+      <div class="profile">
+        <img class="media-img" src="images/unit7-wb58-hippos.jpg" alt="Hippos in a river, one standing on the bank and four more in the water" style="max-width:420px;display:block;margin:0 auto 16px">
+        <div class="profile-para"><span class="pnum">1</span><p>When I was a girl, I lived in South Africa. Around my house <b><u>there wasn't</u></b> a lot to do but
+          <input class="blank" id="sa2" data-answer="there were" placeholder="?">
+          lots of animals to see because we lived next to a wildlife park.</p></div>
+        <div class="profile-para"><span class="pnum">2</span><p>In my bedroom
+          <input class="blank" id="sa3" data-answer="there was" placeholder="?">
+          a big window, and in the mornings, I could see lots of animals.
+          <input class="blank" id="sa4" data-answer="there were" placeholder="?">
+          hippos in the water and
+          <input class="blank" id="sa5" data-answer="there were" placeholder="?">
+          enormous elephants sleeping.
+          <input class="blank" id="sa6" data-answer="there was" placeholder="?">
+          always a big giraffe next to a tree and a strange bird sitting on the tree that looked angry!</p></div>
+        <div class="profile-para"><span class="pnum">3</span><p>My favourite animals are tigers, but
+          <input class="blank" id="sa7" data-answer="there weren't|there weren’t|there were not" placeholder="?">
+          any tigers in the wildlife park. That's because there are no tigers in South Africa.
+          <input class="blank" id="sa8" data-answer="there wasn't|there wasn’t|there was not" placeholder="?">
+          a lot of time to see the animals because I was at school all day, but I remember all of them.</p></div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-safrica')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-safrica')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      Look at the word after the gap: <i>a big window</i> → singular · <i>hippos</i> → plural · <i>any tigers</i> → negative.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 6 — Workbook p.58, task 5
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h6">
+    <div class="step-head">
+      <div class="step-num">6</div>
+      <div>
+        <div class="step-meta">Homework · Questions</div>
+        <h2>Put the words in order</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-order">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Put the words in the correct order to make questions. Finish each question.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span>1. were / Where / on Saturday / you / ? → <b>Where were you on Saturday?</b></span></div>
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">2.</span> your / favourite / six / What / was / animal / when / you / were / ?</p>
+      <p class="gap-line"><b>What was</b>
+        <input type="text" class="blank" id="wo2" data-answer="your favourite animal when you were six?|your favourite animal when you were six" placeholder="…" style="width:min(100%,420px);text-align:left"></p>
+      <p class="gap-line" style="margin-top:14px"><span class="num">3.</span> people / were / there / How / many / last year / your / class / in / ?</p>
+      <p class="gap-line"><b>How many</b>
+        <input type="text" class="blank" id="wo3" data-answer="people were there in your class last year?|people were there in your class last year|people were there last year in your class?|people were there last year in your class" placeholder="…" style="width:min(100%,420px);text-align:left"></p>
+      <p class="gap-line" style="margin-top:14px"><span class="num">4.</span> in 2011 / were / you / How / old / ?</p>
+      <p class="gap-line"><b>How old</b>
+        <input type="text" class="blank" id="wo4" data-answer="were you in 2011?|were you in 2011" placeholder="…" style="width:min(100%,420px);text-align:left"></p>
+      <p class="gap-line" style="margin-top:14px"><span class="num">5.</span> your town / in / Was / there / were / you / when / young / a zoo / ?</p>
+      <p class="gap-line"><b>Was there</b>
+        <input type="text" class="blank" id="wo5" data-answer="a zoo in your town when you were young?|a zoo in your town when you were young" placeholder="…" style="width:min(100%,420px);text-align:left"></p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-order')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-order')">Try again</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Writing</div>
+      <h3>Now write answers about you to questions 1–5.</h3>
+      <textarea class="free-write" id="fw-order-answers" placeholder="1. On Saturday I was … 2. When I was six, my favourite animal was …" rows="5"></textarea>
+      <div class="char-count" id="cc-fw-order-answers">0 characters</div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 7 — Workbook p.58, task 6
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h7">
+    <div class="step-head">
+      <div class="step-num">7</div>
+      <div>
+        <div class="step-meta">Homework · Explore</div>
+        <h2>An animal from the past</h2>
       </div>
     </div>
 
     <div class="card">
       <div class="exercise-label">Free Writing</div>
-      <h3>Answer the questions with your own ideas.</h3>
-      <p style="font-weight:800;margin:14px 0 4px">1. Would you like to visit Churchill to see the polar bears? Why / Why not?</p>
-      <textarea class="free-write" id="fw-hw-churchill" placeholder="I would / wouldn't like to visit Churchill because …" rows="3"></textarea>
-      <div class="char-count" id="cc-fw-hw-churchill">0 characters</div>
-      <p style="font-weight:800;margin:14px 0 4px">2. Why do you think there are more bears coming to the town than before?</p>
-      <textarea class="free-write" id="fw-hw-why" placeholder="I think …" rows="3"></textarea>
-      <div class="char-count" id="cc-fw-hw-why">0 characters</div>
+      <h3>Find out about an animal from the past, like mammoths or sabre-toothed tigers. Write three sentences about it. Use <i>was</i> and <i>were</i>.</h3>
+      <textarea class="free-write" id="fw-past-animal" placeholder="The dodo was a … It lived in … Its legs were …" rows="4"></textarea>
+      <div class="char-count" id="cc-fw-past-animal">0 characters</div>
     </div>
 
     <div class="tip">
-      <b>Think about it:</b> polar bears need <b>ice</b> to hunt seals. What happens to the ice when the weather gets warmer?
+      Ideas: the <b>dodo</b>, the <b>woolly rhino</b>, the <b>megalodon</b> (a huge shark), <b>dinosaurs</b> like the T-rex.
     </div>
   </section>
 

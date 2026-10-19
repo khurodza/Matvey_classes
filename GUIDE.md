@@ -131,6 +131,10 @@ soft yellow background, so it's obvious at a glance which lines need answers.
 - Items on both sides with the same `data-pair` number are a correct pair.
 - Shuffle the right-hand column order so pairs don't line up visually.
 - The string inside `selectMatch(this,'…')` must match the container's `id`.
+- When a pair is matched, the right-hand item slides to the row of its
+  left-hand partner, so correct pairs always sit side by side (rows get equal
+  heights). Unmatched items keep their shuffled order; **Reset** restores it.
+  This is automatic in `lessons.js` — nothing to add in the HTML.
 
 ### Word choice (inline buttons, e.g. take/give)
 
