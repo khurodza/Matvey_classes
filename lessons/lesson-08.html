@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 8 – Amazing Animals: Past Simple</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+/* spelling-rule rows: base form → past form */
+.sp-rule{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:10px 0;border-bottom:1px dashed #d9cfc0}
+.sp-rule:last-child{border-bottom:none}
+.sp-rule .sp-name{min-width:230px;font-weight:800}
+.sp-rule .sp-ex{font-style:italic}
+@media (max-width:600px){.sp-rule .sp-name{min-width:100%}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <a class="back-home" href="../index.html">← All lessons</a>
+    <div class="hero-grid">
+      <div>
+        <h1>Amazing animals: the past simple</h1>
+        <p><b>Language in action:</b> watch a vlog about a trip to a wildlife centre and learn the past simple of <b>regular</b> (<i>laughed, visited</i>) and <b>irregular</b> verbs (<i>took, saw, went</i>). Learn to say <i>-ed</i> the right way, read the story of a boy and his crow, and talk about things that happened <i>… ago</i>.</p>
+        <div class="hero-badges">
+          <span class="badge">Lesson 8</span>
+          <span class="badge">Unit 7 · Amazing animals</span>
+          <span class="badge">Student's Book p.87, p.119 · Workbook p.60</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="parts">
+  <div class="wrap">
+    <button class="part-tab" data-part="part-grammar" onclick="showPart('part-grammar')">Past simple</button>
+    <button class="part-tab" data-part="part-use" onclick="showPart('part-use')">A boy's best friend &amp; Use it!</button>
+    <button class="part-tab hw" data-part="part-homework" onclick="showPart('part-homework')">Homework</button>
+  </div>
+</nav>
+
+<div class="lesson-part" id="part-grammar">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#g1">1 · Video</a>
+    <a href="#g2">2 · The rule</a>
+    <a href="#g3">3 · Spelling</a>
+    <a href="#g4">4 · Irregular verbs</a>
+    <a href="#g5">5 · Say -ed</a>
+    <a href="#part-homework" onclick="showPart('part-homework');window.scrollTo(0,0)">Homework ↗</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 1 — Student's Book p.87, Language in action, Video 7.3
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="g1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Language in action · Video 7.3</div>
+        <h2>A trip to a wildlife centre</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-video-trip">
+      <div class="exercise-label">Watch</div>
+      <h3>Watch the video. Which animals ran away? Who touched a snake?</h3>
+      <div class="video-wrap">
+        <video controls>
+          <source src="video/unit7-page87-language-in-action.mp4" type="video/mp4">
+          <track kind="captions" src="video/unit7-page87-language-in-action.vtt" srclang="en" label="English" default>
+          Your browser does not support video.
+        </video>
+      </div>
+
+      <p style="font-weight:700;margin:18px 0 4px">1. Which animals ran away?</p>
+      <div class="mc-options" data-correct="c">
+        <label class="mc-option"><input type="radio" name="mc1" value="a"><span class="mc-bullet">A</span> Two elephants.</label>
+        <label class="mc-option"><input type="radio" name="mc1" value="b"><span class="mc-bullet">B</span> A grey parrot.</label>
+        <label class="mc-option"><input type="radio" name="mc1" value="c"><span class="mc-bullet">C</span> A mother bear and two baby bears.</label>
+      </div>
+      <p style="font-weight:700;margin:18px 0 4px">2. Who touched a snake?</p>
+      <div class="mc-options" data-correct="b">
+        <label class="mc-option"><input type="radio" name="mc2" value="a"><span class="mc-bullet">A</span> The vlogger.</label>
+        <label class="mc-option"><input type="radio" name="mc2" value="b"><span class="mc-bullet">B</span> Her friend Ben.</label>
+        <label class="mc-option"><input type="radio" name="mc2" value="c"><span class="mc-bullet">C</span> Her friend Lily.</label>
+      </div>
+      <p style="font-weight:700;margin:18px 0 4px">3. What did the parrot say?</p>
+      <div class="mc-options" data-correct="a">
+        <label class="mc-option"><input type="radio" name="mc3" value="a"><span class="mc-bullet">A</span> “What a beautiful parrot!”</label>
+        <label class="mc-option"><input type="radio" name="mc3" value="b"><span class="mc-bullet">B</span> “Hello, Lily!”</label>
+        <label class="mc-option"><input type="radio" name="mc3" value="c"><span class="mc-bullet">C</span> Nothing — parrots can't talk.</label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkMC('ex-video-trip')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetMC('ex-video-trip')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>wildlife centre</b> = a place where people look after wild animals · <b>ran away</b> = went away fast · The mother bear was <b>huge</b> — the same size as a small car!
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 2 — Student's Book p.87, grammar table + task 1
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="g2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Language in action · Past simple</div>
+        <h2>Look at the table and complete the rule</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-rule">
+      <div class="exercise-label">Fill in the Blanks</div>
+
+      <table class="ref-table">
+        <tr><th></th><th>Regular</th><th>Irregular</th></tr>
+        <tr><td class="label">+</td>
+          <td>Everyone <b>laughed</b>.</td>
+          <td>I <b>took</b> this picture before they <b>ran</b> away.</td></tr>
+        <tr><td class="label">−</td>
+          <td>I <b>didn't touch</b> it.</td>
+          <td>We <b>didn't see</b> any elephants.</td></tr>
+        <tr><td class="label">Past time expressions</td>
+          <td>Our class <b>visited</b> a wildlife centre <b>last week</b>.</td>
+          <td>They <b>didn't go</b> to the centre <b>yesterday</b>.</td></tr>
+      </table>
+
+      <h3 style="margin-top:20px">Look at the table. Complete the rules.</h3>
+      <p class="gap-line"><span class="num">1.</span> Regular past simple forms end in
+        <input class="blank" id="ru1" data-answer="-ed|ed" placeholder="?">.</p>
+      <p class="gap-line"><span class="num">2.</span> Irregular verbs don't follow a pattern: <i>take</i> →
+        <input class="blank" id="ru2" data-answer="took" placeholder="?">, <i>run</i> →
+        <input class="blank" id="ru3" data-answer="ran" placeholder="?">.</p>
+      <p class="gap-line"><span class="num">3.</span> In negative sentences we use
+        <input class="blank" id="ru4" data-answer="didn't|didn’t|did not" placeholder="?">
+        + the verb (<i>touch, see, go</i>) — for regular <b>and</b> irregular verbs.</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-rule')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-rule')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      After <b>didn't</b> the verb goes back to its first form: <i>I didn't <s>touched</s> <b>touch</b> it.</i> · <i>We didn't <s>saw</s> <b>see</b> any elephants.</i> And it's the same for <b>everyone</b>: <i>I / you / he / she / we / they <b>went</b></i> — no <i>-s</i>!
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 3 — Spelling of regular verbs (Grammar tutor p.131)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="g3">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-meta">Grammar tutor · Spelling</div>
+        <h2>How to spell regular verbs</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Look and learn</div>
+      <div class="sp-rule"><span class="sp-name">Most verbs: + <i>ed</i></span><span class="sp-ex">show → show<b>ed</b> · laugh → laugh<b>ed</b></span></div>
+      <div class="sp-rule"><span class="sp-name">Verb ends in <i>-e</i>: + <i>d</i></span><span class="sp-ex">live → live<b>d</b> · share → share<b>d</b></span></div>
+      <div class="sp-rule"><span class="sp-name">Consonant + <i>y</i>: <s>y</s> → <i>ied</i></span><span class="sp-ex">study → stud<b>ied</b> · carry → carr<b>ied</b></span></div>
+      <div class="sp-rule"><span class="sp-name">Consonant + vowel + consonant: double it + <i>ed</i></span><span class="sp-ex">stop → sto<b>pped</b> · hug → hu<b>gged</b></span></div>
+    </div>
+
+    <div class="card" id="ex-spell">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Write the past simple. Be careful with the spelling!</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span><span class="cue-input"><span class="cue-lab">visit</span><span class="given">visited</span></span></span></div>
+
+      <div class="letter-gaps">
+        <label><span class="lg-letter" style="color:var(--ink)">1</span><span class="cue-input"><span class="cue-lab">touch</span><input class="blank" id="sp1" data-answer="touched" placeholder="?"></span></label>
+        <label><span class="lg-letter" style="color:var(--ink)">2</span><span class="cue-input"><span class="cue-lab">love</span><input class="blank" id="sp2" data-answer="loved" placeholder="?"></span></label>
+        <label><span class="lg-letter" style="color:var(--ink)">3</span><span class="cue-input"><span class="cue-lab">carry</span><input class="blank" id="sp3" data-answer="carried" placeholder="?"></span></label>
+        <label><span class="lg-letter" style="color:var(--ink)">4</span><span class="cue-input"><span class="cue-lab">stop</span><input class="blank" id="sp4" data-answer="stopped" placeholder="?"></span></label>
+        <label><span class="lg-letter" style="color:var(--ink)">5</span><span class="cue-input"><span class="cue-lab">play</span><input class="blank" id="sp5" data-answer="played" placeholder="?"></span></label>
+        <label><span class="lg-letter" style="color:var(--ink)">6</span><span class="cue-input"><span class="cue-lab">dance</span><input class="blank" id="sp6" data-answer="danced" placeholder="?"></span></label>
+        <label><span class="lg-letter" style="color:var(--ink)">7</span><span class="cue-input"><span class="cue-lab">study</span><input class="blank" id="sp7" data-answer="studied" placeholder="?"></span></label>
+        <label><span class="lg-letter" style="color:var(--ink)">8</span><span class="cue-input"><span class="cue-lab">climb</span><input class="blank" id="sp8" data-answer="climbed" placeholder="?"></span></label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-spell')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-spell')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>play</b> ends in a <b>vowel</b> + <i>y</i>, so just add <i>-ed</i>: play<b>ed</b>, not <s>plaied</s>.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 4 — Student's Book p.87, task 2
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="g4">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-meta">Language in action · Practice</div>
+        <h2>Match the verbs to the past simple</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-match-verbs">
+      <div class="exercise-label">Matching</div>
+      <h3>Match the verbs to the correct past simple form. Which ones are irregular?</h3>
+
+      <div class="match-grid">
+        <div class="match-col" data-side="left">
+          <div class="match-item" data-pair="1" onclick="selectMatch(this,'ex-match-verbs')">1. touch</div>
+          <div class="match-item" data-pair="2" onclick="selectMatch(this,'ex-match-verbs')">2. take</div>
+          <div class="match-item" data-pair="3" onclick="selectMatch(this,'ex-match-verbs')">3. see</div>
+          <div class="match-item" data-pair="4" onclick="selectMatch(this,'ex-match-verbs')">4. visit</div>
+          <div class="match-item" data-pair="5" onclick="selectMatch(this,'ex-match-verbs')">5. go</div>
+        </div>
+        <div class="match-col" data-side="right">
+          <div class="match-item" data-pair="4" onclick="selectMatch(this,'ex-match-verbs')">a. visited</div>
+          <div class="match-item" data-pair="3" onclick="selectMatch(this,'ex-match-verbs')">b. saw</div>
+          <div class="match-item" data-pair="5" onclick="selectMatch(this,'ex-match-verbs')">c. went</div>
+          <div class="match-item" data-pair="1" onclick="selectMatch(this,'ex-match-verbs')">d. touched</div>
+          <div class="match-item" data-pair="2" onclick="selectMatch(this,'ex-match-verbs')">e. took</div>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-ghost" onclick="resetMatchEx('ex-match-verbs')">Reset</button>
+      </div>
+    </div>
+
+    <div class="card" id="ex-irregular">
+      <div class="exercise-label">Tap the Words</div>
+      <h3>Tap the <b>irregular</b> past forms — the ones without <i>-ed</i> rules.</h3>
+      <div class="tap-chips">
+        <span class="tap" onclick="toggleTap(this)">visited</span>
+        <span class="tap" data-key onclick="toggleTap(this)">saw</span>
+        <span class="tap" onclick="toggleTap(this)">touched</span>
+        <span class="tap" data-key onclick="toggleTap(this)">took</span>
+        <span class="tap" data-key onclick="toggleTap(this)">went</span>
+        <span class="tap" onclick="toggleTap(this)">laughed</span>
+        <span class="tap" data-key onclick="toggleTap(this)">ran</span>
+        <span class="tap" data-key onclick="toggleTap(this)">ate</span>
+        <span class="tap" onclick="toggleTap(this)">wanted</span>
+        <span class="tap" data-key onclick="toggleTap(this)">swam</span>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkTap('ex-irregular')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetTap('ex-irregular')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      Irregular verbs must be learnt by heart — there's a full list on <b>Student's Book p.134</b>. Start with these: <i>go – went · see – saw · take – took · run – ran · eat – ate · swim – swam · have – had · give – gave · find – found</i>.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 5 — Student's Book p.119, Pronunciation, Audio 7.06–7.08
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="g5">
+    <div class="step-head">
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-meta">Pronunciation · /t/, /d/ and /ɪd/ · Audio 7.06–7.08</div>
+        <h2>How to say -ed</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Listen and Repeat</div>
+      <h3>The ending <i>-ed</i> has three sounds. Listen and repeat.</h3>
+      <table class="ref-table">
+        <tr><th>/t/</th><th>/d/</th><th>/ɪd/</th></tr>
+        <tr><td>lik<b>ed</b></td><td>play<b>ed</b></td><td>want<b>ed</b></td></tr>
+      </table>
+      <div class="audio-wrap">
+        <audio controls>
+          <source src="audio/unit7-page119-track6.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+    </div>
+
+    <div class="card" id="ex-pron">
+      <div class="exercise-label">Listening · Multiple Choice</div>
+      <h3>Listen. Do you hear <b>A</b> /t/ or /d/ — or <b>B</b> /ɪd/, an extra syllable?</h3>
+      <div class="audio-wrap">
+        <audio controls>
+          <source src="audio/unit7-page119-track7.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+
+      <div class="example-row"><span class="ex-tag">Example</span> <span>1. looked → <b>A</b> /t/</span></div>
+
+      <p style="font-weight:700;margin:14px 0 4px">2. wanted</p>
+      <div class="mc-options" data-correct="b">
+        <label class="mc-option"><input type="radio" name="mc4" value="a"><span class="mc-bullet">A</span> /t/ or /d/</label>
+        <label class="mc-option"><input type="radio" name="mc4" value="b"><span class="mc-bullet">B</span> /ɪd/</label>
+      </div>
+      <p style="font-weight:700;margin:14px 0 4px">3. danced</p>
+      <div class="mc-options" data-correct="a">
+        <label class="mc-option"><input type="radio" name="mc5" value="a"><span class="mc-bullet">A</span> /t/ or /d/</label>
+        <label class="mc-option"><input type="radio" name="mc5" value="b"><span class="mc-bullet">B</span> /ɪd/</label>
+      </div>
+      <p style="font-weight:700;margin:14px 0 4px">4. needed</p>
+      <div class="mc-options" data-correct="b">
+        <label class="mc-option"><input type="radio" name="mc6" value="a"><span class="mc-bullet">A</span> /t/ or /d/</label>
+        <label class="mc-option"><input type="radio" name="mc6" value="b"><span class="mc-bullet">B</span> /ɪd/</label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkMC('ex-pron')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetMC('ex-pron')">Try again</button>
+      </div>
+    </div>
+
+    <div class="card" id="ex-sort-ed">
+      <div class="exercise-label">Word Choice</div>
+      <h3>Write the past simple in your head, then choose the sound. Listen, check and repeat.</h3>
+      <div class="audio-wrap">
+        <audio controls>
+          <source src="audio/unit7-page119-track8.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+
+      <div class="example-row"><span class="ex-tag">Example</span> <span>call → call<b>ed</b> → /d/</span></div>
+
+      <p class="gap-line"><span class="num">1.</span> climb → climbed
+        <span class="word-choice" id="ed1" data-answer="/t/ or /d/">
+          <button class="word-choice-btn" onclick="selectWord(this)">/t/ or /d/</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">/ɪd/</button>
+        </span></p>
+      <p class="gap-line"><span class="num">2.</span> hunt → hunted
+        <span class="word-choice" id="ed2" data-answer="/ɪd/">
+          <button class="word-choice-btn" onclick="selectWord(this)">/t/ or /d/</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">/ɪd/</button>
+        </span></p>
+      <p class="gap-line"><span class="num">3.</span> start → started
+        <span class="word-choice" id="ed3" data-answer="/ɪd/">
+          <button class="word-choice-btn" onclick="selectWord(this)">/t/ or /d/</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">/ɪd/</button>
+        </span></p>
+      <p class="gap-line"><span class="num">4.</span> want → wanted
+        <span class="word-choice" id="ed4" data-answer="/ɪd/">
+          <button class="word-choice-btn" onclick="selectWord(this)">/t/ or /d/</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">/ɪd/</button>
+        </span></p>
+      <p class="gap-line"><span class="num">5.</span> watch → watched
+        <span class="word-choice" id="ed5" data-answer="/t/ or /d/">
+          <button class="word-choice-btn" onclick="selectWord(this)">/t/ or /d/</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">/ɪd/</button>
+        </span></p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkWords('ex-sort-ed')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetWords('ex-sort-ed')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      The easy rule: if the verb ends in <b>t</b> or <b>d</b> (<i>want, start, need, visit</i>), <i>-ed</i> is an extra syllable /ɪd/: <i>vis·it·<b>ed</b></i>. All the others are just one sound: <i>looked</i> = /lʊkt/, not <s>look-ed</s>.
+    </div>
+
+    <div class="speak-prompt">
+      <span class="sp-icon" aria-hidden="true">💬</span>
+      <div>
+        <div class="sp-label">Talk to your teacher</div>
+        <p class="sp-q">Take turns: one person says a verb (<i>call, climb, hunt, start, want, watch, visit, laugh, touch</i>), the other says the past form. Is the pronunciation right?</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="btn-row" style="justify-content:flex-end;margin:10px 0 30px">
+    <button class="btn-accent" onclick="showPart('part-use');window.scrollTo(0,0)">Next part: A boy's best friend →</button>
+  </div>
+
+</div><!-- /wrap -->
+</div><!-- /part-grammar -->
+
+<div class="lesson-part" id="part-use">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#u1">1 · Time words</a>
+    <a href="#u2">2 · A boy's best friend</a>
+    <a href="#u3">3 · … ago</a>
+    <a href="#u4">4 · True or false?</a>
+    <a href="#u5">5 · Finish</a>
+    <a href="#part-homework" onclick="showPart('part-homework');window.scrollTo(0,0)">Homework ↗</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 1 — Student's Book p.87, Get it right!
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="u1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Get it right! · Past time expressions</div>
+        <h2>When did it happen?</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Remember</div>
+      <h3>We use past time expressions with the past simple.</h3>
+      <table class="ref-table">
+        <tr><th>yesterday</th><th>last …</th><th>… ago</th></tr>
+        <tr><td>yesterday<br>yesterday morning</td><td>last night<br>last week / month / year</td><td>three days ago<br>two weeks ago<br>six months ago</td></tr>
+      </table>
+    </div>
+
+    <div class="card" id="ex-time">
+      <div class="exercise-label">Word Choice</div>
+      <h3>Choose the correct word.</h3>
+
+      <p class="gap-line"><span class="num">1.</span> We visited the zoo
+        <span class="word-choice" id="tm1" data-answer="last">
+          <button class="word-choice-btn" onclick="selectWord(this)">last</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">ago</button>
+        </span> Saturday.</p>
+      <p class="gap-line"><span class="num">2.</span> I saw a fox two days
+        <span class="word-choice" id="tm2" data-answer="ago">
+          <button class="word-choice-btn" onclick="selectWord(this)">last</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">ago</button>
+        </span>.</p>
+      <p class="gap-line"><span class="num">3.</span> My cat didn't eat
+        <span class="word-choice" id="tm3" data-answer="yesterday">
+          <button class="word-choice-btn" onclick="selectWord(this)">yesterday</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">last yesterday</button>
+        </span>.</p>
+      <p class="gap-line"><span class="num">4.</span> They went to Africa
+        <span class="word-choice" id="tm4" data-answer="a year ago">
+          <button class="word-choice-btn" onclick="selectWord(this)">ago a year</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">a year ago</button>
+        </span>.</p>
+      <p class="gap-line"><span class="num">5.</span> I watched a film about sharks
+        <span class="word-choice" id="tm5" data-answer="last night">
+          <button class="word-choice-btn" onclick="selectWord(this)">last night</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">the last night</button>
+        </span>.</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkWords('ex-time')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetWords('ex-time')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>ago</b> goes <b>after</b> the time: <i>three days <b>ago</b></i> (= три дня назад). No <i>the</i> before <i>last</i>: <i><s>the</s> last week</i>.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 2 — Student's Book p.87, task 3, Audio 7.09
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="u2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Language in action · Audio 7.09</div>
+        <h2>A boy's best friend</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-crow">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Complete the text with the correct past simple form of the verbs. Then listen and check.</h3>
+      <p class="char-count" style="text-align:left;margin-top:0">Not sure about an irregular verb? Look at the list on Student's Book p.134.</p>
+
+      <div class="profile">
+        <div class="profile-head">
+          <div class="profile-title">A boy's best friend</div>
+        </div>
+        <img class="media-img" src="images/unit7-p87-crow.jpg" alt="A little blond boy pointing at a black and grey crow sitting on a wooden fence in a garden" style="max-width:380px;display:block;margin:0 auto 16px">
+        <div class="profile-para"><span class="pnum">1</span><p>A few years ago, a Danish man <b><u>found</u></b> (find) a baby crow. It was very thin and hungry. There wasn't an animal specialist to help him so the man
+          <span class="cue-input"><span class="cue-lab">take</span><input class="blank" id="cw2" data-answer="took" placeholder="?"></span>
+          the crow home. His family
+          <span class="cue-input"><span class="cue-lab">give</span><input class="blank" id="cw3" data-answer="gave" placeholder="?"></span>
+          the crow food and it
+          <span class="cue-input"><span class="cue-lab">become</span><input class="blank" id="cw4" data-answer="became" placeholder="?"></span>
+          part of the family.</p></div>
+        <div class="profile-para"><span class="pnum">2</span><p>They
+          <span class="cue-input"><span class="cue-lab">call</span><input class="blank" id="cw5" data-answer="called" placeholder="?"></span>
+          the crow Russell. Their son Otto
+          <span class="cue-input"><span class="cue-lab">love</span><input class="blank" id="cw6" data-answer="loved" placeholder="?"></span>
+          Russell. Russell
+          <span class="cue-input"><span class="cue-lab">not leave</span><input class="blank" id="cw7" data-answer="didn't leave|didn’t leave|did not leave" placeholder="?"></span>
+          Otto and they
+          <span class="cue-input"><span class="cue-lab">spend</span><input class="blank" id="cw8" data-answer="spent" placeholder="?"></span>
+          a lot of time together.</p></div>
+        <div class="profile-para"><span class="pnum">3</span><p>After a few weeks, the family
+          <span class="cue-input"><span class="cue-lab">put</span><input class="blank" id="cw9" data-answer="put" placeholder="?"></span>
+          the crow in their garden to fly home. Russell doesn't live with the family now but he visits them every day. Otto's mum
+          <span class="cue-input"><span class="cue-lab">share</span><input class="blank" id="cw10" data-answer="shared" placeholder="?"></span>
+          the story on social media. Russell and Otto are famous now!</p></div>
+      </div>
+
+      <div class="audio-wrap">
+        <audio controls>
+          <source src="audio/unit7-page87-track9.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-crow')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-crow')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>crow</b> = a big black bird (ворона) · <b>Danish</b> = from Denmark · <b>thin</b> = not fat · <b>put</b> is a funny one: <i>put → <b>put</b></i> — the past form is the same!
+    </div>
+
+    <div class="card" id="ex-crow-tf">
+      <div class="exercise-label">Multiple Choice</div>
+      <h3>True or false? Read the story again.</h3>
+      <p style="font-weight:700;margin:10px 0 4px">1. The crow was big and strong when the man found it.</p>
+      <div class="mc-options" data-correct="f">
+        <label class="mc-option"><input type="radio" name="mc7" value="t"><span class="mc-bullet">T</span> True</label>
+        <label class="mc-option"><input type="radio" name="mc7" value="f"><span class="mc-bullet">F</span> False</label>
+      </div>
+      <p style="font-weight:700;margin:14px 0 4px">2. Russell lives with Otto's family now.</p>
+      <div class="mc-options" data-correct="f">
+        <label class="mc-option"><input type="radio" name="mc8" value="t"><span class="mc-bullet">T</span> True</label>
+        <label class="mc-option"><input type="radio" name="mc8" value="f"><span class="mc-bullet">F</span> False</label>
+      </div>
+      <p style="font-weight:700;margin:14px 0 4px">3. Russell visits the family every day.</p>
+      <div class="mc-options" data-correct="t">
+        <label class="mc-option"><input type="radio" name="mc9" value="t"><span class="mc-bullet">T</span> True</label>
+        <label class="mc-option"><input type="radio" name="mc9" value="f"><span class="mc-bullet">F</span> False</label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkMC('ex-crow-tf')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetMC('ex-crow-tf')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 3 — Student's Book p.87, Use it!, task 4
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="u3">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-meta">Use it!</div>
+        <h2>Sentences with <i>ago</i></h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-ago">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Write the verb in the past simple. Then change the time so that the sentence is true for you.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span>1. This lesson start / <b>thirty minutes</b> → This lesson <b>started</b> <u>forty-five minutes</u> ago.</span></div>
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">2.</span> I
+        <span class="cue-input"><span class="cue-lab">get</span><input class="blank" id="ag2" data-answer="got" placeholder="?"></span>
+        up <input type="text" class="blank" id="ag2t" placeholder="four hours" style="width:150px"> ago.</p>
+      <p class="gap-line"><span class="num">3.</span> I
+        <span class="cue-input"><span class="cue-lab">start</span><input class="blank" id="ag3" data-answer="started" placeholder="?"></span>
+        school <input type="text" class="blank" id="ag3t" placeholder="seven years" style="width:150px"> ago.</p>
+      <p class="gap-line"><span class="num">4.</span> I
+        <span class="cue-input"><span class="cue-lab">have</span><input class="blank" id="ag4" data-answer="had" placeholder="?"></span>
+        lunch <input type="text" class="blank" id="ag4t" placeholder="an hour" style="width:150px"> ago.</p>
+      <p class="gap-line"><span class="num">5.</span> I
+        <span class="cue-input"><span class="cue-lab">meet</span><input class="blank" id="ag5" data-answer="met" placeholder="?"></span>
+        my English teacher <input type="text" class="blank" id="ag5t" placeholder="six months" style="width:150px"> ago.</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-ago')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-ago')">Try again</button>
+      </div>
+    </div>
+
+    <div class="speak-prompt">
+      <span class="sp-icon" aria-hidden="true">💬</span>
+      <div>
+        <div class="sp-label">Talk to your teacher</div>
+        <p class="sp-q">Say your sentences. Then listen to your teacher's sentences. <b>Are any the same?</b></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 4 — Student's Book p.87, tasks 5–6
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="u4">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-meta">Use it! · Speaking game</div>
+        <h2>True or false?</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Writing · Speaking</div>
+      <h3>Write three <b>true</b> and three <b>false</b> sentences about you. Use the past simple and past time expressions. Mix them up! Then read them to your teacher — can they guess which are true?</h3>
+
+      <div class="dialogue" style="margin-top:12px">
+        <span class="dl-name">Matvey</span>
+        <p class="dl-text">I went to Brazil on holiday last week.</p>
+        <span class="dl-name two">Nina</span>
+        <p class="dl-text">False! You were at school last week.</p>
+      </div>
+
+      <textarea class="free-write" id="fw-truefalse" placeholder="1. I saw a … last summer.&#10;2. I didn't … yesterday.&#10;3. …" rows="6" style="margin-top:14px"></textarea>
+      <div class="char-count" id="cc-fw-truefalse">0 characters</div>
+    </div>
+
+    <div class="tip">
+      Use at least one <b>negative</b> (<i>I didn't …</i>) and at least one <b>irregular verb</b> (<i>went, saw, had, ate, swam …</i>).
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 5 — Finish
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="u5">
+    <div class="step-head">
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-meta">Finish</div>
+        <h2>Nice work</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Now I...</h3>
+      <div class="reflect-list">
+        <label class="reflect-item">
+          <input type="checkbox" id="rf1">
+          <span class="check-box"></span>
+          <span class="reflect-text">can make the past simple of regular verbs with <i>-ed</i> and spell them correctly</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="rf2">
+          <span class="check-box"></span>
+          <span class="reflect-text">know some irregular verbs: <i>went, saw, took, gave, found, had …</i></span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="rf3">
+          <span class="check-box"></span>
+          <span class="reflect-text">can make negative sentences with <i>didn't</i> + verb</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="rf4">
+          <span class="check-box"></span>
+          <span class="reflect-text">can say <i>-ed</i> as /t/, /d/ or /ɪd/</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="rf5">
+          <span class="check-box"></span>
+          <span class="reflect-text">can use <i>yesterday, last week</i> and <i>… ago</i></span>
+        </label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-accent" onclick="showPart('part-homework');window.scrollTo(0,0)">Go to homework →</button>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /wrap -->
+</div><!-- /part-use -->
+
+<div class="lesson-part" id="part-homework">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#h1">1 · Infinitives</a>
+    <a href="#h2">2 · Donkey</a>
+    <a href="#h3">3 · Word order</a>
+    <a href="#h4">4 · Flo the dog</a>
+    <a href="#h5">5 · … ago</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 1 — Workbook p.60, task 1
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Homework · Past simple</div>
+        <h2>Write the infinitive</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-hw-inf">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Write the infinitive (the first form) of these past tense verbs.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span><span class="cue-input"><span class="cue-lab">had</span><span class="given">have</span></span></span></div>
+
+      <div class="letter-gaps">
+        <label><span class="lg-letter" style="color:var(--ink)">2</span><span class="cue-input"><span class="cue-lab">slept</span><input class="blank" id="in2" data-answer="sleep" placeholder="?"></span></label>
+        <label><span class="lg-letter" style="color:var(--ink)">3</span><span class="cue-input"><span class="cue-lab">took</span><input class="blank" id="in3" data-answer="take" placeholder="?"></span></label>
+        <label><span class="lg-letter" style="color:var(--ink)">4</span><span class="cue-input"><span class="cue-lab">looked</span><input class="blank" id="in4" data-answer="look" placeholder="?"></span></label>
+        <label><span class="lg-letter" style="color:var(--ink)">5</span><span class="cue-input"><span class="cue-lab">heard</span><input class="blank" id="in5" data-answer="hear" placeholder="?"></span></label>
+        <label><span class="lg-letter" style="color:var(--ink)">6</span><span class="cue-input"><span class="cue-lab">saw</span><input class="blank" id="in6" data-answer="see" placeholder="?"></span></label>
+        <label><span class="lg-letter" style="color:var(--ink)">7</span><span class="cue-input"><span class="cue-lab">became</span><input class="blank" id="in7" data-answer="become" placeholder="?"></span></label>
+        <label><span class="lg-letter" style="color:var(--ink)">8</span><span class="cue-input"><span class="cue-lab">gave</span><input class="blank" id="in8" data-answer="give" placeholder="?"></span></label>
+        <label><span class="lg-letter" style="color:var(--ink)">9</span><span class="cue-input"><span class="cue-lab">shared</span><input class="blank" id="in9" data-answer="share" placeholder="?"></span></label>
+        <label><span class="lg-letter" style="color:var(--ink)">10</span><span class="cue-input"><span class="cue-lab">wanted</span><input class="blank" id="in10" data-answer="want" placeholder="?"></span></label>
+        <label><span class="lg-letter" style="color:var(--ink)">11</span><span class="cue-input"><span class="cue-lab">found</span><input class="blank" id="in11" data-answer="find" placeholder="?"></span></label>
+        <label><span class="lg-letter" style="color:var(--ink)">12</span><span class="cue-input"><span class="cue-lab">went</span><input class="blank" id="in12" data-answer="go" placeholder="?"></span></label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-hw-inf')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-hw-inf')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      Careful with <i>shared</i>: the verb ends in <i>-e</i>, so the infinitive is <b>share</b>, not <s>shar</s>.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 2 — Workbook p.60, task 2
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Homework · Positive and negative</div>
+        <h2>Complete the sentences</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-hw-donkey">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Complete the sentences with the correct past simple form of the verbs in the box.</h3>
+
+      <img class="media-img" src="images/unit7-wb60-donkey.jpg" alt="A black-and-white photo of a donkey with big ears putting its head over a white wall and looking into the camera" style="max-width:420px;display:block;margin:6px auto 14px">
+
+      <div class="word-bank-ref">
+        <span onclick="this.classList.toggle('crossed')">look</span><span class="crossed">not give</span><span onclick="this.classList.toggle('crossed')">have</span><span onclick="this.classList.toggle('crossed')">not want</span><span onclick="this.classList.toggle('crossed')">sleep</span><span onclick="this.classList.toggle('crossed')">not find</span><span onclick="this.classList.toggle('crossed')">see</span><span onclick="this.classList.toggle('crossed')">not go</span>
+      </div>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span>1. You <b><u>didn't give</u></b> the donkey its food.</span></div>
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">2.</span> We
+        <input class="blank" id="dk2" data-answer="saw" placeholder="?">
+        lots of snakes at the wildlife park.</p>
+      <p class="gap-line"><span class="num">3.</span> The horse
+        <input class="blank" id="dk3" data-answer="didn't want|didn’t want|did not want" placeholder="?">
+        to eat my apple. It wasn't hungry.</p>
+      <p class="gap-line"><span class="num">4.</span> They
+        <input class="blank" id="dk4a" data-answer="looked" placeholder="?">
+        for the cat in the garden but they
+        <input class="blank" id="dk4b" data-answer="didn't find|didn’t find|did not find" placeholder="?">
+        him.</p>
+      <p class="gap-line"><span class="num">5.</span> My dad
+        <input class="blank" id="dk5" data-answer="had" placeholder="?">
+        a parrot as a pet when he was a child.</p>
+      <p class="gap-line"><span class="num">6.</span> The cat
+        <input class="blank" id="dk6a" data-answer="didn't go|didn’t go|did not go" placeholder="?">
+        out, she
+        <input class="blank" id="dk6b" data-answer="slept" placeholder="?">
+        on my bed all day.</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-hw-donkey')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-hw-donkey')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>look for</b> = try to find (искать). Tap a word in the box to cross it out when you use it.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 3 — Workbook p.60, task 3
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h3">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-meta">Homework · Word order</div>
+        <h2>Make sentences</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-hw-order">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Write the words in the correct order to make sentences.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span>1. park / years / The / 20 / safari / opened / ago → <b>The safari park opened 20 years ago.</b></span></div>
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">2.</span> Crocodiles / killed / year / 1,000 / people / last</p>
+      <input type="text" class="blank line-write" id="ho2" data-answer="Crocodiles killed 1,000 people last year.|Crocodiles killed 1,000 people last year|Crocodiles killed 1000 people last year.|Crocodiles killed 1000 people last year|Last year crocodiles killed 1,000 people.|Last year crocodiles killed 1,000 people|Last year crocodiles killed 1000 people.|Last year crocodiles killed 1000 people" placeholder="Crocodiles …">
+      <p class="gap-line" style="margin-top:14px"><span class="num">3.</span> bears / days / in town / ago / Two / three / were / there</p>
+      <input type="text" class="blank line-write" id="ho3" data-answer="Two bears were there in town three days ago.|Two bears were there in town three days ago|Two bears were in town three days ago.|Two bears were in town three days ago|There were two bears in town three days ago.|There were two bears in town three days ago|Three days ago there were two bears in town.|Three days ago there were two bears in town|Two bears were in town there three days ago.|Two bears were in town there three days ago" placeholder="Two bears …">
+      <p class="gap-line" style="margin-top:14px"><span class="num">4.</span> blue / last / saw / whales / summer / They</p>
+      <input type="text" class="blank line-write" id="ho4" data-answer="They saw blue whales last summer.|They saw blue whales last summer|Last summer they saw blue whales.|Last summer they saw blue whales" placeholder="They …">
+      <p class="gap-line" style="margin-top:14px"><span class="num">5.</span> an / The / home / hour / cat / came / ago</p>
+      <input type="text" class="blank line-write" id="ho5" data-answer="The cat came home an hour ago.|The cat came home an hour ago|An hour ago the cat came home.|An hour ago the cat came home" placeholder="The cat …">
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-hw-order')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-hw-order')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      The usual order is: <b>who</b> → <b>did what</b> → <b>what / where</b> → <b>when</b>. <i>The cat · came · home · an hour ago.</i>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 4 — Workbook p.60, task 4
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h4">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-meta">Homework · Regular and irregular verbs</div>
+        <h2>Flo comes home</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-hw-flo">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Complete the text with the past simple form of the verbs.</h3>
+
+      <div class="profile">
+        <img class="media-img" src="images/unit7-wb60-dog.jpg" alt="A black-and-white photo of a happy border collie dog sitting in a field" style="max-width:240px;display:block;margin:0 auto 16px">
+        <div class="profile-para"><span class="pnum">1</span><p>Flo, a dog from Northern Ireland, suddenly disappeared one day. The Gallaghers, Flo's family, <b><u>looked</u></b> (look) for her but they
+          <span class="cue-input"><span class="cue-lab">not find</span><input class="blank" id="fl2" data-answer="didn't find|didn’t find|did not find" placeholder="?"></span>
+          her. They were very sad.</p></div>
+        <div class="profile-para"><span class="pnum">2</span><p>Three years later, a volunteer at the local animal hospital
+          <span class="cue-input"><span class="cue-lab">hear</span><input class="blank" id="fl3" data-answer="heard" placeholder="?"></span>
+          about a dog with no home. The dog
+          <span class="cue-input"><span class="cue-lab">sleep</span><input class="blank" id="fl4" data-answer="slept" placeholder="?"></span>
+          in an old building about ten miles from the Gallaghers' house. The volunteers at the hospital
+          <span class="cue-input"><span class="cue-lab">not want</span><input class="blank" id="fl5" data-answer="didn't want|didn’t want|did not want" placeholder="?"></span>
+          the dog to stay there. They
+          <span class="cue-input"><span class="cue-lab">go</span><input class="blank" id="fl6" data-answer="went" placeholder="?"></span>
+          to find her.</p></div>
+        <div class="profile-para"><span class="pnum">3</span><p>Soon the dog
+          <span class="cue-input"><span class="cue-lab">have</span><input class="blank" id="fl7" data-answer="had" placeholder="?"></span>
+          a new home at the animal hospital, and they
+          <span class="cue-input"><span class="cue-lab">share</span><input class="blank" id="fl8" data-answer="shared" placeholder="?"></span>
+          photos of her on social media. The Gallagher family
+          <span class="cue-input"><span class="cue-lab">see</span><input class="blank" id="fl9" data-answer="saw" placeholder="?"></span>
+          the photos and
+          <span class="cue-input"><span class="cue-lab">become</span><input class="blank" id="fl10" data-answer="became" placeholder="?"></span>
+          very excited – it was Flo! The next day they
+          <span class="cue-input"><span class="cue-lab">take</span><input class="blank" id="fl11" data-answer="took" placeholder="?"></span>
+          her home. They
+          <span class="cue-input"><span class="cue-lab">give</span><input class="blank" id="fl12" data-answer="gave" placeholder="?"></span>
+          her a big dinner.</p></div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-hw-flo')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-hw-flo')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>disappeared</b> = was suddenly not there (пропала) · <b>volunteer</b> = a person who helps for free · <b>excited</b> = very happy about something.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 5 — Grammar tutor p.131, task 3 + Explore
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h5">
+    <div class="step-head">
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-meta">Homework · Grammar tutor p.131</div>
+        <h2>Write sentences with <i>ago</i></h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-hw-ago">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Write sentences with <i>ago</i>. Use the correct form of the past simple.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span>1. This lesson start / thirty minutes → <b>This lesson started thirty minutes ago.</b></span></div>
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">2.</span> She / get up / four hours</p>
+      <input type="text" class="blank line-write" id="ha2" data-answer="She got up four hours ago.|She got up four hours ago" placeholder="She …">
+      <p class="gap-line" style="margin-top:14px"><span class="num">3.</span> They / arrive in London / one week</p>
+      <input type="text" class="blank line-write" id="ha3" data-answer="They arrived in London one week ago.|They arrived in London one week ago|They arrived in London a week ago.|They arrived in London a week ago" placeholder="They …">
+      <p class="gap-line" style="margin-top:14px"><span class="num">4.</span> We / have / lunch / an hour</p>
+      <input type="text" class="blank line-write" id="ha4" data-answer="We had lunch an hour ago.|We had lunch an hour ago" placeholder="We …">
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-hw-ago')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-hw-ago')">Try again</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Free Writing</div>
+      <h3>Write about an animal you saw — at a zoo, a farm, in a park or on holiday. When was it? What did the animal do? Use at least three verbs in the past simple.</h3>
+      <textarea class="free-write" id="fw-animal-saw" placeholder="Two years ago I went to … I saw a … It ate … I didn't …" rows="5"></textarea>
+      <div class="char-count" id="cc-fw-animal-saw">0 characters</div>
+    </div>
+  </section>
+
+  <div class="btn-row" style="justify-content:flex-start;margin:10px 0 30px">
+    <button class="btn-ghost" onclick="showPart('part-grammar');window.scrollTo(0,0)">← Back to the lesson</button>
+  </div>
+
+</div><!-- /wrap -->
+</div><!-- /part-homework -->
+
+<div class="scorebar" id="scoreBar" style="display:none">
+  <div class="wrap">
+    <span>Score: <span id="scoreCorrect">0</span> correct · <span id="scoreDone">0</span>/<span id="scoreTotal">0</span> answered</span>
+    <div class="meter"><i id="scoreMeter"></i></div>
+    <button class="btn-primary" onclick="checkAll()">Check my answers ✓</button>
+  </div>
+</div>
+
+<script src="../assets/sync.js"></script>
+<script src="../assets/lessons.js"></script>
+<script src="../assets/dictionary.js"></script>
+</body>
+</html>

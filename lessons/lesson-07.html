@@ -21,6 +21,21 @@
 .wo-box{border:2px dashed var(--muted);border-radius:14px;padding:12px 16px;margin-top:14px}
 .wo-box h4{margin:0 0 8px}
 @media (max-width:600px){.wo-label{min-width:100%}.wo-arrow,.wo-short{margin-left:0}}
+/* "complete the adjective" tiles with a one-letter gap (homework Nov. 4th) */
+.adj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px;margin-top:14px}
+.adj-tile{display:flex;align-items:center;gap:10px;background:#fff;border:2px solid var(--line);border-radius:14px;padding:10px 14px;box-shadow:var(--shadow-sm)}
+.adj-tile.ex{background:var(--mint);border-style:dashed;box-shadow:none}
+.adj-num{flex:0 0 auto;width:28px;height:28px;border-radius:50%;background:var(--butter);border:2px solid var(--line);display:grid;place-items:center;font-size:13px;font-weight:900}
+.adj-word{display:flex;align-items:center;font-size:20px;font-weight:700;letter-spacing:.04em}
+.adj-word .blank{min-width:0;width:32px;height:38px;padding:0;margin:0 3px;font-size:20px;text-transform:lowercase;border-radius:8px}
+.adj-word .blank::placeholder{color:#c9bfae}
+.adj-word .given{display:inline-grid;place-items:center;width:32px;height:38px;margin:0 3px;border:2px dashed var(--teal);border-radius:8px;color:var(--teal);font-weight:900}
+.letter-bank span{width:40px;height:40px;padding:0;display:inline-grid;place-items:center;font-size:18px}
+/* "start like this" sentence starters above writing boxes — tap one to add it */
+.starters{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 0 8px;padding:10px 12px;background:var(--butter);border:2px dashed var(--line);border-radius:12px}
+.starters-lab{font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.06em;color:#7A5B00;margin-right:2px}
+.starter{font:inherit;font-size:15px;font-weight:600;color:var(--ink);background:#fff;border:2px solid var(--line);border-radius:999px;padding:4px 12px;cursor:pointer;box-shadow:var(--shadow-sm);text-align:left}
+.starter:hover{background:var(--yellow)}
 </style>
 </head>
 <body>
@@ -35,7 +50,7 @@
         <div class="hero-badges">
           <span class="badge">Lesson 7</span>
           <span class="badge">Unit 7 · Amazing animals</span>
-          <span class="badge">Student's Book p.85–86 · Workbook p.58</span>
+          <span class="badge">Student's Book p.85–86 · Workbook p.58–59</span>
         </div>
       </div>
     </div>
@@ -47,6 +62,7 @@
     <button class="part-tab" data-part="part-grammar" onclick="showPart('part-grammar')">was / were</button>
     <button class="part-tab" data-part="part-vocab" onclick="showPart('part-vocab')">Adjectives &amp; podcast</button>
     <button class="part-tab hw" data-part="part-homework" onclick="showPart('part-homework')">Homework</button>
+    <button class="part-tab hw" data-part="part-homework-2" onclick="showPart('part-homework-2')">Homework Nov. 4th</button>
   </div>
 </nav>
 <div class="lesson-part" id="part-grammar">
@@ -396,6 +412,7 @@
     <div class="card">
       <div class="exercise-label">Writing</div>
       <h3>Now answer the four questions about you. Then ask your teacher the same questions!</h3>
+      <div class="starters"><span class="starters-lab">Start like this</span><button class="starter" onclick="useStarter(this,'fw-past-me')">I was born in …</button><button class="starter" onclick="useStarter(this,'fw-past-me')">When I was six, my favourite animal was …</button><button class="starter" onclick="useStarter(this,'fw-past-me')">When I was eight, my best friend was …</button><button class="starter" onclick="useStarter(this,'fw-past-me')">My last holiday was in …</button></div>
       <textarea class="free-write" id="fw-past-me" placeholder="I was born in … When I was six, my favourite animal was …" rows="4"></textarea>
       <div class="char-count" id="cc-fw-past-me">0 characters</div>
     </div>
@@ -646,9 +663,11 @@
       <img class="media-img" src="images/unit7-p86-dolphins.jpg" alt="A group of dolphins swimming together in the blue sea" style="max-width:480px;display:block;margin:12px auto">
 
       <p style="font-weight:800;margin:14px 0 4px">1. What can dolphins do?</p>
+      <div class="starters"><span class="starters-lab">Start like this</span><button class="starter" onclick="useStarter(this,'fw-d1')">Dolphins can …</button><button class="starter" onclick="useStarter(this,'fw-d1')">I know that dolphins …</button></div>
       <textarea class="free-write" id="fw-d1" placeholder="Dolphins can …" rows="2"></textarea>
       <div class="char-count" id="cc-fw-d1">0 characters</div>
       <p style="font-weight:800;margin:14px 0 4px">2. Do you think dolphins can understand people? Why / Why not?</p>
+      <div class="starters"><span class="starters-lab">Start like this</span><button class="starter" onclick="useStarter(this,'fw-d2')">Yes, I think they can, because …</button><button class="starter" onclick="useStarter(this,'fw-d2')">No, I don't think so, because …</button></div>
       <textarea class="free-write" id="fw-d2" placeholder="I think … because …" rows="2"></textarea>
       <div class="char-count" id="cc-fw-d2">0 characters</div>
     </div>
@@ -814,6 +833,7 @@
         <p class="dl-text">There was a group of seven dolphins.</p>
       </div>
 
+      <div class="starters"><span class="starters-lab">Start like this</span><button class="starter" onclick="useStarter(this,'fw-story')">Kai was fifteen. He was on holiday in …</button><button class="starter" onclick="useStarter(this,'fw-story')">There was a group of …</button><button class="starter" onclick="useStarter(this,'fw-story')">Kai and Mateo were on a …</button></div>
       <textarea class="free-write" id="fw-story" placeholder="Kai was 15. He was on holiday in Georgia. There was …" rows="5" style="margin-top:14px"></textarea>
       <div class="char-count" id="cc-fw-story">0 characters</div>
     </div>
@@ -1205,6 +1225,7 @@
     <div class="card">
       <div class="exercise-label">Writing</div>
       <h3>Now write answers about you to questions 1–5.</h3>
+      <div class="starters"><span class="starters-lab">Start like this</span><button class="starter" onclick="useStarter(this,'fw-order-answers')">1. On Saturday I was …</button><button class="starter" onclick="useStarter(this,'fw-order-answers')">2. When I was six, my favourite animal was …</button><button class="starter" onclick="useStarter(this,'fw-order-answers')">3. There were … people in my class.</button><button class="starter" onclick="useStarter(this,'fw-order-answers')">4. In 2011 I was … / I wasn't born!</button><button class="starter" onclick="useStarter(this,'fw-order-answers')">5. Yes, there was … / No, there wasn't …</button></div>
       <textarea class="free-write" id="fw-order-answers" placeholder="1. On Saturday I was … 2. When I was six, my favourite animal was …" rows="5"></textarea>
       <div class="char-count" id="cc-fw-order-answers">0 characters</div>
     </div>
@@ -1225,6 +1246,7 @@
     <div class="card">
       <div class="exercise-label">Free Writing</div>
       <h3>Find out about an animal from the past, like mammoths or sabre-toothed tigers. Write three sentences about it. Use <i>was</i> and <i>were</i>.</h3>
+      <div class="starters"><span class="starters-lab">Start like this</span><button class="starter" onclick="useStarter(this,'fw-past-animal')">The … was a big / small animal.</button><button class="starter" onclick="useStarter(this,'fw-past-animal')">It lived in … a long time ago.</button><button class="starter" onclick="useStarter(this,'fw-past-animal')">Its teeth / legs were …</button></div>
       <textarea class="free-write" id="fw-past-animal" placeholder="The dodo was a … It lived in … Its legs were …" rows="4"></textarea>
       <div class="char-count" id="cc-fw-past-animal">0 characters</div>
     </div>
@@ -1241,6 +1263,324 @@
 </div><!-- /wrap -->
 </div><!-- /part-homework -->
 
+<div class="lesson-part" id="part-homework-2">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#n1">1 · Letters</a>
+    <a href="#n2">2 · My cat</a>
+    <a href="#n3">3 · Pets</a>
+    <a href="#n4">4 · Wolves</a>
+    <a href="#n5">5 · Listen again</a>
+    <a href="#n6">6 · Yellowstone</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK NOV. 4TH · TASK 1 — Workbook p.59, Vocabulary, task 1
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="n1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Homework · Adjectives</div>
+        <h2>Complete the adjectives</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-letters">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Choose the correct letters to complete the adjectives. Use each letter once — tap a letter to cross it out.</h3>
+
+      <div class="word-bank-ref letter-bank">
+        <span onclick="this.classList.toggle('crossed')">a</span><span onclick="this.classList.toggle('crossed')">c</span><span onclick="this.classList.toggle('crossed')">d</span><span class="crossed">f</span><span onclick="this.classList.toggle('crossed')">g</span><span onclick="this.classList.toggle('crossed')">i</span><span onclick="this.classList.toggle('crossed')">l</span><span onclick="this.classList.toggle('crossed')">n</span><span onclick="this.classList.toggle('crossed')">r</span><span onclick="this.classList.toggle('crossed')">u</span><span onclick="this.classList.toggle('crossed')">v</span><span onclick="this.classList.toggle('crossed')">y</span>
+      </div>
+
+      <div class="adj-grid">
+        <div class="adj-tile ex"><span class="adj-num">1</span><span class="adj-word">beauti<span class="given">f</span>ul</span></div>
+        <div class="adj-tile"><span class="adj-num">2</span><span class="adj-word">cle<input class="blank" id="nl2" data-answer="v" maxlength="1" placeholder="?">er</span></div>
+        <div class="adj-tile"><span class="adj-num">3</span><span class="adj-word"><input class="blank" id="nl3" data-answer="c" maxlength="1" placeholder="?">ute</span></div>
+        <div class="adj-tile"><span class="adj-num">4</span><span class="adj-word">dan<input class="blank" id="nl4" data-answer="g" maxlength="1" placeholder="?">erous</span></div>
+        <div class="adj-tile"><span class="adj-num">5</span><span class="adj-word">heav<input class="blank" id="nl5" data-answer="y" maxlength="1" placeholder="?"></span></div>
+        <div class="adj-tile"><span class="adj-num">6</span><span class="adj-word">l<input class="blank" id="nl6" data-answer="a" maxlength="1" placeholder="?">zy</span></div>
+        <div class="adj-tile"><span class="adj-num">7</span><span class="adj-word">wil<input class="blank" id="nl7" data-answer="d" maxlength="1" placeholder="?"></span></div>
+        <div class="adj-tile"><span class="adj-num">8</span><span class="adj-word">no<input class="blank" id="nl8" data-answer="i" maxlength="1" placeholder="?">sy</span></div>
+        <div class="adj-tile"><span class="adj-num">9</span><span class="adj-word">ti<input class="blank" id="nl9" data-answer="n" maxlength="1" placeholder="?">y</span></div>
+        <div class="adj-tile"><span class="adj-num">10</span><span class="adj-word">la<input class="blank" id="nl10" data-answer="r" maxlength="1" placeholder="?">ge</span></div>
+        <div class="adj-tile"><span class="adj-num">11</span><span class="adj-word">q<input class="blank" id="nl11" data-answer="u" maxlength="1" placeholder="?">iet</span></div>
+        <div class="adj-tile"><span class="adj-num">12</span><span class="adj-word"><input class="blank" id="nl12" data-answer="l" maxlength="1" placeholder="?">ong</span></div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-letters')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-letters')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      Say each word out loud — you'll hear the missing letter. Remember the opposites from the lesson: <i>long – short, heavy – light, tiny – huge, noisy – quiet</i>.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK NOV. 4TH · TASK 2 — Workbook p.59, task 2
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="n2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Homework · Adjectives</div>
+        <h2>My little cat</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-kitten">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Complete the text with adjectives from Exercise 1.</h3>
+
+      <div class="word-bank-ref">
+        <span class="crossed">beautiful</span><span onclick="this.classList.toggle('crossed')">clever</span><span onclick="this.classList.toggle('crossed')">cute</span><span onclick="this.classList.toggle('crossed')">dangerous</span><span onclick="this.classList.toggle('crossed')">heavy</span><span onclick="this.classList.toggle('crossed')">lazy</span><span onclick="this.classList.toggle('crossed')">wild</span><span onclick="this.classList.toggle('crossed')">noisy</span><span onclick="this.classList.toggle('crossed')">tiny</span><span onclick="this.classList.toggle('crossed')">large</span><span onclick="this.classList.toggle('crossed')">quiet</span><span onclick="this.classList.toggle('crossed')">long</span>
+      </div>
+
+      <div class="profile">
+        <img class="media-img" src="images/unit7-wb59-kitten.jpg" alt="A small grey tabby kitten with big round eyes sitting in a basket" style="max-width:320px;display:block;margin:0 auto 16px">
+        <div class="profile-para"><span class="pnum">1</span><p>I've got a <b><u>beautiful</u></b> little cat. He's got a lovely face and I think he's really
+          <input class="blank" id="nt2" data-answer="cute" placeholder="?">.
+          He's
+          <input class="blank" id="nt3" data-answer="clever" placeholder="?">
+          too and can do lots of tricks.</p></div>
+        <div class="profile-para"><span class="pnum">2</span><p>My mum likes him because he doesn't make a lot of noise like some pets. She says he's very
+          <input class="blank" id="nt4" data-answer="quiet" placeholder="?">.
+          He can't run fast because his legs aren't very
+          <input class="blank" id="nt5" data-answer="long" placeholder="?">!
+          I prefer small pets because some of my friends' big pets are
+          <input class="blank" id="nt6" data-answer="dangerous|noisy|wild" placeholder="?">
+          and they make me nervous.</p></div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-kitten')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-kitten')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      Look for clues around each gap: <i>doesn't make a lot of noise</i> → ? · <i>can't run fast</i> → his legs aren't very ? · <i>they make me nervous</i> → ? (more than one answer is possible here!)
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK NOV. 4TH · TASK 3 — Workbook p.59, task 3
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="n3">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-meta">Homework · Writing</div>
+        <h2>Our pets</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Free Writing</div>
+      <h3>Which pets have your family or friends got? Use the adjectives and your own ideas to write <b>four</b> sentences.</h3>
+      <div class="example-row"><span class="ex-tag">Example</span> <span>My best friend has got a tiny mouse.</span></div>
+      <div class="starters"><span class="starters-lab">Start like this</span><button class="starter" onclick="useStarter(this,'fw-pets')">My … has got a … It's very …</button><button class="starter" onclick="useStarter(this,'fw-pets')">My friend's dog is …</button><button class="starter" onclick="useStarter(this,'fw-pets')">We haven't got a pet, but my … has got …</button></div>
+      <textarea class="free-write" id="fw-pets" placeholder="My grandma has got a lazy cat. It's …" rows="5"></textarea>
+      <div class="char-count" id="cc-fw-pets">0 characters</div>
+    </div>
+
+    <div class="tip">
+      No pets? Write about a friend's pet or a pet you'd like: <i>I'd like a … because it's …</i>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK NOV. 4TH · TASK 4 — Workbook p.59, A class discussion, task 4 (audio 7.01)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="n4">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-meta">A class discussion · Audio 7.01</div>
+        <h2>Wolves in Yellowstone Park</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-wolves-1">
+      <div class="exercise-label">Listening · Word Choice</div>
+      <h3>Listen to a teacher talking about wolves with her class. Choose the correct answers.</h3>
+
+      <img class="media-img" src="images/unit7-wb59-wolves.jpg" alt="Three grey wolves on a rock in a forest, two standing and one lying down" style="max-width:520px;display:block;margin:0 auto 16px">
+
+      <div class="audio-wrap">
+        <audio controls>
+          <source src="audio/unit7-wb59-track7-01.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+
+      <p class="gap-line" style="margin-top:16px"><span class="num">1.</span> The teacher is talking about wolves that live in
+        <span class="word-choice" id="nc1" data-answer="the USA">
+          <button class="word-choice-btn" onclick="selectWord(this)">the USA</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Canada</button>
+        </span>.</p>
+      <p class="gap-line"><span class="num">2.</span> In the late 1990s, new wolves came from
+        <span class="word-choice" id="nc2" data-answer="other areas">
+          <button class="word-choice-btn" onclick="selectWord(this)">a zoo</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">other areas</button>
+        </span>.</p>
+      <p class="gap-line"><span class="num">3.</span> There are more than
+        <span class="word-choice" id="nc3" data-answer="120">
+          <button class="word-choice-btn" onclick="selectWord(this)">20</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">120</button>
+        </span>
+        wolves there now.</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkWords('ex-wolves-1')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetWords('ex-wolves-1')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>Yellowstone</b> is a very big national park in the USA, with forests, rivers, mountains and lots of wild animals.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK NOV. 4TH · TASK 5 — Workbook p.59, task 5 (audio 7.01)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="n5">
+    <div class="step-head">
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-meta">A class discussion · Audio 7.01</div>
+        <h2>Listen again and answer</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-wolves-2">
+      <div class="exercise-label">Listening · Multiple Choice</div>
+      <h3>Remember the <i>Learn to learn</i> tip: look for the question words and think about the answers <b>before</b> you listen. Then listen again and answer the questions.</h3>
+      <p lang="ru" style="margin:-4px 0 14px;color:var(--muted);font-style:italic">Найди вопросительные слова и подумай об ответах <b>до того</b>, как начнёшь слушать. Потом послушай ещё раз и ответь на вопросы.</p>
+
+      <div class="audio-wrap">
+        <audio controls>
+          <source src="audio/unit7-wb59-track7-01.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+
+      <div class="example-row"><span class="ex-tag">Example</span> <span>1. How does one student describe wolves? — <b>They are fast, dangerous and clever.</b></span></div>
+
+      <p style="font-weight:700;margin:14px 0 4px">2. Why weren't there many wolves in Yellowstone Park for a long time?</p>
+      <div class="mc-options" data-correct="a">
+        <label class="mc-option"><input type="radio" name="mc7" value="a"><span class="mc-bullet">A</span> People killed them because farmers were scared of them.</label>
+        <label class="mc-option"><input type="radio" name="mc7" value="b"><span class="mc-bullet">B</span> They went to a different place.</label>
+        <label class="mc-option"><input type="radio" name="mc7" value="c"><span class="mc-bullet">C</span> They didn't like the park.</label>
+      </div>
+      <p style="font-weight:700;margin:18px 0 4px">3. How many wolves were in the park in the late 1990s?</p>
+      <div class="mc-options" data-correct="b">
+        <label class="mc-option"><input type="radio" name="mc8" value="a"><span class="mc-bullet">A</span> About 14.</label>
+        <label class="mc-option"><input type="radio" name="mc8" value="b"><span class="mc-bullet">B</span> About 40.</label>
+        <label class="mc-option"><input type="radio" name="mc8" value="c"><span class="mc-bullet">C</span> About 120.</label>
+      </div>
+      <p style="font-weight:700;margin:18px 0 4px">4. Why was it difficult for the wolves at first?</p>
+      <div class="mc-options" data-correct="c">
+        <label class="mc-option"><input type="radio" name="mc9" value="a"><span class="mc-bullet">A</span> There were too many people in the park.</label>
+        <label class="mc-option"><input type="radio" name="mc9" value="b"><span class="mc-bullet">B</span> They were from a zoo, so they couldn't hunt.</label>
+        <label class="mc-option"><input type="radio" name="mc9" value="c"><span class="mc-bullet">C</span> It was very cold in winter and they couldn't find any animals to eat.</label>
+      </div>
+      <p style="font-weight:700;margin:18px 0 4px">5. Why is it difficult to see wolves in the park?</p>
+      <div class="mc-options" data-correct="a">
+        <label class="mc-option"><input type="radio" name="mc10" value="a"><span class="mc-bullet">A</span> They are careful and quiet and they hide from people.</label>
+        <label class="mc-option"><input type="radio" name="mc10" value="b"><span class="mc-bullet">B</span> They only come out at night.</label>
+        <label class="mc-option"><input type="radio" name="mc10" value="c"><span class="mc-bullet">C</span> There aren't many wolves there now.</label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkMC('ex-wolves-2')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetMC('ex-wolves-2')">Try again</button>
+      </div>
+
+      <details style="margin-top:16px;background:var(--mint);border-radius:12px;padding:12px 16px">
+        <summary style="cursor:pointer;font-weight:900;color:var(--teal)">Show the audioscript</summary>
+        <div class="dialogue" style="margin-top:10px">
+          <span class="dl-name">Teacher</span>
+          <p class="dl-text">Good morning, class. How are you today? Yesterday we talked about wolves. What do you remember about them?</p>
+          <span class="dl-name two">Ari</span>
+          <p class="dl-text">They are fast and dangerous and clever like me.</p>
+          <span class="dl-name two">Leo</span>
+          <p class="dl-text">OK, Ari, and there are lots of wolves living now in Yellowstone Park in the USA.</p>
+          <span class="dl-name">Teacher</span>
+          <p class="dl-text">Yes, that's right, Leo. But just a few years ago, that was not true. From the 1970s to the 1990s, scientists think that the number of wolves maybe went down to only a few in Yellowstone Park. Why do you think that was?</p>
+          <span class="dl-name two">Leo</span>
+          <p class="dl-text">Because they went to a different place?</p>
+          <span class="dl-name two">Ari</span>
+          <p class="dl-text">Because they didn't like the park?</p>
+          <span class="dl-name">Teacher</span>
+          <p class="dl-text">No, they didn't go to a different place, and they liked the park. Many years ago, a lot of wolves lived in Yellowstone Park, but in the early 1900s they started to disappear.</p>
+          <span class="dl-name two">Leo</span>
+          <p class="dl-text">So why was that?</p>
+          <span class="dl-name">Teacher</span>
+          <p class="dl-text">Well, Leo, people killed the wolves. Farmers were scared of them, and sometimes the wolves attacked farm animals. People killed the wolves until 1935. After that, people thought it was the end of the wolf in Yellowstone. But, from 1995 to 1997, people moved a small group of about 40 wolves to Yellowstone.</p>
+          <span class="dl-name two">Ari</span>
+          <p class="dl-text">Where were the wolves from? Were they from a zoo?</p>
+          <span class="dl-name">Teacher</span>
+          <p class="dl-text">No, Ari. They were wild wolves from different parts of the USA and from Canada. When the wolves began their new life in Yellowstone Park, it was really difficult for them. Sometimes there was no food in winter because it was really cold and they couldn't find any animals to eat.</p>
+          <span class="dl-name two">Leo</span>
+          <p class="dl-text">How many wolves live there now?</p>
+          <span class="dl-name">Teacher</span>
+          <p class="dl-text">Scientists think there are more than 120 wolves in the park.</p>
+          <span class="dl-name two">Ari</span>
+          <p class="dl-text">Is it easy to see the wolves?</p>
+          <span class="dl-name">Teacher</span>
+          <p class="dl-text">No. They are very careful and quiet. They hide from people.</p>
+          <span class="dl-name two">Leo</span>
+          <p class="dl-text">That's not like you, Ari … haha!</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="tip">
+      <b>Why</b> → listen for <i>because</i> · <b>How many</b> → listen for a number · <b>disappear</b> = go away so that nobody can see it any more · <b>hide</b> = go where people can't see you.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK NOV. 4TH · TASK 6 — Workbook p.59, task 6
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="n6">
+    <div class="step-head">
+      <div class="step-num">6</div>
+      <div>
+        <div class="step-meta">Homework · Explore</div>
+        <h2>Who else lives in Yellowstone?</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Free Writing</div>
+      <h3>Which other wild animals do you think live in Yellowstone Park? Write some ideas below.</h3>
+      <div class="starters"><span class="starters-lab">Start like this</span><button class="starter" onclick="useStarter(this,'fw-yellowstone')">I think there are … in Yellowstone Park because …</button><button class="starter" onclick="useStarter(this,'fw-yellowstone')">Maybe there are … too.</button><button class="starter" onclick="useStarter(this,'fw-yellowstone')">… can live there because there are forests and rivers.</button></div>
+      <textarea class="free-write" id="fw-yellowstone" placeholder="I think there are bears in Yellowstone Park because …" rows="4"></textarea>
+      <div class="char-count" id="cc-fw-yellowstone">0 characters</div>
+    </div>
+
+    <div class="tip">
+      Think about the forests, rivers and mountains in the photo. Which big animals, birds and fish could live there? Then check your ideas on the internet!
+    </div>
+  </section>
+
+  <div class="btn-row" style="justify-content:flex-start;margin:10px 0 30px">
+    <button class="btn-ghost" onclick="showPart('part-grammar');window.scrollTo(0,0)">← Back to the lesson</button>
+  </div>
+
+</div><!-- /wrap -->
+</div><!-- /part-homework-2 -->
+
 <div class="scorebar" id="scoreBar" style="display:none">
   <div class="wrap">
     <span>Score: <span id="scoreCorrect">0</span> correct · <span id="scoreDone">0</span>/<span id="scoreTotal">0</span> answered</span>
@@ -1249,6 +1589,20 @@
   </div>
 </div>
 
+<script>
+/* sentence starters: add the starter on a new line and select its first "…" to type over */
+function useStarter(btn, id) {
+  const ta = document.getElementById(id);
+  const text = btn.textContent;
+  const start = ta.value && !ta.value.endsWith('\n') ? ta.value.length + 1 : ta.value.length;
+  ta.value = (ta.value && !ta.value.endsWith('\n') ? ta.value + '\n' : ta.value) + text;
+  const gap = text.indexOf('…');
+  ta.focus();
+  if (gap >= 0) ta.setSelectionRange(start + gap, start + gap + 1);
+  else ta.setSelectionRange(ta.value.length, ta.value.length);
+  ta.dispatchEvent(new Event('input', { bubbles: true }));
+}
+</script>
 <script src="../assets/sync.js"></script>
 <script src="../assets/lessons.js"></script>
 <script src="../assets/dictionary.js"></script>
