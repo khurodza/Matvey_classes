@@ -35,11 +35,238 @@
 
 <nav class="parts">
   <div class="wrap">
+    <button class="part-tab" data-part="part-warmup" onclick="showPart('part-warmup')">Warm-up</button>
     <button class="part-tab" data-part="part-grammar" onclick="showPart('part-grammar')">Past simple</button>
     <button class="part-tab" data-part="part-use" onclick="showPart('part-use')">A boy's best friend &amp; Use it!</button>
     <button class="part-tab hw" data-part="part-homework" onclick="showPart('part-homework')">Homework</button>
   </div>
 </nav>
+
+<div class="lesson-part" id="part-warmup">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#w1">1 · Adjectives</a>
+    <a href="#w2">2 · Opposites</a>
+    <a href="#w3">3 · was / were</a>
+    <a href="#w4">4 · Your break</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       WARM-UP 1 — Adjectives from Lesson 7 (first-letter recall)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="w1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Warm-up · Remember the adjectives</div>
+        <h2>Welcome back! What's the adjective?</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-wu-adj">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Two weeks is a long time! Read the clue and write the adjective. The first letter helps you.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span>A mouse is very, very small. It's <span class="given">tiny</span>.</span></div>
+
+      <p class="gap-line"><span class="num">1.</span> Elephants weigh a lot. They're <input class="blank" id="wa1" data-answer="heavy" placeholder="h…">.</p>
+      <p class="gap-line"><span class="num">2.</span> Parrots make a lot of sound. They're <input class="blank" id="wa2" data-answer="noisy" placeholder="n…">.</p>
+      <p class="gap-line"><span class="num">3.</span> A dolphin can play with a ball. It's <input class="blank" id="wa3" data-answer="clever" placeholder="c…">.</p>
+      <p class="gap-line"><span class="num">4.</span> A crocodile has big teeth. Be careful — it's <input class="blank" id="wa4" data-answer="dangerous" placeholder="d…">!</p>
+      <p class="gap-line"><span class="num">5.</span> My cat sleeps all day and doesn't want to move. It's <input class="blank" id="wa5" data-answer="lazy" placeholder="l…">.</p>
+      <p class="gap-line"><span class="num">6.</span> Wolves live in nature, not with people. They're <input class="blank" id="wa6" data-answer="wild" placeholder="w…">.</p>
+      <p class="gap-line"><span class="num">7.</span> A giraffe has got a very <input class="blank" id="wa7" data-answer="long" placeholder="l…"> neck.</p>
+      <p class="gap-line"><span class="num">8.</span> Look at the peacock's tail — it's so <input class="blank" id="wa8" data-answer="beautiful" placeholder="b…">!</p>
+      <p class="gap-line"><span class="num">9.</span> Aww, a baby panda! It's really <input class="blank" id="wa9" data-answer="cute" placeholder="c…">.</p>
+      <p class="gap-line"><span class="num">10.</span> Mice don't make a lot of sound. They're <input class="blank" id="wa10" data-answer="quiet" placeholder="q…">.</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-wu-adj')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-wu-adj')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      Forgot some words? Look back at <a href="lesson-07.html#v1">Lesson 7 → Describe the photos</a>. Which adjective is <b>missing</b> from this list? (Hint: it means <i>very big</i> and starts with <b>l</b>.)
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       WARM-UP 2 — Opposites
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="w2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Warm-up · Opposites</div>
+        <h2>Find the opposites</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-match-wu-opp">
+      <div class="exercise-label">Matching</div>
+      <h3>Match each adjective with its opposite.</h3>
+
+      <div class="match-grid">
+        <div class="match-col" data-side="left">
+          <div class="match-item" data-pair="1" onclick="selectMatch(this,'ex-match-wu-opp')">tiny</div>
+          <div class="match-item" data-pair="2" onclick="selectMatch(this,'ex-match-wu-opp')">heavy</div>
+          <div class="match-item" data-pair="3" onclick="selectMatch(this,'ex-match-wu-opp')">noisy</div>
+          <div class="match-item" data-pair="4" onclick="selectMatch(this,'ex-match-wu-opp')">dangerous</div>
+          <div class="match-item" data-pair="5" onclick="selectMatch(this,'ex-match-wu-opp')">long</div>
+        </div>
+        <div class="match-col" data-side="right">
+          <div class="match-item" data-pair="4" onclick="selectMatch(this,'ex-match-wu-opp')">safe</div>
+          <div class="match-item" data-pair="5" onclick="selectMatch(this,'ex-match-wu-opp')">short</div>
+          <div class="match-item" data-pair="1" onclick="selectMatch(this,'ex-match-wu-opp')">huge</div>
+          <div class="match-item" data-pair="3" onclick="selectMatch(this,'ex-match-wu-opp')">quiet</div>
+          <div class="match-item" data-pair="2" onclick="selectMatch(this,'ex-match-wu-opp')">light</div>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-ghost" onclick="resetMatchEx('ex-match-wu-opp')">Reset</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       WARM-UP 3 — was / were, there was / there were
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="w3">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-meta">Warm-up · was / were</div>
+        <h2>Kai's holiday on a farm</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Remember</div>
+      <table class="ref-table">
+        <tr><th></th><th>I / he / she / it</th><th>you / we / they</th></tr>
+        <tr><td class="label">+</td><td>was</td><td>were</td></tr>
+        <tr><td class="label">−</td><td>wasn't</td><td>weren't</td></tr>
+        <tr><td class="label">?</td><td><b>Was</b> it fun?</td><td><b>Were</b> you at home?</td></tr>
+        <tr><td class="label">there</td><td>there was + <i>one thing</i></td><td>there were + <i>many things</i></td></tr>
+      </table>
+    </div>
+
+    <div class="card" id="ex-wu-was">
+      <div class="exercise-label">Word Choice</div>
+      <h3>Choose the correct words.</h3>
+
+      <p class="gap-line"><span class="num">1.</span> Two weeks ago Kai
+        <span class="word-choice" id="ww1" data-answer="was">
+          <button class="word-choice-btn" onclick="selectWord(this)">was</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">were</button>
+        </span> on holiday with his family.</p>
+      <p class="gap-line"><span class="num">2.</span> They
+        <span class="word-choice" id="ww2" data-answer="were">
+          <button class="word-choice-btn" onclick="selectWord(this)">was</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">were</button>
+        </span> at a big farm in the countryside.</p>
+      <p class="gap-line"><span class="num">3.</span>
+        <span class="word-choice" id="ww3" data-answer="There were">
+          <button class="word-choice-btn" onclick="selectWord(this)">There was</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">There were</button>
+        </span> lots of animals — cows, sheep and <b>noisy</b> chickens.</p>
+      <p class="gap-line"><span class="num">4.</span>
+        <span class="word-choice" id="ww4" data-answer="There was">
+          <button class="word-choice-btn" onclick="selectWord(this)">There was</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">There were</button>
+        </span> a <b>huge</b>, <b>heavy</b> horse too.</p>
+      <p class="gap-line"><span class="num">5.</span> The farm dog
+        <span class="word-choice" id="ww5" data-answer="wasn't">
+          <button class="word-choice-btn" onclick="selectWord(this)">wasn't</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">weren't</button>
+        </span> <b>dangerous</b>. It was very <b>cute</b>!</p>
+      <p class="gap-line"><span class="num">6.</span> The weather wasn't great, but Kai and his sister
+        <span class="word-choice" id="ww6" data-answer="weren't">
+          <button class="word-choice-btn" onclick="selectWord(this)">wasn't</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">weren't</button>
+        </span> bored.</p>
+      <p class="gap-line"><span class="num">7.</span>
+        <span class="word-choice" id="ww7" data-answer="Were">
+          <button class="word-choice-btn" onclick="selectWord(this)">Was</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Were</button>
+        </span> there any <b>wild</b> animals? — Yes, there
+        <span class="word-choice" id="ww8" data-answer="were">
+          <button class="word-choice-btn" onclick="selectWord(this)">was</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">were</button>
+        </span>. Two foxes!</p>
+      <p class="gap-line"><span class="num">8.</span>
+        <span class="word-choice" id="ww9" data-answer="Was">
+          <button class="word-choice-btn" onclick="selectWord(this)">Was</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">Were</button>
+        </span> it a good holiday? — Yes, it
+        <span class="word-choice" id="ww10" data-answer="was">
+          <button class="word-choice-btn" onclick="selectWord(this)">was</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">wasn't</button>
+        </span>!</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkWords('ex-wu-was')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetWords('ex-wu-was')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      Did you see the adjectives in <b>bold</b>? Kai's story uses words from Lesson 7. In a question, <i>was / were</i> goes <b>first</b>: <i><b>Was</b> it fun?</i> · <i><b>Were</b> there any foxes?</i>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       WARM-UP 4 — Speaking about the break
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="w4">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-meta">Warm-up · Speaking</div>
+        <h2>And what about your break?</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Speaking</div>
+      <h3>Answer your teacher's questions. Use <i>was / were</i> and an adjective in every answer! Then ask your teacher the same questions.</h3>
+
+      <div class="dialogue" style="margin-top:12px">
+        <span class="dl-name">Teacher</span>
+        <p class="dl-text">Were you at home for the break?</p>
+        <span class="dl-name two">Matvey</span>
+        <p class="dl-text">No, I wasn't. I was at my grandma's. Her house is <b>quiet</b> and her dog is very <b>lazy</b>!</p>
+      </div>
+
+      <p class="gap-line"><span class="num">1.</span> Where were you for the two weeks?</p>
+      <input type="text" class="blank line-write" id="wq1" placeholder="I was …">
+      <p class="gap-line"><span class="num">2.</span> Who were you with?</p>
+      <input type="text" class="blank line-write" id="wq2" placeholder="I was with …">
+      <p class="gap-line"><span class="num">3.</span> What was the weather like? Was it cold?</p>
+      <input type="text" class="blank line-write" id="wq3" placeholder="It was … / It wasn't …">
+      <p class="gap-line"><span class="num">4.</span> Were there any animals? What were they like?</p>
+      <input type="text" class="blank line-write" id="wq4" placeholder="There was a … It was … / There were …">
+      <p class="gap-line"><span class="num">5.</span> What was the best day? Why?</p>
+      <input type="text" class="blank line-write" id="wq5" placeholder="The best day was … because …">
+    </div>
+
+    <div class="tip">
+      Adjectives to use: <i>beautiful, clever, cute, dangerous, heavy, huge, large, lazy, long, noisy, quiet, tiny, wild</i> — and <i>good, bad, fun, boring, cold, warm</i>.
+    </div>
+  </section>
+
+  <div class="btn-row" style="justify-content:flex-end;margin:10px 0 30px">
+    <button class="btn-accent" onclick="showPart('part-grammar');window.scrollTo(0,0)">Next part: Past simple →</button>
+  </div>
+
+</div><!-- /wrap -->
+</div><!-- /part-warmup -->
 
 <div class="lesson-part" id="part-grammar">
 <nav class="chips">
