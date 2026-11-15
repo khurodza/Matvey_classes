@@ -39,6 +39,7 @@
     <button class="part-tab" data-part="part-grammar" onclick="showPart('part-grammar')">Past simple</button>
     <button class="part-tab" data-part="part-use" onclick="showPart('part-use')">A boy's best friend &amp; Use it!</button>
     <button class="part-tab hw" data-part="part-homework" onclick="showPart('part-homework')">Homework</button>
+    <button class="part-tab hw" data-part="part-homework-2" onclick="showPart('part-homework-2')">Homework November 15th</button>
   </div>
 </nav>
 
@@ -1171,6 +1172,283 @@
 
 </div><!-- /wrap -->
 </div><!-- /part-homework -->
+
+<div class="lesson-part" id="part-homework-2">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#n1">1 · Spell it right</a>
+    <a href="#n2">2 · Letters</a>
+    <a href="#n3">3 · True sentences</a>
+    <a href="#n4">4 · a, b or c?</a>
+    <a href="#n5">5 · Safari park</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK NOV. 15TH · TASK 1 — Spelling: heavy, clever, lazy, wild, beautiful
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="n1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Homework · Adjectives · Spelling</div>
+        <h2>Spell it right!</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-nv-spell">
+      <div class="exercise-label">Word Choice</div>
+      <h3>Only one word is spelt correctly. Choose it.</h3>
+
+      <p class="gap-line"><span class="num">1.</span> An elephant can weigh 6,000 kilos. It's very
+        <span class="word-choice" id="nv1" data-answer="heavy">
+          <button class="word-choice-btn" onclick="selectWord(this)">hevy</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">heavy</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">heavey</button>
+        </span>.</p>
+      <p class="gap-line"><span class="num">2.</span> Dolphins can understand people. They're
+        <span class="word-choice" id="nv2" data-answer="clever">
+          <button class="word-choice-btn" onclick="selectWord(this)">clever</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">clevar</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">clevver</button>
+        </span>.</p>
+      <p class="gap-line"><span class="num">3.</span> My cat sleeps sixteen hours a day. He's so
+        <span class="word-choice" id="nv3" data-answer="lazy">
+          <button class="word-choice-btn" onclick="selectWord(this)">lasy</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">lazzy</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">lazy</button>
+        </span>!</p>
+      <p class="gap-line"><span class="num">4.</span> Tigers aren't pets — they're
+        <span class="word-choice" id="nv4" data-answer="wild">
+          <button class="word-choice-btn" onclick="selectWord(this)">wyld</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">wild</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">wilde</button>
+        </span> animals.</p>
+      <p class="gap-line"><span class="num">5.</span> Look at the parrot's colours! It's
+        <span class="word-choice" id="nv5" data-answer="beautiful">
+          <button class="word-choice-btn" onclick="selectWord(this)">beautifull</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">beatiful</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">beautiful</button>
+        </span>.</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkWords('ex-nv-spell')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetWords('ex-nv-spell')">Try again</button>
+      </div>
+    </div>
+
+    <div class="card" id="ex-nv-write">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Now write the words yourself. The first letter and the number of letters help you.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span>Snakes can kill people. They're <span class="given">dangerous</span>.</span></div>
+
+      <p class="gap-line"><span class="num">1.</span> A hippo is big and <input class="blank" id="nw1" data-answer="heavy" placeholder="h _ _ _ _">. It weighs more than a car!</p>
+      <p class="gap-line"><span class="num">2.</span> Crows can use sticks as tools. They're very <input class="blank" id="nw2" data-answer="clever" placeholder="c _ _ _ _ _">.</p>
+      <p class="gap-line"><span class="num">3.</span> Lions sleep up to twenty hours a day. They look <input class="blank" id="nw3" data-answer="lazy" placeholder="l _ _ _">, but they can run very fast!</p>
+      <p class="gap-line"><span class="num">4.</span> Wolves don't live with people. They're <input class="blank" id="nw4" data-answer="wild" placeholder="w _ _ _"> animals.</p>
+      <p class="gap-line"><span class="num">5.</span> A peacock has got a long, <input class="blank" id="nw5" data-answer="beautiful" placeholder="b _ _ _ _ _ _ _ _"> tail.</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-nv-write')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-nv-write')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      Spelling tricks: <b>beau</b>tiful starts like <i>beau</i> and ends in <b>-ful</b> with only <b>one l</b> · h<b>ea</b>vy has <i>ea</i>, like h<b>ea</b>d · clev<b>er</b> ends in <i>-er</i> · la<b>z</b>y has one <i>z</i> · w<b>i</b>ld has an <i>i</i>, like ch<b>i</b>ld.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK NOV. 15TH · TASK 2 — Vocabulary Bank Unit 7, Adjectives, task 2
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="n2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Homework · Vocabulary bank · Adjectives</div>
+        <h2>Put the letters in order</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-nv-order">
+      <div class="exercise-label">Fill in the Blanks</div>
+
+      <div class="word-bank-ref">
+        <span>beautiful</span><span>clever</span><span>cute</span><span>dangerous</span><span>heavy</span><span>large</span><span>lazy</span><span>long</span><span>noisy</span><span>quiet</span><span>tiny</span><span>wild</span>
+      </div>
+
+      <h3>Put the letters in order to describe the animals.</h3>
+
+      <p class="gap-line"><span class="num">1.</span> I saw a
+        <span class="cue-input"><span class="cue-lab">eutc</span><input class="blank" id="no1" data-answer="cute" placeholder="?"></span>
+        duck in the park.</p>
+      <p class="gap-line"><span class="num">2.</span> There are
+        <span class="cue-input"><span class="cue-lab">gealr</span><input class="blank" id="no2" data-answer="large" placeholder="?"></span>
+        crocodiles in the water here.</p>
+      <p class="gap-line"><span class="num">3.</span> There was a
+        <span class="cue-input"><span class="cue-lab">aubfetiul</span><input class="blank" id="no3" data-answer="beautiful" placeholder="?"></span>
+        parrot in the tree.</p>
+      <p class="gap-line"><span class="num">4.</span> Listen to that
+        <span class="cue-input"><span class="cue-lab">oinys</span><input class="blank" id="no4" data-answer="noisy" placeholder="?"></span>
+        lion!</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-nv-order')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-nv-order')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK NOV. 15TH · TASK 3 — Vocabulary Bank Unit 7, Learn to learn, task 3
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="n3">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-meta">Homework · Learn to learn · Remembering new vocabulary</div>
+        <h2>Write true sentences about animals</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Writing</div>
+      <h3>Using new words in a sentence helps you remember them. Write true sentences about animals. Use the adjectives from Task 2.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span>1. I love mice because they are tiny and cute.</span></div>
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">2.</span></p>
+      <input type="text" class="blank line-write" id="ns2" placeholder="… are … because …">
+      <p class="gap-line"><span class="num">3.</span></p>
+      <input type="text" class="blank line-write" id="ns3" placeholder="I don't like … because they're …">
+      <p class="gap-line"><span class="num">4.</span></p>
+      <input type="text" class="blank line-write" id="ns4" placeholder="My … is …">
+      <p class="gap-line"><span class="num">5.</span></p>
+      <input type="text" class="blank line-write" id="ns5" placeholder="… have got long …">
+    </div>
+
+    <div class="tip">
+      Try to use <b>two</b> adjectives in some sentences, like the example: <i>tiny <b>and</b> cute</i>. Use <b>heavy, clever, lazy, wild</b> and <b>beautiful</b> at least once — and check the spelling!
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK NOV. 15TH · TASK 4 — Extension Grammar Worksheet Unit 7, task 6
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="n4">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-meta">Homework · Past simple, present simple, present continuous</div>
+        <h2>Choose the correct word</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-nv-mc">
+      <div class="exercise-label">Multiple Choice</div>
+      <h3>Choose the correct word (a, b or c) for each space.</h3>
+
+      <p style="font-weight:700;margin:10px 0 4px">1. I … tennis yesterday.</p>
+      <div class="mc-options" data-correct="b">
+        <label class="mc-option"><input type="radio" name="mc10" value="a"><span class="mc-bullet">a</span> wasn't play</label>
+        <label class="mc-option"><input type="radio" name="mc10" value="b"><span class="mc-bullet">b</span> played</label>
+        <label class="mc-option"><input type="radio" name="mc10" value="c"><span class="mc-bullet">c</span> don't play</label>
+      </div>
+      <p style="font-weight:700;margin:14px 0 4px">2. There … a loud noise outside.</p>
+      <div class="mc-options" data-correct="c">
+        <label class="mc-option"><input type="radio" name="mc11" value="a"><span class="mc-bullet">a</span> made</label>
+        <label class="mc-option"><input type="radio" name="mc11" value="b"><span class="mc-bullet">b</span> were</label>
+        <label class="mc-option"><input type="radio" name="mc11" value="c"><span class="mc-bullet">c</span> was</label>
+      </div>
+      <p style="font-weight:700;margin:14px 0 4px">3. We … to music all weekend.</p>
+      <div class="mc-options" data-correct="b">
+        <label class="mc-option"><input type="radio" name="mc12" value="a"><span class="mc-bullet">a</span> was listen</label>
+        <label class="mc-option"><input type="radio" name="mc12" value="b"><span class="mc-bullet">b</span> listened</label>
+        <label class="mc-option"><input type="radio" name="mc12" value="c"><span class="mc-bullet">c</span> didn't listened</label>
+      </div>
+      <p style="font-weight:700;margin:14px 0 4px">4. Joe … great at the moment!</p>
+      <div class="mc-options" data-correct="c">
+        <label class="mc-option"><input type="radio" name="mc13" value="a"><span class="mc-bullet">a</span> felt</label>
+        <label class="mc-option"><input type="radio" name="mc13" value="b"><span class="mc-bullet">b</span> feel</label>
+        <label class="mc-option"><input type="radio" name="mc13" value="c"><span class="mc-bullet">c</span> 's feeling</label>
+      </div>
+      <p style="font-weight:700;margin:14px 0 4px">5. We … here last year.</p>
+      <div class="mc-options" data-correct="a">
+        <label class="mc-option"><input type="radio" name="mc14" value="a"><span class="mc-bullet">a</span> didn't live</label>
+        <label class="mc-option"><input type="radio" name="mc14" value="b"><span class="mc-bullet">b</span> aren't living</label>
+        <label class="mc-option"><input type="radio" name="mc14" value="c"><span class="mc-bullet">c</span> don't live</label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkMC('ex-nv-mc')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetMC('ex-nv-mc')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      Look for the time words: <i>yesterday, all weekend, last year</i> → past simple · <i>at the moment</i> → present continuous. And remember: after <b>didn't</b> the verb goes back to its first form — <i>didn't <s>listened</s> <b>listen</b></i>.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK NOV. 15TH · TASK 5 — Unit 7 Finished?, task 2
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="n5">
+    <div class="step-head">
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-meta">Homework · there was / there were</div>
+        <h2>Sarah's safari park photos</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-nv-safari">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Sarah went to a safari park. Look closely at her photos and write the animals that were there.</h3>
+
+      <img class="media-img" src="images/unit7-finished-safari.jpg" alt="Five overlapping safari photos: 1 a gorilla hiding in green leaves, 2 a giraffe, 3 two lions lying in long grass, 4 a tiger in dry grass, 5 a hippo with only its head above the water" style="max-width:460px;display:block;margin:6px auto 16px">
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span>1. There was a gorilla. · 2. There were elephants and a giraffe.</span></div>
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">3.</span></p>
+      <input type="text" class="blank line-write" id="nf3" data-answer="There were two lions.|There were two lions|There were lions.|There were lions|There were 2 lions.|There were 2 lions|There was a lion and a lion cub.|There was a lion and a lion cub|There was a lion and a cub.|There was a lion and a cub|There was a lion and a baby lion.|There was a lion and a baby lion" placeholder="There …">
+      <p class="gap-line" style="margin-top:14px"><span class="num">4.</span></p>
+      <input type="text" class="blank line-write" id="nf4" data-answer="There was a tiger.|There was a tiger" placeholder="There …">
+      <p class="gap-line" style="margin-top:14px"><span class="num">5.</span></p>
+      <input type="text" class="blank line-write" id="nf5" data-answer="There was a hippo.|There was a hippo|There was a hippopotamus.|There was a hippopotamus" placeholder="There …">
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-nv-safari')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-nv-safari')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      Look closely at photo 3 — how many animals can you see? One animal → <b>There was a …</b> · Two or more → <b>There were …</b>
+    </div>
+
+    <div class="speak-prompt">
+      <span class="sp-icon" aria-hidden="true">💬</span>
+      <div>
+        <div class="sp-label">Talk to your teacher</div>
+        <p class="sp-q">Describe the animals in Sarah's photos with an adjective: <i>The gorilla was …  The hippo was …</i></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="btn-row" style="justify-content:flex-start;margin:10px 0 30px">
+    <button class="btn-ghost" onclick="showPart('part-grammar');window.scrollTo(0,0)">← Back to the lesson</button>
+  </div>
+
+</div><!-- /wrap -->
+</div><!-- /part-homework-2 -->
 
 <div class="scorebar" id="scoreBar" style="display:none">
   <div class="wrap">
