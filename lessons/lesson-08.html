@@ -12,6 +12,23 @@
 .sp-rule .sp-name{min-width:230px;font-weight:800}
 .sp-rule .sp-ex{font-style:italic}
 @media (max-width:600px){.sp-rule .sp-name{min-width:100%}}
+/* Let's remember: "why" box, verb cards, story chain */
+.rm-why{margin-top:14px;border:2px dashed #d9cfc0;border-radius:12px;padding:10px 14px;background:var(--butter)}
+.rm-why summary{cursor:pointer;font-weight:800}
+.rm-why ol{margin:10px 0 2px;padding-left:22px;line-height:1.6}
+.vc-card{margin:18px auto 6px;max-width:420px;text-align:center;background:var(--mint);border:3px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:18px 16px 22px}
+.vc-count{font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.vc-sign{min-height:26px;margin-top:6px;font-weight:900}
+.vc-sign.neg{display:inline-block;background:var(--badred);color:var(--red);border:2px solid var(--red);border-radius:999px;padding:0 12px}
+.vc-verb{font-size:44px;font-weight:900;line-height:1.1;margin-top:4px}
+.vc-time{display:inline-block;margin-top:10px;background:var(--yellow);border:2px solid var(--line);border-radius:999px;padding:4px 14px;font-weight:800}
+.vc-answer{margin-top:16px;padding-top:14px;border-top:2px dashed var(--line)}
+.vc-past{font-size:28px;color:var(--teal)}
+.vc-not{font-size:15px;color:var(--muted);font-weight:600}
+.vc-rule{margin-top:6px;font-weight:700}
+.sp-starter{margin:14px 0 4px;padding:12px 16px;background:var(--peach);border-radius:12px;font-style:italic;font-size:18px}
+.vc-chips span{cursor:pointer;user-select:none;border:2px solid var(--line);border-radius:999px;padding:6px 16px;background:#fff;font-weight:800;font-size:16px;box-shadow:var(--shadow-sm)}
+.vc-chips span.used{background:var(--okgreen);color:var(--green);text-decoration:line-through;box-shadow:none}
 </style>
 </head>
 <body>
@@ -37,6 +54,7 @@
   <div class="wrap">
     <button class="part-tab" data-part="part-warmup" onclick="showPart('part-warmup')">Warm-up</button>
     <button class="part-tab" data-part="part-grammar" onclick="showPart('part-grammar')">Past simple</button>
+    <button class="part-tab" data-part="part-remember" onclick="showPart('part-remember')">Let's remember</button>
     <button class="part-tab" data-part="part-use" onclick="showPart('part-use')">A boy's best friend &amp; Use it!</button>
     <button class="part-tab hw" data-part="part-homework" onclick="showPart('part-homework')">Homework</button>
     <button class="part-tab hw" data-part="part-homework-2" onclick="showPart('part-homework-2')">Homework November 15th</button>
@@ -618,11 +636,269 @@
   </section>
 
   <div class="btn-row" style="justify-content:flex-end;margin:10px 0 30px">
-    <button class="btn-accent" onclick="showPart('part-use');window.scrollTo(0,0)">Next part: A boy's best friend →</button>
+    <button class="btn-accent" onclick="showPart('part-remember');window.scrollTo(0,0)">Next part: Let's remember →</button>
   </div>
 
 </div><!-- /wrap -->
 </div><!-- /part-grammar -->
+
+<div class="lesson-part" id="part-remember">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#rm1">1 · Odd one out</a>
+    <a href="#rm2">2 · Say it fast!</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       REVIEW · TASK 1 — Odd one out + spot the fake forms
+       (only verbs from the "Past simple" part)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="rm1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Let's remember · Past simple forms</div>
+        <h2>Odd one out</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-odd">
+      <div class="exercise-label">Word Choice</div>
+      <h3>Three past forms follow the same rule. One doesn't. Find the odd one out — and say <b>why</b>.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span>ate · swam · <b>wanted</b> · ran → <i>wanted</i> is regular (+ <i>ed</i>). The others are irregular.</span></div>
+
+      <p class="gap-line"><span class="num">1.</span>
+        <span class="word-choice" id="oo1" data-answer="visited">
+          <button class="word-choice-btn" onclick="selectWord(this)">went</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">took</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">visited</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">saw</button>
+        </span></p>
+      <p class="gap-line"><span class="num">2.</span>
+        <span class="word-choice" id="oo2" data-answer="laughed">
+          <button class="word-choice-btn" onclick="selectWord(this)">lived</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">laughed</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">shared</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">danced</button>
+        </span></p>
+      <p class="gap-line"><span class="num">3.</span>
+        <span class="word-choice" id="oo3" data-answer="played">
+          <button class="word-choice-btn" onclick="selectWord(this)">studied</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">played</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">carried</button>
+        </span></p>
+      <p class="gap-line"><span class="num">4.</span>
+        <span class="word-choice" id="oo4" data-answer="climbed">
+          <button class="word-choice-btn" onclick="selectWord(this)">stopped</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">climbed</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">hugged</button>
+        </span></p>
+      <p class="gap-line"><span class="num">5.</span>
+        <span class="word-choice" id="oo5" data-answer="looked">
+          <button class="word-choice-btn" onclick="selectWord(this)">wanted</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">needed</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">looked</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">started</button>
+        </span> <span style="color:var(--muted);font-size:14px">(say them out loud!)</span></p>
+      <p class="gap-line"><span class="num">6.</span>
+        <span class="word-choice" id="oo6" data-answer="showed">
+          <button class="word-choice-btn" onclick="selectWord(this)">had</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">gave</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">showed</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">found</button>
+        </span></p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkWords('ex-odd')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetWords('ex-odd')">Try again</button>
+      </div>
+
+      <details class="rm-why">
+        <summary>Why? Open after you check</summary>
+        <ol>
+          <li><i>went, took, saw</i> are irregular — <b>visited</b> is regular: + <i>ed</i>.</li>
+          <li><i>live, share, dance</i> end in <i>-e</i>, so just + <i>d</i> — <b>laughed</b> gets the full + <i>ed</i>.</li>
+          <li><i>study, carry</i>: consonant + <i>y</i> → <i>ied</i> — <b>played</b>: vowel + <i>y</i>, just + <i>ed</i>.</li>
+          <li><i>stop, hug</i>: consonant + vowel + consonant → double it — <b>climbed</b> ends in two consonants, no doubling.</li>
+          <li><i>wanted, needed, started</i> have an extra syllable /ɪd/ — <b>looked</b> is just /t/: /lʊkt/.</li>
+          <li><i>had, gave, found</i> are irregular — <b>showed</b> is regular.</li>
+        </ol>
+      </details>
+    </div>
+
+    <div class="card" id="ex-fake">
+      <div class="exercise-label">Tap the Words</div>
+      <h3>Six of these past forms are <b>fake</b> — they don't exist! Tap them. Then tell your teacher the real forms.</h3>
+      <div class="tap-chips">
+        <span class="tap" onclick="toggleTap(this)">went</span>
+        <span class="tap" data-key onclick="toggleTap(this)">taked</span>
+        <span class="tap" onclick="toggleTap(this)">carried</span>
+        <span class="tap" onclick="toggleTap(this)">saw</span>
+        <span class="tap" data-key onclick="toggleTap(this)">stoped</span>
+        <span class="tap" onclick="toggleTap(this)">ran</span>
+        <span class="tap" data-key onclick="toggleTap(this)">eated</span>
+        <span class="tap" onclick="toggleTap(this)">danced</span>
+        <span class="tap" onclick="toggleTap(this)">found</span>
+        <span class="tap" data-key onclick="toggleTap(this)">studyed</span>
+        <span class="tap" onclick="toggleTap(this)">hugged</span>
+        <span class="tap" data-key onclick="toggleTap(this)">swimmed</span>
+        <span class="tap" onclick="toggleTap(this)">had</span>
+        <span class="tap" data-key onclick="toggleTap(this)">plaied</span>
+        <span class="tap" onclick="toggleTap(this)">gave</span>
+        <span class="tap" onclick="toggleTap(this)">laughed</span>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkTap('ex-fake')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetTap('ex-fake')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      Two kinds of mistakes to watch for: putting <i>-ed</i> on an <b>irregular</b> verb (<s>taked</s> → <b>took</b>), and forgetting a <b>spelling rule</b> (<s>stoped</s> → <b>stopped</b>, <s>studyed</s> → <b>studied</b>).
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       REVIEW · TASK 2 — Speaking: past forms on the spot
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="rm2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Let's remember · Speaking</div>
+        <h2>Say it fast!</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-say-verbs">
+      <div class="exercise-label">Speaking · Verb cards</div>
+      <h3>Look at the card and <b>say a sentence</b> about you with the past simple and the time word. ✗ means a negative sentence with <i>didn't</i>. Then open the answer and check yourself.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span><b>see</b> · yesterday → “I <b>saw</b> a big dog yesterday.” &nbsp;·&nbsp; ✗ <b>go</b> · last week → “I <b>didn't go</b> to school last week.”</span></div>
+
+      <div class="vc-card" id="vc-card">
+        <div class="vc-count" id="vc-count"></div>
+        <div class="vc-sign" id="vc-sign"></div>
+        <div class="vc-verb" id="vc-verb"></div>
+        <div class="vc-time" id="vc-time"></div>
+        <div class="vc-answer" id="vc-answer" hidden>
+          <div class="vc-past" id="vc-past"></div>
+          <div class="vc-rule" id="vc-rule"></div>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" id="vc-show" onclick="vcShow()">Show the answer</button>
+        <button class="btn-ghost" onclick="vcSay()">🔊 Listen</button>
+        <button class="btn-accent" onclick="vcNext()">Next card →</button>
+        <button class="btn-ghost" onclick="vcShuffle()">Shuffle again</button>
+      </div>
+    </div>
+
+    <div class="card" id="ex-story-chain">
+      <div class="exercise-label">Speaking · Story chain</div>
+      <h3>Make a story with your teacher. Take turns: each of you adds <b>one sentence</b> with a verb from the list. Tap a verb when you use it. Can you use all of them?</h3>
+      <div class="sp-starter">“Last Saturday I <b>went</b> to a wildlife centre with my friend…”</div>
+      <div class="tap-chips vc-chips">
+        <span onclick="this.classList.toggle('used')">see</span>
+        <span onclick="this.classList.toggle('used')">take</span>
+        <span onclick="this.classList.toggle('used')">run</span>
+        <span onclick="this.classList.toggle('used')">eat</span>
+        <span onclick="this.classList.toggle('used')">swim</span>
+        <span onclick="this.classList.toggle('used')">have</span>
+        <span onclick="this.classList.toggle('used')">give</span>
+        <span onclick="this.classList.toggle('used')">find</span>
+        <span onclick="this.classList.toggle('used')">touch</span>
+        <span onclick="this.classList.toggle('used')">laugh</span>
+        <span onclick="this.classList.toggle('used')">stop</span>
+        <span onclick="this.classList.toggle('used')">carry</span>
+        <span onclick="this.classList.toggle('used')">climb</span>
+        <span onclick="this.classList.toggle('used')">want</span>
+      </div>
+    </div>
+
+    <div class="speak-prompt">
+      <span class="sp-icon" aria-hidden="true">💬</span>
+      <div>
+        <div class="sp-label">Talk to your teacher</div>
+        <p class="sp-q">Now ask each other: <b>What did you do last weekend?</b> Answer with three sentences — one irregular verb, one regular verb and one <i>didn't</i>.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="btn-row" style="justify-content:flex-end;margin:10px 0 30px">
+    <button class="btn-accent" onclick="showPart('part-use');window.scrollTo(0,0)">Next part: A boy's best friend →</button>
+  </div>
+
+</div><!-- /wrap -->
+</div><!-- /part-remember -->
+
+<script>
+/* ── "Say it fast!" verb cards — only verbs from the Past simple part ── */
+(function(){
+  var V = [
+    ['go','went','irregular'],['see','saw','irregular'],['take','took','irregular'],
+    ['run','ran','irregular'],['eat','ate','irregular'],['swim','swam','irregular'],
+    ['have','had','irregular'],['give','gave','irregular'],['find','found','irregular'],
+    ['laugh','laughed','+ ed','/t/'],['visit','visited','+ ed','/ɪd/'],['touch','touched','+ ed','/t/'],
+    ['show','showed','+ ed','/d/'],['play','played','vowel + y → + ed','/d/'],['climb','climbed','+ ed','/d/'],
+    ['want','wanted','+ ed','/ɪd/'],['look','looked','+ ed','/t/'],['need','needed','+ ed','/ɪd/'],
+    ['call','called','+ ed','/d/'],['hunt','hunted','+ ed','/ɪd/'],['start','started','+ ed','/ɪd/'],
+    ['watch','watched','+ ed','/t/'],
+    ['live','lived','ends in -e → + d','/d/'],['share','shared','ends in -e → + d','/d/'],
+    ['love','loved','ends in -e → + d','/d/'],['dance','danced','ends in -e → + d','/t/'],
+    ['like','liked','ends in -e → + d','/t/'],
+    ['study','studied','consonant + y → ied','/d/'],['carry','carried','consonant + y → ied','/d/'],
+    ['stop','stopped','double the consonant + ed','/t/'],['hug','hugged','double the consonant + ed','/d/']
+  ];
+  var T = ['yesterday','last week','last weekend','last summer','last night','two days ago','an hour ago','on Saturday','last year','three weeks ago'];
+  var deck = [], i = 0;
+  function $(id){ return document.getElementById(id); }
+  function shuffle(a){ for (var k = a.length - 1; k > 0; k--) { var j = Math.floor(Math.random() * (k + 1)); var t = a[k]; a[k] = a[j]; a[j] = t; } return a; }
+  function build(){
+    deck = shuffle(V.slice()).map(function(v){
+      return { v: v, t: T[Math.floor(Math.random() * T.length)], neg: Math.random() < 0.25 };
+    });
+    i = 0;
+  }
+  function render(){
+    var c = deck[i], v = c.v;
+    $('vc-count').textContent = 'Card ' + (i + 1) + ' of ' + deck.length;
+    $('vc-sign').textContent = c.neg ? '✗ negative' : '';
+    $('vc-sign').className = 'vc-sign' + (c.neg ? ' neg' : '');
+    $('vc-verb').textContent = v[0];
+    $('vc-time').textContent = c.t;
+    $('vc-past').innerHTML = c.neg
+      ? "didn't <b>" + v[0] + '</b> <span class="vc-not">(not didn\'t ' + v[1] + ')</span>'
+      : '<b>' + v[1] + '</b>';
+    $('vc-rule').textContent = c.neg
+      ? 'After didn\'t → the first form'
+      : (v[2] === 'irregular' ? 'Irregular — learn it by heart!' : 'Regular: ' + v[2] + ' · say ' + v[3]);
+    $('vc-answer').hidden = true;
+    $('vc-show').disabled = false;
+  }
+  window.vcShow = function(){ $('vc-answer').hidden = false; $('vc-show').disabled = true; };
+  window.vcNext = function(){ i = (i + 1) % deck.length; if (i === 0) build(); render(); };
+  window.vcShuffle = function(){ build(); render(); };
+  window.vcSay = function(){
+    if (!window.speechSynthesis) return;
+    var c = deck[i];
+    var u = new SpeechSynthesisUtterance(c.neg ? c.v[0] + '. didn\'t ' + c.v[0] : c.v[0] + '. ' + c.v[1]);
+    u.lang = 'en-GB'; u.rate = 0.85;
+    var gb = speechSynthesis.getVoices().filter(function(x){ return x.lang === 'en-GB'; })[0];
+    if (gb) u.voice = gb;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  };
+  build(); render();
+})();
+</script>
 
 <div class="lesson-part" id="part-use">
 <nav class="chips">
