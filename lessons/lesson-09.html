@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 9 – Amazing Animals: A Day Out and an Article</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+/* Useful language / Everyday English boxes */
+.ul-box{margin:14px 0 6px;border:3px solid var(--line);border-radius:16px;background:var(--mint);padding:12px 16px;box-shadow:var(--shadow-sm)}
+.ul-box .ul-title{font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:6px}
+.ul-box .ul-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;font-size:17px}
+.ul-box.ee{background:var(--butter)}
+@media (max-width:600px){.ul-box .ul-grid{grid-template-columns:1fr}}
+/* phrase chips you tick off while speaking */
+.ph-chips span{cursor:pointer;user-select:none;border:2px solid var(--line);border-radius:999px;padding:6px 16px;background:#fff;font-weight:800;font-size:16px;box-shadow:var(--shadow-sm)}
+.ph-chips span.used{background:var(--okgreen);color:var(--green);text-decoration:line-through;box-shadow:none}
+/* put the conversation in order */
+.order-line{display:flex;align-items:center;gap:12px;padding:8px 0;border-bottom:1px dashed #d9cfc0}
+.order-line:last-child{border-bottom:none}
+.order-line .blank,.order-line .given{width:52px;min-width:52px;text-align:center}
+.order-line .who{font-weight:800;min-width:74px}
+/* frames: sentence starters */
+.frame{margin:12px 0 4px;padding:12px 16px;background:var(--peach);border-radius:12px;line-height:1.8}
+.frame b{white-space:nowrap}
+.sp-starter{margin:14px 0 4px;padding:12px 16px;background:var(--peach);border-radius:12px;font-style:italic;font-size:18px}
+.plan-label{font-weight:800;margin:14px 0 0}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <a class="back-home" href="../index.html">← All lessons</a>
+    <div class="hero-grid">
+      <div>
+        <h1>Amazing animals: a day out and an article</h1>
+        <p><b>Speaking:</b> listen to Martha's story about a school trip to a safari park, learn how to <b>ask about</b> a day out (<i>How was …? What was it like?</i>) and how to <b>react</b> (<i>No way! You're joking!</i>). <b>Writing:</b> read about a llama that broke a world record, use <i>on</i>, <i>in</i> and <i>ago</i> with dates, and write your own article about a famous animal.</p>
+        <div class="hero-badges">
+          <span class="badge">Lesson 9</span>
+          <span class="badge">Unit 7 · Amazing animals</span>
+          <span class="badge">Student's Book p.88–89 · Workbook p.61, p.84</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="parts">
+  <div class="wrap">
+    <button class="part-tab" data-part="part-warmup" onclick="showPart('part-warmup')">Warm-up</button>
+    <button class="part-tab" data-part="part-dayout" onclick="showPart('part-dayout')">Talk about a day out</button>
+    <button class="part-tab" data-part="part-yourturn" onclick="showPart('part-yourturn')">Your conversation</button>
+    <button class="part-tab" data-part="part-remember" onclick="showPart('part-remember')">Let's remember</button>
+    <button class="part-tab" data-part="part-article" onclick="showPart('part-article')">An article</button>
+    <button class="part-tab hw" data-part="part-homework" onclick="showPart('part-homework')">Homework</button>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════════════════════════
+     PART 1 — WARM-UP
+════════════════════════════════════════════════════════════ -->
+<div class="lesson-part" id="part-warmup">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#w1">1 · Your last day out</a>
+    <a href="#w2">2 · Places</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       WARM-UP 1 — TB p.92 Warmer: last school trip / fun day out
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="w1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Warm-up · Speaking</div>
+        <h2>Your last day out</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Speaking</div>
+      <h3>Think about your last <b>school trip</b> or a <b>fun day out</b>. Answer your teacher's questions. Use the past simple! Then ask your teacher the same questions.</h3>
+
+      <div class="dialogue" style="margin-top:12px">
+        <span class="dl-name">Teacher</span>
+        <p class="dl-text">Where did you go?</p>
+        <span class="dl-name two">Matvey</span>
+        <p class="dl-text">I <b>went</b> to an aquarium with my class. We <b>saw</b> sharks!</p>
+      </div>
+
+      <p class="gap-line"><span class="num">1.</span> Where did you go? When was it?</p>
+      <input type="text" class="blank line-write" id="wq1" placeholder="I went to … last … / … ago.">
+      <p class="gap-line"><span class="num">2.</span> Who were you with?</p>
+      <input type="text" class="blank line-write" id="wq2" placeholder="I was with …">
+      <p class="gap-line"><span class="num">3.</span> What did you see there?</p>
+      <input type="text" class="blank line-write" id="wq3" placeholder="I saw … / There were …">
+      <p class="gap-line"><span class="num">4.</span> What did you do?</p>
+      <input type="text" class="blank line-write" id="wq4" placeholder="We … and then we …">
+      <p class="gap-line"><span class="num">5.</span> Was it fun? Why? / Why not?</p>
+      <input type="text" class="blank line-write" id="wq5" placeholder="It was … because …">
+    </div>
+
+    <div class="tip">
+      Useful verbs: <i>went, saw, had, ate, took (photos), bought, visited, watched, played, walked, swam</i>. Keep your answers — you can use them later in the lesson!
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       WARM-UP 2 — places for a day out (TB p.92 note 5 ideas)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="w2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Warm-up · Vocabulary</div>
+        <h2>Where can you see it?</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-match-places">
+      <div class="exercise-label">Matching</div>
+      <h3>Match the places for a day out with the things you can see there.</h3>
+
+      <div class="match-grid">
+        <div class="match-col" data-side="left">
+          <div class="match-item" data-pair="1" onclick="selectMatch(this,'ex-match-places')">a safari park</div>
+          <div class="match-item" data-pair="2" onclick="selectMatch(this,'ex-match-places')">an aquarium</div>
+          <div class="match-item" data-pair="3" onclick="selectMatch(this,'ex-match-places')">a football stadium</div>
+          <div class="match-item" data-pair="4" onclick="selectMatch(this,'ex-match-places')">a museum</div>
+          <div class="match-item" data-pair="5" onclick="selectMatch(this,'ex-match-places')">a theme park</div>
+          <div class="match-item" data-pair="6" onclick="selectMatch(this,'ex-match-places')">a beach</div>
+        </div>
+        <div class="match-col" data-side="right">
+          <div class="match-item" data-pair="4" onclick="selectMatch(this,'ex-match-places')">old things and dinosaur bones</div>
+          <div class="match-item" data-pair="6" onclick="selectMatch(this,'ex-match-places')">sand, the sea and big waves</div>
+          <div class="match-item" data-pair="1" onclick="selectMatch(this,'ex-match-places')">lions and giraffes from your car</div>
+          <div class="match-item" data-pair="5" onclick="selectMatch(this,'ex-match-places')">rides and roller coasters</div>
+          <div class="match-item" data-pair="3" onclick="selectMatch(this,'ex-match-places')">players, fans and a big match</div>
+          <div class="match-item" data-pair="2" onclick="selectMatch(this,'ex-match-places')">sharks, fish and turtles</div>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-ghost" onclick="resetMatchEx('ex-match-places')">Reset</button>
+      </div>
+    </div>
+
+    <div class="speak-prompt">
+      <span class="sp-icon" aria-hidden="true">💬</span>
+      <div>
+        <div class="sp-label">Talk to your teacher</div>
+        <p class="sp-q">Which of these places did you visit? <b>When?</b> Which place do you want to visit?</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="btn-row" style="justify-content:flex-end;margin:10px 0 30px">
+    <button class="btn-accent" onclick="showPart('part-dayout');window.scrollTo(0,0)">Next part: Talk about a day out →</button>
+  </div>
+
+</div><!-- /wrap -->
+</div><!-- /part-warmup -->
+
+<!-- ════════════════════════════════════════════════════════════
+     PART 2 — TALK ABOUT A DAY OUT (Student's Book p.88)
+════════════════════════════════════════════════════════════ -->
+<div class="lesson-part" id="part-dayout">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#s1">1 · Listen</a>
+    <a href="#s2">2 · Useful language</a>
+    <a href="#s3">3 · Everyday English</a>
+    <a href="#s4">4 · Practise</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 1 — SB p.88, task 1, Audio 7.10 (listen first, text hidden)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Speaking · Audio 7.10</div>
+        <h2>Martha's school trip</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-listen-trip">
+      <div class="exercise-label">Listen</div>
+      <h3>Listen to Daniel and Martha. Don't read anything yet — just listen! Then answer the questions.</h3>
+
+      <img class="media-img" src="images/unit7-p88-lions.jpg" alt="A big male lion lying on the ground with two lion cubs sitting next to him" style="max-width:420px;display:block;margin:6px auto 16px">
+
+      <div class="audio-wrap">
+        <audio controls>
+          <source src="audio/unit7-page88-track10.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+
+      <p style="font-weight:700;margin:18px 0 4px">1. Where was Martha yesterday?</p>
+      <div class="mc-options" data-correct="b">
+        <label class="mc-option"><input type="radio" name="mc1" value="a"><span class="mc-bullet">A</span> At a zoo.</label>
+        <label class="mc-option"><input type="radio" name="mc1" value="b"><span class="mc-bullet">B</span> At a safari park.</label>
+        <label class="mc-option"><input type="radio" name="mc1" value="c"><span class="mc-bullet">C</span> At an aquarium.</label>
+      </div>
+      <p style="font-weight:700;margin:18px 0 4px">2. Did Martha see the elephants?</p>
+      <div class="mc-options" data-correct="c">
+        <label class="mc-option"><input type="radio" name="mc2" value="a"><span class="mc-bullet">A</span> Yes, she did. They were huge.</label>
+        <label class="mc-option"><input type="radio" name="mc2" value="b"><span class="mc-bullet">B</span> No — there weren't any elephants.</label>
+        <label class="mc-option"><input type="radio" name="mc2" value="c"><span class="mc-bullet">C</span> No — there were elephants, but she didn't see them.</label>
+      </div>
+      <p style="font-weight:700;margin:18px 0 4px">3. What did one of the lions do?</p>
+      <div class="mc-options" data-correct="a">
+        <label class="mc-option"><input type="radio" name="mc3" value="a"><span class="mc-bullet">A</span> It looked inside their car.</label>
+        <label class="mc-option"><input type="radio" name="mc3" value="b"><span class="mc-bullet">B</span> It ran after their car.</label>
+        <label class="mc-option"><input type="radio" name="mc3" value="c"><span class="mc-bullet">C</span> It slept under a tree.</label>
+      </div>
+      <p style="font-weight:700;margin:18px 0 4px">4. Did the lion really eat Martha's lunch?</p>
+      <div class="mc-options" data-correct="b">
+        <label class="mc-option"><input type="radio" name="mc4" value="a"><span class="mc-bullet">A</span> Yes, it did!</label>
+        <label class="mc-option"><input type="radio" name="mc4" value="b"><span class="mc-bullet">B</span> No — Martha was joking.</label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkMC('ex-listen-trip')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetMC('ex-listen-trip')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>safari park</b> = a big park where wild animals walk free and people drive through in cars (сафари-парк) · <b>school trip</b> = a day out with your class
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 2 — SB p.88, task 2 + Useful language, Audio 7.10
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Useful language · Audio 7.10</div>
+        <h2>Complete the conversation</h2>
+      </div>
+    </div>
+
+    <div class="ul-box">
+      <div class="ul-title">Useful language</div>
+      <div class="ul-grid">
+        <span>How was (the school trip)?</span>
+        <span>It was (really cool).</span>
+        <span>What about (lions)?</span>
+        <span>What was (it) like?</span>
+      </div>
+    </div>
+
+    <div class="card" id="ex-dialogue">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Complete the conversation with the phrases from the <i>Useful language</i> box. Then listen again and check.</h3>
+
+      <div class="dialogue" style="margin-top:12px">
+        <span class="dl-name">Daniel</span>
+        <p class="dl-text">Hey, Martha. <span class="given">How was</span> the school trip yesterday?</p>
+        <span class="dl-name two">Martha</span>
+        <p class="dl-text ask"><input class="blank" id="sd2" data-answer="It was" placeholder="2 …" style="width:110px"> really cool! We went to a safari park.</p>
+        <span class="dl-name">Daniel</span>
+        <p class="dl-text ask">Really? <input class="blank" id="sd3" data-answer="What was it like|What was it like?" placeholder="3 …" style="width:200px">?</p>
+        <span class="dl-name two">Martha</span>
+        <p class="dl-text">It was amazing!</p>
+        <span class="dl-name">Daniel</span>
+        <p class="dl-text">Were there any elephants?</p>
+        <span class="dl-name two">Martha</span>
+        <p class="dl-text">Yeah, there were, but I didn't see them.</p>
+        <span class="dl-name">Daniel</span>
+        <p class="dl-text ask">I can't believe you didn't see any elephants. <input class="blank" id="sd4" data-answer="What about" placeholder="4 …" style="width:130px"> lions?</p>
+        <span class="dl-name two">Martha</span>
+        <p class="dl-text">Yeah, there was a family of lions. One of them looked inside our car.</p>
+        <span class="dl-name">Daniel</span>
+        <p class="dl-text">Wow! No way!</p>
+        <span class="dl-name two">Martha</span>
+        <p class="dl-text">Yup. It did. Then it climbed in the window and ate my lunch.</p>
+        <span class="dl-name">Daniel</span>
+        <p class="dl-text">You're joking!</p>
+        <span class="dl-name two">Martha</span>
+        <p class="dl-text">Of course I'm joking!</p>
+      </div>
+
+      <div class="audio-wrap">
+        <audio controls>
+          <source src="audio/unit7-page88-track10.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-dialogue')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-dialogue')">Try again</button>
+      </div>
+    </div>
+
+    <div class="card" id="ex-ul-use">
+      <div class="exercise-label">Word Choice</div>
+      <h3>Which question do you ask? Choose the correct one.</h3>
+
+      <p class="gap-line"><span class="num">1.</span> You want your friend's opinion about the film.
+        <span class="word-choice" id="uq1" data-answer="What was it like?">
+          <button class="word-choice-btn" onclick="selectWord(this)">What was it like?</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">What did it like?</button>
+        </span></p>
+      <p class="gap-line"><span class="num">2.</span> Your friend went to a party on Saturday.
+        <span class="word-choice" id="uq2" data-answer="How was the party?">
+          <button class="word-choice-btn" onclick="selectWord(this)">How was the party?</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">How were the party?</button>
+        </span></p>
+      <p class="gap-line"><span class="num">3.</span> Your friend talked about the sharks. Now you want to know about the turtles.
+        <span class="word-choice" id="uq3" data-answer="What about the turtles?">
+          <button class="word-choice-btn" onclick="selectWord(this)">What about the turtles?</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">How about turtles was?</button>
+        </span></p>
+      <p class="gap-line"><span class="num">4.</span> Your friend asks: <i>How was your weekend?</i> You answer:
+        <span class="word-choice" id="uq4" data-answer="It was really cool!">
+          <button class="word-choice-btn" onclick="selectWord(this)">It is really cool!</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">It was really cool!</button>
+        </span></p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkWords('ex-ul-use')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetWords('ex-ul-use')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>What was it like?</b> = Какой он был? / Как там было? — it asks for a description, <b>not</b> about liking! Answer with an adjective: <i>It was <b>amazing</b> / <b>boring</b> / <b>noisy</b>.</i>
+    </div>
+
+    <div class="speak-prompt">
+      <span class="sp-icon" aria-hidden="true">💬</span>
+      <div>
+        <div class="sp-label">Say it with the audio</div>
+        <p class="sp-q">Play the audio again. Stop after each <i>Useful language</i> phrase and repeat it. Copy the voice — go <b>up</b> and <b>down</b> like Daniel and Martha!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 3 — SB p.88, task 3 + Video 7.4 Everyday English
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s3">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-meta">Everyday English · Video 7.4</div>
+        <h2>No way! You're joking!</h2>
+      </div>
+    </div>
+
+    <div class="ul-box ee">
+      <div class="ul-title">Everyday English</div>
+      <div class="ul-grid">
+        <span>No way!</span><span>Really?</span>
+        <span>Wow!</span><span>You're joking!</span>
+      </div>
+    </div>
+
+    <div class="card" id="ex-find-ee">
+      <div class="exercise-label">Tap to Underline</div>
+      <h3>Find the <i>Everyday English</i> phrases in the conversation and tap them.</h3>
+
+      <div class="profile tappable">
+        <div class="profile-para"><span class="pnum">D</span><p><span class="tap" onclick="toggleTap(this)">Hey, Martha.</span> <span class="tap" onclick="toggleTap(this)">How was the school trip yesterday?</span></p></div>
+        <div class="profile-para"><span class="pnum">M</span><p><span class="tap" onclick="toggleTap(this)">It was really cool!</span> <span class="tap" onclick="toggleTap(this)">We went to a safari park.</span></p></div>
+        <div class="profile-para"><span class="pnum">D</span><p><span class="tap" data-key onclick="toggleTap(this)">Really?</span> <span class="tap" onclick="toggleTap(this)">What was it like?</span></p></div>
+        <div class="profile-para"><span class="pnum">M</span><p><span class="tap" onclick="toggleTap(this)">It was amazing!</span></p></div>
+        <div class="profile-para"><span class="pnum">D</span><p><span class="tap" onclick="toggleTap(this)">Were there any elephants?</span></p></div>
+        <div class="profile-para"><span class="pnum">M</span><p><span class="tap" onclick="toggleTap(this)">Yeah, there were,</span> <span class="tap" onclick="toggleTap(this)">but I didn't see them.</span></p></div>
+        <div class="profile-para"><span class="pnum">D</span><p><span class="tap" onclick="toggleTap(this)">I can't believe you didn't see any elephants.</span> <span class="tap" onclick="toggleTap(this)">What about lions?</span></p></div>
+        <div class="profile-para"><span class="pnum">M</span><p><span class="tap" onclick="toggleTap(this)">Yeah, there was a family of lions.</span> <span class="tap" onclick="toggleTap(this)">One of them looked inside our car.</span></p></div>
+        <div class="profile-para"><span class="pnum">D</span><p><span class="tap" data-key onclick="toggleTap(this)">Wow!</span> <span class="tap" data-key onclick="toggleTap(this)">No way!</span></p></div>
+        <div class="profile-para"><span class="pnum">M</span><p><span class="tap" onclick="toggleTap(this)">Yup. It did.</span> <span class="tap" onclick="toggleTap(this)">Then it climbed in the window and ate my lunch.</span></p></div>
+        <div class="profile-para"><span class="pnum">D</span><p><span class="tap" data-key onclick="toggleTap(this)">You're joking!</span></p></div>
+        <div class="profile-para"><span class="pnum">M</span><p><span class="tap" onclick="toggleTap(this)">Of course I'm joking!</span></p></div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkTap('ex-find-ee')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetTap('ex-find-ee')">Try again</button>
+      </div>
+    </div>
+
+    <div class="card" id="ex-video-ee">
+      <div class="exercise-label">Watch</div>
+      <h3>Watch Chatty Charlie. When do we use each phrase? Choose the best answer.</h3>
+      <div class="video-wrap">
+        <video controls>
+          <source src="video/unit7-page88-everyday-english.mp4" type="video/mp4">
+          <track kind="captions" src="video/unit7-page88-everyday-english.vtt" srclang="en" label="English" default>
+          Your browser does not support video.
+        </video>
+      </div>
+
+      <p style="font-weight:700;margin:18px 0 4px">1. Someone shows you something amazing: <i>“Look at this view!”</i></p>
+      <div class="mc-options" data-correct="c">
+        <label class="mc-option"><input type="radio" name="mc5" value="a"><span class="mc-bullet">A</span> Really?</label>
+        <label class="mc-option"><input type="radio" name="mc5" value="b"><span class="mc-bullet">B</span> You're joking!</label>
+        <label class="mc-option"><input type="radio" name="mc5" value="c"><span class="mc-bullet">C</span> Wow!</label>
+      </div>
+      <p style="font-weight:700;margin:18px 0 4px">2. You're surprised: <i>“I'm going to Paris tomorrow.”</i></p>
+      <div class="mc-options" data-correct="a">
+        <label class="mc-option"><input type="radio" name="mc6" value="a"><span class="mc-bullet">A</span> Really?</label>
+        <label class="mc-option"><input type="radio" name="mc6" value="b"><span class="mc-bullet">B</span> Wow! It's beautiful!</label>
+        <label class="mc-option"><input type="radio" name="mc6" value="c"><span class="mc-bullet">C</span> Of course I'm joking!</label>
+      </div>
+      <p style="font-weight:700;margin:18px 0 4px">3. You can't believe it: <i>“I've just got a pet crocodile!”</i></p>
+      <div class="mc-options" data-correct="b">
+        <label class="mc-option"><input type="radio" name="mc7" value="a"><span class="mc-bullet">A</span> What was it like?</label>
+        <label class="mc-option"><input type="radio" name="mc7" value="b"><span class="mc-bullet">B</span> No way! / You're joking!</label>
+        <label class="mc-option"><input type="radio" name="mc7" value="c"><span class="mc-bullet">C</span> How was it?</label>
+      </div>
+      <p style="font-weight:700;margin:18px 0 4px">4. <i>“One of the monkeys took my hat!”</i></p>
+      <div class="mc-options" data-correct="a">
+        <label class="mc-option"><input type="radio" name="mc8" value="a"><span class="mc-bullet">A</span> You're joking!</label>
+        <label class="mc-option"><input type="radio" name="mc8" value="b"><span class="mc-bullet">B</span> It was really cool.</label>
+        <label class="mc-option"><input type="radio" name="mc8" value="c"><span class="mc-bullet">C</span> What about lions?</label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkMC('ex-video-ee')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetMC('ex-video-ee')">Try again</button>
+      </div>
+    </div>
+
+    <div class="speak-prompt">
+      <span class="sp-icon" aria-hidden="true">💬</span>
+      <div>
+        <div class="sp-label">Talk to your teacher</div>
+        <p class="sp-q">Your teacher tells you some surprising things. React with <i>No way! / Really? / Wow! / You're joking!</i> Then you say four surprising things (true or not!) and your teacher reacts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 4 — SB p.88, task 4: practise the conversation
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="s4">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-meta">Speaking · Practise</div>
+        <h2>Be Daniel and Martha</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Speaking</div>
+      <h3>Practise the conversation with your teacher.</h3>
+      <div class="reflect-list">
+        <label class="reflect-item">
+          <input type="checkbox" id="sp1">
+          <span class="check-box"></span>
+          <span class="reflect-text">First read it <b>together with the audio</b> — at the same time and at the same speed.</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="sp2">
+          <span class="check-box"></span>
+          <span class="reflect-text">You are <b>Daniel</b>, your teacher is Martha.</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="sp3">
+          <span class="check-box"></span>
+          <span class="reflect-text">Change roles: you are <b>Martha</b>.</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="sp4">
+          <span class="check-box"></span>
+          <span class="reflect-text">Challenge: say Martha's part <b>without looking</b>!</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="tip">
+      Sound surprised! <i>No way!</i> and <i>You're joking!</i> are loud and strong. <i>Really?</i> goes <b>up</b> at the end ↗.
+    </div>
+  </section>
+
+  <div class="btn-row" style="justify-content:flex-end;margin:10px 0 30px">
+    <button class="btn-accent" onclick="showPart('part-yourturn');window.scrollTo(0,0)">Next part: Your conversation →</button>
+  </div>
+
+</div><!-- /wrap -->
+</div><!-- /part-dayout -->
+
+<!-- ════════════════════════════════════════════════════════════
+     PART 3 — YOUR CONVERSATION (SB p.88 tasks 5–7, Communication worksheet U7, speaking frame)
+════════════════════════════════════════════════════════════ -->
+<div class="lesson-part" id="part-yourturn">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#c1">1 · In order</a>
+    <a href="#c2">2 · Plan</a>
+    <a href="#c3">3 · Speak</a>
+    <a href="#c4">4 · Listen and note</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 1 — Communication worksheet Unit 7, activity 1
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="c1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Speaking · A holiday</div>
+        <h2>Put the conversation in order</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-order">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Two friends are talking about a holiday. Write the numbers 2–10 to put the conversation in the correct order. Then read it with your teacher.</h3>
+
+      <div class="order-line"><span class="given">1</span><span class="who">Alex</span><span>How was your holiday?</span></div>
+      <div class="order-line"><input class="blank" id="co1" data-answer="5" placeholder="?"><span class="who">Alex</span><span>A water park! Wow! What about the food?</span></div>
+      <div class="order-line"><input class="blank" id="co2" data-answer="8" placeholder="?"><span class="who">Sam</span><span>Yup, we did. We had hamburgers for breakfast and dinner, too.</span></div>
+      <div class="order-line"><input class="blank" id="co3" data-answer="3" placeholder="?"><span class="who">Alex</span><span>Really? What was it like?</span></div>
+      <div class="order-line"><input class="blank" id="co4" data-answer="10" placeholder="?"><span class="who">Sam</span><span>Of course I'm joking!</span></div>
+      <div class="order-line"><input class="blank" id="co5" data-answer="2" placeholder="?"><span class="who">Sam</span><span>It was really cool! We went to the Canary Islands.</span></div>
+      <div class="order-line"><input class="blank" id="co6" data-answer="7" placeholder="?"><span class="who">Alex</span><span>Every day? No way!</span></div>
+      <div class="order-line"><input class="blank" id="co7" data-answer="4" placeholder="?"><span class="who">Sam</span><span>It was amazing. We stayed in a hotel with a water park!</span></div>
+      <div class="order-line"><input class="blank" id="co8" data-answer="9" placeholder="?"><span class="who">Alex</span><span>You're joking!</span></div>
+      <div class="order-line"><input class="blank" id="co9" data-answer="6" placeholder="?"><span class="who">Sam</span><span>It was delicious! We had hamburgers for lunch every day!</span></div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-order')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-order')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      Alex asks, Sam answers — so the lines go <b>Alex, Sam, Alex, Sam …</b> Look for the clue words: <i>water park → A water park!</i>, <i>every day → Every day?</i>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 2 — SB p.88, task 5 Plan (+ flipped-class style ideas)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="c2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Plan</div>
+        <h2>Plan your day out</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Writing · Notes</div>
+      <h3>Plan a conversation about a day out. It can be true or invented! Make short notes.</h3>
+      <p class="char-count" style="text-align:left;margin-top:0">Ideas: a safari park, an aquarium, a zoo, a museum, a theme park, a party, a concert, a football match, a restaurant, the beach …</p>
+
+      <p class="plan-label">Where you went</p>
+      <input type="text" class="blank line-write" id="cp1" placeholder="a zoo, last Sunday …">
+      <p class="plan-label">What you saw</p>
+      <input type="text" class="blank line-write" id="cp2" placeholder="penguins, a huge bear …">
+      <p class="plan-label">What you didn't see</p>
+      <input type="text" class="blank line-write" id="cp3" placeholder="the tigers …">
+      <p class="plan-label">What happened</p>
+      <input type="text" class="blank line-write" id="cp4" placeholder="a monkey took my sandwich! …">
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 3 — SB p.88, task 6 Speak (+ speaking frame, phrases to tick)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="c3">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-meta">Speak</div>
+        <h2>Tell your teacher about your day out</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Speaking</div>
+      <h3>Your teacher asks about your day out. Answer with your notes. Use verbs in the past! Need help? Follow the frame.</h3>
+
+      <div class="dialogue" style="margin-top:12px">
+        <span class="dl-name">Teacher</span>
+        <p class="dl-text">Hey! How was your …?</p>
+        <span class="dl-name two">Matvey</span>
+        <p class="dl-text ask">It was … ! We went to …</p>
+        <span class="dl-name">Teacher</span>
+        <p class="dl-text">Really? What was it like?</p>
+        <span class="dl-name two">Matvey</span>
+        <p class="dl-text ask">It was … . There was / There were …</p>
+        <span class="dl-name">Teacher</span>
+        <p class="dl-text">Were there any …?</p>
+        <span class="dl-name two">Matvey</span>
+        <p class="dl-text ask">Yeah, there were, but I didn't see them. / No, there weren't.</p>
+        <span class="dl-name">Teacher</span>
+        <p class="dl-text">What about …?</p>
+        <span class="dl-name two">Matvey</span>
+        <p class="dl-text ask">… Then …</p>
+        <span class="dl-name">Teacher</span>
+        <p class="dl-text">No way! / You're joking!</p>
+      </div>
+
+      <h3 style="margin-top:18px">Now change roles: <b>you</b> ask about your teacher's day out. Tap each phrase when you use it. Can you use them all?</h3>
+      <div class="tap-chips ph-chips">
+        <span onclick="this.classList.toggle('used')">How was …?</span>
+        <span onclick="this.classList.toggle('used')">What was it like?</span>
+        <span onclick="this.classList.toggle('used')">What about …?</span>
+        <span onclick="this.classList.toggle('used')">Was there / Were there …?</span>
+        <span onclick="this.classList.toggle('used')">It was …</span>
+        <span onclick="this.classList.toggle('used')">No way!</span>
+        <span onclick="this.classList.toggle('used')">Really?</span>
+        <span onclick="this.classList.toggle('used')">Wow!</span>
+        <span onclick="this.classList.toggle('used')">You're joking!</span>
+      </div>
+    </div>
+
+    <div class="tip">
+      Remember to use: <b>verbs in the past</b> (<i>went, saw, had, looked, climbed</i>) and the phrases from the <i>Useful language</i> and <i>Everyday English</i> boxes.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 4 — SB p.88, task 7 Check: listen and complete the notes
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="c4">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-meta">Check · Listening</div>
+        <h2>Your teacher's day out</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Writing · Notes</div>
+      <h3>Listen to your teacher's story about a day out. Complete the notes.</h3>
+
+      <p class="plan-label">Place</p>
+      <input type="text" class="blank line-write" id="cn1" placeholder="…">
+      <p class="plan-label">What they saw</p>
+      <input type="text" class="blank line-write" id="cn2" placeholder="…">
+      <p class="plan-label">What they didn't see</p>
+      <input type="text" class="blank line-write" id="cn3" placeholder="…">
+      <p class="plan-label">What happened</p>
+      <input type="text" class="blank line-write" id="cn4" placeholder="…">
+    </div>
+
+    <div class="speak-prompt">
+      <span class="sp-icon" aria-hidden="true">💬</span>
+      <div>
+        <div class="sp-label">Talk to your teacher</div>
+        <p class="sp-q">Read your notes back: <i>You went to … You saw … You didn't see …</i> Are they right? Which day out was better — yours or your teacher's?</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="btn-row" style="justify-content:flex-end;margin:10px 0 30px">
+    <button class="btn-accent" onclick="showPart('part-remember');window.scrollTo(0,0)">Next part: Let's remember →</button>
+  </div>
+
+</div><!-- /wrap -->
+</div><!-- /part-yourturn -->
+
+<!-- ════════════════════════════════════════════════════════════
+     PART 4 — LET'S REMEMBER (Unit 7 Finished?, tasks 1, 3, 4)
+════════════════════════════════════════════════════════════ -->
+<div class="lesson-part" id="part-remember">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#r1">1 · Animal words</a>
+    <a href="#r2">2 · Crossword</a>
+    <a href="#r3">3 · Which animal?</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       REVIEW 1 — Finished? Unit 7, task 1 (anagrams)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="r1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Let's remember · Animals</div>
+        <h2>Mixed-up animals</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-anagram">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Read the clues and put the letters in the correct order to make words.</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span>This reptile has no arms or legs. <span class="cue">nakes</span> → <span class="given">snake</span></span></div>
+
+      <p class="gap-line"><span class="num">2.</span> This mammal lives in the sea. <span class="cue">helaw</span> → <input class="blank" id="ra2" data-answer="whale" placeholder="?"></p>
+      <p class="gap-line"><span class="num">3.</span> Some people are scared of this very small animal. <span class="cue">semou</span> → <input class="blank" id="ra3" data-answer="mouse" placeholder="?"></p>
+      <p class="gap-line"><span class="num">4.</span> This bird is the national symbol of the US. <span class="cue">galee</span> → <input class="blank" id="ra4" data-answer="eagle" placeholder="?"></p>
+      <p class="gap-line"><span class="num">5.</span> This animal has a trunk and usually has two tusks. <span class="cue">thapelen</span> → <input class="blank" id="ra5" data-answer="elephant" placeholder="?"></p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-anagram')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-anagram')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>trunk</b> = хобот · <b>tusks</b> = бивни · <b>national symbol</b> = национальный символ
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       REVIEW 2 — Finished? Unit 7, task 3 (past simple crossword)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="r2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Let's remember · Past simple</div>
+        <h2>Past simple crossword</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-crossword">
+      <div class="exercise-label">Crossword</div>
+      <h3>Complete the crossword with the past simple of the verbs.</h3>
+
+      <table class="ref-table">
+        <tr><th>Across →</th><th>Down ↓</th></tr>
+        <tr><td>2 see · 3 give · 6 make · 7 take<br>10 feed · 11 learn · 13 teach</td><td>1 become · 2 sleep · 4 be · 5 find<br>8 leave · 9 go · 12 do · 14 have</td></tr>
+      </table>
+
+      <div class="tip" style="margin-top:14px">
+        <b>2 across</b> (<i>saw</i>) is already there to help you. Tap the <b>first box</b> of a word and type — it jumps to the next box for you. A box where two words cross? Tap it twice to change direction.
+      </div>
+
+      <div class="crossword-scroll">
+          <div class="xw-grid" style="grid-template-columns:repeat(12,38px);grid-template-rows:repeat(12,38px)">
+            <div class="xw-cell" style="grid-column:6;grid-row:1"><span class="xw-num">1</span><input type="text" class="xw-blank" maxlength="1" id="xw-c5-r0" data-answer="B"></div>
+            <div class="xw-cell" style="grid-column:6;grid-row:2"><input type="text" class="xw-blank" maxlength="1" id="xw-c5-r1" data-answer="E"></div>
+            <div class="xw-cell xw-given" style="grid-column:8;grid-row:2"><span class="xw-num">2</span><span class="xw-letter">S</span></div>
+            <div class="xw-cell xw-given" style="grid-column:9;grid-row:2"><span class="xw-letter">A</span></div>
+            <div class="xw-cell xw-given" style="grid-column:10;grid-row:2"><span class="xw-letter">W</span></div>
+            <div class="xw-cell" style="grid-column:6;grid-row:3"><input type="text" class="xw-blank" maxlength="1" id="xw-c5-r2" data-answer="C"></div>
+            <div class="xw-cell" style="grid-column:8;grid-row:3"><input type="text" class="xw-blank" maxlength="1" id="xw-c7-r2" data-answer="L"></div>
+            <div class="xw-cell" style="grid-column:5;grid-row:4"><span class="xw-num">3</span><input type="text" class="xw-blank" maxlength="1" id="xw-c4-r3" data-answer="G"></div>
+            <div class="xw-cell" style="grid-column:6;grid-row:4"><input type="text" class="xw-blank" maxlength="1" id="xw-c5-r3" data-answer="A"></div>
+            <div class="xw-cell" style="grid-column:7;grid-row:4"><input type="text" class="xw-blank" maxlength="1" id="xw-c6-r3" data-answer="V"></div>
+            <div class="xw-cell" style="grid-column:8;grid-row:4"><input type="text" class="xw-blank" maxlength="1" id="xw-c7-r3" data-answer="E"></div>
+            <div class="xw-cell" style="grid-column:4;grid-row:5"><span class="xw-num">4</span><input type="text" class="xw-blank" maxlength="1" id="xw-c3-r4" data-answer="W"></div>
+            <div class="xw-cell" style="grid-column:6;grid-row:5"><input type="text" class="xw-blank" maxlength="1" id="xw-c5-r4" data-answer="M"></div>
+            <div class="xw-cell" style="grid-column:8;grid-row:5"><input type="text" class="xw-blank" maxlength="1" id="xw-c7-r4" data-answer="P"></div>
+            <div class="xw-cell" style="grid-column:10;grid-row:5"><span class="xw-num">5</span><input type="text" class="xw-blank" maxlength="1" id="xw-c9-r4" data-answer="F"></div>
+            <div class="xw-cell" style="grid-column:3;grid-row:6"><span class="xw-num">6</span><input type="text" class="xw-blank" maxlength="1" id="xw-c2-r5" data-answer="M"></div>
+            <div class="xw-cell" style="grid-column:4;grid-row:6"><input type="text" class="xw-blank" maxlength="1" id="xw-c3-r5" data-answer="A"></div>
+            <div class="xw-cell" style="grid-column:5;grid-row:6"><input type="text" class="xw-blank" maxlength="1" id="xw-c4-r5" data-answer="D"></div>
+            <div class="xw-cell" style="grid-column:6;grid-row:6"><input type="text" class="xw-blank" maxlength="1" id="xw-c5-r5" data-answer="E"></div>
+            <div class="xw-cell" style="grid-column:8;grid-row:6"><span class="xw-num">7</span><input type="text" class="xw-blank" maxlength="1" id="xw-c7-r5" data-answer="T"></div>
+            <div class="xw-cell" style="grid-column:9;grid-row:6"><input type="text" class="xw-blank" maxlength="1" id="xw-c8-r5" data-answer="O"></div>
+            <div class="xw-cell" style="grid-column:10;grid-row:6"><input type="text" class="xw-blank" maxlength="1" id="xw-c9-r5" data-answer="O"></div>
+            <div class="xw-cell" style="grid-column:11;grid-row:6"><input type="text" class="xw-blank" maxlength="1" id="xw-c10-r5" data-answer="K"></div>
+            <div class="xw-cell" style="grid-column:2;grid-row:7"><span class="xw-num">8</span><input type="text" class="xw-blank" maxlength="1" id="xw-c1-r6" data-answer="L"></div>
+            <div class="xw-cell" style="grid-column:4;grid-row:7"><input type="text" class="xw-blank" maxlength="1" id="xw-c3-r6" data-answer="S"></div>
+            <div class="xw-cell" style="grid-column:7;grid-row:7"><span class="xw-num">9</span><input type="text" class="xw-blank" maxlength="1" id="xw-c6-r6" data-answer="W"></div>
+            <div class="xw-cell" style="grid-column:10;grid-row:7"><input type="text" class="xw-blank" maxlength="1" id="xw-c9-r6" data-answer="U"></div>
+            <div class="xw-cell" style="grid-column:1;grid-row:8"><span class="xw-num">10</span><input type="text" class="xw-blank" maxlength="1" id="xw-c0-r7" data-answer="F"></div>
+            <div class="xw-cell" style="grid-column:2;grid-row:8"><input type="text" class="xw-blank" maxlength="1" id="xw-c1-r7" data-answer="E"></div>
+            <div class="xw-cell" style="grid-column:3;grid-row:8"><input type="text" class="xw-blank" maxlength="1" id="xw-c2-r7" data-answer="D"></div>
+            <div class="xw-cell" style="grid-column:6;grid-row:8"><span class="xw-num">11</span><input type="text" class="xw-blank" maxlength="1" id="xw-c5-r7" data-answer="L"></div>
+            <div class="xw-cell" style="grid-column:7;grid-row:8"><input type="text" class="xw-blank" maxlength="1" id="xw-c6-r7" data-answer="E"></div>
+            <div class="xw-cell" style="grid-column:8;grid-row:8"><input type="text" class="xw-blank" maxlength="1" id="xw-c7-r7" data-answer="A"></div>
+            <div class="xw-cell" style="grid-column:9;grid-row:8"><input type="text" class="xw-blank" maxlength="1" id="xw-c8-r7" data-answer="R"></div>
+            <div class="xw-cell" style="grid-column:10;grid-row:8"><input type="text" class="xw-blank" maxlength="1" id="xw-c9-r7" data-answer="N"></div>
+            <div class="xw-cell" style="grid-column:11;grid-row:8"><input type="text" class="xw-blank" maxlength="1" id="xw-c10-r7" data-answer="E"></div>
+            <div class="xw-cell" style="grid-column:12;grid-row:8"><span class="xw-num">12</span><input type="text" class="xw-blank" maxlength="1" id="xw-c11-r7" data-answer="D"></div>
+            <div class="xw-cell" style="grid-column:2;grid-row:9"><input type="text" class="xw-blank" maxlength="1" id="xw-c1-r8" data-answer="F"></div>
+            <div class="xw-cell" style="grid-column:7;grid-row:9"><input type="text" class="xw-blank" maxlength="1" id="xw-c6-r8" data-answer="N"></div>
+            <div class="xw-cell" style="grid-column:10;grid-row:9"><input type="text" class="xw-blank" maxlength="1" id="xw-c9-r8" data-answer="D"></div>
+            <div class="xw-cell" style="grid-column:12;grid-row:9"><input type="text" class="xw-blank" maxlength="1" id="xw-c11-r8" data-answer="I"></div>
+            <div class="xw-cell" style="grid-column:2;grid-row:10"><span class="xw-num">13</span><input type="text" class="xw-blank" maxlength="1" id="xw-c1-r9" data-answer="T"></div>
+            <div class="xw-cell" style="grid-column:3;grid-row:10"><input type="text" class="xw-blank" maxlength="1" id="xw-c2-r9" data-answer="A"></div>
+            <div class="xw-cell" style="grid-column:4;grid-row:10"><input type="text" class="xw-blank" maxlength="1" id="xw-c3-r9" data-answer="U"></div>
+            <div class="xw-cell" style="grid-column:5;grid-row:10"><input type="text" class="xw-blank" maxlength="1" id="xw-c4-r9" data-answer="G"></div>
+            <div class="xw-cell" style="grid-column:6;grid-row:10"><span class="xw-num">14</span><input type="text" class="xw-blank" maxlength="1" id="xw-c5-r9" data-answer="H"></div>
+            <div class="xw-cell" style="grid-column:7;grid-row:10"><input type="text" class="xw-blank" maxlength="1" id="xw-c6-r9" data-answer="T"></div>
+            <div class="xw-cell" style="grid-column:12;grid-row:10"><input type="text" class="xw-blank" maxlength="1" id="xw-c11-r9" data-answer="D"></div>
+            <div class="xw-cell" style="grid-column:6;grid-row:11"><input type="text" class="xw-blank" maxlength="1" id="xw-c5-r10" data-answer="A"></div>
+            <div class="xw-cell" style="grid-column:6;grid-row:12"><input type="text" class="xw-blank" maxlength="1" id="xw-c5-r11" data-answer="D"></div>
+          </div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-crossword','xw-blank')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-crossword','xw-blank')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       REVIEW 3 — Finished? Unit 7, task 4 (which animal is it?)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="r3">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-meta">Let's remember · Adjectives</div>
+        <h2>Which animal is it?</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-which">
+      <div class="exercise-label">Multiple Choice</div>
+      <h3>Read the sentences and choose the correct photo.</h3>
+      <img class="media-img" src="images/unit7-finished-which-animal.jpg" alt="Four numbered photos: 1 a brown horse running, 2 a green hummingbird, 3 a hippo with its mouth wide open in the water, 4 a monkey drinking from a plastic bottle" style="max-width:460px;display:block;margin:6px auto 16px">
+
+      <div class="sp-starter" style="font-style:normal">This is a wild animal. It is large and heavy. Most people think it isn't cute and it is very dangerous. It lives on land and in the water.</div>
+
+      <div class="mc-options" data-correct="c">
+        <label class="mc-option"><input type="radio" name="mc9" value="a"><span class="mc-bullet">1</span> the horse</label>
+        <label class="mc-option"><input type="radio" name="mc9" value="b"><span class="mc-bullet">2</span> the bird</label>
+        <label class="mc-option"><input type="radio" name="mc9" value="c"><span class="mc-bullet">3</span> the hippo</label>
+        <label class="mc-option"><input type="radio" name="mc9" value="d"><span class="mc-bullet">4</span> the monkey</label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkMC('ex-which')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetMC('ex-which')">Try again</button>
+      </div>
+    </div>
+
+    <div class="speak-prompt">
+      <span class="sp-icon" aria-hidden="true">💬</span>
+      <div>
+        <div class="sp-label">Talk to your teacher</div>
+        <p class="sp-q">Describe one of the other animals in the same way — your teacher guesses which photo it is. Then your teacher describes one for you!</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="btn-row" style="justify-content:flex-end;margin:10px 0 30px">
+    <button class="btn-accent" onclick="showPart('part-article');window.scrollTo(0,0)">Next part: An article →</button>
+  </div>
+
+</div><!-- /wrap -->
+</div><!-- /part-remember -->
+
+<!-- ════════════════════════════════════════════════════════════
+     PART 5 — AN ARTICLE (Student's Book p.89)
+════════════════════════════════════════════════════════════ -->
+<div class="lesson-part" id="part-article">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#a1">1 · The llama</a>
+    <a href="#a2">2 · Paragraphs</a>
+    <a href="#a3">3 · on / in / ago</a>
+    <a href="#a4">4 · Bini the rabbit</a>
+    <a href="#a5">5 · Your article</a>
+    <a href="#a6">6 · Finish</a>
+    <a href="#part-homework" onclick="showPart('part-homework');window.scrollTo(0,0)">Homework ↗</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 1 — SB p.89, task 1
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="a1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Writing · An article</div>
+        <h2>Meet Boateng de Oro</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-llama-guess">
+      <div class="exercise-label">Multiple Choice</div>
+      <h3>Look at the photo. Describe it to your teacher. What do you think this llama can do? Choose — then read the article and check your idea.</h3>
+      <img class="media-img" src="images/unit7-p89-llama.jpg" alt="A man holding a world record certificate next to a tall brown and white llama with a red halter" style="max-width:520px;display:block;margin:6px auto 16px">
+
+      <div class="mc-options" data-correct="b">
+        <label class="mc-option"><input type="radio" name="mc10" value="a"><span class="mc-bullet">A</span> It can paint pictures.</label>
+        <label class="mc-option"><input type="radio" name="mc10" value="b"><span class="mc-bullet">B</span> It can jump very high.</label>
+        <label class="mc-option"><input type="radio" name="mc10" value="c"><span class="mc-bullet">C</span> It can play basketball.</label>
+      </div>
+
+      <div class="profile" style="margin-top:16px">
+        <div class="profile-head">
+          <div class="profile-title">Meet Boateng de Oro</div>
+          <p class="profile-by">By Lara Wilson</p>
+        </div>
+        <div class="profile-para"><span class="pnum">1</span><p>Boateng de Oro is a clever llama. He lives on a farm in Italy with his owner, Walter Mair. Boateng and Walter take people into the Italian mountains. Boateng loves jumping.</p></div>
+        <div class="profile-para"><span class="pnum">2</span><p>In 2023, Walter and Boateng appeared on an Italian TV show. Lots of people watched the show. Boateng jumped 1.2 metres. He broke the world record. More than ten years ago, a llama called Caspa <b>could</b> jump 1.13m. On 22nd February, 2023, five days later, Boateng jumped 1.3 metres at home on the farm.</p></div>
+        <div class="profile-para"><span class="pnum">3</span><p>Now you know about clever llamas. Do you know any other animals with amazing abilities?</p></div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkMC('ex-llama-guess')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetMC('ex-llama-guess')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>owner</b> = хозяин · <b>appeared on a TV show</b> = was on TV · <b>broke the world record</b> = did it better than anyone before (побил мировой рекорд) · <b>could</b> = the past of <i>can</i> · <b>abilities</b> = things you can do
+    </div>
+
+    <div class="card" id="ex-llama-tf">
+      <div class="exercise-label">Multiple Choice</div>
+      <h3>True or false?</h3>
+      <p style="font-weight:700;margin:10px 0 4px">1. Boateng lives in the mountains in Spain.</p>
+      <div class="mc-options" data-correct="f">
+        <label class="mc-option"><input type="radio" name="mc11" value="t"><span class="mc-bullet">T</span> True</label>
+        <label class="mc-option"><input type="radio" name="mc11" value="f"><span class="mc-bullet">F</span> False</label>
+      </div>
+      <p style="font-weight:700;margin:14px 0 4px">2. On the TV show, Boateng jumped higher than Caspa.</p>
+      <div class="mc-options" data-correct="t">
+        <label class="mc-option"><input type="radio" name="mc12" value="t"><span class="mc-bullet">T</span> True</label>
+        <label class="mc-option"><input type="radio" name="mc12" value="f"><span class="mc-bullet">F</span> False</label>
+      </div>
+      <p style="font-weight:700;margin:14px 0 4px">3. Boateng's best jump was on the TV show.</p>
+      <div class="mc-options" data-correct="f">
+        <label class="mc-option"><input type="radio" name="mc13" value="t"><span class="mc-bullet">T</span> True</label>
+        <label class="mc-option"><input type="radio" name="mc13" value="f"><span class="mc-bullet">F</span> False</label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkMC('ex-llama-tf')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetMC('ex-llama-tf')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 2 — SB p.89, task 2
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="a2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Writing · Paragraphs</div>
+        <h2>What is each paragraph about?</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-match-paras">
+      <div class="exercise-label">Matching</div>
+      <h3>Match the paragraphs 1–3 of the article with the topics.</h3>
+
+      <div class="match-grid">
+        <div class="match-col" data-side="left">
+          <div class="match-item" data-pair="1" onclick="selectMatch(this,'ex-match-paras')">Paragraph 1</div>
+          <div class="match-item" data-pair="2" onclick="selectMatch(this,'ex-match-paras')">Paragraph 2</div>
+          <div class="match-item" data-pair="3" onclick="selectMatch(this,'ex-match-paras')">Paragraph 3</div>
+        </div>
+        <div class="match-col" data-side="right">
+          <div class="match-item" data-pair="2" onclick="selectMatch(this,'ex-match-paras')">Description of an amazing thing Boateng did</div>
+          <div class="match-item" data-pair="3" onclick="selectMatch(this,'ex-match-paras')">Conclusion that asks a question</div>
+          <div class="match-item" data-pair="1" onclick="selectMatch(this,'ex-match-paras')">Introduction to the subject</div>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-ghost" onclick="resetMatchEx('ex-match-paras')">Reset</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      A good article has <b>three parts</b>: an <b>introduction</b> (who is the animal?), a <b>description</b> (what did it do?) and a <b>conclusion</b> (a question to the reader).
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 3 — SB p.89, task 3 + Useful language + Get it right!
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="a3">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-meta">Useful language · Get it right!</div>
+        <h2>Time expressions: <i>on, in, ago</i></h2>
+      </div>
+    </div>
+
+    <div class="ul-box">
+      <div class="ul-title">Useful language</div>
+      <div class="ul-grid">
+        <span>In 2023</span><span>On 22nd February, 2023</span>
+        <span>More than ten years ago</span>
+      </div>
+    </div>
+
+    <div class="card" id="ex-find-time">
+      <div class="exercise-label">Tap to Underline</div>
+      <h3>Find the three time expressions from the <i>Useful language</i> box in paragraph 2 and tap them.</h3>
+
+      <div class="profile tappable">
+        <div class="profile-para"><span class="pnum">2</span><p><span class="tap" data-key onclick="toggleTap(this)">In 2023,</span> <span class="tap" onclick="toggleTap(this)">Walter and Boateng appeared on an Italian TV show.</span> <span class="tap" onclick="toggleTap(this)">Lots of people watched the show.</span> <span class="tap" onclick="toggleTap(this)">Boateng jumped 1.2 metres.</span> <span class="tap" onclick="toggleTap(this)">He broke the world record.</span> <span class="tap" data-key onclick="toggleTap(this)">More than ten years ago,</span> <span class="tap" onclick="toggleTap(this)">a llama called Caspa could jump 1.13m.</span> <span class="tap" data-key onclick="toggleTap(this)">On 22nd February, 2023,</span> <span class="tap" onclick="toggleTap(this)">five days later,</span> <span class="tap" onclick="toggleTap(this)">Boateng jumped 1.3 metres at home on the farm.</span></p></div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkTap('ex-find-time')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetTap('ex-find-time')">Try again</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Get it right!</div>
+      <table class="ref-table">
+        <tr><th>on</th><th>in</th><th>… ago</th></tr>
+        <tr><td>days and dates<br><i>on Monday · on 22nd May</i></td><td>months and years<br><i>in February · in 2025</i></td><td>after the time<br><i>ten years ago · two days ago</i></td></tr>
+      </table>
+    </div>
+
+    <div class="card" id="ex-onin">
+      <div class="exercise-label">Word Choice</div>
+      <h3>Choose <i>on</i> or <i>in</i>. Then answer the questions about you.</h3>
+
+      <p class="gap-line"><span class="num">1.</span> When is your birthday? — It's
+        <span class="word-choice" id="oi1" data-answer="in">
+          <button class="word-choice-btn" onclick="selectWord(this)">on</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">in</button>
+        </span> June. / It's
+        <span class="word-choice" id="oi2" data-answer="on">
+          <button class="word-choice-btn" onclick="selectWord(this)">on</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">in</button>
+        </span> 5th June.</p>
+      <input type="text" class="blank line-write" id="oiw1" placeholder="My birthday is on … / in …">
+      <p class="gap-line"><span class="num">2.</span> When do you have English lessons? — I have English
+        <span class="word-choice" id="oi3" data-answer="on">
+          <button class="word-choice-btn" onclick="selectWord(this)">on</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">in</button>
+        </span> Tuesdays.</p>
+      <input type="text" class="blank line-write" id="oiw2" placeholder="I have English lessons on …">
+      <p class="gap-line"><span class="num">3.</span> When does summer start? — It starts
+        <span class="word-choice" id="oi4" data-answer="in">
+          <button class="word-choice-btn" onclick="selectWord(this)">on</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">in</button>
+        </span> June.</p>
+      <p class="gap-line"><span class="num">4.</span> When did you start school? — I started school
+        <span class="word-choice" id="oi5" data-answer="in">
+          <button class="word-choice-btn" onclick="selectWord(this)">on</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">in</button>
+        </span> 2019.</p>
+      <input type="text" class="blank line-write" id="oiw3" placeholder="I started school in … / … years ago.">
+      <p class="gap-line"><span class="num">5.</span> When is New Year? — It's
+        <span class="word-choice" id="oi6" data-answer="on">
+          <button class="word-choice-btn" onclick="selectWord(this)">on</button>
+          <button class="word-choice-btn" onclick="selectWord(this)">in</button>
+        </span> 1st January.</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkWords('ex-onin')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetWords('ex-onin')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      Say dates like this: <i>22nd February</i> = “the twenty-second of February” · <i>2023</i> = “twenty twenty-three”.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 4 — SB p.89, task 4 (Bini Senior)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="a4">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-meta">Writing · Time expressions</div>
+        <h2>Bini the basketball rabbit</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-bini">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Complete the text with the correct time expressions: <i>on</i>, <i>in</i> or <i>ago</i>.</h3>
+
+      <div class="profile">
+        <img class="media-img" src="images/unit7-p89-bini-rabbit.jpg" alt="A rabbit in a red basketball shirt standing on its back legs and putting a small orange ball into a toy basketball hoop" style="max-width:340px;display:block;margin:0 auto 16px">
+        <div class="profile-para"><span class="pnum">1</span><p>Bini Senior was born <span class="given">on</span> 21st March, 2012. He was a very clever rabbit.
+          <input class="blank" id="bn2" data-answer="on" placeholder="2 …" style="width:80px"> 31st October, 2016, Bini scored 7 basketball slam dunks in one minute! It was a world record!</p></div>
+        <div class="profile-para"><span class="pnum">2</span><p>Several years <input class="blank" id="bn3" data-answer="ago" placeholder="3 …" style="width:80px">, Bini and his owner appeared on a TV show for the first time.
+          <input class="blank" id="bn4" data-answer="in" placeholder="4 …" style="width:80px"> April 2020, Bini learned to paint pictures. Bini was a TV star – <input class="blank" id="bn5" data-answer="in" placeholder="5 …" style="width:80px"> June 2022, he was in a TV documentary.</p></div>
+        <div class="profile-para"><span class="pnum">3</span><p>Sadly, Bini died. <input class="blank" id="bn6" data-answer="on" placeholder="6 …" style="width:80px"> 1st September 2023, Bini's owner shared the news on social media.</p></div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-bini')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-bini')">Try again</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      <b>slam dunk</b> = when a player jumps and puts the ball into the basket from above · <b>documentary</b> = a film about real life · <b>sadly</b> = к сожалению
+    </div>
+
+    <div class="speak-prompt">
+      <span class="sp-icon" aria-hidden="true">💬</span>
+      <div>
+        <div class="sp-label">Talk to your teacher</div>
+        <p class="sp-q">Boateng de Oro, Bini Senior … Do you know any other <b>amazing animals</b>? What can they do? What did they do?</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 5 — SB p.89, tasks 5–7 Plan / Write / Check (+ writing frame)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="a5">
+    <div class="step-head">
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-meta">Plan · Write · Check</div>
+        <h2>Write your own article about a famous animal</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Plan</div>
+      <h3>Find a story about a famous animal on the internet (or choose one from the ideas). Make notes for each paragraph.</h3>
+      <p class="char-count" style="text-align:left;margin-top:0">Ideas: Hachiko the dog (Japan) · Laika the space dog · Purrsephone the cat with the longest fur · Sultan the tallest dog · Apollo the talking parrot · Trapper the skateboarding dog …</p>
+
+      <p class="plan-label">Introduction — who is the animal? Where does it live? Who is its owner?</p>
+      <input type="text" class="blank line-write" id="ap1" placeholder="…">
+      <p class="plan-label">Description of things the animal did — when?</p>
+      <textarea class="free-write" id="fw-plan-desc" placeholder="In 20…, … / On …, … / … years ago, …" rows="3"></textarea>
+      <div class="char-count" id="cc-fw-plan-desc">0 characters</div>
+      <p class="plan-label">Conclusion — a question for the reader</p>
+      <input type="text" class="blank line-write" id="ap3" placeholder="Do you know …?">
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Write</div>
+      <h3>Write your article. Remember to include: <b>three paragraphs</b>, <b>the past simple</b> and <b>time expressions</b> from the <i>Useful language</i> box.</h3>
+
+      <div class="frame">
+        <b>Title:</b> Meet … / … – the really clever …<br>
+        <b>1</b> … is a clever / an amazing … . He / She lives in … with … . He / She loves …<br>
+        <b>2</b> In 20… , … . On … , … . More than … years ago, … .<br>
+        <b>3</b> Now you know about … . Do you know any other animals …?
+      </div>
+
+      <textarea class="free-write" id="fw-article" placeholder="Meet …&#10;&#10;1 …&#10;&#10;2 …&#10;&#10;3 …" rows="10" style="margin-top:12px"></textarea>
+      <div class="char-count" id="cc-fw-article">0 characters</div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Check</div>
+      <h3>Read your article. Do you …</h3>
+      <div class="reflect-list">
+        <label class="reflect-item">
+          <input type="checkbox" id="ac1">
+          <span class="check-box"></span>
+          <span class="reflect-text">introduce the animal in the first paragraph?</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="ac2">
+          <span class="check-box"></span>
+          <span class="reflect-text">describe what the animal did?</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="ac3">
+          <span class="check-box"></span>
+          <span class="reflect-text">use time expressions (<i>on, in, ago</i>)?</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="ac4">
+          <span class="check-box"></span>
+          <span class="reflect-text">use the past simple correctly (<i>jumped, broke, became</i> …)?</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="speak-prompt">
+      <span class="sp-icon" aria-hidden="true">💬</span>
+      <div>
+        <div class="sp-label">Talk to your teacher</div>
+        <p class="sp-q">Read your article to your teacher. Your teacher checks it with the list above. Which phrases do you like in Boateng's article? Copy one into your text!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       STEP 6 — Finish
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="a6">
+    <div class="step-head">
+      <div class="step-num">6</div>
+      <div>
+        <div class="step-meta">Finish</div>
+        <h2>Nice work</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Now I...</h3>
+      <div class="reflect-list">
+        <label class="reflect-item">
+          <input type="checkbox" id="rf1">
+          <span class="check-box"></span>
+          <span class="reflect-text">can ask about a day out: <i>How was …? What was it like? What about …?</i></span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="rf2">
+          <span class="check-box"></span>
+          <span class="reflect-text">can react: <i>No way! Really? Wow! You're joking!</i></span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="rf3">
+          <span class="check-box"></span>
+          <span class="reflect-text">can talk about a day out in the past simple</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="rf4">
+          <span class="check-box"></span>
+          <span class="reflect-text">know when to use <i>on</i> (days, dates), <i>in</i> (months, years) and <i>… ago</i></span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="rf5">
+          <span class="check-box"></span>
+          <span class="reflect-text">can write an article in three paragraphs</span>
+        </label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-accent" onclick="showPart('part-homework');window.scrollTo(0,0)">Go to homework →</button>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /wrap -->
+</div><!-- /part-article -->
+
+<!-- ════════════════════════════════════════════════════════════
+     HOMEWORK — Workbook p.61, Writing tutor p.84, second draft, flipped class (SB p.91)
+════════════════════════════════════════════════════════════ -->
+<div class="lesson-part" id="part-homework">
+<nav class="chips">
+  <div class="wrap">
+    <a href="#h1">1 · Apollo</a>
+    <a href="#h2">2 · at / in / on / ago</a>
+    <a href="#h3">3 · An email</a>
+    <a href="#h4">4 · First, then …</a>
+    <a href="#h5">5 · so</a>
+    <a href="#h6">6 · Second draft</a>
+    <a href="#h7">7 · Find out!</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 1 — Workbook p.61, tasks 1–4
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h1">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-meta">Homework · An article</div>
+        <h2>Apollo – the really clever parrot</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-hw-apollo">
+      <div class="exercise-label">Word Choice</div>
+      <h3>Read the article. Choose the correct words (1–4).</h3>
+
+      <div class="profile">
+        <div class="profile-head">
+          <div class="profile-title">Apollo – the really clever parrot</div>
+          <p class="profile-by">by Catalina Lomboy</p>
+        </div>
+        <img class="media-img" src="images/unit7-wb61-apollo-parrot.jpg" alt="An African grey parrot with grey feathers, a white face and a black curved beak" style="max-width:260px;display:block;margin:0 auto 16px">
+        <div class="profile-para"><span class="pnum">1</span><p>Do you think birds are clever animals? Well, Apollo the African grey parrot is very clever. He lives in Florida in the USA and he's four years old. His owners, Dalton and Tori Mason, got him a few years
+          <span class="word-choice" id="hp1" data-answer="ago">
+            <button class="word-choice-btn" onclick="selectWord(this)">ago</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">when</button>
+          </span>. Now, millions of people watch him on social media!</p></div>
+        <div class="profile-para"><span class="pnum">2</span><p>This parrot can do a lot of things. He can speak in complete English sentences, he can count and he also knows the names of lots of colours. He loves asking questions, too.
+          <span class="word-choice" id="hp2" data-answer="On">
+            <button class="word-choice-btn" onclick="selectWord(this)">In</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">On</button>
+          </span> 18th December 2023, he broke a new world record.
+          <span class="word-choice" id="hp3" data-answer="When">
+            <button class="word-choice-btn" onclick="selectWord(this)">At</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">When</button>
+          </span> his owners showed him 12 things, Apollo said the names of each one in just three minutes. Now, the parrot is even more famous.
+          <span class="word-choice" id="hp4" data-answer="In">
+            <button class="word-choice-btn" onclick="selectWord(this)">Ago</button>
+            <button class="word-choice-btn" onclick="selectWord(this)">In</button>
+          </span> 2025, Apollo's name went into the <i>Guinness World Records</i>, a book about the world's most amazing people and animals!</p></div>
+        <div class="profile-para"><span class="pnum">3</span><p>Apollo is really clever and is learning a lot. What other clever animals do you know, and what can they do?</p></div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkWords('ex-hw-apollo')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetWords('ex-hw-apollo')">Try again</button>
+      </div>
+    </div>
+
+    <div class="card" id="ex-hw-apollo-mc">
+      <div class="exercise-label">Multiple Choice</div>
+      <h3>What can this parrot do?</h3>
+      <div class="mc-options" data-correct="c">
+        <label class="mc-option"><input type="radio" name="mc14" value="a"><span class="mc-bullet">A</span> He can fly very fast and dance.</label>
+        <label class="mc-option"><input type="radio" name="mc14" value="b"><span class="mc-bullet">B</span> He can sing songs and paint pictures.</label>
+        <label class="mc-option"><input type="radio" name="mc14" value="c"><span class="mc-bullet">C</span> He can talk in sentences, count, name colours and ask questions.</label>
+      </div>
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkMC('ex-hw-apollo-mc')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetMC('ex-hw-apollo-mc')">Try again</button>
+      </div>
+    </div>
+
+    <div class="card" id="ex-hw-apollo-verbs">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Read the article again. Find the past simple of these verbs.</h3>
+      <table class="ref-table">
+        <tr><th>Present</th><th>Past</th></tr>
+        <tr><td>get</td><td><span class="given">got</span></td></tr>
+        <tr><td>break</td><td><input class="blank" id="hv2" data-answer="broke" placeholder="?"></td></tr>
+        <tr><td>show</td><td><input class="blank" id="hv3" data-answer="showed" placeholder="?"></td></tr>
+        <tr><td>say</td><td><input class="blank" id="hv4" data-answer="said" placeholder="?"></td></tr>
+        <tr><td>go</td><td><input class="blank" id="hv5" data-answer="went" placeholder="?"></td></tr>
+      </table>
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-hw-apollo-verbs')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-hw-apollo-verbs')">Try again</button>
+      </div>
+    </div>
+
+    <div class="card" id="ex-match-hw-paras">
+      <div class="exercise-label">Matching</div>
+      <h3>Match the topics with the paragraphs 1–3.</h3>
+      <div class="match-grid">
+        <div class="match-col" data-side="left">
+          <div class="match-item" data-pair="1" onclick="selectMatch(this,'ex-match-hw-paras')">Paragraph 1</div>
+          <div class="match-item" data-pair="2" onclick="selectMatch(this,'ex-match-hw-paras')">Paragraph 2</div>
+          <div class="match-item" data-pair="3" onclick="selectMatch(this,'ex-match-hw-paras')">Paragraph 3</div>
+        </div>
+        <div class="match-col" data-side="right">
+          <div class="match-item" data-pair="3" onclick="selectMatch(this,'ex-match-hw-paras')">Conclusion that asks a question</div>
+          <div class="match-item" data-pair="2" onclick="selectMatch(this,'ex-match-hw-paras')">Something amazing that Apollo did</div>
+          <div class="match-item" data-pair="1" onclick="selectMatch(this,'ex-match-hw-paras')">Introduction to the subject</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-ghost" onclick="resetMatchEx('ex-match-hw-paras')">Reset</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 2 — Writing tutor p.84, task 1
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h2">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-meta">Homework · Time expressions</div>
+        <h2><i>at</i>, <i>in</i>, <i>on</i> or <i>ago</i>?</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Remember</div>
+      <table class="ref-table">
+        <tr><th>at</th><th>in</th><th>on</th><th>ago</th></tr>
+        <tr><td>times<br><i>at 3.45 pm</i></td><td>years, months, seasons, parts of the day<br><i>in 2005, in March, in summer, in the afternoon</i></td><td>days and dates<br><i>on Friday, on 27th February</i></td><td>after the time<br><i>two hours ago</i></td></tr>
+      </table>
+      <p style="margin:12px 0 0">No <i>at / in / on</i> before: <i>last year, last week, today, tomorrow, yesterday</i>.</p>
+    </div>
+
+    <div class="card" id="ex-hw-aioa">
+      <div class="exercise-label">Word Choice</div>
+      <h3>Which word goes with each time expression?</h3>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span><b>at</b> 3.45 pm · <b>on</b> 27th February</span></div>
+
+      <p class="gap-line"><span class="num">1.</span>
+        <span class="word-choice" id="ta1" data-answer="in"><button class="word-choice-btn" onclick="selectWord(this)">at</button><button class="word-choice-btn" onclick="selectWord(this)">in</button><button class="word-choice-btn" onclick="selectWord(this)">on</button><button class="word-choice-btn" onclick="selectWord(this)">ago</button></span> → 2005</p>
+      <p class="gap-line"><span class="num">2.</span>
+        <span class="word-choice" id="ta2" data-answer="at"><button class="word-choice-btn" onclick="selectWord(this)">at</button><button class="word-choice-btn" onclick="selectWord(this)">in</button><button class="word-choice-btn" onclick="selectWord(this)">on</button><button class="word-choice-btn" onclick="selectWord(this)">ago</button></span> → 6 o'clock</p>
+      <p class="gap-line"><span class="num">3.</span>
+        <span class="word-choice" id="ta3" data-answer="ago"><button class="word-choice-btn" onclick="selectWord(this)">at</button><button class="word-choice-btn" onclick="selectWord(this)">in</button><button class="word-choice-btn" onclick="selectWord(this)">on</button><button class="word-choice-btn" onclick="selectWord(this)">ago</button></span> → four weeks …</p>
+      <p class="gap-line"><span class="num">4.</span>
+        <span class="word-choice" id="ta4" data-answer="on"><button class="word-choice-btn" onclick="selectWord(this)">at</button><button class="word-choice-btn" onclick="selectWord(this)">in</button><button class="word-choice-btn" onclick="selectWord(this)">on</button><button class="word-choice-btn" onclick="selectWord(this)">ago</button></span> → Friday</p>
+      <p class="gap-line"><span class="num">5.</span>
+        <span class="word-choice" id="ta5" data-answer="in"><button class="word-choice-btn" onclick="selectWord(this)">at</button><button class="word-choice-btn" onclick="selectWord(this)">in</button><button class="word-choice-btn" onclick="selectWord(this)">on</button><button class="word-choice-btn" onclick="selectWord(this)">ago</button></span> → March</p>
+      <p class="gap-line"><span class="num">6.</span>
+        <span class="word-choice" id="ta6" data-answer="on"><button class="word-choice-btn" onclick="selectWord(this)">at</button><button class="word-choice-btn" onclick="selectWord(this)">in</button><button class="word-choice-btn" onclick="selectWord(this)">on</button><button class="word-choice-btn" onclick="selectWord(this)">ago</button></span> → my birthday</p>
+      <p class="gap-line"><span class="num">7.</span>
+        <span class="word-choice" id="ta7" data-answer="on"><button class="word-choice-btn" onclick="selectWord(this)">at</button><button class="word-choice-btn" onclick="selectWord(this)">in</button><button class="word-choice-btn" onclick="selectWord(this)">on</button><button class="word-choice-btn" onclick="selectWord(this)">ago</button></span> → Monday morning</p>
+      <p class="gap-line"><span class="num">8.</span>
+        <span class="word-choice" id="ta8" data-answer="ago"><button class="word-choice-btn" onclick="selectWord(this)">at</button><button class="word-choice-btn" onclick="selectWord(this)">in</button><button class="word-choice-btn" onclick="selectWord(this)">on</button><button class="word-choice-btn" onclick="selectWord(this)">ago</button></span> → six months …</p>
+      <p class="gap-line"><span class="num">9.</span>
+        <span class="word-choice" id="ta9" data-answer="in"><button class="word-choice-btn" onclick="selectWord(this)">at</button><button class="word-choice-btn" onclick="selectWord(this)">in</button><button class="word-choice-btn" onclick="selectWord(this)">on</button><button class="word-choice-btn" onclick="selectWord(this)">ago</button></span> → summer</p>
+      <p class="gap-line"><span class="num">10.</span>
+        <span class="word-choice" id="ta10" data-answer="in"><button class="word-choice-btn" onclick="selectWord(this)">at</button><button class="word-choice-btn" onclick="selectWord(this)">in</button><button class="word-choice-btn" onclick="selectWord(this)">on</button><button class="word-choice-btn" onclick="selectWord(this)">ago</button></span> → the afternoon</p>
+      <p class="gap-line"><span class="num">11.</span>
+        <span class="word-choice" id="ta11" data-answer="ago"><button class="word-choice-btn" onclick="selectWord(this)">at</button><button class="word-choice-btn" onclick="selectWord(this)">in</button><button class="word-choice-btn" onclick="selectWord(this)">on</button><button class="word-choice-btn" onclick="selectWord(this)">ago</button></span> → two weeks …</p>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkWords('ex-hw-aioa')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetWords('ex-hw-aioa')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 3 — Writing tutor p.84, task 2
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h3">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-meta">Homework · Time expressions</div>
+        <h2>An email to Yildiz</h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-hw-email">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>Complete the email with <i>at</i>, <i>in</i>, <i>on</i> or <i>ago</i>.</h3>
+
+      <div class="profile">
+        <div class="profile-para"><span class="pnum">✉</span><p>Hi Yildiz,<br>
+          Do you want to come to a party at my house <span class="given">on</span> Saturday? The party starts
+          <input class="blank" id="em2" data-answer="at" placeholder="2 …" style="width:80px"> 7 o'clock
+          <input class="blank" id="em3" data-answer="in" placeholder="3 …" style="width:80px"> the evening.<br>
+          The last time we saw each other was <input class="blank" id="em4" data-answer="in" placeholder="4 …" style="width:80px"> April! That was at your birthday party,
+          <input class="blank" id="em5" data-answer="in" placeholder="5 …" style="width:80px"> the spring. I think it was
+          <input class="blank" id="em6" data-answer="on" placeholder="6 …" style="width:80px"> the 5th April, is that right? It feels like a very long time
+          <input class="blank" id="em7" data-answer="ago" placeholder="7 …" style="width:80px">!<br>
+          Anyway, I hope you can come!</p></div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-hw-email')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-hw-email')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 4 — Writing tutor p.84, Ordering information + task 3
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h4">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-meta">Homework · Ordering information</div>
+        <h2>A fun day at the café</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Remember</div>
+      <h3>When we tell a story, we use these words to show the order of events:</h3>
+      <table class="ref-table">
+        <tr><th>Beginning</th><th>Middle</th><th>End</th></tr>
+        <tr><td>First, …<br>At the beginning, …<br>It all began when …</td><td>After that, …<br>Then, …<br>Next, …<br>Later, …</td><td>In the end, …<br>Finally, …<br>After all that, …</td></tr>
+      </table>
+    </div>
+
+    <div class="card" id="ex-hw-order">
+      <div class="exercise-label">Word Choice</div>
+      <h3>Choose the correct words.</h3>
+
+      <div class="profile">
+        <div class="profile-para"><span class="pnum">☕</span><p>I had a fun day yesterday.
+          <span class="word-choice" id="ho1" data-answer="First"><button class="word-choice-btn" onclick="selectWord(this)">First</button><button class="word-choice-btn" onclick="selectWord(this)">Next</button></span>,
+          I went to the café with my friend. We stayed there and had a nice cake.
+          <span class="word-choice" id="ho2" data-answer="Then"><button class="word-choice-btn" onclick="selectWord(this)">Later</button><button class="word-choice-btn" onclick="selectWord(this)">Then</button></span>,
+          some people came into the café and took some photos for the café's website. The café owner asked me and my friend to stay. We said ‘yes!’ After
+          <span class="word-choice" id="ho3" data-answer="that"><button class="word-choice-btn" onclick="selectWord(this)">that</button><button class="word-choice-btn" onclick="selectWord(this)">then</button></span>,
+          the owner gave us some more cake! We ate it while the people took photos.
+          <span class="word-choice" id="ho4" data-answer="Later"><button class="word-choice-btn" onclick="selectWord(this)">First</button><button class="word-choice-btn" onclick="selectWord(this)">Later</button></span>,
+          I went home and checked the website. I was there in a photo with my friend! In the
+          <span class="word-choice" id="ho5" data-answer="end"><button class="word-choice-btn" onclick="selectWord(this)">after</button><button class="word-choice-btn" onclick="selectWord(this)">end</button></span>,
+          we were very happy we went to the café that day!</p></div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkWords('ex-hw-order')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetWords('ex-hw-order')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 5 — Writing tutor p.84, Adding information (so) + task 4
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h5">
+    <div class="step-head">
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-meta">Homework · Adding information</div>
+        <h2>Sentences with <i>so</i></h2>
+      </div>
+    </div>
+
+    <div class="card" id="ex-hw-so">
+      <div class="exercise-label">Fill in the Blanks</div>
+      <h3>We use <b>so</b> to write about the <b>result</b> of something (= поэтому). Match the situations with the results and write sentences with <i>so</i>.</h3>
+
+      <table class="ref-table">
+        <tr><th>Situation</th><th>Result</th></tr>
+        <tr><td>1 I didn't do my homework.</td><td>a I didn't eat much.</td></tr>
+        <tr><td>2 The weather was very nice.</td><td>b My teacher wasn't happy.</td></tr>
+        <tr><td>3 I wasn't very hungry.</td><td>c We went out.</td></tr>
+      </table>
+
+      <div class="example-row"><span class="ex-tag">Example</span>
+        <span>1 + b → I didn't do my homework, <b>so</b> my teacher wasn't happy.</span></div>
+
+      <p class="gap-line" style="margin-top:14px"><span class="num">2.</span></p>
+      <input type="text" class="blank line-write" id="hs2" data-answer="The weather was very nice, so we went out.|The weather was very nice, so we went out|The weather was very nice so we went out.|The weather was very nice so we went out" placeholder="The weather was very nice, so …">
+      <p class="gap-line" style="margin-top:14px"><span class="num">3.</span></p>
+      <input type="text" class="blank line-write" id="hs3" data-answer="I wasn't very hungry, so I didn't eat much.|I wasn't very hungry, so I didn't eat much|I wasn't very hungry so I didn't eat much.|I wasn't very hungry so I didn't eat much|I wasn’t very hungry, so I didn’t eat much.|I wasn’t very hungry, so I didn’t eat much" placeholder="I wasn't very hungry, so …">
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkBlanks('ex-hw-so')">Check ✓</button>
+        <button class="btn-ghost" onclick="resetBlanks('ex-hw-so')">Try again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 6 — Workbook p.61, tasks 5–8 (second draft of the article)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h6">
+    <div class="step-head">
+      <div class="step-num">6</div>
+      <div>
+        <div class="step-meta">Homework · Writing</div>
+        <h2>Your article: the second draft</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Free Writing</div>
+      <h3>Read your article from the lesson again. Make it even better and write it here! Find more information about your animal on the internet: what it <b>did</b> and what it <b>can do</b>.</h3>
+
+      <div class="frame">
+        Try to add: one sentence with <b>can</b> (<i>He can …</i>) · one sequencer (<i>First, … Then, … In the end, …</i>) · one sentence with <b>so</b> · a <b>question</b> at the end.
+      </div>
+
+      <textarea class="free-write" id="fw-article-2" placeholder="Title …&#10;&#10;1 …&#10;&#10;2 …&#10;&#10;3 …" rows="12" style="margin-top:12px"></textarea>
+      <div class="char-count" id="cc-fw-article-2">0 characters</div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Check</div>
+      <h3>Do you …</h3>
+      <div class="reflect-list">
+        <label class="reflect-item">
+          <input type="checkbox" id="hc1">
+          <span class="check-box"></span>
+          <span class="reflect-text">introduce the animal in the first paragraph?</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="hc2">
+          <span class="check-box"></span>
+          <span class="reflect-text">describe what the animal did and can do?</span>
+        </label>
+        <label class="reflect-item">
+          <input type="checkbox" id="hc3">
+          <span class="check-box"></span>
+          <span class="reflect-text">use the past simple and time expressions?</span>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       HOMEWORK TASK 7 — Flipped class: prepare for Explore it! (SB p.91)
+  ══════════════════════════════════════════════════════ -->
+  <section class="step" id="h7">
+    <div class="step-head">
+      <div class="step-num">7</div>
+      <div>
+        <div class="step-meta">Homework · Get ready for the next lesson</div>
+        <h2>Find out! Eagle hunters</h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="exercise-label">Research</div>
+      <h3>In some countries, people hunt with <b>eagles</b> (охотятся с беркутами). Look on the internet and find <b>one interesting fact</b> about eagle hunters. Write it in English. You will tell your teacher next lesson!</h3>
+      <textarea class="free-write" id="fw-eagle" placeholder="Did you know …? Eagle hunters live in …" rows="4"></textarea>
+      <div class="char-count" id="cc-fw-eagle">0 characters</div>
+    </div>
+  </section>
+
+  <div class="btn-row" style="justify-content:flex-start;margin:10px 0 30px">
+    <button class="btn-ghost" onclick="showPart('part-article');window.scrollTo(0,0)">← Back to the lesson</button>
+  </div>
+
+</div><!-- /wrap -->
+</div><!-- /part-homework -->
+
+<div class="scorebar" id="scoreBar" style="display:none">
+  <div class="wrap">
+    <span>Score: <span id="scoreCorrect">0</span> correct · <span id="scoreDone">0</span>/<span id="scoreTotal">0</span> answered</span>
+    <div class="meter"><i id="scoreMeter"></i></div>
+    <button class="btn-primary" onclick="checkAll()">Check my answers ✓</button>
+  </div>
+</div>
+
+<script src="../assets/sync.js"></script>
+<script src="../assets/lessons.js"></script>
+<script src="../assets/dictionary.js"></script>
+<script>
+/* Crossword with across AND down words: lessons.js always jumps down,
+   this picks the right direction (across / down) and fixes the jump. */
+(function(){
+  function cell(c, r){ return document.getElementById('xw-c' + c + '-r' + r); }
+  function has(c, r){
+    if (cell(c, r)) return true;
+    var g = document.querySelector('#ex-crossword .xw-cell[style="grid-column:' + (c + 1) + ';grid-row:' + (r + 1) + '"]');
+    return !!g;
+  }
+  var dir = 'down', last = null;
+  function pos(el){ var m = el.id.match(/^xw-c(\d+)-r(\d+)$/); return m ? [Number(m[1]), Number(m[2])] : null; }
+  function init(){
+    document.querySelectorAll('#ex-crossword .xw-blank').forEach(function(el){
+      el.addEventListener('mousedown', function(){
+        var p = pos(el), c = p[0], r = p[1];
+        var across = has(c - 1, r) || has(c + 1, r), down = has(c, r - 1) || has(c, r + 1);
+        if (across && down) { if (last === el) dir = dir === 'down' ? 'across' : 'down';
+          else dir = (!has(c - 1, r) && has(c + 1, r)) ? 'across' : (!has(c, r - 1) && has(c, r + 1)) ? 'down' : dir; }
+        else dir = across ? 'across' : 'down';
+        last = el;
+      });
+      el.addEventListener('input', function(){
+        if (!el.value) return;
+        var p = pos(el), next = dir === 'across' ? cell(p[0] + 1, p[1]) : cell(p[0], p[1] + 1);
+        if (dir === 'across' && !next && has(p[0] + 1, p[1])) next = cell(p[0] + 2, p[1]);
+        if (dir === 'down' && !next && has(p[0], p[1] + 1)) next = cell(p[0], p[1] + 2);
+        if (next) { last = next; next.focus(); } else el.blur();
+      });
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+})();
+</script>
+</body>
+</html>
