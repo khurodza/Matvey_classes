@@ -362,12 +362,14 @@ function updateScoreBar() {
   let total = 0, done = 0, correct = 0;
 
   document.querySelectorAll('.blank[data-answer]').forEach(inp => {
+    if (inp.closest('[data-extra]:not(.unlocked)')) return;   // hidden from the student
     total++;
     if (inp.value.trim()) done++;
     if (inp.classList.contains('correct')) correct++;
   });
 
   document.querySelectorAll('.mc-options[data-correct]').forEach(group => {
+    if (group.closest('[data-extra]:not(.unlocked)')) return;   // hidden from the student
     total++;
     const selected = group.querySelector('.mc-option.selected');
     if (selected) done++;
